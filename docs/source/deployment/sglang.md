@@ -55,7 +55,7 @@ python -m sglang.launch_server --model-path your_model_path --port 30000 --trust
             {
                 "type": "image_url",
                 "image_url": {
-                "url": "https://github.com/tc-mb/MiniCPM-o-cookbook/blob/main/inference/assets/airplane.jpeg?raw=true"
+                "url": "https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/assets/airplane.jpeg?raw=true"
                 }
             }
             ]
@@ -84,7 +84,7 @@ python -m sglang.launch_server --model-path your_model_path --port 30000 --trust
                     {
                         "type": "image_url",
                         "image_url": {
-                            "url": "https://github.com/tc-mb/MiniCPM-o-cookbook/blob/main/inference/assets/airplane.jpeg?raw=true",
+                            "url": "https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/assets/airplane.jpeg?raw=true",
                         },
                     },
                 ],
