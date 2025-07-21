@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, OpenBMB
+# This file is distributed under the same license as the MiniCPM-o Cookbook
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MiniCPM-o Cookbook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-20 15:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/quantization/bnb.md:1 7a792156636a40a985e2e624844023b6
+msgid "BNB"
+msgstr "BNB"
+
+#: ../../source/quantization/bnb.md:4 2a940f7ac99744dcab6530225fd76fc4
+msgid "**Support:** MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5"
+msgstr "**支持模型:** MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5"
+
+#: ../../source/quantization/bnb.md:8 bcdb3abf8e254dfbafe9a885d501c3a5
+msgid "1.Download the Model"
+msgstr "1.下载模型"
+
+#: ../../source/quantization/bnb.md:10 47a6da18ba4a47f9a9921462b0eb9cb5
+msgid ""
+"Download the MiniCPM-V-4 model from "
+"[HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4) and extract it "
+"to your local directory."
+msgstr "从[HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4)下载MiniCPM-V-4模型并解压到本地目录。"
+
+#: ../../source/quantization/bnb.md:12 fb4249e3f63146d188e6d2081e3c7f28
+msgid "2.Quantization Script"
+msgstr "2.量化脚本"
+
+#: ../../source/quantization/bnb.md:14 5beee2d186144ba482b65d2fb061b669
+msgid ""
+"The following script loads the original model, quantizes it to 4-bit "
+"using bitsandbytes, and saves the quantized model."
+msgstr "以下脚本加载原始模型，使用bitsandbytes将其量化为4比特，并保存量化后的模型。"
+
+#: ../../source/quantization/bnb.md:75 d2f2181aced0403295c06ea27e356564
+msgid "3.Expected Output"
+msgstr "3.预期输出"
+
+#: ../../source/quantization/bnb.md:77 572bbedc89214408859ec9f88aaa36d6
+msgid "After quantization, you should see output similar to:"
+msgstr "量化完成后，你应该会看到类似如下的输出："
+
+#: ../../source/quantization/bnb.md:85 1115a1d6b92348ccbdd92cec9c73de90
+msgid ""
+"The quantized model will be saved in the directory specified by "
+"`save_path` and can be used for further fine-tuning or inference."
+msgstr "量化后的模型将保存在`save_path`指定的目录下，可用于后续微调或推理。"
+
+#: ../../source/quantization/bnb.md:88 b2282fb072964056a31f9107492d28ae
+msgid ""
+"To customize the model path, image, or save path, modify the "
+"corresponding variables in the script."
+msgstr "如需自定义模型路径、镜像或保存路径，请修改脚本中的相关变量。"
+

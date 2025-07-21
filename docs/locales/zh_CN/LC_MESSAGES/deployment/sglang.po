@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, OpenBMB
+# This file is distributed under the same license as the MiniCPM-o Cookbook
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MiniCPM-o Cookbook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-20 15:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/deployment/sglang.md:1 e89b53f07f924193843c437368f32c2e
+msgid "SGLang"
+msgstr "SGLang"
+
+#: ../../source/deployment/sglang.md:3 305303342f95431abdeaa104930d45e0
+msgid "1.Installing SGLang"
+msgstr "1.安装 SGLang"
+
+#: ../../source/deployment/sglang.md:4 3fab0dffdcf64b2b80410ec8c1ffc140
+msgid "Install SGLang from Source Code"
+msgstr "从源码安装 SGLang"
+
+#: ../../source/deployment/sglang.md:13 6912a70264914b54b9ca3d19f86c88b1
+msgid "Installing flashinfer Dependencies"
+msgstr "安装 flashinfer 依赖"
+
+#: ../../source/deployment/sglang.md:15 baad27c9af634f6e87d7bc9a86580b12
+msgid "Method 1: pip installation (network speed may be insufficient)"
+msgstr "方法一：pip 安装（网络速度可能不足）"
+
+#: ../../source/deployment/sglang.md:20 7261129eb204456d85aa0c27305bc644
+msgid "Method 2: whl file installation"
+msgstr "方法二：whl 文件安装"
+
+#: ../../source/deployment/sglang.md:21 93f040cb0e9740dab4b79d482ab56872
+msgid ""
+"Visit: "
+"[https://flashinfer.ai/whl/cu121/torch2.4/flashinfer/](https://flashinfer.ai/whl/cu121/torch2.4/flashinfer/)"
+msgstr "访问：[https://flashinfer.ai/whl/cu121/torch2.4/flashinfer/](https://flashinfer.ai/whl/cu121/torch2.4/flashinfer/)"
+
+#: ../../source/deployment/sglang.md:22 950a765b4d35431f94d07a15ae9bef49
+msgid ""
+"Locate and download the whl file compatible with your server, e.g. "
+"`flashinfer-0.1.6+cu121torch2.4-cp310-cp310-linux_x86_64.whl`"
+msgstr ""
+"找到并下载与你服务器兼容的 whl 文件，例如 "
+"`flashinfer-0.1.6+cu121torch2.4-cp310-cp310-linux_x86_64.whl`"
+
+#: ../../source/deployment/sglang.md:23 38e2e2f8ac6d477686315d726977652e
+msgid "Install using pip:"
+msgstr "使用 pip 安装："
+
+#: ../../source/deployment/sglang.md:27 a6b1b2dfbf2a49149b38d953e7e69239
+msgid ""
+"For any installation issues, please consult the [official installation "
+"documentation](https://docs.sglang.ai/start/install.html)"
+msgstr "如遇安装问题，请参考[官方安装文档](https://docs.sglang.ai/start/install.html)"
+
+#: ../../source/deployment/sglang.md:29 0c784659a8ac40a596460bbd14cbbc3a
+msgid "2.Launching Inference Service with SGLang"
+msgstr "2.使用 SGLang 启动推理服务"
+
+#: ../../source/deployment/sglang.md:31 caacc777b6ca4716be66d1d1c2471997
+msgid "By default, it downloads model files from Hugging Face Hub"
+msgstr "默认情况下，会从 Hugging Face Hub 下载模型文件"
+
+#: ../../source/deployment/sglang.md:35 0a3bfc42320d459d8c90117cf9985139
+msgid ""
+"Alternatively, you can specify a local path after the `--model-path` "
+"parameter"
+msgstr "或者，你可以在 `--model-path` 参数后指定本地路径"
+
+#: ../../source/deployment/sglang.md:40 5324d4b34e8b41869df6953a4e26d8d2
+msgid "3.Service API Calls"
+msgstr "3.服务 API 调用"
+
+#: ../../source/deployment/sglang.md:41 bab93a692c504b6dac97c7871cc7d700
+msgid "Bash call"
+msgstr "Bash 调用"
+
+#: ../../source/deployment/sglang.md:68 d86cdfc108a64ac481effc80618205fc
+msgid "Python call"
+msgstr "Python 调用"
+
+#: ../../source/deployment/sglang.md:98 918b38f6bb61429abead625ee9ccef9b
+msgid ""
+"**If the image_url is inaccessible, it can be replaced with a local image"
+" path**"
+msgstr "**如果 image_url 无法访问，可以替换为本地图片路径**"
+
+#: ../../source/deployment/sglang.md:100 1cd3d955b9ef43419039b2adbb9df845
+msgid ""
+"For more calling methods, please refer to the [SGLang "
+"documentation](https://docs.sglang.ai/backend/openai_api_vision.html)"
+msgstr ""
+"更多调用方式请参考 [SGLang "
+"文档](https://docs.sglang.ai/backend/openai_api_vision.html)"
+

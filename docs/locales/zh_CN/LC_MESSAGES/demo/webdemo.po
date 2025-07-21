@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, OpenBMB
+# This file is distributed under the same license as the MiniCPM-o Cookbook
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MiniCPM-o Cookbook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-17 20:35+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/demo/webdemo.md:1 0e2e2732276b43dd84b8e7203b7f69e7
+msgid "Omni Stream"
+msgstr ""
+
+#: ../../source/demo/webdemo.md:3 66b83295682a41ee8e28caba7fec79da
+msgid "Overview"
+msgstr "概述"
+
+#: ../../source/demo/webdemo.md:5 8c8ae687d19a45deb519c89ef0c30295
+msgid ""
+"The MiniCPM-o Omni Stream demo provides a real-time conversational AI "
+"experience with multimodal capabilities. It supports streaming audio "
+"input/output, voice activity detection (VAD), voice cloning, and "
+"multimodal interactions."
+msgstr ""
+"MiniCPM-o 全域流式（Omni "
+"Stream）演示提供了一个具备多模态能力的实时对话式人工智能体验。它支持流式音频输入/输出、语音活动检测（VAD）、声音克隆以及多模态交互。"
+
+#: ../../source/demo/webdemo.md:7 9b280830829f49e29f1aade6e40003d3
+msgid "Key Features"
+msgstr "主要特性"
+
+#: ../../source/demo/webdemo.md:9 7ec9a6ad8d0e4b81bb2151ab94e5dab7
+msgid "Real-time Streaming"
+msgstr "实时流式处理"
+
+#: ../../source/demo/webdemo.md:10 8fe1d4fc470840688bebca486e9fc73c
+msgid "**Streaming Audio Processing**: Process audio input in real-time chunks"
+msgstr "**流式音频处理**：实时分块处理音频输入"
+
+#: ../../source/demo/webdemo.md:11 b3bbace3162d478386c458c9baa97e69
+msgid "**Low-latency Response**: Optimized for real-time conversation scenarios"
+msgstr "**低延迟响应**：为实时对话场景优化"
+
+#: ../../source/demo/webdemo.md:12 e3d259de1ffe4a80a96531490452cae5
+msgid ""
+"**Concurrent Processing**: Handle multiple audio streams with session "
+"management"
+msgstr "**并发处理**：通过会话管理处理多个音频流"
+
+#: ../../source/demo/webdemo.md:14 458ce1dc1a3147f19d85de6fd47e8c4b
+msgid "Voice Activity Detection (VAD)"
+msgstr "语音活动检测（VAD）"
+
+#: ../../source/demo/webdemo.md:15 d49012d792d94d4294689fb6b09ab51f
+msgid ""
+"**Silero VAD Integration**: Automatic speech detection using pre-trained "
+"VAD models"
+msgstr "**集成 Silero VAD**：使用预训练的 VAD 模型自动检测语音"
+
+#: ../../source/demo/webdemo.md:16 f23d191ad5aa40cda5d3eaad02558182
+msgid ""
+"**Configurable Thresholds**: Customizable silence/speech detection "
+"parameters"
+msgstr "**可配置阈值**：可自定义的静音/语音检测参数"
+
+#: ../../source/demo/webdemo.md:17 ddc256cc5280427d96d854562e3795a9
+msgid ""
+"**Smart Segmentation**: Automatic audio segmentation based on speech "
+"patterns"
+msgstr "**智能分段**：根据语音模式自动进行音频分段"
+
+#: ../../source/demo/webdemo.md:19 7506ab1e7e6d411a961d310d73730149
+msgid "Voice Cloning & TTS"
+msgstr "声音克隆与文本转语音（TTS）"
+
+#: ../../source/demo/webdemo.md:20 edcb3640917d43808de058317ba3219a
+msgid ""
+"**Reference Audio Support**: Clone voice characteristics from reference "
+"audio samples"
+msgstr "**支持参考音频**：从参考音频样本中克隆声音特征"
+
+#: ../../source/demo/webdemo.md:21 affe2367d3e64c2aa5dd57f61576f879
+msgid ""
+"**Multiple Voice Options**: Built-in male, female, and default voice "
+"presets"
+msgstr "**多种声音选项**：内置男性、女性和默认声音预设"
+
+#: ../../source/demo/webdemo.md:22 374ab60bad2b46b2959c29f9005450d0
+msgid "**Custom Audio Upload**: Upload your own reference audio for voice cloning"
+msgstr "**自定义音频上传**：上传您自己的参考音频进行声音克隆"
+
+#: ../../source/demo/webdemo.md:24 6f97f6c93fbf4f1fa5d358216640b2f8
+msgid "Multimodal Support"
+msgstr "多模态支持"
+
+#: ../../source/demo/webdemo.md:25 e8fa9bd32a17451eb17bf2864660397a
+msgid ""
+"**Audio + Image Input**: Process both audio and visual information "
+"simultaneously"
+msgstr "**音频 + 图像输入**：同时处理音频和视觉信息"
+
+#: ../../source/demo/webdemo.md:26 da6cf58459ab4ffcae8750b0ea368940
+msgid "**Text + Audio Output**: Generate both speech and text responses"
+msgstr "**文本 + 音频输出**：生成语音和文本两种响应"
+
+#: ../../source/demo/webdemo.md:27 14e94eeb60784426b527dfef32e3a099
+msgid ""
+"**High-definition Video**: Support for HD video processing with advanced "
+"slicing"
+msgstr "**高清视频**：支持通过高级切片技术处理高清视频"
+
+#: ../../source/demo/webdemo.md:29 de8b598336614baa8c646a306e65556d
+msgid "Architecture"
+msgstr "架构"
+
+#: ../../source/demo/webdemo.md:41 28226047dd5d4d26b0cf6358152547c1
+msgid "Local WebUI Demo"
+msgstr "本地 WebUI 演示"
+
+#: ../../source/demo/webdemo.md:43 54f1ca64505f4d1188e293a1c00374f8
+msgid ""
+"You can easily build your own local WebUI demo using the following "
+"commands."
+msgstr "您可以使用以下命令轻松构建自己的本地 WebUI 演示。"
+
+#: ../../source/demo/webdemo.md:45 a2e8f3249c5549238a0047b8cddd6725
+msgid ""
+"Please ensure that `transformers==4.44.2` is installed, as other versions"
+" may have compatibility issues."
+msgstr "请确保已安装 `transformers==4.44.2`，因为其他版本可能存在兼容性问题。"
+
+#: ../../source/demo/webdemo.md:47 3150308ad178411296ef69337a3742d3
+msgid ""
+"If you are using an older version of PyTorch, you might encounter this "
+"issue `\"weight_norm_fwd_first_dim_kernel\" not implemented for "
+"'BFloat16'`, Please add `self.minicpmo_model.tts.float()` during the "
+"model initialization."
+msgstr ""
+"如果您使用的是旧版 PyTorch，可能会遇到此问题：`\"weight_norm_fwd_first_dim_kernel\" not "
+"implemented for 'BFloat16'`。请在模型初始化期间添加 "
+"`self.minicpmo_model.tts.float()`。"
+
+#: ../../source/demo/webdemo.md:49 9c505ae2755846d6bfefc836f85a7e80
+msgid "**For real-time voice/video call demo:**"
+msgstr "**对于实时语音/视频通话演示：**"
+
+#: ../../source/demo/webdemo.md:50 c06f420275b54097b3108700a7fe884c
+msgid "launch model server:"
+msgstr "启动模型服务器："
+
+#: ../../source/demo/webdemo.md:57 f321a1733c1c4ffba860fdc23eac27d0
+msgid "launch web server:"
+msgstr "启动 Web 服务器："
+
+#: ../../source/demo/webdemo.md:73 2508c69ed6e74a0a81418f30de71cc63
+msgid ""
+"Open `https://localhost:8088/` in browser and enjoy the real-time "
+"voice/video call."
+msgstr "在浏览器中打开 `https://localhost:8088/`，即可体验实时语音/视频通话。"
+
+#~ msgid "MiniCPM-o Omni Stream Demo"
+#~ msgstr "Omni Stream"
+

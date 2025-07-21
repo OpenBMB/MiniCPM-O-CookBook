@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, OpenBMB
+# This file is distributed under the same license as the MiniCPM-o Cookbook
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MiniCPM-o Cookbook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-20 20:07+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/finetune/swift.md:1 d9909c7a6e1b4b3d9a3c7e47e61624dc
+msgid "SWIFT"
+msgstr "SWIFT"
+
+#: ../../source/finetune/swift.md:4 c3dd60d6c0d1482b8d6a3ddd9dacec3b
+msgid "**Support:** MiniCPM-V 2.6"
+msgstr "**支持:** MiniCPM-V 2.6"
+
+#: ../../source/finetune/swift.md:7 0e60e3e2b7524ccf87ca0143fad855aa
+msgid ""
+"SWIFT is an efficient and scalable framework for fine-tuning large pre-"
+"trained models with support for various parameter-efficient methods like "
+"LoRA, Adapter, and Prompt Tuning."
+msgstr ""
+"SWIFT 是一个高效且可扩展的框架，用于微调大型预训练模型，支持 LoRA、Adapter 和 Prompt "
+"Tuning 等多种参数高效方法。"
+
+#: ../../source/finetune/swift.md:9 ab4fff61b9e14c669180c0d2fe07db36
+msgid "SWIFT Install"
+msgstr "安装SWIFT"
+
+#: ../../source/finetune/swift.md:11 d15b21ef0cb643649ec9404f2a99f266
+msgid "You can quickly install SWIFT using bash commands."
+msgstr "您可以使用 bash 命令快速安装 SWIFT。"
+
+#: ../../source/finetune/swift.md:20 f97bae50d4c546b9a75a47098b6fbefb
+msgid "Train"
+msgstr "训练"
+
+#: ../../source/finetune/swift.md:22 e5a8da8318b340b1874da03a356b43d0
+msgid "Prepare the data"
+msgstr "数据准备"
+
+#: ../../source/finetune/swift.md:24 abd4fb04e2eb448c8bf9054f39242287
+msgid ""
+"You can refer to the format below to construct your dataset. Custom "
+"datasets support JSON and JSONL formats."
+msgstr "您可以参考以下格式构建您的数据集。自定义数据集支持 JSON 和 JSONL 格式。"
+
+#: ../../source/finetune/swift.md:32 a53fc64053364a53bf0601ce1894b07b
+msgid ""
+"Alternatively, you can also use datasets from ModelScope, such as the "
+"image dataset [coco-en-"
+"mini](https://modelscope.cn/datasets/modelscope/coco_2014_caption/summary)"
+" or the video dataset [video-"
+"chatgpt](https://modelscope.cn/datasets/swift/VideoChatGPT)."
+msgstr ""
+"或者，您也可以使用 ModelScope 的数据集，例如图像数据集 [coco-en-"
+"mini](https://modelscope.cn/datasets/modelscope/coco_2014_caption/summary) "
+"或视频数据集 [video-chatgpt](https://modelscope.cn/datasets/swift/VideoChatGPT)。"
+
+#: ../../source/finetune/swift.md:34 86054b2175a84e84a3d79a65f60b82bf
+msgid "Image Fine-tuning"
+msgstr "图像微调"
+
+#: ../../source/finetune/swift.md:36 f12679335bda460c98fb1e03bfe61091
+msgid ""
+"We use the `coco-en-mini` dataset for fine-tuning, which involves "
+"describing the content of images."
+msgstr "我们使用 `coco-en-mini` 数据集进行微调，该数据集涉及描述图像内容。"
+
+#: ../../source/finetune/swift.md:38 ../../source/finetune/swift.md:69
+#: 7d41b3a1f62d436eb9479bda927277ef 82fcfcc516f14c9988f3c86f1121a53d
+msgid "The following is the code configuration:"
+msgstr "以下是代码配置："
+
+#: ../../source/finetune/swift.md:49 ../../source/finetune/swift.md:79
+#: c44dc20cad1c4add8f1fd9c857cbadc7 dbca8f332420464c93c1ec80abd1c99e
+msgid "If you want to use a custom dataset, simply specify it as follows:"
+msgstr "如果您想使用自定义数据集，只需按如下方式指定即可："
+
+#: ../../source/finetune/swift.md:56 ../../source/finetune/swift.md:94
+#: 23ea376ce9ab4c0b93f2dbfbc9504180 a776b6642a6641a8b652c52a446e1f10
+msgid "The inference script after fine-tuning is as follows:"
+msgstr "微调后的推理脚本如下："
+
+#: ../../source/finetune/swift.md:65 9c0eb8e1067c4da889191d8106f9ef4b
+msgid "Video Fine-tuning"
+msgstr "视频微调"
+
+#: ../../source/finetune/swift.md:67 ee237d555e2f471da97cb45f25de9e73
+msgid ""
+"We use the `video-chatgpt` dataset for fine-tuning, which involves "
+"describing the content of images."
+msgstr "我们使用 `video-chatgpt` 数据集进行微调，该数据集涉及描述视频内容。"
+
+#: ../../source/finetune/swift.md:86 9f3a40c0f68d4bfea956c19d5b35c61a
+msgid ""
+"Custom datasets support JSON and JSONL formats. Below is an example of "
+"the video dataset:"
+msgstr "自定义数据集支持 JSON 和 JSONL 格式。以下是视频数据集的示例："
+
+#: ../../source/finetune/swift.md:102 cbe937b1861047f3be4cbafa6c01af2f
+msgid "Infer"
+msgstr "推理"
+
+#: ../../source/finetune/swift.md:104 5cc68ac5cfd24891b24f5047b6c3f948
+msgid ""
+"Run the bash code will download the model of MiniCPM-V 2.6 and run the "
+"inference"
+msgstr "运行 bash 代码将下载 MiniCPM-V 2.6 模型并执行推理。"

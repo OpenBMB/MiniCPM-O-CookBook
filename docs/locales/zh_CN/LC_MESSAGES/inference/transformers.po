@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, OpenBMB
+# This file is distributed under the same license as the MiniCPM-o Cookbook
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MiniCPM-o Cookbook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-15 18:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/inference/transformers.md:1 efeae6e2775e4bf6981a830264cd0fb4
+msgid "Transformers"
+msgstr "Transformers"
+
+#: ../../source/inference/transformers.md:3 8dbdf0970a3246c29d20dd0e688aaf14
+msgid ""
+"Transformers is a library of pretrained natural language processing for "
+"inference and training. Developers can use Transformers to train models "
+"on their data, build inference applications, and generate texts with "
+"large language models."
+msgstr ""
+"Transformers 是一个用于推理和训练的预训练自然语言处理库。开发者可以使用 Transformers 在自己的数据上训练模型，构建推理应用，并使用大型语言模型生成文本。"
+
+#: ../../source/inference/transformers.md:5 b1be7f2374284436aa976582ab3a34de
+msgid "Environment Setup"
+msgstr "环境配置"
+
+#: ../../source/inference/transformers.md:7 f7f3288f41994757b70058ef02fdad75
+msgid "`transformers>=4.53.0`"
+msgstr "`transformers>=4.53.0`"
+
+#: ../../source/inference/transformers.md:8 c8008c927182404385fcf3647782f55d
+msgid "`torch>=2.6` is recommended"
+msgstr "建议使用 `torch>=2.6`"
+
+#: ../../source/inference/transformers.md:9 ed5bec974dd644ec80f3f3e81e8262ed
+msgid "GPU is recommended"
+msgstr "建议使用 GPU"
+
+#: ../../source/inference/transformers.md:11 13bcd435b1a54043becfadc5b6889946
+msgid "Basic Usage"
+msgstr "基本用法"

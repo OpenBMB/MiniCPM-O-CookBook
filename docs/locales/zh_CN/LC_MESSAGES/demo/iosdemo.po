@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, OpenBMB
+# This file is distributed under the same license as the MiniCPM-o Cookbook
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MiniCPM-o Cookbook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-20 23:13+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/demo/iosdemo.md:1 ffee5ace31374ae28a17e95736457457
+msgid "iOS Demo"
+msgstr "iOS Demo"
+
+#: ../../source/demo/iosdemo.md:3 608d9242db9f4ecc98c8b78e842e07d8
+msgid "1. Deploying iOS App"
+msgstr "1.部署 iOS 应用"
+
+#: ../../source/demo/iosdemo.md:5 3e499c1a8b164676bacf0131e4bdbf39
+msgid ""
+"**NOTE: To deploy and test the app on an iOS device, you may need an "
+"Apple Developer account.**"
+msgstr "**注意：要在 iOS 设备上部署和测试该应用，您可能需要一个 Apple Developer 帐户。**"
+
+#: ../../source/demo/iosdemo.md:7 bd4c4b0ef1564531bca4d6c49d9ef679
+msgid "Clone the official iOS demo repository provided by OpenBMB:"
+msgstr "克隆 OpenBMB 提供的官方 iOS demo 仓库："
+
+#: ../../source/demo/iosdemo.md:14 96c075b9dca14b03964ae6059f4eefaf
+msgid "Install Xcode:"
+msgstr "安装 Xcode："
+
+#: ../../source/demo/iosdemo.md:16 30f9feb507854b0abbd989d09b563b2f
+msgid "Download Xcode from the App Store"
+msgstr "从 App Store 下载 Xcode"
+
+#: ../../source/demo/iosdemo.md:17 aae75c41276947949eb9379861c69c77
+msgid "Install the Command Line Tools:"
+msgstr "安装命令行工具："
+
+#: ../../source/demo/iosdemo.md:22 728fb8f703b3471d8101ddba7c965141
+msgid "Agree to the software license agreement:"
+msgstr "同意软件许可协议："
+
+#: ../../source/demo/iosdemo.md:28 902d4aa7c95f4a50925398427685d550
+msgid ""
+"Open `MiniCPM-demo.xcodeproj` with Xcode. It may take a moment for Xcode "
+"to automatically download the required dependencies."
+msgstr "使用 Xcode 打开 `MiniCPM-demo.xcodeproj`。Xcode 自动下载所需依赖项可能需要一些时间。"
+
+#: ../../source/demo/iosdemo.md:30 f7098c20da764e9fac2dfb55c14d527c
+msgid ""
+"In Xcode, select the target device at the top of the window, then click "
+"the \"Run\" (triangle) button to launch the demo."
+msgstr "在 Xcode 中，选择窗口顶部的目标设备，然后点击“运行”（三角形）按钮来启动演示。"
+
+#: ../../source/demo/iosdemo.md:32 f052e4c4d65b45b69b635e6c0712d2f7
+msgid ""
+"**NOTE: If you encounter errors related to the "
+"`thirdparty/llama.xcframework` path, please follow the steps below to "
+"build the `llama.xcframework` manually.**"
+msgstr "**注意：如果遇到与 `thirdparty/llama.xcframework` 路径相关的错误，请按照以下步骤手动构建 `llama.xcframework`。**"
+
+#: ../../source/demo/iosdemo.md:34 be00ed87c8c4404facb8bac5a073eec6
+msgid "2. Manually Building the llama.cpp Library From OpenBMB"
+msgstr "2.自行编译构建 OpenBMB 提供的 llama.cpp"
+
+#: ../../source/demo/iosdemo.md:36 424d7e5a8f2c419bad145db06b177718
+msgid "Clone the llama.cpp repository:"
+msgstr "克隆 llama.cpp 仓库："
+
+#: ../../source/demo/iosdemo.md:43 5c65c19429a7414988349bd4140970ca
+msgid "Build the llama.cpp library for iOS using the script:"
+msgstr "使用脚本为 iOS 构建 llama.cpp 库："
+
+#: ../../source/demo/iosdemo.md:49 9b4c1474913244b6b4a43d50e5c669a9
+msgid ""
+"Copy the built library into the corresponding directory of the iOS demo "
+"project:"
+msgstr "将构建好的库复制到 iOS demo 项目的相应目录中："
+
+#: ../../source/demo/iosdemo.md:55 aedf5cea943c41218f6721795bc9d841
+msgid "3. GGUF Files"
+msgstr "3.获取 GGUF 模型文件"
+
+#: ../../source/demo/iosdemo.md:57 169e0414c61f4f36949fc9ac8ae84104
+msgid "1: Download Official GGUF Files"
+msgstr "1：下载官方 GGUF 文件"
+
+#: ../../source/demo/iosdemo.md:59 6021b2cd9075439088f4ee402368be6f
+msgid ""
+"HuggingFace: "
+"[https://huggingface.co/openbmb/MiniCPM-V-4-gguf](https://huggingface.co/openbmb/MiniCPM-V-4-gguf)"
+msgstr ""
+"HuggingFace: "
+"[https://huggingface.co/openbmb/MiniCPM-V-4-gguf](https://huggingface.co/openbmb/MiniCPM-V-4-gguf)"
+
+#: ../../source/demo/iosdemo.md:60 2b0c262a3be5474c874ff50f159c5777
+msgid ""
+"ModelScope: "
+"[https://modelscope.cn/models/OpenBMB/MiniCPM-V-4-gguf](https://modelscope.cn/models/OpenBMB/MiniCPM-V-4-gguf)"
+msgstr ""
+"ModelScope: "
+"[https://modelscope.cn/models/OpenBMB/MiniCPM-V-4-gguf](https://modelscope.cn/models/OpenBMB/MiniCPM-V-4-gguf)"
+
+#: ../../source/demo/iosdemo.md:62 428bb8212d2d4d018a2e6cdc4cc71985
+msgid ""
+"Download the language model file (e.g., `Model-3.6B-Q4_K_M.gguf`) and the"
+" vision model file (`mmproj-model-f16.gguf`) from the repository."
+msgstr "从仓库中下载语言模型文件（例如 `Model-3.6B-Q4_K_M.gguf`）和视觉模型文件（`mmproj-model-f16.gguf`）。"
+
+#: ../../source/demo/iosdemo.md:64 3a40a62d34754779913df22c0fbd1a61
+msgid "2: Convert from PyTorch Model"
+msgstr "2：从 PyTorch 模型转换"
+
+#: ../../source/demo/iosdemo.md:66 ae58675d08ab44658e9ccb401fdb7baf
+msgid "Download the MiniCPM-V-4 PyTorch model into a folder named `MiniCPM-V-4`:"
+msgstr "将 MiniCPM-V-4 PyTorch 模型下载到名为 `MiniCPM-V-4` 的文件夹中："
+
+#: ../../source/demo/iosdemo.md:68 a98c7a5a045147a58dad6904a1b1a374
+msgid ""
+"HuggingFace: "
+"[https://huggingface.co/openbmb/MiniCPM-V-4](https://huggingface.co/openbmb/MiniCPM-V-4)"
+msgstr ""
+"HuggingFace: "
+"[https://huggingface.co/openbmb/MiniCPM-V-4](https://huggingface.co/openbmb/MiniCPM-V-4)"
+
+#: ../../source/demo/iosdemo.md:69 67ff0f673676445f93f879bfca407b0f
+msgid ""
+"ModelScope: "
+"[https://modelscope.cn/models/OpenBMB/MiniCPM-V-4](https://modelscope.cn/models/OpenBMB/MiniCPM-V-4)"
+msgstr ""
+"ModelScope: "
+"[https://modelscope.cn/models/OpenBMB/MiniCPM-V-4](https://modelscope.cn/models/OpenBMB/MiniCPM-V-4)"
+
+#: ../../source/demo/iosdemo.md:71 acfb1959e0094833a575d925d2f5e4a8
+msgid "Convert the PyTorch model to GGUF format:"
+msgstr "将 PyTorch 模型转换为 GGUF 格式："
+
+#~ msgid "iOS Demo"
+#~ msgstr "iOS Demo"

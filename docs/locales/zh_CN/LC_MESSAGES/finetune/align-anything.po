@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, OpenBMB
+# This file is distributed under the same license as the MiniCPM-o Cookbook
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MiniCPM-o Cookbook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-20 20:39+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/finetune/align-anything.md:1 e0bb1367e7b140f689ce04d641104343
+msgid "Align-Anything"
+msgstr "Align-Anything"
+
+#: ../../source/finetune/align-anything.md:4 89631e6a3d634edfac1e9bc1a915f676
+msgid "**Support:** MiniCPM-o 2.6"
+msgstr "**支持:** MiniCPM-o 2.6"
+
+#: ../../source/finetune/align-anything.md:7 ccec53deaa20417299caf39d43ef0287
+msgid ""
+"[Align-Anything](https://github.com/PKU-Alignment/align-anything/) is a "
+"multi-modal alignment framework, it aims to align any modality large "
+"models (any-to-any models), including LLMs, VLMs, and others, with human "
+"intentions and values. More details about the definition and milestones "
+"of alignment for Large Models can be found in [AI "
+"Alignment](https://alignmentsurvey.com/)."
+msgstr ""
+"[Align-Anything](https://github.com/PKU-Alignment/align-anything/) "
+"是一个多模态对齐框架，旨在对齐全模态（any-to-any"
+"）模型，包括 LLM、VLM 等，使其与人类的意图和价值观保持一致。有关大型模型对齐的定义和里程碑的更多详细信息，可以在 "
+"[AI Alignment](https://alignmentsurvey.com/) 中找到。"
+
+#: ../../source/finetune/align-anything.md:9 f7a0833fa33d4cfba20f6111763a4cd5
+msgid "Environment Setup"
+msgstr "环境配置"
+
+#: ../../source/finetune/align-anything.md:21 09c5dad6981948ab9f4c088d39628891
+msgid "**On Nvidia GPU**"
+msgstr "**在 Nvidia GPU 上**"
+
+#: ../../source/finetune/align-anything.md:23 2d63a32dc7d24983b6dfc437b25f271c
+msgid ""
+"**`[Optional]`** We recommend installing "
+"[CUDA](https://anaconda.org/nvidia/cuda) in the conda environment and set"
+" the environment variable."
+msgstr ""
+"**`[可选]`** 我们建议在 conda 环境中安装 [CUDA](https://anaconda.org/nvidia/cuda) "
+"并设置环境变量。"
+
+#: ../../source/finetune/align-anything.md:33 3390a5e480c545e7a119cd668218fab8
+msgid ""
+"If your CUDA installed in a different location, such as "
+"`/usr/local/cuda/bin/nvcc`, you can set the environment variables as "
+"follows:"
+msgstr "如果您的 CUDA 安装在不同的位置，例如 `/usr/local/cuda/bin/nvcc`，您可以如下设置环境变量："
+
+#: ../../source/finetune/align-anything.md:39 8fe3d948076a4c98a2c6df8126319347
+msgid "Finally, install `align-anything` by:"
+msgstr "最后，通过以下方式安装 `align-anything`："
+
+#: ../../source/finetune/align-anything.md:47 2f751f76a5ab4f48a09635babc72935c
+msgid "Training"
+msgstr "训练"
+
+#: ../../source/finetune/align-anything.md:49 5dc550cfeaa0475bb15597a0790b5c45
+msgid ""
+"You can find SFT & DPO training script in the `./scripts/minicpmo` "
+"directory. These scripts would automatically download the model and "
+"dataset, and run the training or evaluation."
+msgstr "您可以在 `./scripts/minicpmo` 目录中找到 SFT 和 DPO 训练脚本。这些脚本会自动下载模型和数据集，并运行训练或评估。"
+
+#: ../../source/finetune/align-anything.md:51 cb28835d42084ecea8f0331664788e79
+msgid ""
+"For example, `scripts/minicpmo/minicpmo_dpo_vision.sh` is the script for "
+"`Text + Image -> Text` modality, you can run it by:"
+msgstr ""
+"例如，`scripts/minicpmo/minicpmo_dpo_vision.sh` 是用于 `文本 + 图像 -> 文本` "
+"模态的脚本，您可以通过以下方式运行它："
+
+#: ../../source/finetune/align-anything.md:58 a6035e37be19469494c137e075576eeb
+msgid ""
+"**Note:** The scripts will automatically download the model and dataset "
+"from huggingface. If you are prohibited from the internet, please try to "
+"use the `HF Mirror`:"
+msgstr "**注意：** 脚本将自动从 huggingface 下载模型和数据集。如果您无法访问互联网，请尝试使用 `HF Mirror`："
+

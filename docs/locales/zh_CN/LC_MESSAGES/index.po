@@ -1,0 +1,495 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, OpenBMB
+# This file is distributed under the same license as the MiniCPM-o Cookbook
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MiniCPM-o Cookbook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-21 10:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/index.rst:204
+msgid "Getting Started"
+msgstr "快速开始"
+
+#: ../../source/index.rst:212
+msgid "Inference"
+msgstr "推理"
+
+#: ../../source/index.rst:219
+msgid "Deployment"
+msgstr "部署"
+
+#: ../../source/index.rst:227
+msgid "Run Locally"
+msgstr "端侧运行"
+
+#: ../../source/index.rst:235
+msgid "Quantization"
+msgstr "量化"
+
+#: ../../source/index.rst:244
+msgid "finetune"
+msgstr "微调"
+
+#: ../../source/index.rst:254
+msgid "Demo"
+msgstr "演示"
+
+#: ../../source/index.rst:7 57436d0af51948f1a16e261fe703177a
+msgid "Welcome to MiniCPM-o Cookbook"
+msgstr "欢迎来到MiniCPM-o Cookbook"
+
+#: ../../source/index.rst:9 06f41e62f1d74e94be99fd5e1894e98b
+msgid "MiniCPM"
+msgstr "MiniCPM"
+
+#: ../../source/index.rst:24 f8742300f70e4cdb86c1fd1cac5c5018
+msgid ""
+"`🏠 Main Repository`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 "
+"Technical Blog`_"
+msgstr "`🏠 模型仓库`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 技术博客`_"
+
+#: ../../source/index.rst:26 7680a12a247647e3a46921422fa1a1b5
+msgid ""
+"Cook up amazing multimodal AI applications effortlessly with MiniCPM-o / "
+"MiniCPM-V, bringing vision, speech, and live-streaming capabilities right"
+" to your fingertips!"
+msgstr "使用 MiniCPM-o / MiniCPM-V 轻松打造出色的多模态 AI 应用，将视觉、语音功能带到您的身边！"
+
+#: ../../source/index.rst:30 1e30516b53804a6d9c3f54888e20d164
+msgid "✨ What Makes Our Recipes Special?"
+msgstr "✨ 我们的Cookbook有何特别之处？"
+
+#: ../../source/index.rst:33 278b90a306044cdba18a382f1a1b4948
+msgid "Broad User Spectrum"
+msgstr "适配广泛的用户群体"
+
+#: ../../source/index.rst:35 ca88e85f283640829a5e472ccc93478b
+msgid ""
+"We support a wide range of users, from individuals to enterprises and "
+"researchers."
+msgstr "我们支持从个人到企业和研究人员的广泛用户。"
+
+#: ../../source/index.rst:37 b7c8219d17d347ac848a6cb720d74e51
+msgid ""
+"Individuals: Enjoy effortless inference using **Ollama** and "
+"**Llama.cpp** with minimal setup."
+msgstr "个人用户：使用 **Ollama** 和 **Llama.cpp**，只需最少的设置即可轻松进行推理。"
+
+#: ../../source/index.rst:38 868b4fe8658049ad8e9d0d5b399193c8
+msgid ""
+"Enterprises: Achieve high-throughput, scalable performance with **vLLM** "
+"and **SGLang**."
+msgstr "企业用户：使用 **vLLM** 和 **SGLang** 实现高吞吐量、可扩展的性能。"
+
+#: ../../source/index.rst:39 033199632a14420593b0146a102b0a00
+msgid ""
+"Researchers: Leverage advanced frameworks including **Transformers**, "
+"**LLaMA-Factory**, **SWIFT**, and **Align-anything** to enable flexible "
+"model development and cutting-edge experimentation."
+msgstr "研究人员：利用包括 **Transformers**、**LLaMA-Factory**、**SWIFT** 和 **Align-anything** 在内的先进框架，实现灵活的模型开发和前沿实验。"
+
+#: ../../source/index.rst:42 211b3691bec34b5ca3d06d47ff891806
+msgid "Versatile Deployment Scenarios"
+msgstr "多样的部署场景"
+
+#: ../../source/index.rst:44 45d4bcd28e2a43fcb75fec842c8e10fb
+msgid ""
+"Our ecosystem delivers optimal solution for a variety of hardware "
+"environments and deployment demands."
+msgstr "我们的生态系统为各种硬件环境和部署需求提供最佳解决方案。"
+
+#: ../../source/index.rst:46 bea7034ecd0541398ba0630023e27bdc
+msgid ""
+"Private Web demo: Launch interactive multimodal AI web demo with "
+"**FastAPI**."
+msgstr "私有化网页演示：使用 **FastAPI** 启动交互式多模态 AI 网页演示。"
+
+#: ../../source/index.rst:47 0e4d2548f74d4d7699bf52b7f1d733b4
+msgid ""
+"Quantized deployment: Maximize efficiency and minimize resource "
+"consumption using **GGUF** and **BNB**."
+msgstr "量化部署：使用 **GGUF** 和 **BNB** 最大化效率并最小化资源消耗。"
+
+#: ../../source/index.rst:48 1e2f12a103c7416f83952257127d48b9
+msgid ""
+"Edge devices: Bring powerful AI experiences directly to **iPhone** and "
+"**iPad**, supporting mobile and privacy-sensitive applications."
+msgstr "边缘设备：将强大的 AI 体验直接带到 **iPhone** 和 **iPad**，支持移动和隐私敏感型应用。"
+
+#: ../../source/index.rst:51 be2d5ab074c24641a3ad3dc6462286d7
+msgid "🔥 Inference recipes"
+msgstr "🔥 推理指南"
+
+#: ../../source/index.rst:53 fc30b34a7bc6494693d2a5620a16dda0
+msgid "*Ready-to-run examples*"
+msgstr "*开箱即用的示例*"
+
+#: ../../source/index.rst:59 7979aa1e33ee4f568fd9d9afe72f7ef0
+msgid "Recipe"
+msgstr "指南"
+
+#: ../../source/index.rst:60 ../../source/index.rst:117
+#: ../../source/index.rst:140 0e99260687864c35bc032c41d461b6fb
+#: b3224aed06c445318801338c138c47fc ebbefc62b6f54e54a36467c9cc9a54ce
+msgid "Description"
+msgstr "描述"
+
+#: ../../source/index.rst:62 37be07a79f854330a6d6cd3eb8e5c7fb
+msgid "**Vision Capabilities**"
+msgstr "**视觉能力**"
+
+#: ../../source/index.rst:65 12dbd4d85ce24701b37a647b5f01aafa
+msgid "🎬 `Video QA <./inference/video_understanding.md>`_"
+msgstr "🎬 `视频问答 <./inference/video_understanding.md>`_"
+
+#: ../../source/index.rst:66 eceab71b7f3c4475a44df833b4836e79
+msgid "Video-based question answering"
+msgstr "基于视频的问答"
+
+#: ../../source/index.rst:68 9c4c203e626a443a9d6234bc12885bea
+msgid "🧩 `Multi-image QA <./inference/multi_images.md>`_"
+msgstr "🧩 `多图问答 <./inference/multi_images.md>`_"
+
+#: ../../source/index.rst:69 5b3cfb16a42e462aa3d7755e3248ef5e
+msgid "Question answering with multiple images"
+msgstr "使用多张图片的问答"
+
+#: ../../source/index.rst:71 b64735f381814e028a1c35b9be28f035
+msgid "🖼️ `Single-image QA <./inference/single_image.md>`_"
+msgstr "🖼️ `单图问答 <./inference/single_image.md>`_"
+
+#: ../../source/index.rst:72 a01e273c5eca43f18c7d25fbb7bc3f1b
+msgid "Question answering on a single image"
+msgstr "对单张图片进行问答"
+
+#: ../../source/index.rst:74 f666fad5b8f741ec9d4142962c2468b7
+msgid "📄 `Document Parser <./inference/pdf_parse.md>`_"
+msgstr "📄 `文档解析器 <./inference/pdf_parse.md>`_"
+
+#: ../../source/index.rst:75 6993f1d2cbb141bd8c9c66feac4e6636
+msgid "Parse and extract content from PDFs and webpages"
+msgstr "解析并从 PDF 和网页中提取内容"
+
+#: ../../source/index.rst:77 9950cda57cec4082816d89a78c6bc335
+msgid "📝 `Text Recognition <./inference/ocr.md>`_"
+msgstr "📝 `文本识别 <./inference/ocr.md>`_"
+
+#: ../../source/index.rst:78 74d44ac488184363841f8f3ed883c272
+msgid "Reliable OCR for photos and screenshots"
+msgstr "可靠的照片和截图 OCR"
+
+#: ../../source/index.rst:80 cb19d3c854d94a0c8cf6ad6a3f1d607b
+msgid "🔍 `Multimodal RAG <./inference/rag.md>`_"
+msgstr "🔍 `多模态 RAG <./inference/rag.md>`_"
+
+#: ../../source/index.rst:81 ae6a976efdb54087a792c49da15f48f0
+msgid "Retrieve and organize multimodal data"
+msgstr "检索和组织多模态数据"
+
+#: ../../source/index.rst:83 812e4eed26a54868b92c5260fecd12d5
+msgid "🤖 `Agents <./inference/agent.md>`_"
+msgstr "🤖 `智能体 <./inference/agent.md>`_"
+
+#: ../../source/index.rst:84 386d940cc7e2470592e78445af0d4967
+msgid "AI assistants with tool integration"
+msgstr "集成工具的 AI 助手"
+
+#: ../../source/index.rst:86 83c9c139037d44b2962135ee510a9a8f
+msgid "**Audio Capabilities**"
+msgstr "**音频能力**"
+
+#: ../../source/index.rst:89 8b1c0f652da64060a5a62bcddfd19e55
+msgid "🎤 `Speech-to-Text <./inference/speech2text.md>`_"
+msgstr "🎤 `语音转文本 <./inference/speech2text.md>`_"
+
+#: ../../source/index.rst:90 2f3fe886c3dc4846ad330c52b0b4bce9
+msgid "Multilingual speech recognition"
+msgstr "多语言语音识别"
+
+#: ../../source/index.rst:92 c7a062aadeff4cd1a5481bc8feba1d34
+msgid "🎭 `Voice Cloning <./inference/voice_clone.md>`_"
+msgstr "🎭 `声音克隆 <./inference/voice_clone.md>`_"
+
+#: ../../source/index.rst:93 53ff136fd98d4d0a9952971097233438
+msgid "Realistic voice cloning and role-play"
+msgstr "逼真的声音克隆和角色扮演"
+
+#: ../../source/index.rst:95 d6bb810f8b7f494896ca614a863b987f
+msgid "🗣️ `Text-to-Speech <./inference/text2speech.md>`_"
+msgstr "🗣️ `文本转语音 <./inference/text2speech.md>`_"
+
+#: ../../source/index.rst:96 ec3cfde189b84ec796208f3541a874b1
+msgid "Instruction-following speech synthesis"
+msgstr "指令驱动的语音合成"
+
+#: ../../source/index.rst:99 9b590226dbef4e7baa6172cb65c46d11
+msgid "🏋️ Fine-tuning recipes"
+msgstr "🏋️ 微调指南"
+
+#: ../../source/index.rst:101 e799e4f0981144dcb5400f29e7a7e07e
+msgid "*Customize your model with your own ingredients*"
+msgstr "*用您自己的数据集定制您的模型*"
+
+#: ../../source/index.rst:103 18f6090924d84a92b6bbea76084e3c09
+msgid "**Data preparation**"
+msgstr "**数据准备**"
+
+#: ../../source/index.rst:105 98522f5fa89f4259b4ffd9d31919fb76
+msgid ""
+"Follow the `guidance <./finetune/fintune.html#data-preparation>`_ to set "
+"up your training datasets."
+msgstr "请遵循 `指南 <./finetune/fintune.html#data-preparation>`_  来设置您的训练数据集。"
+
+#: ../../source/index.rst:108 75d8380442d14971825240364acff8f7
+msgid "**Training**"
+msgstr "**训练**"
+
+#: ../../source/index.rst:110 a655f7b47b9842e08e8ffc3ca77a64c6
+msgid "We provide training methods serving different needs as following:"
+msgstr "我们提供以下训练方法以满足不同需求："
+
+#: ../../source/index.rst:116 d2d3f0db736c4c13944f68a28a7a60df
+msgid "Framework"
+msgstr ""
+
+#: ../../source/index.rst:118 39ddd790478c4459abef96c1886f03b6
+msgid "`Transformers <./finetune/fintune.html#full-parameter-finetuning>`_"
+msgstr "`Transformers <./finetune/fintune.html#full-parameter-finetuning>`_"
+
+#: ../../source/index.rst:119 d0b8c4b1f34c4ebdad94420eba5cda54
+msgid "Most flexible for customization"
+msgstr "全面的模型定制"
+
+#: ../../source/index.rst:120 d2c14afc4558493b832db741a79c5106
+msgid "`LLaMA-Factory <./finetune/llamafactory.html>`_"
+msgstr "`LLaMA-Factory <./finetune/llamafactory.html>`_"
+
+#: ../../source/index.rst:121 2d007bdafc51469488fb01ac01108ce5
+msgid "Modular fine-tuning toolkit"
+msgstr "灵活且模块化的微调框架"
+
+#: ../../source/index.rst:122 afa4cdf177fb4163843641fdcca4706a
+msgid "`SWIFT <./finetune/swift.html>`_"
+msgstr "`SWIFT <./finetune/swift.html>`_"
+
+#: ../../source/index.rst:123 a317a1615ff242dcb16a74cbbaf5acb3
+msgid "Lightweight and fast parameter-efficient tuning"
+msgstr "轻量级、快速的参数高效微调"
+
+#: ../../source/index.rst:124 b1dc8edd6d19493d97263d1444735775
+msgid "`Align-anything <./finetune/align-anything.html>`_"
+msgstr "`Align-anything <./finetune/align-anything.html>`_"
+
+#: ../../source/index.rst:125 8840e30b4d0a4889b3dd740b125af23b
+msgid "Visual instruction alignment for multimodal models"
+msgstr "多模态模型的视觉指令对齐"
+
+#: ../../source/index.rst:131 4f41ea16290f453f832917ce12b4bf78
+msgid "🥡 Serving recipes"
+msgstr "🥡 服务指南"
+
+#: ../../source/index.rst:133 c668edd215134aef9a6f83eb36715b6d
+msgid "*Deploy your model efficiently*"
+msgstr "*高效部署您的模型*"
+
+#: ../../source/index.rst:139 38456ccd0c4a4ed6a559e3c6ec1fe449
+msgid "Method"
+msgstr "方法"
+
+#: ../../source/index.rst:141 f740f2424a114ccf812123fa44eb27dc
+msgid "`vLLM <./deployment/vllm.html>`_"
+msgstr "`vLLM <./deployment/vllm.html>`_"
+
+#: ../../source/index.rst:142 ../../source/index.rst:144
+#: 150f40cf8a014c62b4b07e078c463f9b a4b819a02ae841ccb051a2f68b88efaa
+msgid "High-throughput GPU inference"
+msgstr "高吞吐量 GPU 推理"
+
+#: ../../source/index.rst:143 44c7d461f4784cc1840353f2b2164b11
+msgid "`SGLang <./deployment/sglang.html>`_"
+msgstr "`SGLang <./deployment/sglang.html>`_"
+
+#: ../../source/index.rst:145 1aff9cf13cac498bac3d6f5ded9535c7
+msgid "`Llama.cpp <./run_locally/llama.cpp.html>`_"
+msgstr "`Llama.cpp <./run_locally/llama.cpp.html>`_"
+
+#: ../../source/index.rst:146 a025b4cc9e744253b75f6ed34d8531b0
+msgid "Fast inference on PC, iPhone and iPad"
+msgstr "在 PC、iPhone 和 iPad 上进行快速推理"
+
+#: ../../source/index.rst:147 1d60f29a914f484b8de0d008da8c46c1
+msgid "`Ollama <./run_locally/ollama.html>`_"
+msgstr "`Ollama <./run_locally/ollama.html>`_"
+
+#: ../../source/index.rst:148 fd41593f049c4a158cde9fbde2c1035d
+msgid "User-friendly setup"
+msgstr "用户友好的设置"
+
+#: ../../source/index.rst:149 23dfc186d9aa41dfb465fbf1cb6ac663
+msgid "`Fast API <./demo/webdemo.html>`_"
+msgstr "`Fast API <./demo/webdemo.html>`_"
+
+#: ../../source/index.rst:150 fc886aa05b7646bea7b47ae19522b071
+msgid "Interactive Omni Streaming demo with FastAPI"
+msgstr "使用 FastAPI 的交互式全能流媒体演示"
+
+#: ../../source/index.rst:151 08c8358dfbb84e84af8148955b74bf51
+msgid "`OpenWebUI <./demo/openwebui.html>`_"
+msgstr "`OpenWebUI <./demo/openwebui.html>`_"
+
+#: ../../source/index.rst:152 91faf4cf40f04e2d9b7507a090f8880b
+msgid "Interactive Web demo with Open WebUI"
+msgstr "使用 Open WebUI 的交互式网页演示"
+
+#: ../../source/index.rst:153 b3d5f815b6ed4ed8a81b55c16e3e58ac
+msgid "`iOS Demo <./demo/iosdemo.html>`_"
+msgstr "`iOS 演示 <./demo/iosdemo.html>`_"
+
+#: ../../source/index.rst:154 9f432a56d6224129b4147d685d563303
+msgid "Interactive iOS demo with llama.cpp"
+msgstr "使用 llama.cpp 的交互式 iOS 演示"
+
+#: ../../source/index.rst:160 1ec5fb97ca6541febd07a4bef3bb4602
+msgid "🥄 Quantization recipes"
+msgstr "🥄 量化指南"
+
+#: ../../source/index.rst:161 c9cfa325907a4ff886dba1af6138f89d
+msgid "*Compress your model to improve efficiency*"
+msgstr "*压缩您的模型以提高效率*"
+
+#: ../../source/index.rst:167 36914293fcf24bcfa7c320ea33fe4760
+msgid "Format"
+msgstr "格式"
+
+#: ../../source/index.rst:168 52ac4d92b90b46f7bd0905925bf9e167
+msgid "Key Feature"
+msgstr "主要特点"
+
+#: ../../source/index.rst:169 952c52e069dd4396ab9782bcdb7ac91e
+msgid "`GGUF <./quantization/gguf.html>`_"
+msgstr "`GGUF <./quantization/gguf.html>`_"
+
+#: ../../source/index.rst:170 370705ed0708443f90619e63005e83c3
+msgid "Simplest and most portable format"
+msgstr "最简单、最便携的格式"
+
+#: ../../source/index.rst:171 d887187f7b8d401fbfffcf1d601702fa
+msgid "`BNB <./quantization/bnb.html>`_"
+msgstr "`BNB <./quantization/bnb.html>`_"
+
+#: ../../source/index.rst:172 b4104fb815294ea28991c735d36db7ea
+msgid "Efficient 4/8-bit weight quantization"
+msgstr "高效的 4/8 位权重化"
+
+#: ../../source/index.rst:178 f287fe28a3f345dd891509433efd5771
+msgid "👥 Community"
+msgstr "👥 社区"
+
+#: ../../source/index.rst:182 4abe95aa0dbc470f8204b01bca901246
+msgid "**Contributing**"
+msgstr "**贡献**"
+
+#: ../../source/index.rst:184 5d12d79816864b909192306bdb3b9b86
+msgid "We love new recipes! Please share your creative dishes:"
+msgstr "我们欢迎新的指南！请分享您的创意："
+
+#: ../../source/index.rst:186 2b239a2b4f764080953fbd31278e30aa
+msgid "Fork the repository"
+msgstr "Fork 本仓库"
+
+#: ../../source/index.rst:187 0a349127ad0a45cab986575b21b49456
+msgid "Create your recipe"
+msgstr "创建您的指南"
+
+#: ../../source/index.rst:188 0d09421814e3438f9b58fc83c60ce572
+msgid "Submit a pull request"
+msgstr "提交拉取请求"
+
+#: ../../source/index.rst:193 99b0ae0614134996b8fd2765049c8d8c
+msgid "**Issues & Support**"
+msgstr "**问题与支持**"
+
+#: ../../source/index.rst:195 f551524efd9d455cba2c31d5b1a4df36
+msgid ""
+"Found a bug? `Open an issue "
+"<https://github.com/OpenBMB/MiniCPM-o/issues>`__"
+msgstr "发现了一个 bug？ `提交一个 issue <https://github.com/OpenBMB/MiniCPM-o/issues>`__"
+
+#: ../../source/index.rst:196 cb7cc9c0371f426c8e4bdd226f944ec1
+msgid ""
+"Need help? Join our `Discord <https://discord.gg/rM6sC9G2MA>`__ and "
+"`WeChat <https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-"
+"QR.jpeg>`__ group."
+msgstr ""
+"需要帮助？加入我们的 `Discord <https://discord.gg/rM6sC9G2MA>`__ 和 `微信 "
+"<https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-QR.jpeg>`__"
+" 群组。"
+
+#: ../../source/index.rst:198 5f9b080e69fe46fd8f21721be9f3d756
+msgid "For more information, please visit our:"
+msgstr "更多信息，请访问我们的："
+
+#: ../../source/index.rst:200 999a10740c074d7c881c1a302f305bc1
+msgid "`GitHub <https://github.com/OpenBMB>`__"
+msgstr "`GitHub <https://github.com/OpenBMB>`__"
+
+#: ../../source/index.rst:201 7867eb289cfb4b429954855256f5d2fc
+msgid "`Hugging Face <https://huggingface.co/OpenBMB>`__"
+msgstr "`Hugging Face <https://huggingface.co/OpenBMB>`__"
+
+#: ../../source/index.rst:202 753239cecc794d8d8cdce66b776b20a6
+msgid "`Modelscope <https://modelscope.cn/organization/OpenBMB>`__"
+msgstr "`Modelscope <https://modelscope.cn/organization/OpenBMB>`__"
+
+#~ msgid "User Groups Covered"
+#~ msgstr "覆盖的用户群体"
+
+#~ msgid "**Individuals (Low-barrier, easy inference):** Ollama, Llama.cpp"
+#~ msgstr "**个人（低门槛，端侧推理）：** Ollama, Llama.cpp"
+
+#~ msgid ""
+#~ "**Researchers (Secondary development):** Huggingface"
+#~ " Transformers, LLaMA-Factory, SWIFT, "
+#~ "Align-anything"
+#~ msgstr ""
+#~ "**研究人员（二次开发）：** Huggingface Transformers, LLaMA-"
+#~ "Factory, SWIFT, Align-anything"
+
+#~ msgid "Application Scenarios Covered"
+#~ msgstr "覆盖的应用场景"
+
+#~ msgid "Our solutions fit various deployment needs and hardware environments."
+#~ msgstr "我们的解决方案适用于各种部署需求和硬件环境。"
+
+#~ msgid "**Private deployment:** Web Demo"
+#~ msgstr "**私有化部署：** Web Demo"
+
+#~ msgid "**Quantized deployment:** GGUF, BNB, AWQ"
+#~ msgstr "**量化部署：** GGUF, BNB, AWQ"
+
+#~ msgid "**Edge devices:** iOS, iPad"
+#~ msgstr "**边缘设备：** iOS, iPad"
+
+#~ msgid "`LoRA <./finetune/fintune.html#lora-finetuning>`_"
+#~ msgstr "`LoRA <./finetune/fintune.html#lora-finetuning>`_"
+
+#~ msgid "Efficient parameter tuning"
+#~ msgstr "高效的参数调整"
+
+#~ msgid "Fast CPU inference"
+#~ msgstr "快速 CPU 推理"
+

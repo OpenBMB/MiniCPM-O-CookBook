@@ -1,0 +1,184 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, OpenBMB
+# This file is distributed under the same license as the MiniCPM-o Cookbook
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MiniCPM-o Cookbook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-15 18:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/quantization/awq.md:1 8d74eb9b27534b6f9c4b3a2770e636da
+msgid "AWQ"
+msgstr "AWQ"
+
+#: ../../source/quantization/awq.md:4 fd3e3377f11f4aa0b3ce71005dd469ee
+msgid "To be updated for MiniCPM-V 4.0"
+msgstr "即将支持 MiniCPM-V 4.0"
+
+#: ../../source/quantization/awq.md:8 b0e6002fed85422b971a0649aa1920cc
+msgid "**Support:** MiniCPM-V2.6"
+msgstr "**支持：** MiniCPM-V2.6"
+
+#: ../../source/quantization/awq.md:12 0ff68d0da90f430994bd8adc91663b56
+msgid "AWQ Quantization (Recommended for vLLM)"
+msgstr "AWQ 量化（推荐用于 vLLM）"
+
+#: ../../source/quantization/awq.md:14 df6a910b42d2442392f2520ff3486101
+msgid "Environment Configuration"
+msgstr "环境配置"
+
+#: ../../source/quantization/awq.md:7 685ed40086094adf8ff0fe13234983b8
+msgid "vllm"
+msgstr "vllm"
+
+#: ../../source/quantization/awq.md:7 7675e9628be74b73b80aafc411b58c55
+msgid "transformers"
+msgstr "transformers"
+
+#: ../../source/quantization/awq.md:7 e5e5c755ba204876950a157cea289825
+msgid "torchvision"
+msgstr "torchvision"
+
+#: ../../source/quantization/awq.md:7 db80e6941d484e0e8c622b8c9daacc47
+msgid "torch"
+msgstr "torch"
+
+#: ../../source/quantization/awq.md:7 ca3e0836cc2a487c9f101a495c685e60
+msgid "triton"
+msgstr "triton"
+
+#: ../../source/quantization/awq.md:7 f11a2ac432674ba78b958358c879fc56
+msgid "trl"
+msgstr "trl"
+
+#: ../../source/quantization/awq.md:7 9aef158f345747b3b20915ce3381f889
+msgid "autoawq_kernels"
+msgstr "autoawq_kernels"
+
+#: ../../source/quantization/awq.md:7 0d74c7f7453a4ed6980ee95b104f3b54
+msgid "0.5.4"
+msgstr "0.5.4"
+
+#: ../../source/quantization/awq.md:7 fdfea3f6413f4285839ceb42685ee7af
+msgid "4.44.0"
+msgstr "4.44.0"
+
+#: ../../source/quantization/awq.md:7 5544ad7085af41d5abb1ab70232e78c1
+msgid "0.19.0"
+msgstr "0.19.0"
+
+#: ../../source/quantization/awq.md:7 8ebf508fb376478eb7189a8ae2f363fc
+msgid "2.4.0"
+msgstr "2.4.0"
+
+#: ../../source/quantization/awq.md:7 53321b7ba7c140979870951f6ebd73ec
+msgid "3.0.0"
+msgstr "3.0.0"
+
+#: ../../source/quantization/awq.md:7 b2f829d6c3214a768996e074fbdb9285
+msgid "0.9.6"
+msgstr "0.9.6"
+
+#: ../../source/quantization/awq.md:7 a56f4f01fd25416a879ee930e5d7ac06
+msgid "0.0.6"
+msgstr "0.0.6"
+
+#: ../../source/quantization/awq.md:20 91b491767c204480b74384fa2ae54d27
+msgid "Method 1 (Recommended)"
+msgstr "方法一（推荐）"
+
+#: ../../source/quantization/awq.md:22 f5a969a6efdf4bb3ae735ab54de5afb4
+msgid "**1. Download the Pre-Quantized Model**"
+msgstr "**1. 下载预量化模型**"
+
+#: ../../source/quantization/awq.md:28 ../../source/quantization/awq.md:106
+#: 3a25fc0a73294ec09daa2587d63f00ff dfeebb8a914a44bd891fb99928e9fbf0
+msgid "**2. Download and Build the AutoAWQ Fork**"
+msgstr "**2. 下载并编译 AutoAWQ 分支**"
+
+#: ../../source/quantization/awq.md:30 ../../source/quantization/awq.md:108
+#: 4e78e501dbbf47e887ab0b982669038c b4d90bbc601a4d12aeb44596a2227802
+msgid ""
+"**Note**: A pull request for MiniCPM-V 2.6 support has been submitted to "
+"the official AutoAWQ repository and is pending merge. In the meantime, "
+"please use the following fork."
+msgstr ""
+"**注意**：MiniCPM-V 2.6 支持的 Pull Request 已提交至官方 AutoAWQ 仓库，正在等待合并。"
+"在此期间，请使用以下分支。"
+
+#: ../../source/quantization/awq.md:39 bdbb1e2e7c724700af898247be42a478
+msgid "**3. Inference with the Pre-Quantized Model**"
+msgstr "**3. 使用预量化模型进行推理**"
+
+#: ../../source/quantization/awq.md:41 3d1faed330924955af0ebca7c75a4a2b
+msgid ""
+"Usage with vLLM is identical to the non-quantized model. For details, "
+"please refer to the \"MiniCPM-V 2.6 Deployment Guide\"."
+msgstr ""
+"在 vLLM 中的用法与非量化模型完全一致。详情请参考《MiniCPM-V 2.6 部署指南》。"
+
+#: ../../source/quantization/awq.md:95 93173c790fa642c9ae173519084f574d
+msgid "Method 2 (Manual Quantization)"
+msgstr "方法二（手动量化）"
+
+#: ../../source/quantization/awq.md:96 c2bf8699bb8a4f9b84ecde77474ca250
+msgid "This method is recommended for quantizing trained models."
+msgstr "该方法推荐用于对已训练模型进行量化。"
+
+#: ../../source/quantization/awq.md:98 9487f713fd4c45cd9f2c76a400198164
+msgid "**1. Download the PyTorch Model**"
+msgstr "**1. 下载 PyTorch 模型**"
+
+#: ../../source/quantization/awq.md:117 587e50583a43405bb5b6deb86a0feb87
+msgid "**3. Prepare the Quantization Scripts**"
+msgstr "**3. 准备量化脚本**"
+
+#: ../../source/quantization/awq.md:123 b2fff12eddd54e328ac34d13d8d78f21
+msgid ""
+"Replace the `modeling_minicpmv.py` file in your downloaded MiniCPM-V 2.6 "
+"model directory with the one from `MiniCPM-"
+"CookBook/MiniCPMV2_6_awq/modeling_minicpmv.py`."
+msgstr ""
+"将你下载的 MiniCPM-V 2.6 模型目录中的 `modeling_minicpmv.py` 文件替换为 "
+"`MiniCPM-CookBook/MiniCPMV2_6_awq/modeling_minicpmv.py` 路径下的同名文件。"
+
+#: ../../source/quantization/awq.md:125 f349fd3cff0d41df97bea1994463cd6f
+msgid "**4. Run Quantization**"
+msgstr "**4. 执行量化**"
+
+#: ../../source/quantization/awq.md:127 589882e26e214fef9e0ba644185c5e98
+msgid ""
+"Modify the following parameters in the `MiniCPM-"
+"CookBook/MiniCPMV2_6_awq/quantize.py` file:"
+msgstr ""
+"请在 `MiniCPM-CookBook/MiniCPMV2_6_awq/quantize.py` 文件中修改以下参数："
+
+#: ../../source/quantization/awq.md:141 c154a5c5c3ea4bf29fc5ea815036039f
+msgid "Execute the quantization script:"
+msgstr "执行量化脚本："
+
+#: ../../source/quantization/awq.md:147 283afb22d16e422090a3cdebe7b88699
+msgid "**5. Inference with the Quantized Model**"
+msgstr "**5. 使用量化模型进行推理**"
+
+#: ../../source/quantization/awq.md:149 9c76550545a545e781ec6f31f9d8d4ec
+msgid ""
+"The inference code is the same as the example provided in **Method 1**. "
+"Please ensure you update the `MODEL_PATH` variable to the path you "
+"specified in `quant_path`."
+msgstr ""
+"推理代码与**方法一**中的示例相同。请确保将 `MODEL_PATH` 变量更新为你在 `quant_path` 中指定的路径。"
+

@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, OpenBMB
+# This file is distributed under the same license as the MiniCPM-o Cookbook
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MiniCPM-o Cookbook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-20 15:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/quantization/gguf.md:1 82d5d1c03287407e98ab2e348a002d7c
+msgid "GGUF"
+msgstr "GGUF"
+
+#: ../../source/quantization/gguf.md:4 d2cd4f0ff43141579fc998b057f1803c
+msgid "**Support:** MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5"
+msgstr "**支持模型:** MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5"
+
+#: ../../source/quantization/gguf.md:7 2c7170ab211e4815abb26c06424b3616
+msgid "1.Download the PyTorch Model"
+msgstr "1.下载 PyTorch 模型"
+
+#: ../../source/quantization/gguf.md:9 b45542f1f5ff4e0f9788084ab0423723
+msgid ""
+"First, obtain the original PyTorch model files from one of the following "
+"sources:"
+msgstr "首先，从以下来源之一获取原始的 PyTorch 模型文件："
+
+#: ../../source/quantization/gguf.md:11 ce986ccfb21249d587d5665b4507f75a
+msgid "**HuggingFace:** https://huggingface.co/openbmb/MiniCPM-V-4"
+msgstr "**[HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-2_6)**"
+
+#: ../../source/quantization/gguf.md:12 9ef5fcc41e444fc7b63e39c35eb22386
+msgid "**ModelScope Community:** https://modelscope.cn/models/OpenBMB/MiniCPM-V-4"
+msgstr "**[ModelScope](https://modelscope.cn/models/OpenBMB/MiniCPM-V-2_6)**"
+
+#: ../../source/quantization/gguf.md:14 5dfb27e4b79047d49b1c09fc9d8a6bca
+msgid "2.Convert the PyTorch Model to GGUF Format"
+msgstr "2.将 PyTorch 模型转换为 GGUF 格式"
+
+#: ../../source/quantization/gguf.md:16 a10fcf256b1d47178ab75a0133490a61
+msgid ""
+"Run the following commands in sequence to perform model surgery, convert "
+"the vision encoder, and then convert the language model."
+msgstr "依次运行以下命令以进行模型结构调整、转换视觉编码器，然后转换语言模型。"
+
+#: ../../source/quantization/gguf.md:29 a1f4d3c78efe47f8a923bf5d7c6ef857
+msgid "3.Perform INT4 Quantization"
+msgstr "3.执行 INT4 量化"
+
+#: ../../source/quantization/gguf.md:31 547013b153654466bad3eb952191d4ef
+msgid ""
+"Once the conversion is complete, use the `llama-quantize` tool to "
+"quantize the F16 precision GGUF model to INT4."
+msgstr "转换完成后，使用 `llama-quantize` 工具将 F16 精度的 GGUF 模型量化为 INT4。"
+
+#~ msgid "To be updated for MiniCPM-V 4.0"
+#~ msgstr "即将支持 MiniCPM-V 4.0"
+

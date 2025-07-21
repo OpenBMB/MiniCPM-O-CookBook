@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, OpenBMB
+# This file is distributed under the same license as the MiniCPM-o Cookbook
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MiniCPM-o Cookbook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-20 15:43+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/deployment/vllm.md:1 c3f2ac3b80ef45889f96527cbf1e0220
+msgid "vLLM"
+msgstr "vLLM"
+
+#: ../../source/deployment/vllm.md:3 c47c3b6ba9d14467a8027ad9bd17b09e
+msgid ""
+"[vLLM](https://github.com/vllm-project/vllm) is a fast and easy-to-use "
+"library for LLM inference and serving. To learn more about vLLM, please "
+"refer to the [documentation](https://docs.vllm.ai/en/latest/)."
+msgstr ""
+"[vLLM](https://github.com/vllm-project/vllm) "
+"是一个快速且易于使用的大语言模型（LLM）推理与服务库。如需了解更多关于 vLLM "
+"的信息，请参考[官方文档](https://docs.vllm.ai/en/latest/)。"
+
+#: ../../source/deployment/vllm.md:6 5f4b9d5fad97470991f2300ace089c84
+msgid "1. Environment Setup"
+msgstr "1.环境配置"
+
+#: ../../source/deployment/vllm.md:8 6709dfcd01e9402d9ce6acbf16b8f980
+msgid "1.1 Install vLLM"
+msgstr "1.1 安装vLLM"
+
+#: ../../source/deployment/vllm.md:14 c39434a42cb443408da74bd05030c170
+msgid "For video inference, install the video module:"
+msgstr "如需进行视频推理，请安装视频模块："
+
+#: ../../source/deployment/vllm.md:20 41f61b052f4d4b9fb383dc044c94047d
+msgid ""
+"Please note that the prebuilt `vllm` has strict dependencies on `torch` "
+"and its CUDA versions. Check the note in the official document for "
+"installation "
+"([link](https://docs.vllm.ai/en/latest/getting_started/installation.html))"
+" for more help."
+msgstr ""
+"请注意，预编译的 `vllm` 对 `torch` 及其 CUDA "
+"版本有严格依赖。如需更多帮助，请查阅官方文档中的安装说明（[链接](https://docs.vllm.ai/en/latest/getting_started/installation.html)）。"
+
+#: ../../source/deployment/vllm.md:24 c33a030682a4445e9825c8f94d920b89
+msgid "2. API Service Deployment"
+msgstr "2.API 服务部署"
+
+#: ../../source/deployment/vllm.md:26 18de2061a53340329485cc2f9c1f0b52
+msgid "2.1 Launch API Service"
+msgstr "2.1 启动 API 服务"
+
+#: ../../source/deployment/vllm.md:28 f9450c25456c486e92029797b62efb69
+msgid ""
+"It is easy to build an OpenAI-compatible API service with vLLM, which can"
+" be deployed as a server that implements OpenAI API protocol. By default,"
+" it starts the server at http://localhost:8000. You can specify the "
+"address with --host and --port arguments. Run the command as shown below:"
+msgstr ""
+"使用 vLLM 可以轻松构建兼容 OpenAI 的 API 服务，可作为实现 OpenAI API 协议的服务器部署。默认情况下，服务器会启动在 "
+"http://localhost:8000。你可以通过 --host 和 --port 参数指定地址。请按如下命令运行："
+
+#: ../../source/deployment/vllm.md:34 696851e849324ec09af1d7f5b5fc8b40
+msgid "**Parameter Description:**"
+msgstr "**参数说明：**"
+
+#: ../../source/deployment/vllm.md:35 52b03a7387c94d288c46e838b9cc6bdd
+msgid "`<model_path>`: Specify the local path to your MiniCPM-V 4.0 model"
+msgstr "`<model_path>`：指定本地 MiniCPM-V 4.0 模型路径"
+
+#: ../../source/deployment/vllm.md:36 a2063c678f054e6fa8c6d752f07425c7
+msgid "`--api-key`: Set the API access key"
+msgstr "`--api-key`：设置 API 访问密钥"
+
+#: ../../source/deployment/vllm.md:37 fa75e134c8fa4ff8931aefcd0f4cf963
+msgid "`--max-model-len`: Set the maximum model length"
+msgstr "`--max-model-len`：设置模型最大长度"
+
+#: ../../source/deployment/vllm.md:38 842a031dae3b40afb6de9f9d86109da9
+msgid "`--gpu_memory_utilization`: GPU memory utilization rate"
+msgstr "`--gpu_memory_utilization`：GPU 显存利用率"
+
+#: ../../source/deployment/vllm.md:40 50f027c0631f40238c528a7b4b419c75
+msgid "2.2 Image Inference"
+msgstr "2.2 图片推理"
+
+#: ../../source/deployment/vllm.md:82 b3b7f2a9b4fa4aff90b755fea7944a86
+msgid "2.3 Video Inference"
+msgstr "2.3 视频推理"
+
+#: ../../source/deployment/vllm.md:130 9edbcddbc3ee49398fe9cfda764370f2
+msgid "2.4 Multi-turn Conversation"
+msgstr "2.4 多轮对话"
+
+#: ../../source/deployment/vllm.md:132 3fe1bef1472b48d789ea54c97230bced
+msgid "Launch Parameter Configuration"
+msgstr "启动参数配置"
+
+#: ../../source/deployment/vllm.md:134 78d53cdff1a74f01848a9c991ddb568b
+msgid ""
+"For video multi-turn conversations, you need to add the `--limit-mm-per-"
+"prompt` parameter when launching vLLM:"
+msgstr "对于视频多轮对话，启动 vLLM 时需添加 `--limit-mm-per-prompt` 参数："
+
+#: ../../source/deployment/vllm.md:136 5b97dfa604a84be38c50a91acbf9cf20
+msgid "**Video multi-turn conversation configuration (supports up to 3 videos):**"
+msgstr "**视频多轮对话配置（最多支持3个视频）：**"
+
+#: ../../source/deployment/vllm.md:141 08d3712c66e74557b6e7a6f71a189a6e
+msgid "**Image and video mixed input configuration:**"
+msgstr "**图片与视频混合输入配置：**"
+
+#: ../../source/deployment/vllm.md:146 4f03e293a74d48baad9599aa6b09b78a
+msgid "Multi-turn Conversation Example Code"
+msgstr "多轮对话示例代码"
+
+#: ../../source/deployment/vllm.md:235 8f3c91203d274bfdb1161b0088d640e9
+msgid "3. Offline Inference"
+msgstr "3.离线推理"
+
+#: ../../source/deployment/vllm.md:307 1f9f5619d25d43449bbae5c3c2a68816
+msgid "Notes"
+msgstr "注意事项"
+
+#: ../../source/deployment/vllm.md:309 ccbfe6dec78346c595e1896baed4294e
+#, fuzzy
+msgid ""
+"**Model Path**: Replace all `<model_path>` in the examples with the "
+"actual MiniCPM-V 4.0 model path"
+msgstr "**模型路径**：请将示例中的 `<model_path>` 替换为实际的 MiniCPM-V4 模型路径"
+
+#: ../../source/deployment/vllm.md:310 87858c087e774bf2851bd5f8339e0388
+msgid ""
+"**API Key**: Ensure the API key when launching the service matches the "
+"key in the client code"
+msgstr "**API 密钥**：请确保启动服务时的 API 密钥与客户端代码中的密钥一致"
+
+#: ../../source/deployment/vllm.md:311 ceb90b3e565648dbb838879ac415bed9
+msgid ""
+"**File Paths**: Adjust image and video file paths according to your "
+"actual situation"
+msgstr "**文件路径**：请根据实际情况调整图片和视频文件路径"
+
+#: ../../source/deployment/vllm.md:312 5222ae3e7b85438fa79d44140fe4376a
+msgid ""
+"**Memory Configuration**: Adjust the `--gpu_memory_utilization` parameter"
+" appropriately based on GPU memory"
+msgstr "**显存配置**：请根据 GPU 显存情况合理调整 `--gpu_memory_utilization` 参数"
+
+#: ../../source/deployment/vllm.md:313 c8111d1129aa4666af1a1d234c2c3d22
+msgid ""
+"**Multimodal Limits**: Set appropriate `--limit-mm-per-prompt` parameters"
+" when using multi-turn conversations"
+msgstr "**多模态限制**：多轮对话时请合理设置 `--limit-mm-per-prompt` 参数"
+

@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, OpenBMB
+# This file is distributed under the same license as the MiniCPM-o Cookbook
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MiniCPM-o Cookbook \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-17 15:21+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/getting_started/quickstart.md:1
+#: 122e22279f074ed19a237517790808cd
+msgid "Quickstart"
+msgstr "快速开始"
+
+#: ../../source/getting_started/quickstart.md:3
+#: 0d4cea1103d84afa8636e91768fb939a
+msgid "1. Installation"
+msgstr "环境配置"
+
+#: ../../source/getting_started/quickstart.md:8
+#: 7a39f5b39e444384b626ab21f1855415
+msgid "2. Basic Usage"
+msgstr "基础用法"
+
+#: ../../source/getting_started/quickstart.md:21
+#: 72de11ec55aa48a4a40c7ee1f052aaf6
+msgid "🍽️ Menu"
+msgstr "🍽️ 菜单"
+
+#: ../../source/getting_started/quickstart.md:23
+#: 25c7d44f49c14cbeacdd4909b457be50
+msgid "🔥 Hot Dishes (Inference)"
+msgstr "🔥 推理"
+
+#: ../../source/getting_started/quickstart.md:24
+#: a869bf5ec0e9451b924ae02ec35de8a3
+msgid "*Ready-to-serve examples for immediate satisfaction*"
+msgstr "*即刻体验的现成示例*"
+
+#: ../../source/getting_started/quickstart.md 32dac3f078d845df968718c59fd8e1c7
+#: 4147056627f947938bc0eda3a9b40d58
+msgid "Recipe"
+msgstr "菜谱"
+
+#: ../../source/getting_started/quickstart.md 5c71a8641c6b457190f27d428c5154b1
+msgid "Description"
+msgstr "描述"
+
+#: ../../source/getting_started/quickstart.md e78ff028b36c41ec99ae7f5f172fa8f7
+msgid "**Vision Capabilities**"
+msgstr "**视觉能力**"
+
+#: ../../source/getting_started/quickstart.md 18b33531eb7f42c3adf347a77b1b506a
+msgid "🖼️ [Single Image](./inference/single_image.md)"
+msgstr "🖼️ [单张图片](./inference/single_image.md)"
+
+#: ../../source/getting_started/quickstart.md 23222d89bd57461286873f64dd2f97d0
+msgid "Image understanding with high-resolution support"
+msgstr "支持高分辨率的图像理解"
+
+#: ../../source/getting_started/quickstart.md 98acbe5483d6464ab32252f4ec5bf70b
+msgid "🧩 [Multi Images](./inference/multi_images.md)"
+msgstr "🧩 [多图推理](./inference/multi_images.md)"
+
+#: ../../source/getting_started/quickstart.md 8da7af91f9c148d0a4c321a48b736af8
+msgid "Multi-image reasoning and comparison"
+msgstr "多图推理与对比"
+
+#: ../../source/getting_started/quickstart.md 3d6807e9a8a744b1a98bceafde09cdb8
+msgid "🎬 [Video Understanding](./inference/video_understanding.md)"
+msgstr "🎬 [视频理解](./inference/video_understanding.md)"
+
+#: ../../source/getting_started/quickstart.md c001d209de664758a1c24c5350e601e6
+msgid "Real-time video analysis and dense captions"
+msgstr "实时视频分析与密集描述"
+
+#: ../../source/getting_started/quickstart.md fa4e23af900f409699468efade534591
+msgid "📝 [OCR](./inference/ocr.md)"
+msgstr "📝 [OCR文字识别](./inference/ocr.md)"
+
+#: ../../source/getting_started/quickstart.md 58b631b0a77b42cb88aa1ca932e48949
+msgid "Robust text extraction and recognition"
+msgstr "强大的文本提取与识别"
+
+#: ../../source/getting_started/quickstart.md 9ef34251fca24e1299503a79426175f8
+msgid "🔍 [Scene Text Recognition](./inference/scene_text_recognize.md)"
+msgstr "🔍 [场景文字识别](./inference/scene_text_recognize.md)"
+
+#: ../../source/getting_started/quickstart.md 3054b44cf1f743bfacb50fbc7c9e535c
+msgid "Scene text detection and license plate recognition"
+msgstr "场景文字检测与车牌识别"
+
+#: ../../source/getting_started/quickstart.md 524835cc1c004579914fa8b6932b6c93
+msgid "📄 [PDF Parse](./inference/pdf_parse.md)"
+msgstr "📄 [PDF解析](./inference/pdf_parse.md)"
+
+#: ../../source/getting_started/quickstart.md f25d9166353e4ab68986c3bceaaff1c0
+msgid "PDF document parsing and text extraction"
+msgstr "PDF文档解析与文本提取"
+
+#: ../../source/getting_started/quickstart.md dc3f7485d38344e4812c885d95a8d93d
+msgid "**Omni Capabilities**"
+msgstr "**全模态能力**"
+
+#: ../../source/getting_started/quickstart.md 4205893f8d7344be9435455d8ad00e4f
+msgid "🎤 [Speech-to-Text](./inference/speech2text.md)"
+msgstr "🎤 [语音转文本](./inference/speech2text.md)"
+
+#: ../../source/getting_started/quickstart.md a3f538da32c34a57ba2ad9d9f0beb7ee
+msgid "Multilingual speech recognition"
+msgstr "多语言语音识别"
+
+#: ../../source/getting_started/quickstart.md 0b5f879147e14a71b7be42a165f5ff68
+msgid "🗣️ [Text-to-Speech](./inference/text2speech.md)"
+msgstr "🗣️ [文本转语音](./inference/text2speech.md)"
+
+#: ../../source/getting_started/quickstart.md 35cff4b101d443c7b588314815084cfa
+msgid "Natural speech synthesis with emotion control"
+msgstr "支持情感控制的自然语音合成"
+
+#: ../../source/getting_started/quickstart.md b4e8fb899ed048d387e2fabe808926a9
+msgid "🎭 [Voice Clone](./inference/voice_clone.md)"
+msgstr "🎭 [声音克隆](./inference/voice_clone.md)"
+
+#: ../../source/getting_started/quickstart.md cd8ff6f6c35e4b35a26c3c0ff4661cde
+msgid "End-to-end voice cloning and role-playing"
+msgstr "端到端声音克隆与角色扮演"
+
+#: ../../source/getting_started/quickstart.md:40
+#: fe86ac9fce0f496bb2ac45086887e851
+msgid "🏋️ Training Camp (Fine-tuning)"
+msgstr "🏋️ 微调"
+
+#: ../../source/getting_started/quickstart.md:41
+#: a39ce902d95247c89356c007dc315834
+msgid "*Customize your model with your own ingredients*"
+msgstr "*用你的专属配料定制模型*"
+
+#: ../../source/getting_started/quickstart.md:43
+#: b6c026db53604a6794b6cb4f1f9dc138
+msgid "**[Fine-tuning Guide](./finetune/readme.md)** - Complete training recipes"
+msgstr "**[微调指南](./finetune/readme.md)** - 完整训练配方"
+
+#: ../../source/getting_started/quickstart.md:44
+#: 1b8d9647cdec48c7a202a3f38dc84d09
+msgid ""
+"**[LoRA Training](./finetune/finetune_lora.sh)** - Efficient parameter "
+"tuning"
+msgstr "**[LoRA训练](./finetune/finetune_lora.sh)** - 高效参数微调"
+
+#: ../../source/getting_started/quickstart.md:45
+#: a2e2f36f5e634a5d87db2a016db4ba8a
+msgid "**[Full Training](./finetune/finetune_ds.sh)** - Deep customization"
+msgstr "**[全量训练](./finetune/finetune_ds.sh)** - 深度定制"
+
+#: ../../source/getting_started/quickstart.md:46
+#: 0b214b9280a644f3979812f1bdec4081
+msgid "**[Custom Datasets](./finetune/dataset.py)** - Prepare your own data"
+msgstr "**[自定义数据集](./finetune/dataset.py)** - 准备你的专属数据"
+
+#: ../../source/getting_started/quickstart.md:48
+#: 25fa4a889fd54df09b8b59c5892fc541
+msgid "🥡 Takeaway (Deployment)"
+msgstr "🥡 部署"
+
+#: ../../source/getting_started/quickstart.md:49
+#: de80ace161184c87b5b1f79808c8b412
+msgid "*Package your model for production*"
+msgstr "*将你的模型打包上线*"
+
+#: ../../source/getting_started/quickstart.md bc5ac60df4b5401a8bbda62ba16d53c1
+msgid "Platform"
+msgstr "平台"
+
+#: ../../source/getting_started/quickstart.md 354cf6fc05e64182b2a8203ef9b61f3a
+msgid "Best For"
+msgstr "最佳用途"
+
+#: ../../source/getting_started/quickstart.md 069261ba431a42b389992e1e0867b372
+msgid "[Llama.cpp](./run_locally/llamacpp)"
+msgstr "[Llama.cpp](./run_locally/llamacpp)"
+
+#: ../../source/getting_started/quickstart.md dffbbd7529e04a0caf5c6332c6d70ee2
+msgid "CPU inference"
+msgstr "CPU推理"
+
+#: ../../source/getting_started/quickstart.md 88732b751434440bae7954764853f9c8
+msgid "Local deployment"
+msgstr "本地部署"
+
+#: ../../source/getting_started/quickstart.md 78173ef16b0d4f468c865b1b0b1d019c
+msgid "[Ollama](./run_locally/ollama)"
+msgstr "[Ollama](./run_locally/ollama)"
+
+#: ../../source/getting_started/quickstart.md d3e593d5c3824620b4e8a9783b814dc6
+msgid "Easy management"
+msgstr "便捷管理"
+
+#: ../../source/getting_started/quickstart.md 68d2575afa154deda09b2aaa89fa657c
+msgid "Quick setup"
+msgstr "快速配置"
+
+#: ../../source/getting_started/quickstart.md 1b395d6e94ea468589778dff3aa146b1
+msgid "[vLLM](./deployment/vllm)"
+msgstr "[vLLM](./deployment/vllm)"
+
+#: ../../source/getting_started/quickstart.md 0deae67401094ac3b369142e7b57854f
+msgid "High throughput"
+msgstr "高吞吐量"
+
+#: ../../source/getting_started/quickstart.md 8ede04a516d543f9b5d538a02fd53847
+msgid "Production servers"
+msgstr "生产服务器"
+
+#: ../../source/getting_started/quickstart.md 9bd05c7921874e1281b6e4fe05c4a777
+msgid "[SGLang](./deployment/sglang)"
+msgstr "[SGLang](./deployment/sglang)"
+
+#: ../../source/getting_started/quickstart.md 0f1a007b5e7e4e9d85c38548bfe38b23
+msgid "Structured generation"
+msgstr "结构化生成"
+
+#: ../../source/getting_started/quickstart.md 8e42af9cb7ca4617acbafbd7d823330c
+msgid "Complex workflows"
+msgstr "复杂工作流"
+
+#: ../../source/getting_started/quickstart.md 8866b37533b44e3e87941f0ce2307ab9
+msgid "[Web Demo](./demo/webdemo)"
+msgstr "[Web Demo](./demo/webdemo)"
+
+#: ../../source/getting_started/quickstart.md 188d9f26f1ce4ab8883cdbf08c7ce96e
+msgid "FastAPI interactive interface"
+msgstr "FastAPI 交互界面"
+
+#: ../../source/getting_started/quickstart.md ba280f29790942cca5c313e652d14392
+msgid "User-friendly apps"
+msgstr "用户友好应用"
+
+#: ../../source/getting_started/quickstart.md:59
+#: a0f2125604d8404bbf3961bbdf7e9d5e
+msgid "🥄 Light Bites (Quantization)"
+msgstr "🥄 量化"
+
+#: ../../source/getting_started/quickstart.md:60
+#: 5db2eb9f17f24eb482357f44e86b881f
+msgid "*Compress your model without losing flavor*"
+msgstr "*压缩模型，风味不减*"
+
+#: ../../source/getting_started/quickstart.md:62
+#: b8c78fb76c924e98a73bfd2052107a7b
+msgid "**[GGUF](./quantization/gguf/)** - Ultra-lightweight format"
+msgstr "**[GGUF](./quantization/gguf/)** - 超轻量格式"
+
+#: ../../source/getting_started/quickstart.md:63
+#: ae19288dd1234026969256d8a817b729
+msgid "**[BNB](./quantization/bnb/)** - Bits and bytes optimization"
+msgstr "**[BNB](./quantization/bnb/)** - 位与字节优化"
+
+#: ../../source/getting_started/quickstart.md:64
+#: a0f586d867f04b139398071b83bfee1d
+msgid "**[AWQ](./quantization/awq)** - Activation-aware quantization"
+msgstr "**[AWQ](./quantization/awq)** - 感知激活量化"
+
+#: ../../source/getting_started/quickstart.md:66
+#: 9521a5e38b664f558d56957da529b85f
+msgid "📱 Special Menu (Demos)"
+msgstr "📱 演示"
+
+#: ../../source/getting_started/quickstart.md:67
+#: c09cb59c492b490ebb285bfa2fb3270e
+msgid "*Showcase dishes to impress your guests*"
+msgstr "*展示佳肴，惊艳宾客*"
+
+#: ../../source/getting_started/quickstart.md:69
+#: dab70864e495440e9587109638715ae9
+msgid ""
+"**[Web Demo](./demo/web_demo/)** - Interactive web interface and "
+"production API"
+msgstr ""
+"**[Web Demo](./demo/web_demo/)** - 交互式网页界面与生产API"
