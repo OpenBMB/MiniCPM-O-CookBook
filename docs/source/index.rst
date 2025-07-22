@@ -62,31 +62,31 @@ Our ecosystem delivers optimal solution for a variety of hardware environments a
    * - **Vision Capabilities**
      - 
 
-   * - 🎬 `Video QA <./inference/video_understanding.md>`_
+   * - 🎬 `Video QA <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/video_understanding.md>`_
      - Video-based question answering
 
-   * - 🧩 `Multi-image QA <./inference/multi_images.md>`_
+   * - 🧩 `Multi-image QA <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/multi_images.md>`_
      - Question answering with multiple images
 
-   * - 🖼️ `Single-image QA <./inference/single_image.md>`_
+   * - 🖼️ `Single-image QA <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/single_image.md>`_
      - Question answering on a single image
 
-   * - 📄 `Document Parser <./inference/pdf_parse.md>`_
+   * - 📄 `Document Parser <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/pdf_parse.md>`_
      - Parse and extract content from PDFs and webpages
 
-   * - 📝 `Text Recognition <./inference/ocr.md>`_
+   * - 📝 `Text Recognition <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/ocr.md>`_
      - Reliable OCR for photos and screenshots
 
    * - **Audio Capabilities**
      -
 
-   * - 🎤 `Speech-to-Text <./inference/speech2text.md>`_
+   * - 🎤 `Speech-to-Text <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/speech2text.md>`_
      - Multilingual speech recognition
 
-   * - 🎭 `Voice Cloning <./inference/voice_clone.md>`_
+   * - 🎭 `Voice Cloning <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/voice_clone.md>`_
      - Realistic voice cloning and role-play
 
-   * - 🗣️ `Text-to-Speech <./inference/text2speech.md>`_
+   * - 🗣️ `Text-to-Speech <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/text2speech.md>`_
      - Instruction-following speech synthesis
 
 🏋️ Fine-tuning recipes
