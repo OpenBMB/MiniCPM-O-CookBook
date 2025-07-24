@@ -3,7 +3,7 @@
 # 🍳 MiniCPM-o Cookbook
 
 
-[🏠 Main Repository](https://github.com/OpenBMB/MiniCPM-o) | [🤗 Hugging Face](https://huggingface.co/openbmb/MiniCPM-V-4) | [🤖 ModelScope](https://modelscope.cn/models/openbmb/MiniCPM-V-4) | [📖 Technical Blog](https://openbmb.notion.site/MiniCPM-o-2-6-A-GPT-4o-Level-MLLM-for-Vision-Speech-and-Multimodal-Live-Streaming-on-Your-Phone-185ede1b7a558042b5d5e45e6b237da9) | [📚 Documentation](https://minicpm-o.readthedocs.io/en/latest/index.html)
+[🏠 Main Repository](https://github.com/OpenBMB/MiniCPM-o) | [📚 Documentation Web](https://minicpm-o.readthedocs.io/en/latest/index.html)
 
 Cook up amazing multimodal AI applications effortlessly with MiniCPM-o, bringing vision, speech, and live-streaming capabilities right to your fingertips!
 
