@@ -33,7 +33,7 @@ Our ecosystem delivers optimal solution for a variety of hardware environments a
 
 Explore real-world examples of MiniCPM-o deployed on edge devices using our curated recipes. These demos highlight the model’s high efficiency and robust performance in practical scenarios.
 
-- Run locally on iPhone with [iOS demo](./demo/ios_demo/ios.md), processing an image of a railway ticket.
+- Run locally on iPhone with [iOS demo](./demo/ios_demo/ios.md).
 <table align="center"> 
     <p align="center">
       <img src="inference/assets/gif_cases/iphone_cn.gif" width=32%/>
