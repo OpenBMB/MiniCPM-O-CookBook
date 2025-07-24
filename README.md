@@ -3,7 +3,7 @@
 # 🍳 MiniCPM-o Cookbook
 
 
-[🏠 Main Repository](https://github.com/OpenBMB/MiniCPM-o) | [📚 Documentation Web](https://minicpm-o.readthedocs.io/en/latest/index.html)
+[🏠 Main Repository](https://github.com/OpenBMB/MiniCPM-o) | [📚 Full Documentation](https://minicpm-o.readthedocs.io/en/latest/index.html)
 
 Cook up amazing multimodal AI applications effortlessly with MiniCPM-o, bringing vision, speech, and live-streaming capabilities right to your fingertips!
 
