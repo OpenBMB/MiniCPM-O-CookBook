@@ -12,7 +12,7 @@ Cook up amazing multimodal AI applications effortlessly with MiniCPM-o, bringing
 
 ## ✨ What Makes Our Recipes Special?
 
-### Easy Usage documentation
+### Easy Usage Documentation
 
 Our comprehensive [documentation website]((https://minicpm-o.readthedocs.io/en/latest/index.html)) presents every recipe in a clear, well-organized manner.
 All features are displayed at a glance, making it easy for you to quickly find exactly what you need.
