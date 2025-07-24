@@ -139,6 +139,12 @@ We love new recipes! Please share your creative dishes:
 - Need help? Join our [Discord](https://discord.gg/rftuRMbqzf)
 
 
+## Institutions
+
+This cookbook is developed by [OpenBMB](https://github.com/openbmb) and [OpenSQZ](https://github.com/opensqz).
+
+
+
 ## 📜 License
 
 This cookbook is served under the [Apache-2.0 License](LICENSE) - cook freely, share generously! 🍳
