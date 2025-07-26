@@ -38,6 +38,13 @@ res = model.chat(
     use_tts_template=True,
     temperature=0.3,
     generate_audio=True,
-    output_audio_path='./output.wav',
+    output_audio_path='./voice_clone_output.wav',
 )
 ```
+
+### Example Output
+
+<audio controls>
+  <source src="./assets/voice_clone_output.wav" type="audio/wav">
+  example audio case
+</audio>
