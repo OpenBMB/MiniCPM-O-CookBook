@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🍳 MiniCPM-V Cookbook
+# 🍳 MiniCPM-V & o Cookbook
 
 
 [🏠 Main Repository](https://github.com/OpenBMB/MiniCPM-o) | [📚 Full Documentation](https://minicpm-o.readthedocs.io/en/latest/index.html)
@@ -36,7 +36,7 @@ Our ecosystem delivers optimal solution for a variety of hardware environments a
 
 ## ⭐️ Live Demonstrations
 
-Explore real-world examples of MiniCPM-V deployed on edge devices using our curated recipes. These demos highlight the model’s high efficiency and robust performance in practical scenarios.
+Explore real-world examples of MiniCPM-V & o deployed on edge devices using our curated recipes. These demos highlight the model’s high efficiency and robust performance in practical scenarios.
 
 - Run locally on iPhone with [iOS demo](./demo/ios_demo/ios.md).
 <table align="center"> 
