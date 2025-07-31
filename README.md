@@ -113,7 +113,7 @@ We provide training methods serving different needs as following:
 | [GGUF](./quantization/gguf/minicpm-v4_gguf_quantize.md)| Simplest and most portable format  |
 | [BNB](./quantization/bnb/minicpm-v4_bnb_quantize.md)   | Efficient 4/8-bit weight quantization |
 
-## Awesome Works using MiniCPM-o
+## Awesome Works using MiniCPM-V & o
 - [text-extract-api](https://github.com/CatchTheTornado/text-extract-api): Document extraction API using OCRs and Ollama supported models ![GitHub Repo stars](https://img.shields.io/github/stars/CatchTheTornado/text-extract-api)
 - [comfyui_LLM_party](https://github.com/heshengtao/comfyui_LLM_party): Build LLM workflows and integrate into existing image workflows ![GitHub Repo stars](https://img.shields.io/github/stars/heshengtao/comfyui_LLM_party)
 - [Ollama-OCR](https://github.com/imanoop7/Ollama-OCR): OCR package uses vlms through Ollama to extract text from images and PDF ![GitHub Repo stars](https://img.shields.io/github/stars/imanoop7/Ollama-OCR)
