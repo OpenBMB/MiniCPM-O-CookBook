@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to MiniCPM-V & o Cookbook
-==============================
+==================================
 
 .. figure:: assets/minicpm.svg
   :width: 70%

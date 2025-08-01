@@ -153,4 +153,4 @@ After successfully downloading the model:
 2. **Run Examples**: Try the notebooks in the `inference/` directory  
 3. **Customize**: Explore fine-tuning options in the `finetune/` directory
 
-For more detailed usage instructions, see our [Quick Start Guide](./quickstart.md).
+For more detailed usage instructions, see our Quick Start Guide
