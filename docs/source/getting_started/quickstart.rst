@@ -15,6 +15,7 @@ Quickstart
 
     import torch
     from transformers import AutoModel, AutoTokenizer
+    from PIL import Image
 
     # Load the model
     model = AutoModel.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_code=True)
