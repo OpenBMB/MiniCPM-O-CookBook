@@ -49,8 +49,8 @@ msgid "Demo"
 msgstr "演示"
 
 #: ../../source/index.rst:7 69c653f84fb5409ca9137e41adcf888e
-msgid "Welcome to MiniCPM-o Cookbook"
-msgstr "欢迎来到MiniCPM-o Cookbook"
+msgid "Welcome to MiniCPM-V & o Cookbook"
+msgstr "欢迎来到 MiniCPM-V & o Cookbook"
 
 #: ../../source/index.rst:9 1286808e6e1d496e87cfae9822111235
 msgid "MiniCPM"
