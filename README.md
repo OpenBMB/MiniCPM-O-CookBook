@@ -112,6 +112,7 @@ We provide training methods serving different needs as following:
 |-----------------------------------------|------------------------------------|
 | [GGUF](./quantization/gguf/minicpm-v4_gguf_quantize.md)| Simplest and most portable format  |
 | [BNB](./quantization/bnb/minicpm-v4_bnb_quantize.md)   | Efficient 4/8-bit weight quantization |
+| [AWQ](./quantization/awq/minicpm-v4_awq_quantize.md)   | 4-bit quantization optimized for vLLM |
 
 ## Awesome Works using MiniCPM-V & o
 - [text-extract-api](https://github.com/CatchTheTornado/text-extract-api): Document extraction API using OCRs and Ollama supported models ![GitHub Repo stars](https://img.shields.io/github/stars/CatchTheTornado/text-extract-api)
