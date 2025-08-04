@@ -31,7 +31,7 @@ We support a wide range of users, from individuals to enterprises and researcher
 Our ecosystem delivers optimal solution for a variety of hardware environments and deployment demands.
 
 * **Web demo**: Launch interactive multimodal AI web demo with [FastAPI](./demo/README.md).
-* **Quantized deployment**: Maximize efficiency and minimize resource consumption using [GGUF](./quantization/gguf/minicpm-v4_gguf_quantize.md) and [BNB](./quantization/bnb/minicpm-v4_bnb_quantize.md).
+* **Quantized deployment**: Maximize efficiency and minimize resource consumption using [GGUF](./quantization/gguf/minicpm-v4_gguf_quantize.md), [BNB](./quantization/bnb/minicpm-v4_bnb_quantize.md), and [AWQ](./quantization/awq/minicpm-v4_awq_quantize.md).
 * **Edge devices**: Bring powerful AI experiences to [iPhone and iPad](./demo/ios_demo/ios.md), supporting offline and privacy-sensitive applications.
 
 ## ⭐️ Live Demonstrations
