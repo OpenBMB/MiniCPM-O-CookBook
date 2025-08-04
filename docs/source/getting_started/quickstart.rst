@@ -133,3 +133,5 @@ Quickstart
      - Simplest and most portable format
    * - `BNB <../quantization/bnb.html>`_
      - Efficient 4/8-bit weight quantization
+   * - `AWQ <../quantization/awq.html>`_
+     - High-performance quantization for efficient inference
