@@ -1,0 +1,1 @@
+from .minicpmv4 import ModelMiniCPMV4

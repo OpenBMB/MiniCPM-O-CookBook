@@ -69,6 +69,7 @@ Desktop.ini
 
 # Logs
 *.log
+logs/
 
 # Environment variables
 .venv
