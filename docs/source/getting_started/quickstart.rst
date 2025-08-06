@@ -91,7 +91,7 @@ Quickstart
 
 .. _serving-recipe:
 
-🥡 Serving recipes
+📦 Serving recipes
 ******************
 
 

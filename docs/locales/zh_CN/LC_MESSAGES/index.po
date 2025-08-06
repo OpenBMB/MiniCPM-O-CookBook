@@ -315,8 +315,8 @@ msgid "Visual instruction alignment for multimodal models"
 msgstr "多模态模型的视觉指令对齐"
 
 #: ../../source/index.rst:125 9f3930bb5be94e47be2e96f4495bd567
-msgid "🥡 Serving recipes"
-msgstr "🥡 服务指南"
+msgid "📦 Serving recipes"
+msgstr "📦 服务指南"
 
 #: ../../source/index.rst:127 8cfe8ccf594a4d22aa3c3d5b114eb51d
 msgid "*Deploy your model efficiently*"

@@ -232,8 +232,8 @@ msgstr "多模态模型的视觉指令对齐"
 
 #: ../../source/getting_started/quickstart.rst:95
 #: 6168a372dd9942ebbe1cb1d7b0457e77
-msgid "🥡 Serving recipes"
-msgstr "🥡 服务指南"
+msgid "📦 Serving recipes"
+msgstr "📦 服务指南"
 
 #: ../../source/getting_started/quickstart.rst:102
 #: 73b39cefe9044c5f9f673e249c1f8997

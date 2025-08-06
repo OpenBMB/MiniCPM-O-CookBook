@@ -121,7 +121,7 @@ We provide training methods serving different needs as following:
 
 .. _serving-recipes:
 
-🥡 Serving recipes
+📦 Serving recipes
 ******************
 
 *Deploy your model efficiently*
