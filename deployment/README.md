@@ -8,7 +8,7 @@ Multiple deployment solutions for efficient MiniCPM-o model deployment across di
 
 | Framework | Performance | Ease of Use | Scalability | Hardware | Best For |
 |-----------|-------------|-------------|-------------|----------|----------|
-| **vLLM** | Excellent | Medium | High | GPU | Large-scale production services |
+| **vLLM** | High | Medium | High | GPU | Large-scale production services |
 | **SGLang** | High | Medium | High | GPU | Structured generation tasks |
 | **Ollama** | Medium | Excellent | Medium | CPU/GPU | Personal use, rapid prototyping |
 | **Llama.cpp** | Medium | High | Medium | CPU | Edge devices, lightweight deployment |
@@ -19,13 +19,13 @@ Multiple deployment solutions for efficient MiniCPM-o model deployment across di
 - High-throughput inference engine with PagedAttention memory management
 - Dynamic batching support, OpenAI-compatible API
 - Ideal for production API services and large-scale batch inference
-- Recommended hardware: A100, H100, RTX 4090 (8GB+ GPU memory)
+- Recommended hardware: GPU with more than 8GB of VRAM
 
 ### SGLang (Structured Generation Language)
 - Structured generation optimization with efficient KV cache management
 - Complex control flow and function calling optimization support
 - Suitable for complex reasoning chains and structured text generation
-- Recommended hardware: RTX 3080, A40, A100 (6GB+ GPU memory)
+- Recommended hardware: GPU with more than 8GB of VRAM
 
 ### Ollama
 - One-click model management with simple command-line interface
