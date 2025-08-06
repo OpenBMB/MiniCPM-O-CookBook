@@ -10,34 +10,34 @@
 
 ```bash
 cd server
-conda create -n v4-server python=3.10
-conda activate v4-server
+conda create -n gradio-server python=3.10
+conda activate gradio-server
 pip install -r requirements.txt
-MODEL_TOKEN='openbmb/MiniCPM-V-4' python main.py
+python gradio_server.py
 ```
 
 **自定义参数:**
 
 ```bash
-# 指定模型路径、端口和日志目录
-MODEL_TOKEN='/path/to/model' python main.py --port=39240 --log_dir=logs_v4
+# 指定服务端口、日志目录、模型路径和类型
+python gradio_server.py --port=39240 --log_dir=logs_v4 --model_path=/path/to/model --model_type=minicpmv4
 ```
 
 ### 客户端
 
 ```bash
 cd client
-conda create -n v4-client python=3.10
-conda activate v4-client
+conda create -n gradio-client python=3.10
+conda activate gradio-client
 pip install -r requirements.txt
-python web_demo_v4.py
+python gradio_client_minicpmv4.py
 ```
 
 **自定义参数:**
 
 ```bash
 # 指定前端端口和后端服务地址
-python web_demo_v4.py --port=9090 --server=http://localhost:39240/api
+python gradio_client_minicpmv4.py --port=9090 --server=http://localhost:39240/api
 ```
 
 ## 访问地址

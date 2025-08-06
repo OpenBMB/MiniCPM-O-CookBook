@@ -1,10 +1,8 @@
 from pydantic import BaseModel
 import uvicorn
 import fastapi
-import os
-import sys
 import argparse
-from models import ModelV4
+from models import ModelMiniCPMV4
 import logging
 from logging_util import setup_root_logger
 
@@ -12,8 +10,12 @@ logger = logging.getLogger(__name__)
 
 
 class Model:
-    def __init__(self, model_token) -> None:
-        self.model = ModelV4(model_token, multi_gpus=True)
+    def __init__(self, model_path: str, model_type: str) -> None:
+        match model_type.lower():
+            case 'minicpmv4':
+                self.model = ModelMiniCPMV4(model_path)
+            case _:
+                raise ValueError(f"Unsupported model type: {model_type}")
 
     def handler(self, query):
         res, output_tokens = self.model({
@@ -38,15 +40,15 @@ parser.add_argument('--port', type=int, default=9999,
                     help='Port to run the server on')
 parser.add_argument('--log_dir', type=str, default='logs',
                     help='Directory for log files')
+parser.add_argument('--model_path', type=str, default='openbmb/MiniCPM-V-4',
+                    help='Path to the model directory')
+parser.add_argument('--model_type', type=str, default='minicpmv4',
+                    help='Type of the model to use')
 args = parser.parse_args()
 
-port = args.port
-log_dir = args.log_dir
+setup_root_logger(local_dir=args.log_dir)
 
-setup_root_logger(local_dir=log_dir)
-
-model_token = os.environ.get("MODEL_TOKEN", None)
-model = Model(model_token)
+model = Model(args.model_path, args.model_type)
 
 app = fastapi.FastAPI()
 
@@ -65,5 +67,5 @@ def websocket(item: Item):
     return {'data': res}
 
 
-_cfg = uvicorn.Config(app, host="0.0.0.0", port=port, workers=1)
+_cfg = uvicorn.Config(app, host="0.0.0.0", port=args.port, workers=1)
 uvicorn.Server(_cfg).run()

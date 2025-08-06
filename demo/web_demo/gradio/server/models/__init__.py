@@ -1,1 +1,1 @@
-from .modelv4 import ModelV4
+from .minicpmv4 import ModelMiniCPMV4
