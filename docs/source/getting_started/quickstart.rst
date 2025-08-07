@@ -113,6 +113,8 @@ Quickstart
      - Interactive Omni Streaming demo with FastAPI
    * - `OpenWebUI <../demo/openwebui.html>`_
      - Interactive Web demo with Open WebUI
+   * - `Gradio Web Demo <../demo/gradiodemo.html>`_
+     - Interactive Web demo with Gradio
    * - `iOS Demo <../demo/iosdemo.html>`_
      - Interactive iOS demo with llama.cpp
 

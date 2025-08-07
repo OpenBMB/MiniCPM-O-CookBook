@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-04 10:17+0800\n"
+"POT-Creation-Date: 2025-08-07 11:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -298,55 +298,66 @@ msgstr "基于 Open WebUI 的交互式网页演示"
 
 #: ../../source/getting_started/quickstart.rst:116
 #: 34a31b93d4134d5ab3a116bbe3b1c0e5
+#, fuzzy
+msgid "`Gradio Web Demo <../demo/gradiodemo.html>`_"
+msgstr "`Gradio Web Demo <../demo/gradiodemo.html>`_"
+
+#: ../../source/getting_started/quickstart.rst:117
+#: bbf3c3043c1f4371b77bbc4e061a7db9
+msgid "Interactive Web demo with Gradio"
+msgstr "基于 Gradio 构建的交互式网页演示"
+
+#: ../../source/getting_started/quickstart.rst:118
+#: 34a31b93d4134d5ab3a116bbe3b1c0e5
 msgid "`iOS Demo <../demo/iosdemo.html>`_"
 msgstr "`iOS Demo <../demo/iosdemo.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:117
+#: ../../source/getting_started/quickstart.rst:119
 #: bbf3c3043c1f4371b77bbc4e061a7db9
 msgid "Interactive iOS demo with llama.cpp"
 msgstr "基于 llama.cpp 的交互式 iOS 演示"
 
-#: ../../source/getting_started/quickstart.rst:123
+#: ../../source/getting_started/quickstart.rst:125
 #: 30841164327e457896449ad00240326e
 msgid "🥄 Quantization recipes"
 msgstr "🥄 量化指南"
 
-#: ../../source/getting_started/quickstart.rst:130
+#: ../../source/getting_started/quickstart.rst:132
 #: cfb74d6d23f14ef7851da05081d5949e
 msgid "Format"
 msgstr "格式"
 
-#: ../../source/getting_started/quickstart.rst:131
+#: ../../source/getting_started/quickstart.rst:133
 #: 357ede3a0841462197ce05f3067f20d5
 msgid "Key Feature"
 msgstr "主要特性"
 
-#: ../../source/getting_started/quickstart.rst:132
+#: ../../source/getting_started/quickstart.rst:134
 #: a4aa3759188247f8a0b9aff8990ea43b
 msgid "`GGUF <../quantization/gguf.html>`_"
 msgstr "`GGUF <../quantization/gguf.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:133
+#: ../../source/getting_started/quickstart.rst:135
 #: f82ff7c0b022483e9a14915a3c988b4b
 msgid "Simplest and most portable format"
 msgstr "最简单且最便携的格式"
 
-#: ../../source/getting_started/quickstart.rst:134
+#: ../../source/getting_started/quickstart.rst:136
 #: a9226d1eab614c40bf7f377f8a432d9a
 msgid "`BNB <../quantization/bnb.html>`_"
 msgstr "`BNB <../quantization/bnb.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:135
+#: ../../source/getting_started/quickstart.rst:137
 #: d6a13abe910a4d3e9cc9e7d92c9f0f3a
 msgid "Efficient 4/8-bit weight quantization"
 msgstr "高效的 4/8 位权重量化"
 
-#: ../../source/getting_started/quickstart.rst:136
+#: ../../source/getting_started/quickstart.rst:138
 #: b4fc87720583497bbb0db91aa709835b
 msgid "`AWQ <../quantization/awq.html>`_"
 msgstr "`AWQ <../quantization/awq.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:137
+#: ../../source/getting_started/quickstart.rst:139
 #: e5db7059765d4de58e1f43c63a881316
 msgid "High-performance quantization for efficient inference"
 msgstr "高效推理的高性能量化方法"
