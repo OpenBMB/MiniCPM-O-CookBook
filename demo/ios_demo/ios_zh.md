@@ -22,7 +22,7 @@ cd MiniCPM-o-demo-iOS
     sudo xcodebuild -license
     ```
 
-使用 Xcode 打开 `MiniCPM-demo.xcodeproj`，可能需要等待 Xcode 自动下载所需的库。
+使用 Xcode 打开 `MiniCPM-V-demo.xcodeproj`，可能需要等待 Xcode 自动下载所需的库。
 
 在 Xcode 页面顶部选择想要运行 iOS demo 的设备，点击三角形的 Run 按钮即可运行。
 
@@ -32,7 +32,7 @@ cd MiniCPM-o-demo-iOS
 
 克隆 llama.cpp 代码仓库: 
 ```bash
-git clone https://github.com/tc-mb/llama.cpp.git
+git clone -b Support-iOS-Demo https://github.com/tc-mb/llama.cpp.git
 cd llama.cpp
 ```
 
@@ -45,7 +45,7 @@ cd llama.cpp
 将构建完成的库复制到 iOS demo 对应目录:
 
 ```bash
-cp -r ./build-apple/llama.xcframework ../MiniCPM_demo_iOS/MiniCPM-demo/thirdparty
+cp -r ./build-apple/llama.xcframework ../MiniCPM-o-demo-iOS/MiniCPM-V-demo/thirdparty
 ```
 
 ## 3. 获取模型 GGUF 权重
@@ -55,7 +55,7 @@ cp -r ./build-apple/llama.xcframework ../MiniCPM_demo_iOS/MiniCPM-demo/thirdpart
 *   HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4-gguf
 *   魔搭社区: https://modelscope.cn/models/OpenBMB/MiniCPM-V-4-gguf
 
-从仓库中下载语言模型文件（如: `Model-3.6B-Q4_K_M.gguf`）与视觉模型文件（`mmproj-model-f16.gguf`）
+从仓库中下载语言模型文件（如: `ggml-model-Q4_0.gguf`）与视觉模型文件（`mmproj-model-f16-iOS.gguf`）
 
 ### 方法二: 从 Pytorch 模型转换
 
@@ -73,5 +73,5 @@ python ./tools/mtmd/legacy-models/minicpmv-convert-image-encoder-to-gguf.py -m .
 python ./convert_hf_to_gguf.py ../MiniCPM-V-4/model
 
 # int4 量化版本
-./llama-quantize ../MiniCPM-V-4/model/Model-3.6B-f16.gguf ../MiniCPM-V-4/model/Model-3.6B-Q4_K_M.gguf Q4_K_M
+./llama-quantize ../MiniCPM-V-4/model/Model-3.6B-f16.gguf ../MiniCPM-V-4/model/ggml-model-Q4_0.gguf Q4_0
 ```
