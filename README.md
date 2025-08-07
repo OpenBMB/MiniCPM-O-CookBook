@@ -102,6 +102,7 @@ We provide training methods serving different needs as following:
 | [Llama.cpp](./deployment/llama.cpp/minicpm-v4_llamacpp.md)| Fast CPU inference on PC, iPhone and iPad                        |
 | [Ollama](./deployment/ollama/minicpm-v4_ollama.md)| User-friendly setup  |
 | [OpenWebUI](./demo/web_demo/openwebui) | Interactive Web demo with Open WebUI |
+| [Gradio](./demo/web_demo/gradio) | Interactive Web demo with Gradio |
 | [FastAPI](./demo/README.md) | Interactive Omni Streaming demo with FastAPI |
 | [iOS](./demo/ios_demo/ios.md) | Interactive iOS demo with llama.cpp |
 
