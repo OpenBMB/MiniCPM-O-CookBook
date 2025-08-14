@@ -91,6 +91,7 @@ html_css_files = [
 # FIXME: figure out why this file is not copied
 html_js_files = [
     "design-tabs.js",
+    "analytics.js",
 ]
 
 # Mock out external dependencies here.
