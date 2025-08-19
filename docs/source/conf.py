@@ -26,6 +26,8 @@ extensions = [
     "sphinx.ext.autosummary",
     "myst_parser",
     "sphinx_design",
+    "sphinx_sitemap",
+    "sphinxext.opengraph",
     # "sphinx_copybutton",
 ]
 
@@ -118,3 +120,54 @@ class MockedClassDocumenter(autodoc.ClassDocumenter):
 autodoc.ClassDocumenter = MockedClassDocumenter
 
 navigation_with_keys = False
+
+# Sitemap
+html_baseurl = 'https://minicpm-o.readthedocs.io/'
+sitemap_url_scheme = "{lang}/{version}/{link}"
+sitemap_locales = ["en", "zh_CN"]
+sitemap_filename = "sitemap.xml"
+
+# Open Graph
+ogp_site_url = "https://minicpm-o.readthedocs.io/"
+ogp_description_length = 200
+ogp_image = "https://raw.githubusercontent.com/OpenBMB/MiniCPM/refs/heads/main/assets/minicpm_logo.png"
+ogp_image_width = 1200
+ogp_image_height = 630
+ogp_type = "website"
+ogp_site_name = "MiniCPM-V & o Cookbook"
+ogp_use_first_image = True
+
+ogp_locale_alternate = [
+    ("en_US", "https://minicpm-o.readthedocs.io/en/latest/"),
+    ("zh_CN", "https://minicpm-o.readthedocs.io/zh_CN/latest/"),
+]
+
+# HTML head meta tags
+html_context = {
+    'en': {
+        'meta_description': 'MiniCPM-V & o Cookbook - Your step-by-step guide to running MiniCPM models anywhere',
+        'meta_keywords': 'MiniCPM, Large Language Model, AI, Machine Learning, Documentation',
+        'meta_author': 'OpenBMB',
+        'meta_robots': 'index, follow',
+        'canonical_url': 'https://minicpm-o.readthedocs.io/en/latest/',
+    },
+    'zh_CN': {
+        'meta_description': 'MiniCPM-V & o Cookbook - 完整的MiniCPM模型使用指南',
+        'meta_keywords': 'MiniCPM, 大语言模型, AI, 机器学习, 文档',
+        'meta_author': 'OpenBMB',
+        'meta_robots': 'index, follow',
+        'canonical_url': 'https://minicpm-o.readthedocs.io/zh_CN/latest/',
+    }
+}
+
+def get_language_meta():
+    current_lang = language
+    return html_context.get(current_lang, html_context['en'])
+
+html_context.update(get_language_meta())
+
+html_use_index = True
+html_split_index = False
+html_compressed = True
+
+html_extra_path = ['_static/robots.txt']
