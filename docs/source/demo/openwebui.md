@@ -53,7 +53,7 @@ Configure in Open WebUI: Settings → Connections → Ollama API → `http://loc
 
 ```bash
 # Install and start vLLM service
-pip install vllm>=0.7.1
+pip install vllm==0.10.1
 vllm serve openbmb/MiniCPM-V-4 \
   --dtype auto \
   --api-key token-abc123 \
