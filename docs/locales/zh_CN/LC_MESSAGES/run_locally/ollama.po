@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-17 19:35+0800\n"
+"POT-Creation-Date: 2025-08-22 18:59+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -20,11 +20,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/run_locally/ollama.md:1 ecceb3de331346ba899636d74bc4ca59
+#: ../../source/run_locally/ollama.md:1 156a514fc5d143f3b9d6c26c2db22cf0
 msgid "Ollama"
 msgstr "Ollama"
 
-#: ../../source/run_locally/ollama.md:3 f067c1cec45f471ca4e7068a89d2f721
+#: ../../source/run_locally/ollama.md:3 a7fddc69e1ee4149b183407e0cdacf53
 msgid ""
 "[Ollama](https://ollama.com/) helps you run LLMs locally with only a few "
 "commands. It is available at macOS, Linux, and Windows. Now, MiniCPM-V "
@@ -33,29 +33,29 @@ msgstr ""
 "[Ollama](https://ollama.com/) 可以帮助你仅用几个命令在本地运行大语言模型。它支持 macOS、Linux 和 "
 "Windows。现在，MiniCPM-V 4.0 已正式上线 Ollama，你只需一条命令即可运行："
 
-#: ../../source/run_locally/ollama.md:9 aecf8388ec464a3da22c30c12345c55a
+#: ../../source/run_locally/ollama.md:9 0ef024498373427e86ab752d44b620c4
 msgid ""
 "Next, we introduce more detailed usages of Ollama for running MiniCPM-V "
 "4.0."
 msgstr "下面将介绍使用 Ollama 运行 MiniCPM-V 4.0 的更多详细用法。"
 
-#: ../../source/run_locally/ollama.md:11 c429d21d00f74ffbb1dff4c61ed7ab88
+#: ../../source/run_locally/ollama.md:11 e55932805069488e91a9a036a781a5c1
 msgid "Install Ollama"
 msgstr "1. 安装 Ollama"
 
-#: ../../source/run_locally/ollama.md:13 cbd1257347e8430dabd95d51bf4e739d
+#: ../../source/run_locally/ollama.md:13 01c1c6921a0c45c49cdd4394cd0fcf81
 msgid ""
 "**macOS**: Download from "
 "[https://ollama.com/download/Ollama.dmg](https://ollama.com/download/Ollama.dmg)."
 msgstr "**macOS**: [下载](https://ollama.com/download/Ollama.dmg)"
 
-#: ../../source/run_locally/ollama.md:15 29a078d2df9641d3a45a9edff8b44145
+#: ../../source/run_locally/ollama.md:15 12ee0c2bf1a64b9bb35764e775b0a7c4
 msgid ""
 "**Windows**: Download from "
 "[https://ollama.com/download/OllamaSetup.exe](https://ollama.com/download/OllamaSetup.exe)."
 msgstr "**Windows**: [下载](https://ollama.com/download/OllamaSetup.exe)"
 
-#: ../../source/run_locally/ollama.md:17 16423a40745b42c89df26360eba47848
+#: ../../source/run_locally/ollama.md:17 84e35224835e4d16afa0c750db9b0684
 msgid ""
 "**Linux**: `curl -fsSL https://ollama.com/install.sh | sh`, or refer to "
 "the guide from "
@@ -64,7 +64,7 @@ msgstr ""
 "**Linux**：`curl -fsSL https://ollama.com/install.sh | sh`，或参考 [ollama "
 "官方指南](https://github.com/ollama/ollama/blob/main/docs/linux.md)。"
 
-#: ../../source/run_locally/ollama.md:19 b8a38519839d4de69d1e0ccbb0318e1c
+#: ../../source/run_locally/ollama.md:19 dd30ca3eae98463fb384622c4febcc1c
 msgid ""
 "**Docker**: The official [Ollama Docker "
 "image](https://hub.docker.com/r/ollama/ollama) `ollama/ollama` is "
@@ -73,125 +73,23 @@ msgstr ""
 "官方 [Ollama Docker 镜像](https://hub.docker.com/r/ollama/ollama) "
 "`ollama/ollama` 可在 Docker Hub 获取。"
 
-#: ../../source/run_locally/ollama.md:21 c6b8c3c875814a2988d76e5818cac5f8
-msgid "Quickstart"
-msgstr "2. 快速开始"
-
-#: ../../source/run_locally/ollama.md:23 91364fc757274c30844b09493ae93ba8
-msgid ""
-"Visit the official website [Ollama](https://ollama.com/) and click "
-"download to install Ollama on your device. You can also search models on "
-"the website, where you can find the MiniCPM-V/o series models. Except for"
-" the default one, you can choose to run MiniCPM-V/o series models by:"
+#: ../../source/run_locally/ollama.md:21 8ea7a5ed05e546f1a227b8136e10258e
+msgid "Build Ollama locally"
 msgstr ""
-"访问 [Ollama 官网](https://ollama.com/) 并点击下载，在你的设备上安装 Ollama。你可以通过以下命令运行 MiniCPM-V/o 系列模型："
 
-#: ../../source/run_locally/ollama.md:25 1c58dafb59bd4628937fd166ca6b54fe
-msgid "`ollama run openbmb/minicpm-v4`"
-msgstr "`ollama run openbmb/minicpm-v4`"
-
-#: ../../source/run_locally/ollama.md:26 c1b9ba234059463582dceb31489f0837
-msgid "`ollama run openbmb/minicpm-o2.6`"
-msgstr "`ollama run openbmb/minicpm-o2.6`"
-
-#: ../../source/run_locally/ollama.md:27 967015b6aab74293aa3348eed8f516ab
-msgid "`ollama run openbmb/minicpm-v2.6`"
-msgstr "`ollama run openbmb/minicpm-v2.6`"
-
-#: ../../source/run_locally/ollama.md:28 33517ec8eace42c08d2cf5f67b924dfe
-msgid "`ollama run openbmb/minicpm-v2.5`"
-msgstr "`ollama run openbmb/minicpm-v2.5`"
-
-#: ../../source/run_locally/ollama.md:30 ceb4c62d1f994cd49c83565709c7eb2d
-msgid "Command Line"
-msgstr "命令行"
-
-#: ../../source/run_locally/ollama.md:31 58138483d46b4b7a9f1f9133e3f6e8b4
-msgid "Separate the input prompt and the image path with space."
-msgstr "输入提示和图片路径用空格分隔。"
-
-#: ../../source/run_locally/ollama.md:36 93922d6edd384e7dbad3b8a74d583576
-msgid "API"
-msgstr "API"
-
-#: ../../source/run_locally/ollama.md:55 d821f475ea1d4df681d670e201326bf0
-msgid "Run Ollama with Your GGUF Files"
-msgstr "使用你自己的 GGUF 文件运行 Ollama"
-
-#: ../../source/run_locally/ollama.md:57 dd04d9a0331c4847bcdc0a6bb6c256da
-msgid ""
-"You can alse use Ollama with your own GGUF files of MiniCPM-V 4.0. For "
-"the first step, you need to create a file called `Modelfile`. The content"
-" of the file is shown below:"
-msgstr ""
-"你也可以使用自己 MiniCPM-V 4.0 的 GGUF 文件与 Ollama 配合使用。第一步，你需要创建一个名为 `Modelfile` 的文件，其内容如下所示："
-
-#: ../../source/run_locally/ollama.md:73 1ee8c98baebb4f6b9ad0da0281023f05
-msgid "Parameter Descriptions:"
-msgstr "参数说明："
-
-#: ../../source/run_locally/ollama.md e38b4d6239f145bd8bbad20ea24d9461
-msgid "first from"
-msgstr "第一个 from"
-
-#: ../../source/run_locally/ollama.md 5ade937e663c4eacbedd0c8c7f3cae0d
-msgid "second from"
-msgstr "第二个 from"
-
-#: ../../source/run_locally/ollama.md 2e5d5b72ddd74683a685e11d6c10ae9d
-msgid "num_ctx"
-msgstr "num_ctx"
-
-#: ../../source/run_locally/ollama.md 13c5e755ae814a849072b0d34e845113
-msgid "Your language GGUF model path"
-msgstr "你的语言 GGUF 模型路径"
-
-#: ../../source/run_locally/ollama.md 514c8e6f2553404d8049677001987e79
-msgid "Your vision GGUF model path"
-msgstr "你的视觉 GGUF 模型路径"
-
-#: ../../source/run_locally/ollama.md 0440762d61ed48d7983e75cec3f05b04
-msgid "Max Model length"
-msgstr "最大模型长度"
-
-#: ../../source/run_locally/ollama.md:79 3d277d4539f74dc883b88cfae363d371
-msgid "Create Ollama Model:"
-msgstr "创建 Ollama 模型"
-
-#: ../../source/run_locally/ollama.md:84 720887e43ab54495bedaf653bed9315b
-msgid "Run your Ollama model: In a new terminal window, run the model instance:"
-msgstr "在新的终端窗口中运行模型实例："
-
-#: ../../source/run_locally/ollama.md:90 ee423bc679074abd92e36677bcdb3df2
-msgid "Enter the prompt and the image path, separated by a space."
-msgstr "输入提示和图片路径，用空格分隔。"
-
-#: ../../source/run_locally/ollama.md:95 524f158f532d4d70be625243598656ec
-msgid "Deployment"
-msgstr "部署"
-
-#: ../../source/run_locally/ollama.md:98 a549abc31c7e4be5a6d9422a2c4aa435
-msgid ""
-"If the method above fails, please refer to the following guide, or refer "
-"to the guide from "
-"[ollama](https://github.com/ollama/ollama/blob/main/docs/development.md)."
-msgstr ""
-"如果上述方法失败，请参考以下指南，或参考 [ollama "
-"官方开发文档](https://github.com/ollama/ollama/blob/main/docs/development.md)。"
-
-#: ../../source/run_locally/ollama.md:101 96b87ba20c994c3f9082d8b1056de711
+#: ../../source/run_locally/ollama.md:23 7d6de32f15d14590bf73c93aafba0f5a
 msgid "Environment requirements:"
 msgstr "环境要求"
 
-#: ../../source/run_locally/ollama.md:103 d3990ee6abe845e89039f6f76e99f3a3
+#: ../../source/run_locally/ollama.md:25 77f306d6712a469cb74db08b0c3b6e79
 msgid "[go](https://go.dev/doc/install) version 1.22 or above"
 msgstr "go 版本 1.22 或更高"
 
-#: ../../source/run_locally/ollama.md:104 0385f744dce84439833808c4478dfbaa
+#: ../../source/run_locally/ollama.md:26 f204e6f338e04015b93350a1d07d3eb5
 msgid "cmake version 3.24 or above"
 msgstr "cmake 版本 3.24 或更高"
 
-#: ../../source/run_locally/ollama.md:105 978e519c3e5b4ebea6898b07ba61f1ed
+#: ../../source/run_locally/ollama.md:27 4db46a61f7ad49148981be129e051f91
 msgid ""
 "C/C++ Compiler e.g. Clang on macOS, [TDM-GCC](https://github.com/jmeubank"
 "/tdm-gcc/releases) (Windows amd64) or [llvm-"
@@ -202,29 +100,108 @@ msgstr ""
 "gcc/releases)（Windows amd64），[llvm-mingw](https://github.com/mstorsjo"
 "/llvm-mingw)（Windows arm64），或 Linux 上的 GCC/Clang。"
 
-#: ../../source/run_locally/ollama.md:107 0f18a98eac764e7792d56f51f064d807
-msgid "Download GGUF Model:"
-msgstr "下载 GGUF 模型"
-
-#: ../../source/run_locally/ollama.md:109 ca1f1882bced4cca99b6a361aee90130
-msgid "HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4-gguf"
-msgstr "HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4-gguf"
-
-#: ../../source/run_locally/ollama.md:110 40e34747373e4b21bb495ec2e112e3d9
-msgid "ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-V-4-gguf"
-msgstr "ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-V-4-gguf"
-
-#: ../../source/run_locally/ollama.md:112 646b4bc6fadc4c62919bf01d5af5a533
+#: ../../source/run_locally/ollama.md:29 4c79b9911c714fdabbcac0b8b7868126
 msgid "Clone OpenBMB Ollama Fork:"
 msgstr "克隆 OpenBMB 官方 Ollama 分支"
 
-#: ../../source/run_locally/ollama.md:119 83a67eacdd5e4ba2b641021c1420ea62
-msgid "Configure and build the project:"
-msgstr "配置并编译项目："
-
-#: ../../source/run_locally/ollama.md:126 7624f4b8236b4c489a8fb65ca6da9b80
+#: ../../source/run_locally/ollama.md:37 ca9d55dd5ab149518416ca34d604d961
 msgid "Then build and run Ollama from the root directory of the repository:"
 msgstr "然后在仓库根目录下编译并运行 Ollama："
+
+#: ../../source/run_locally/ollama.md:44 0984631c83ad4a85a25b724767564735
+msgid "Quickstart"
+msgstr "2. 快速开始"
+
+#: ../../source/run_locally/ollama.md:46 731e51964274440fac92bdc937b9da36
+msgid ""
+"Once the Ollama service has been built and launched, the MiniCPM-V/o "
+"series models can be run using the following commands:"
+msgstr "在构建并启动 Ollama 服务后，可通过以下命令运行 MiniCPM-V/o 系列模型:"
+
+#: ../../source/run_locally/ollama.md:48 c3c3483e2d9a4c0b9b1a6387ee328924
+#, fuzzy
+msgid "`./ollama run openbmb/minicpm-v4`"
+msgstr "`ollama run openbmb/minicpm-v4`"
+
+#: ../../source/run_locally/ollama.md:49 ea58b5107d2a4878b0637e1b647e3ed2
+#, fuzzy
+msgid "`./ollama run openbmb/minicpm-o2.6`"
+msgstr "`ollama run openbmb/minicpm-o2.6`"
+
+#: ../../source/run_locally/ollama.md:50 fb3ff6b117904f92955a050189dd056a
+#, fuzzy
+msgid "`./ollama run openbmb/minicpm-v2.6`"
+msgstr "`ollama run openbmb/minicpm-v2.6`"
+
+#: ../../source/run_locally/ollama.md:51 87f13c538e8e4e86b8683b065ab661fb
+#, fuzzy
+msgid "`./ollama run openbmb/minicpm-v2.5`"
+msgstr "`ollama run openbmb/minicpm-v2.5`"
+
+#: ../../source/run_locally/ollama.md:53 b382b96cc0054acc9eb61cea57a184b7
+msgid "Command Line"
+msgstr "命令行"
+
+#: ../../source/run_locally/ollama.md:54 fdb26d8a85f3452da727ac2c8da7cb4e
+msgid "Separate the input prompt and the image path with space."
+msgstr "输入提示和图片路径用空格分隔。"
+
+#: ../../source/run_locally/ollama.md:59 4c650d7cbc3442a1a4061b7e83e289c0
+msgid "API"
+msgstr "API"
+
+#: ../../source/run_locally/ollama.md:78 83c8d8d2f0054494afbcb1d2003549c4
+msgid "Run Ollama with Your GGUF Files"
+msgstr "使用你自己的 GGUF 文件运行 Ollama"
+
+#: ../../source/run_locally/ollama.md:80 78b4c32a9bfe47a59bb9cb9ed8a1aea7
+msgid ""
+"You can alse use Ollama with your own GGUF files of MiniCPM-V 4.0. For "
+"the first step, you need to create a file called `Modelfile`. The content"
+" of the file is shown below:"
+msgstr ""
+"你也可以使用自己 MiniCPM-V 4.0 的 GGUF 文件与 Ollama 配合使用。第一步，你需要创建一个名为 `Modelfile` "
+"的文件，其内容如下所示："
+
+#: ../../source/run_locally/ollama.md:96 86e3d8c53ff04240b6845b935fb232ac
+msgid "Parameter Descriptions:"
+msgstr "参数说明："
+
+#: ../../source/run_locally/ollama.md ba2a43dca44e45d1a5bcc3d0093f987c
+msgid "first from"
+msgstr "第一个 from"
+
+#: ../../source/run_locally/ollama.md 6a0e9ae29d1d4b05bcd733e67af04f28
+msgid "second from"
+msgstr "第二个 from"
+
+#: ../../source/run_locally/ollama.md 55c86b8a207c4bfb9f7c267ffe8ce03f
+msgid "num_ctx"
+msgstr "num_ctx"
+
+#: ../../source/run_locally/ollama.md 13238ea5909045e18d9a971902bd4436
+msgid "Your language GGUF model path"
+msgstr "你的语言 GGUF 模型路径"
+
+#: ../../source/run_locally/ollama.md da24fc901d3f4e9db49dbefb8d1862cb
+msgid "Your vision GGUF model path"
+msgstr "你的视觉 GGUF 模型路径"
+
+#: ../../source/run_locally/ollama.md b39db1e62e1b470fa9396e075b65fa2a
+msgid "Max Model length"
+msgstr "最大模型长度"
+
+#: ../../source/run_locally/ollama.md:102 8ea7a5ed05e546f1a227b8136e10258e
+msgid "Create Ollama Model:"
+msgstr "创建 Ollama 模型"
+
+#: ../../source/run_locally/ollama.md:107 02d48f43bb504060943962d222e16ead
+msgid "Run your Ollama model: In a new terminal window, run the model instance:"
+msgstr "在新的终端窗口中运行模型实例："
+
+#: ../../source/run_locally/ollama.md:113 edea86a413794b12bb5f2442e5848e11
+msgid "Enter the prompt and the image path, separated by a space."
+msgstr "输入提示和图片路径，用空格分隔。"
 
 #~ msgid "Requirements"
 #~ msgstr "环境要求"
@@ -302,4 +279,57 @@ msgstr "然后在仓库根目录下编译并运行 Ollama："
 
 #~ msgid "Input Prompt"
 #~ msgstr "输入提示"
+
+#~ msgid "Deployment"
+#~ msgstr "部署"
+
+#~ msgid ""
+#~ "If the method above fails, please "
+#~ "refer to the following guide, or "
+#~ "refer to the guide from "
+#~ "[ollama](https://github.com/ollama/ollama/blob/main/docs/development.md)."
+#~ msgstr ""
+#~ "如果上述方法失败，请参考以下指南，或参考 [ollama "
+#~ "官方开发文档](https://github.com/ollama/ollama/blob/main/docs/development.md)。"
+
+#~ msgid "Download GGUF Model:"
+#~ msgstr "下载 GGUF 模型"
+
+#~ msgid "HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4-gguf"
+#~ msgstr "HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4-gguf"
+
+#~ msgid "ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-V-4-gguf"
+#~ msgstr "ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-V-4-gguf"
+
+#~ msgid ""
+#~ "Visit the official website "
+#~ "[Ollama](https://ollama.com/) and click download "
+#~ "to install Ollama on your device. "
+#~ "You can also search models on the"
+#~ " website, where you can find the "
+#~ "MiniCPM-V/o series models. Except for "
+#~ "the default one, you can choose to"
+#~ " run MiniCPM-V/o series models by:"
+#~ msgstr ""
+#~ "访问 [Ollama 官网](https://ollama.com/) 并点击下载，在你的设备上安装"
+#~ " Ollama。你可以通过以下命令运行 MiniCPM-V/o 系列模型："
+
+#~ msgid "Configure and build the project:"
+#~ msgstr "配置并编译项目："
+
+#~ msgid ""
+#~ "As updates to the official Ollama "
+#~ "version may occasionally introduce minor "
+#~ "uncertainties, we provide an additional "
+#~ "maintained [branch](https://github.com/tc-"
+#~ "mb/ollama/tree/MIniCPM-V) to support stable "
+#~ "execution of the MiniCPM-V series "
+#~ "models. We sincerely appreciate the "
+#~ "ongoing updates and support from the "
+#~ "Ollama team."
+#~ msgstr ""
+#~ "由于 Ollama "
+#~ "官方版本在更新过程中可能会出现轻微的不确定性，我们提供了一个额外维护的[分支](https://github.com/tc-"
+#~ "mb/ollama/tree/MIniCPM-V)，以支持 MiniCPM-V 系列模型的稳定运行。我们衷心感谢"
+#~ " Ollama 官方团队的持续更新与支持。"
 
