@@ -14,7 +14,7 @@ import logging
 project = 'MiniCPM-V & o Cookbook'
 copyright = '2025, OpenBMB'
 author = 'OpenBMB'
-release = 'V4.0'
+release = 'V4.5'
 
 # -- General configuration ---------------------------------------------------
 
@@ -28,7 +28,7 @@ extensions = [
     "sphinx_design",
     "sphinx_sitemap",
     "sphinxext.opengraph",
-    # "sphinx_copybutton",
+    "sphinx_copybutton",
 ]
 
 myst_enable_extensions = ["colon_fence", "attrs_block", "attrs_inline", "fieldlist"]

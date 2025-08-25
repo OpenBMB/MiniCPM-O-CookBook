@@ -7,10 +7,9 @@ Open WebUI is an extensible web interface designed for Ollama with full OpenAI A
 MiniCPM-V is a series of efficient multimodal models with strong OCR capabilities, supporting high-resolution images, multi-image reasoning, and video understanding.
 
 ## Requirements
-
 - Python 3.11+
 - Docker (recommended) or local Python environment
-- 8GB+ RAM (16GB+ recommended)
+- 18GB+ RAM (24GB+ recommended)
 - CUDA-compatible GPU (for local inference)
 
 ## Quick Setup
@@ -44,7 +43,7 @@ Access at: http://localhost:8080
 curl -fsSL https://ollama.com/install.sh | sh
 
 # Run MiniCPM-V model
-ollama run openbmb/minicpm-v4
+ollama run openbmb/minicpm-v4.5
 ```
 
 Configure in Open WebUI: Settings → Connections → Ollama API → `http://localhost:11434`
@@ -54,7 +53,7 @@ Configure in Open WebUI: Settings → Connections → Ollama API → `http://loc
 ```bash
 # Install and start vLLM service
 pip install vllm==0.10.1
-vllm serve openbmb/MiniCPM-V-4 \
+vllm serve openbmb/MiniCPM-V-4_5 \
   --dtype auto \
   --api-key token-abc123 \
   --trust-remote-code
@@ -73,7 +72,7 @@ cd sglang && pip install -e "python[all]"
 
 # Start service
 python -m sglang.launch_server \
-  --model-path openbmb/MiniCPM-V-4 \
+  --model-path openbmb/MiniCPM-V-4_5 \
   --port 30000 \
   --trust-remote-code
 ```
@@ -118,7 +117,7 @@ response = requests.post(
     'http://localhost:8000/v1/chat/completions',
     headers={'Authorization': 'Bearer token-abc123'},
     json={
-        'model': 'MiniCPM-V-4',
+        'model': 'MiniCPM-V-4_5',
         'messages': [{
             'role': 'user',
             'content': [

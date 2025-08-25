@@ -1,7 +1,7 @@
 # SWIFT
 
 :::{Note}
-**Support:** MiniCPM-V 2.6
+**Support:** MiniCPM-V 4.0 / MiniCPM-V 2.6
 :::
 
 SWIFT is an efficient and scalable framework for fine-tuning large pre-trained models with support for various parameter-efficient methods like LoRA, Adapter, and Prompt Tuning.

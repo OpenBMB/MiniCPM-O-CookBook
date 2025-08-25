@@ -18,8 +18,8 @@ Quickstart
     from PIL import Image
 
     # Load the model
-    model = AutoModel.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_code=True)
-    tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_code=True)
+    model = AutoModel.from_pretrained('openbmb/MiniCPM-V-4_5', trust_remote_code=True)
+    tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4_5', trust_remote_code=True)
 
     # Start inference!
     # See our recipe notebooks for detailed instructions

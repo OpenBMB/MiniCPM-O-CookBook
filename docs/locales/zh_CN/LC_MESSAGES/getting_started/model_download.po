@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-01 14:03+0800\n"
+"POT-Creation-Date: 2025-08-25 19:01+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -21,71 +21,71 @@ msgstr ""
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../source/getting_started/model_download.md:1
-#: 0815521151f643a19538017475db2e6b
+#: a5d615cd77cc4153bb424e52bf0a5b00
 msgid "Model Download"
 msgstr "模型下载"
 
 #: ../../source/getting_started/model_download.md:3
-#: 84303d3f272b4ff48ed043e26ff60c35
+#: 207a6c5ddc68477dad442e9669f50df4
 msgid ""
-"This guide provides instructions for downloading the MiniCPM-V 4.0 model "
+"This guide provides instructions for downloading the MiniCPM-V 4.5 model "
 "from Hugging Face Hub and ModelScope."
-msgstr "本指南提供了从 Hugging Face Hub 和 ModelScope 下载 MiniCPM-V 4.0 模型的说明。"
+msgstr "本指南提供了从 Hugging Face Hub 和 ModelScope 下载 MiniCPM-V 4.5 模型的说明。"
 
 #: ../../source/getting_started/model_download.md:5
-#: f214d301b3364c8caabcd183d370bd78
+#: 6c679be5488140cb9abb5ce771818986
 msgid "Available Model"
 msgstr "可用模型"
 
 #: ../../source/getting_started/model_download.md:7
-#: 395a44b74df647e986bd38357a937de6
+#: ab8ffacb22d34a08bd8f5dd969b602d5
 msgid ""
-"**MiniCPM-V 4.0**: Vision Understanding model for image and video "
-"processing (~8GB)"
-msgstr "**MiniCPM-V 4.0**：用于图像和视频处理的视觉理解模型（约 8GB）"
+"**MiniCPM-V 4.5**: Vision Understanding model for image and video "
+"processing (~18GB)"
+msgstr "**MiniCPM-V 4.5**：用于图像和视频处理的视觉理解模型（约18GB）"
 
 #: ../../source/getting_started/model_download.md:9
-#: dad0b5ad53c34f64992b2006238f223b
+#: c468b4d66bea4a96a37cde123c4b06de
 msgid "Hugging Face Hub Download"
 msgstr "Hugging Face Hub 下载"
 
 #: ../../source/getting_started/model_download.md:11
-#: e9aeea5438704d55871823c7b06ba8db
+#: 667ca1d0cc1a46a7a07bac1b346bf5d3
 msgid ""
-"Hugging Face Hub is the primary platform for accessing MiniCPM-V 4.0, "
+"Hugging Face Hub is the primary platform for accessing MiniCPM-V 4.5, "
 "offering excellent global accessibility and integration with the "
 "transformers library."
-msgstr "Hugging Face Hub 是获取 MiniCPM-V 4.0 的主要平台，具有出色的全球可访问性，并可与 transformers 库集成。"
+msgstr "Hugging Face Hub 是获取 MiniCPM-V 4.5 的主要平台，具有出色的全球可访问性，并可与 transformers 库集成。"
 
 #: ../../source/getting_started/model_download.md:13
 #: ../../source/getting_started/model_download.md:53
-#: 4984116892db4c8f8bd2f2d7b4dbbe5a 84a89a3f85d84cc6982ac9c06b84b0d2
+#: bc5ffbd857a843b48082c771f48240e6 cd8ce711c3b84a71b3abe518e0e39120
 msgid "Prerequisites"
 msgstr "前置条件"
 
 #: ../../source/getting_started/model_download.md:19
-#: 98f0269a6a5e468580800cdfa72ca4a4
+#: 83d3898a483c484da11655227e996275
 msgid "Method 1: Using huggingface-cli (Recommended)"
 msgstr "方法一：使用 huggingface-cli（推荐）"
 
 #: ../../source/getting_started/model_download.md:29
-#: 2a04ef7a9c1a4e2a8d6e6d2eaf69f1b1
+#: 23b7fa16b2174ef7ab3e6f1160f60750
 msgid "Method 2: Using Git LFS"
 msgstr "方法二：使用 Git LFS"
 
 #: ../../source/getting_started/model_download.md:39
 #: ../../source/getting_started/model_download.md:83
-#: 6758464d3ea449e89b1227c7621553e5 9d65c2e6ca744a3a86e39d68359b5112
+#: 38ae66b70a8a411aa5e489ec2d7b2cae 97283d17a55f47cbb05d4b07e1f2fd49
 msgid "Method 3: Direct Integration"
 msgstr "方法三：直接集成"
 
 #: ../../source/getting_started/model_download.md:49
-#: 00c810224d75434587d2f88ade5db9af
+#: 841af8433ea04d5fa3ecd2faaa3902a1
 msgid "ModelScope Download"
 msgstr "ModelScope 下载"
 
 #: ../../source/getting_started/model_download.md:51
-#: 731f966095cc44ff9b21ddc01f7ea2c0
+#: 6d124be3ef2e4e9f8e855bfd3ff305e6
 msgid ""
 "ModelScope provides an alternative platform with optimized access for "
 "users in China and other regions. For detailed information, refer to the "
@@ -96,221 +96,221 @@ msgstr ""
 "下载文档](https://modelscope.cn/docs/models/download)。"
 
 #: ../../source/getting_started/model_download.md:59
-#: c48b43a1d0fd41f3945b75e0d4d2c22f
+#: f5004708203546af8b8d0ac5d732202b
 msgid "Method 1: Using Modelscope SDK"
 msgstr "方法一：使用 Makeodelscope SDK"
 
 #: ../../source/getting_started/model_download.md:73
-#: 2cc04093cb5d432b9b71fb4d16a6df31
+#: c941a50b8da24873b0a41e67763f9462
 msgid "Method 2: Using Git"
 msgstr "方法二：使用 Git"
 
 #: ../../source/getting_started/model_download.md:93
-#: ecb5ff3bffea4aff8d38859f16808ada
+#: 58a9f507fb5a4b81b59665a1ef5e7d82
 msgid "Method 4: Using Modelscope CLI"
 msgstr "方法四：使用 Modelscope CLI"
 
 #: ../../source/getting_started/model_download.md:103
-#: e484cfebaa88489280d6b5276e2ffc25
+#: 07f41bd5c0a1477ba41d1fde55682318
 msgid "Platform Comparison"
 msgstr "平台对比"
 
 #: ../../source/getting_started/model_download.md
-#: 43716239c96d44be957ba57266ade5cc
+#: c5497e320e9443ddb7d87f2cd25c57e3
 msgid "Feature"
 msgstr "特性"
 
 #: ../../source/getting_started/model_download.md
-#: 10996a777a314ae3b87a939a25fdf3b0
+#: 1c29172e1766406788cf2aa47ef4e3b4
 msgid "Hugging Face Hub"
 msgstr "Hugging Face Hub"
 
 #: ../../source/getting_started/model_download.md
-#: 3fb63ad2dd2241beb62613de40c30668
+#: 4039b944bdbb46d8a251151c7b9e5450
 msgid "ModelScope"
 msgstr "ModelScope"
 
 #: ../../source/getting_started/model_download.md
-#: 489d7602d943461ea52568f3f1c422b3
+#: 22752ff43e514a73a3672456ee6b4380
 msgid "**Global Access**"
 msgstr "**全球访问**"
 
 #: ../../source/getting_started/model_download.md
-#: b37d2d78b57343ab87754168ed535b58
+#: 125ba690e67c4840b198f22ce529d9fa
 msgid "Excellent"
 msgstr "优秀"
 
 #: ../../source/getting_started/model_download.md
-#: 47679c03975443338af8550febcea32a
+#: af35979246ec424089f5bf96067398f9
 msgid "Good"
 msgstr "良好"
 
 #: ../../source/getting_started/model_download.md
-#: 9e13124ea23d4795be91ffd089a0b2f4
+#: 55fdbe60ed834f76b0c4fc0383d07696
 msgid "**China Access**"
 msgstr "**中国访问**"
 
 #: ../../source/getting_started/model_download.md
-#: f0434a44fcfd4ba4b57ae572181e0543
+#: 53ee7370b7db45e98bd6523704bd00ad
 msgid "May be slow"
 msgstr "可能较慢"
 
 #: ../../source/getting_started/model_download.md
-#: 50889c02146648d9b1e0aeabac44195f
+#: 120857da2e0c494db3be71c964cacd65
 msgid "Optimized"
 msgstr "已优化"
 
 #: ../../source/getting_started/model_download.md
-#: 91ec6ae5ca3d4e55864e571882f8b226
+#: 9263004963824b07b51fb7c900f8237d
 msgid "**Integration**"
 msgstr "**集成**"
 
 #: ../../source/getting_started/model_download.md
-#: d782d4dad0a84d089a97c049d6a0afcf
+#: a9b0256acfac42eb8cab4cb69b2c629c
 msgid "transformers"
 msgstr "transformers"
 
 #: ../../source/getting_started/model_download.md
-#: f4e965e0e1d1437b84714ff0f0ee82a3
+#: 4eedcbc04f594745ad9d1ec9847bab97
 msgid "modelscope + transformers"
 msgstr "modelscope + transformers"
 
 #: ../../source/getting_started/model_download.md
-#: 3de163b781d04dd7b5d1270fd47297f1
+#: c63931e554c148bf8e7f7cae3cbd8e9c
 msgid "**Documentation**"
 msgstr "**文档**"
 
 #: ../../source/getting_started/model_download.md
-#: ab5895f2609a465287c8cb7d7b20f015
+#: 744a42121e5749738dc76a96f96bab24
 msgid "Extensive"
 msgstr "丰富"
 
 #: ../../source/getting_started/model_download.md
-#: 908bdce2be0c4ce59ed1d1a6944838c6
+#: b52939fe0e12418cb71ee12a5a6ac681
 msgid "[Official Docs](https://modelscope.cn/docs/models/download)"
 msgstr "[官方文档](https://modelscope.cn/docs/models/download)"
 
 #: ../../source/getting_started/model_download.md
-#: 562a59b37bdc4f9583bc5c9bcba61e14
+#: b090180acd61414e860cfd84d710bb7a
 msgid "**Download Speed**"
 msgstr "**下载速度**"
 
 #: ../../source/getting_started/model_download.md
-#: 9ba663bdd2f84759816446c8d2dd41b4
+#: 099f753c545a4068a714eafd7164e66b
 msgid "Varies by region"
 msgstr "因地区而异"
 
 #: ../../source/getting_started/model_download.md
-#: 5f5a0a0ad738488a9d4f6b14bb22e86b
+#: b93655222c9c4c298eb2dec4f5d68287
 msgid "Fast in China"
 msgstr "中国地区较快"
 
 #: ../../source/getting_started/model_download.md:113
-#: 1cc988b162ee4845906e34723413b73b
+#: 94867f1857c7402d8c04850a8bda9158
 msgid "Storage Requirements"
 msgstr "存储需求"
 
 #: ../../source/getting_started/model_download.md:115
-#: 0d53d7568e6b45c0a5373c8070143206
+#: f45319eec32a4409a4dd574ec0337cbe
 msgid "**Disk Space**: Approximately 8GB of storage"
 msgstr "**磁盘空间**：约 8GB 存储空间"
 
 #: ../../source/getting_started/model_download.md:116
-#: e595c634854742cbbf5e0a0119373a57
+#: 16add0eee6ee433ea6a5fcefefba2732
 msgid "**Memory**: At least 8GB RAM recommended for inference"
 msgstr "**内存**：推理建议至少 8GB RAM"
 
 #: ../../source/getting_started/model_download.md:117
-#: b251f243418845d189e441171d977f0b
+#: 713633facc174225be874ab0f0013d67
 msgid "**GPU Memory**: 6-18GB VRAM depending on quantization and batch size"
 msgstr "**显存**：根据量化和批量大小，需 6-18GB 显存"
 
 #: ../../source/getting_started/model_download.md:119
-#: 34306b1c1ce8454483f6d150059dc71c
+#: b61cb43b7ecd488e82ab48d4d7501dc9
 msgid "Verification"
 msgstr "验证"
 
 #: ../../source/getting_started/model_download.md:121
-#: 6ac40a8140214223bb7f2d7b03442fca
+#: a505578f96284a3ea158368ee61bc40d
 msgid "After downloading, verify your model installation:"
 msgstr "下载完成后，请验证您的模型安装："
 
 #: ../../source/getting_started/model_download.md:136
-#: 11e852bfe53f43698d8fad1a478f2b8d
+#: b7a5e575bd614f88b1ef4a642ec2932c
 msgid "Troubleshooting"
 msgstr "故障排查"
 
 #: ../../source/getting_started/model_download.md:138
-#: 70049bf195f84afca12a355106e0c334
+#: 7bc26748605b4394a40c81f47ae4ac68
 msgid "Hugging Face Issues"
 msgstr "Hugging Face 问题"
 
 #: ../../source/getting_started/model_download.md:139
-#: 937d065edc114e93939d9a086218b0f7
+#: 93b1617836ef405fbf23b8609e0a8814
 msgid "**Slow download**: Try using a VPN or mirror sites"
 msgstr "**下载慢**：尝试使用 VPN 或镜像站点"
 
 #: ../../source/getting_started/model_download.md:140
-#: 2d6eec43c4cb47f1af2e1c69bfc544a2
+#: 52be1aa151874213b9983a7a0a88295f
 msgid "**Download interruption**: Use `--resume-download` flag"
 msgstr "**下载中断**：使用 `--resume-download` 参数"
 
 #: ../../source/getting_started/model_download.md:141
-#: 54b4f48576944b12a7876e6bffd6f53b
+#: 90bdeb1518c74efbbe9c8fa98a62a4f4
 msgid "**Authentication**: Login with `huggingface-cli login` if needed"
 msgstr "**认证问题**：如有需要，请使用 `huggingface-cli login` 登录"
 
 #: ../../source/getting_started/model_download.md:143
-#: 9c3f62c7179d493c9a2c5885a62b755d
+#: 11a7fcff57184a71940037d55b058cf4
 msgid "ModelScope Issues"
 msgstr "ModelScope 问题"
 
 #: ../../source/getting_started/model_download.md:144
-#: 0226d1238ca24296a3f9a9e3d77f9aa5
+#: 90ba603062c24296a819fc457394c48c
 msgid ""
 "**Network errors**: Check "
 "[ModelScope](https://modelscope.cn/docs/models/download) status"
 msgstr "**网络错误**：请检查 [ModelScope](https://modelscope.cn/docs/models/download) 状态"
 
 #: ../../source/getting_started/model_download.md:145
-#: 1848bc791e0c469ead0fd802e06532f8
+#: a31c51ccfa7f46de9810728c03533496
 msgid "**Permission issues**: Ensure proper access credentials"
 msgstr "**权限问题**：请确保拥有正确的访问凭证"
 
 #: ../../source/getting_started/model_download.md:146
-#: 0d74dc213cf644b991a8f1ea13446517
+#: 23a94a33e8cf4a0dbc0f3ac039e33e89
 msgid "**Installation problems**: Try `pip install modelscope --upgrade`"
 msgstr "**安装问题**：尝试执行 `pip install modelscope --upgrade`"
 
 #: ../../source/getting_started/model_download.md:148
-#: 1afe9ee31fc44c4395974a6780de9cb0
+#: d99fee7e66e3418ab9496dd1c65e3597
 msgid "Next Steps"
 msgstr "后续步骤"
 
 #: ../../source/getting_started/model_download.md:150
-#: 3cbf9e8d761d4098b4e21a57635cdb26
+#: 545bac41f63949d3947749f4d7df2c13
 msgid "After successfully downloading the model:"
 msgstr "成功下载模型后："
 
 #: ../../source/getting_started/model_download.md:152
-#: 7d22d980e033442b86b54eac974b6a68
+#: 043e7c943ea5484eb026936ee5bf67dc
 msgid ""
 "**Setup Environment**: Install required dependencies from "
 "`requirements.txt`"
 msgstr "**环境配置**：请根据 `requirements.txt` 安装所需依赖"
 
 #: ../../source/getting_started/model_download.md:153
-#: 651ec2a84a6849a4a258db5fd765806b
+#: d393346ab9b64419ad817b17045d8fde
 msgid "**Run Examples**: Try the notebooks in the `inference/` directory"
 msgstr "**运行示例**：尝试运行 `inference/` 目录下的 notebook 示例"
 
 #: ../../source/getting_started/model_download.md:154
-#: e7253f20d0d04c12b0286c7e0b24297e
+#: b9f4ae86f98b423b820719f5b507819d
 msgid "**Customize**: Explore fine-tuning options in the `finetune/` directory"
 msgstr "**自定义**：探索 `finetune/` 目录下的微调选项"
 
 #: ../../source/getting_started/model_download.md:156
-#: bee82017ae1f48c982dc30da96f96235
+#: 938a8235a51345f08b55c95b8dd04cc0
 msgid "For more detailed usage instructions, see our Quick Start Guide"
 msgstr "更多详细使用说明，请参阅我们的快速开始文档"
 

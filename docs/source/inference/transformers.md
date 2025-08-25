@@ -15,8 +15,8 @@ from transformers import AutoModel, AutoTokenizer
 from PIL import Image
 
 # Load the model
-model = AutoModel.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_code=True)
-tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_code=True)
+model = AutoModel.from_pretrained('openbmb/MiniCPM-V-4_5', trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4_5', trust_remote_code=True)
 
 # Upload your image
 image = Image.open('xx.jpg').convert('RGB')

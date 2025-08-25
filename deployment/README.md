@@ -19,13 +19,13 @@ Multiple deployment solutions for efficient MiniCPM-o model deployment across di
 - High-throughput inference engine with PagedAttention memory management
 - Dynamic batching support, OpenAI-compatible API
 - Ideal for production API services and large-scale batch inference
-- Recommended hardware: GPU with more than 8GB of VRAM
+- Recommended hardware: GPU with more than 18GB of VRAM
 
 ### SGLang (Structured Generation Language)
 - Structured generation optimization with efficient KV cache management
 - Complex control flow and function calling optimization support
 - Suitable for complex reasoning chains and structured text generation
-- Recommended hardware: GPU with more than 8GB of VRAM
+- Recommended hardware: GPU with more than 18GB of VRAM
 
 ### Ollama
 - One-click model management with simple command-line interface

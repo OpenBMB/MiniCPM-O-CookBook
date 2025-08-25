@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-20 20:07+0800\n"
+"POT-Creation-Date: 2025-08-25 19:05+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -20,31 +20,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/finetune/llamafactory.md:1 59492bc7b5ea4fa7b0ff4594bbbe5bb3
+#: ../../source/finetune/llamafactory.md:1 6f0c0cdeb8af467b9ba65891e00ceeda
 msgid "Llama Factory"
 msgstr "Llama Factory"
 
-#: ../../source/finetune/llamafactory.md:4 aa5e918084fb45af9fde899139055e7e
-msgid "**Support:** MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5"
-msgstr ""
+#: ../../source/finetune/llamafactory.md:4 aafb0845c4a5452c9d442fc386910827
+msgid "**Support:** MiniCPM-V 4.5 / MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5"
+msgstr "**支持:** MiniCPM-V 4.5 / MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5"
 
-#: ../../source/finetune/llamafactory.md:7 3d00b7ad90b8447297564f00aaa47589
+#: ../../source/finetune/llamafactory.md:7 305c822368694b06a9499c588b34a029
 msgid "Install LlamaFactory"
 msgstr "安装 Llama Factory"
 
-#: ../../source/finetune/llamafactory.md:9 b324584764504093b00f4bbb995a8568
+#: ../../source/finetune/llamafactory.md:9 fd0c9874f0e2475781d3901ce3d1e7a1
 msgid "Clone the LlamaFactory GitHub repository:"
 msgstr "从克隆Llama Factory Github仓库代码"
 
-#: ../../source/finetune/llamafactory.md:15 0a8ca40b29db49aeb98c8613c04de5db
+#: ../../source/finetune/llamafactory.md:15 0c7edcebde414e119e8862019b4e28a7
 msgid "Install LlamaFactory dependencies:"
 msgstr "安装依赖"
 
-#: ../../source/finetune/llamafactory.md:22 27fd356af58345b5bff59420a09780fd
+#: ../../source/finetune/llamafactory.md:22 d717bc3865564aa08f4322908ad5caa0
 msgid "Prepare the Dataset"
 msgstr "准备数据集"
 
-#: ../../source/finetune/llamafactory.md:24 e7dbc314c89c4db1ad3150bf6d0af251
+#: ../../source/finetune/llamafactory.md:24 fce1bbbf582f4f84994f1309e15cb975
 msgid ""
 "Refer to the **mllm_demo.json** dataset under [LLaMA-"
 "Factory/data](https://github.com/hiyouga/LLaMA-"
@@ -55,7 +55,7 @@ msgstr ""
 "Factory/blob/main/data/dataset_info.json) 下的 **mllm_demo.json** "
 "数据集，按照相同格式构建你的数据。结构如下："
 
-#: ../../source/finetune/llamafactory.md:26 b38153ad610e4b24b925f0939f705d06
+#: ../../source/finetune/llamafactory.md:26 cfa34d32c98c4341bcca23f5dc12e109
 msgid ""
 "To use images in multi-turn conversations, add the `<image>` tag in the "
 "user's content for each turn, and add the corresponding image paths in "
@@ -65,91 +65,94 @@ msgstr ""
 "如需在多轮对话中使用图片，请在每轮用户内容中添加 `<image>` 标签，并在 `images` 字段中添加对应的图片路径。`<image>` "
 "标签的数量应与 `images` 字段中的值数量一致。"
 
-#: ../../source/finetune/llamafactory.md:80 099312f82d4f467280e556a4a3671d8e
+#: ../../source/finetune/llamafactory.md:80 ed91c5c694be4e7c8409610717b630b2
 msgid ""
 "Name your constructed JSON file as `image_caption.json` and place it "
 "under `LLaMA-Factory/data/`."
 msgstr "将你构建的 JSON 文件命名为 `image_caption.json`，并放置在 `LLaMA-Factory/data/` 目录下。"
 
-#: ../../source/finetune/llamafactory.md:82 09de8c7cb91d4b5792b40a7a2225b929
+#: ../../source/finetune/llamafactory.md:82 4756693fa5c24472a34cf46f4389bf5e
 msgid "Locate `LLaMA-Factory/data/dataset_info.json`."
 msgstr "定位到 `LLaMA-Factory/data/dataset_info.json` 文件。"
 
-#: ../../source/finetune/llamafactory.md:84 d9b4d65f90dc429bad44958bae901dd1
+#: ../../source/finetune/llamafactory.md:84 688d5b24ed144fbaba8e53c6636f5bf4
 msgid "Search for `mllm_demo` and find the following field:"
 msgstr "查找 `mllm_demo` 字段，并找到如下内容："
 
-#: ../../source/finetune/llamafactory.md:96 c46af8e4fb80407a9b2fa560f54c631e
+#: ../../source/finetune/llamafactory.md:96 a24af099eb8044d69e26f91bf6fb0ef1
 msgid ""
 "Copy this field, modify the highlighted parts as per your dataset, and "
 "add it to `LLaMA-Factory/data/dataset_info.json`."
 msgstr "复制该字段，根据你的数据集修改高亮部分，并添加到 `LLaMA-Factory/data/dataset_info.json` 文件中。"
 
-#: ../../source/finetune/llamafactory.md:98 bb05c63c4a294addb4603fd838594131
+#: ../../source/finetune/llamafactory.md:98 bc63b11cb4f646f9a9cb9a35d4f7b742
 msgid ""
 "Change the **key** `mllm_demo` to your custom dataset name, e.g., "
 "`cpmv_img`."
 msgstr "将 **键值** `mllm_demo` 修改为你的自定义数据集名称，例如 `cpmv_img`。"
 
-#: ../../source/finetune/llamafactory.md:100 f140638046c64899aae3ca4866d3b058
+#: ../../source/finetune/llamafactory.md:100 d0a3485c96a34f81a1b2342f6bfa224b
 msgid ""
 "Change the `file_name` value to your constructed dataset name, e.g., "
 "`image_caption.json`."
 msgstr "将 `file_name` 的值修改为你构建的数据集名称，例如 `image_caption.json`。"
 
-#: ../../source/finetune/llamafactory.md:102 76d7c9be18254cf4b4aef5aeee3c2d3e
+#: ../../source/finetune/llamafactory.md:102 de1d9d9884ac4fe7929a26989b221993
 msgid "Example:"
 msgstr "示例："
 
-#: ../../source/finetune/llamafactory.md:114 c9325a4542004796bc052f5e456ba56f
+#: ../../source/finetune/llamafactory.md:114 2c0a44cc6ab748e98791495f5b6dc0f3
 msgid "Create Training Configuration YAML Files"
 msgstr "创建训练配置 YAML 文件"
 
-#: ../../source/finetune/llamafactory.md:116 5cb498d82c4c4fb29c768aa3e513b43a
+#: ../../source/finetune/llamafactory.md:116 2cb03dfd3308407eb533fca4bd07e9c8
 msgid "LoRA Fine-tuning"
 msgstr "LoRA 微调"
 
-#: ../../source/finetune/llamafactory.md:118 a84b4c2d7a2a4cb4b5f1d09731c3f72d
+#: ../../source/finetune/llamafactory.md:118 73726bb83344432ebd952c2707f79d16
 msgid ""
-"Create a configuration file named `minicpmv_4_lora_sft.yaml` and place it"
-" in `LLaMA-Factory/minicpm_config`."
+"Create a configuration file named `minicpmv4_5_lora_sft.yaml` and place "
+"it in `LLaMA-Factory/minicpm_config`."
 msgstr ""
-"创建名为 `minicpmv_4_lora_sft.yaml` 的配置文件，并放置在 `LLaMA-Factory/minicpm_config`"
+"创建名为 `minicpmv4_5_lora_sft.yaml` 的配置文件，并放置在 `LLaMA-Factory/minicpm_config`"
 " 目录下。"
 
-#: ../../source/finetune/llamafactory.md:162 a7ff77e402bb4b5d86e555edf18cd2c3
+#: ../../source/finetune/llamafactory.md:162 43c373e0c0b94031a4bac934786d8a73
 msgid "Full Fine-tuning"
 msgstr "全量微调"
 
-#: ../../source/finetune/llamafactory.md:164 264848f29aa94fef9e9b39f2f2c740fc
+#: ../../source/finetune/llamafactory.md:164 087b2301ca1f4670834a1aba63431cd9
 msgid ""
-"Create a full training configuration file `minicpmv_4_full_sft.yaml` and "
-"place it in `LLaMA-Factory/minicpm_config`:"
+"Create a full training configuration file `minicpmv4_5_full_sft.yaml` and"
+" place it in `LLaMA-Factory/minicpm_config`:"
 msgstr ""
-"创建全量训练配置文件 `minicpmv_4_full_sft.yaml`，并放置在 `LLaMA-Factory/minicpm_config`"
+"创建全量训练配置文件 `minicpmv4_5_full_sft.yaml`，并放置在 `LLaMA-Factory/minicpm_config`"
 " 目录下："
 
-#: ../../source/finetune/llamafactory.md:211 bd3030f870914f3ebbed3a34fdbe76a5
+#: ../../source/finetune/llamafactory.md:211 8b7d3b3c9b7b4d628d4eacf11dd06ac5
 msgid "Model Training"
 msgstr "模型训练"
 
-#: ../../source/finetune/llamafactory.md:213 134b6a659ad7431ea40929859324304e
+#: ../../source/finetune/llamafactory.md:213 17b28fa98d14496999c21c6c04d213a6
 msgid "Full Training"
 msgstr "全量训练"
 
-#: ../../source/finetune/llamafactory.md:220 21507a9479af4ba3afa28b7c0bb268ff
+#: ../../source/finetune/llamafactory.md:220 61b03db8159648b6a9f953718784c768
 msgid "LoRA Training"
 msgstr "LoRA 训练"
 
-#: ../../source/finetune/llamafactory.md:222 4506c285c4f74b77bea5c3557a113009
+#: ../../source/finetune/llamafactory.md:222 5ad9161a2bd44b96ad9315d6cc692d66
 msgid "Start training:"
 msgstr "开始训练："
 
-#: ../../source/finetune/llamafactory.md:228 61477f923a9640e2b6f6641c9e3c5a90
+#: ../../source/finetune/llamafactory.md:228 9d83fd6dbaea4f57b6ebe7dac1b408cb
 msgid "Create a merge script `merge.yaml`:"
 msgstr "创建合并脚本 `merge.yaml`："
 
-#: ../../source/finetune/llamafactory.md:245 9ab411c6ad4d4ac592f31e2419c03749
+#: ../../source/finetune/llamafactory.md:245 2447273b69564bf4a7321ce5b4bb6a27
 msgid "Merge the model:"
 msgstr "合并模型："
+
+#~ msgid "**Support:** MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5"
+#~ msgstr "**支持:** MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5"
 

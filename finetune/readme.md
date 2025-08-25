@@ -1,7 +1,7 @@
 # MiniCPM-V Finetuning
 
 
-We offer the official scripts for easy finetuning of the pretrained **MiniCPM-V4**, **MiniCPM-o-2_6**, **MiniCPM-V-2_6**, **MiniCPM-Llama3-V 2.5** and **MiniCPM-V 2.0** on downstream tasks. Our finetune scripts use transformers Trainer and DeepSpeed by default.
+We offer the official scripts for easy finetuning of the pretrained **MiniCPM-V-4_5**, **MiniCPM-V4**, **MiniCPM-o-2_6**, **MiniCPM-V-2_6**, **MiniCPM-Llama3-V 2.5** and **MiniCPM-V 2.0** on downstream tasks. Our finetune scripts use transformers Trainer and DeepSpeed by default.
 
 ### Data preparation
 

@@ -111,11 +111,11 @@ pip install -e ".[torch,metrics,deepspeed,minicpm_v]
 
 ### Lora微调
 
-创建minicpmv_4_lora_sft.yaml的配置文件，并且放入LLaMA-Factory/minicpm_config。
+创建minicpmv4_5_lora_sft.yaml的配置文件，并且放入LLaMA-Factory/minicpm_config。
 
 ```YAML
 ### model
-model_name_or_path: openbmb/MiniCPM-V4 # 可以是MiniCPMV或者MiniCPMO的本地模型
+model_name_or_path: openbmb/MiniCPM-V-4_5 # 可以是MiniCPM-V或者MiniCPM-o的本地模型
 trust_remote_code: true
 
 ### method
@@ -133,7 +133,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: saves/minicpmv_4/lora/sft
+output_dir: saves/minicpmv4_5/lora/sft
 logging_steps: 1
 save_steps: 100 #多少步报错一次
 plot_loss: true # 是否绘制损失函数
@@ -157,11 +157,11 @@ do_eval: false
 
 ### 全量微调
 
-创建全量训练配置minicpmv_4_full_sft.yaml文件，并且放入LLaMA-Factory/minicpm_config：
+创建全量训练配置minicpmv4_5_full_sft.yaml文件，并且放入LLaMA-Factory/minicpm_config：
 
 ```YAML
 ### model
-model_name_or_path: openbmb/MiniCPM-V4 # MiniCPM-o-2_6 MiniCPM-V-2_6
+model_name_or_path: openbmb/MiniCPM-V-4_5 # 可以是MiniCPM-V或者MiniCPM-o的本地模型
 trust_remote_code: true
 freeze_vision_tower: true #冻结图像模块
 print_param_status: true
@@ -182,7 +182,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: saves/minicpmv_4/full/sft
+output_dir: saves/minicpmv4_5/full/sft
 logging_steps: 1
 save_steps: 100
 plot_loss: true
@@ -210,7 +210,7 @@ do_eval: false
 
 ```Bash
 cd LLaMA-Factory
-llamafactory-cli train configs/minicpmv_4_full_sft.yaml
+llamafactory-cli train configs/minicpmv4_5_full_sft.yaml
 ```
 
 ### Lora训练
@@ -218,21 +218,21 @@ llamafactory-cli train configs/minicpmv_4_full_sft.yaml
 1. 开始训练
 
 ```Bash
-llamafactory-cli train configs/minicpmv_4_lora_sft.yaml
+llamafactory-cli train configs/minicpmv4_5_lora_sft.yaml
 ```
 
 2. 创建合并脚本merge.yaml
 
 ```Bash
 ### model
-model_name_or_path: openbmb/MiniCPM-V4 # 这里可以填入原始模型地址，可以是本地模型
-adapter_name_or_path: saves/minicpm_v4/lora/sft # 这里填入保存的lora模型地址
+model_name_or_path: openbmb/MiniCPM-V-4_5 # 这里可以填入原始模型地址，可以是本地模型
+adapter_name_or_path: saves/minicpm_v4_5/lora/sft # 这里填入保存的lora模型地址
 template: minicpm_v
 finetuning_type: lora
 trust_remote_code: true
 
 ### export
-export_dir: models/minicpmv_4_lora_sft
+export_dir: models/minicpmv4_5_lora_sft
 export_size: 2
 export_device: cpu
 export_legacy_format: false
@@ -241,5 +241,5 @@ export_legacy_format: false
 3. 合并模型
 
 ```Bash
-llamafactory-cli export configs/minicpmv_4_lora_export.yaml
+llamafactory-cli export configs/minicpmv4_5_lora_export.yaml
 ```

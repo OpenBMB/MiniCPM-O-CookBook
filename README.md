@@ -21,8 +21,8 @@ All features are displayed at a glance, making it easy for you to quickly find e
 
 We support a wide range of users, from individuals to enterprises and researchers.
 
-* **Individuals**: Enjoy effortless inference using [Ollama](./deployment/ollama/minicpm-v4_ollama.md) and [Llama.cpp](./deployment/llama.cpp/minicpm-v4_llamacpp.md) with minimal setup.
-* **Enterprises**: Achieve high-throughput, scalable performance with [vLLM](./deployment/vllm/minicpm-v4_vllm.md) and [SGLang](./deployment/sglang/MiniCPM-v4_sglang.md).
+* **Individuals**: Enjoy effortless inference using [Ollama](./deployment/ollama/minicpm-v4_5_ollama.md) and [Llama.cpp](./deployment/llama.cpp/minicpm-v4_5_llamacpp.md) with minimal setup.
+* **Enterprises**: Achieve high-throughput, scalable performance with [vLLM](./deployment/vllm/minicpm-v4_5_vllm.md) and [SGLang](./deployment/sglang/MiniCPM-v4_5_sglang.md).
 * **Researchers**: Leverage advanced frameworks including [Transformers](./finetune/finetune_full.md) , [LLaMA-Factory](./finetune/finetune_llamafactory.md), [SWIFT](./finetune/swift.md), and [Align-anything](./finetune/align_anything.md) to enable flexible model development and cutting-edge experimentation.
 
 
@@ -31,7 +31,7 @@ We support a wide range of users, from individuals to enterprises and researcher
 Our ecosystem delivers optimal solution for a variety of hardware environments and deployment demands.
 
 * **Web demo**: Launch interactive multimodal AI web demo with [FastAPI](./demo/README.md).
-* **Quantized deployment**: Maximize efficiency and minimize resource consumption using [GGUF](./quantization/gguf/minicpm-v4_gguf_quantize.md), [BNB](./quantization/bnb/minicpm-v4_bnb_quantize.md), and [AWQ](./quantization/awq/minicpm-v4_awq_quantize.md).
+* **Quantized deployment**: Maximize efficiency and minimize resource consumption using [GGUF](./quantization/gguf/minicpm-v4_5_gguf_quantize.md), [BNB](./quantization/bnb/minicpm-v4_5_bnb_quantize.md), and [AWQ](./quantization/awq/minicpm-v4_awq_quantize.md).
 * **Edge devices**: Bring powerful AI experiences to [iPhone and iPad](./demo/ios_demo/ios.md), supporting offline and privacy-sensitive applications.
 
 ## ⭐️ Live Demonstrations
@@ -60,11 +60,11 @@ Explore real-world examples of MiniCPM-V deployed on edge devices using our cura
 | Recipe | Description | 
 |---------|:-------------|
 | **Vision Capabilities** | |
-| 🖼️ [Single-image QA](./inference/single_image.md) | Question answering on a single image |
-| 🧩 [Multi-image QA](./inference/multi_images.md) | Question answering with multiple images |
-| 🎬 [Video QA](./inference/video_understanding.md) | Video-based question answering |
-| 📄 [Document Parser](./inference/pdf_parse.md) | Parse and extract content from PDFs and webpages |
-| 📝 [Text Recognition](./inference/ocr.md) | Reliable OCR for photos and screenshots |
+| 🖼️ [Single-image QA](./inference/minicpm-v4_5_single_image.md) | Question answering on a single image |
+| 🧩 [Multi-image QA](./inference/minicpm-v4_5_multi_images.md) | Question answering with multiple images |
+| 🎬 [Video QA](./inference/minicpm-v4_5_video_understanding.md) | Video-based question answering |
+| 📄 [Document Parser](./inference/minicpm-v4_5_pdf_parse.md) | Parse and extract content from PDFs and webpages |
+| 📝 [Text Recognition](./inference/minicpm-v4_5_ocr.md) | Reliable OCR for photos and screenshots |
 | **Audio Capabilities** | |
 | 🎤 [Speech-to-Text](./inference/speech2text.md) | Multilingual speech recognition |
 | 🗣️ [Text-to-Speech](./inference/text2speech.md) | Instruction-following speech synthesis |
@@ -97,10 +97,10 @@ We provide training methods serving different needs as following:
 
 | Method                                | Description                                  |
 |-------------------------------------------|----------------------------------------------|
-| [vLLM](./deployment/vllm/minicpm-v4_vllm.md)| High-throughput GPU inference                |
-| [SGLang](./deployment/sglang/MiniCPM-v4_sglang.md)| High-throughput GPU inference                |
-| [Llama.cpp](./deployment/llama.cpp/minicpm-v4_llamacpp.md)| Fast CPU inference on PC, iPhone and iPad                        |
-| [Ollama](./deployment/ollama/minicpm-v4_ollama.md)| User-friendly setup  |
+| [vLLM](./deployment/vllm/minicpm-v4_5_vllm.md)| High-throughput GPU inference                |
+| [SGLang](./deployment/sglang/MiniCPM-v4_5_sglang.md)| High-throughput GPU inference                |
+| [Llama.cpp](./deployment/llama.cpp/minicpm-v4_5_llamacpp.md)| Fast CPU inference on PC, iPhone and iPad                        |
+| [Ollama](./deployment/ollama/minicpm-v4_5_ollama.md)| User-friendly setup  |
 | [OpenWebUI](./demo/web_demo/openwebui) | Interactive Web demo with Open WebUI |
 | [Gradio](./demo/web_demo/gradio) | Interactive Web demo with Gradio |
 | [FastAPI](./demo/README.md) | Interactive Omni Streaming demo with FastAPI |
@@ -111,8 +111,8 @@ We provide training methods serving different needs as following:
 
 | Format                                 | Key Feature                        |
 |-----------------------------------------|------------------------------------|
-| [GGUF](./quantization/gguf/minicpm-v4_gguf_quantize.md)| Simplest and most portable format  |
-| [BNB](./quantization/bnb/minicpm-v4_bnb_quantize.md)   | Simple and easy-to-use quantization method |
+| [GGUF](./quantization/gguf/minicpm-v4_5_gguf_quantize.md)| Simplest and most portable format  |
+| [BNB](./quantization/bnb/minicpm-v4_5_bnb_quantize.md)   | Simple and easy-to-use quantization method |
 | [AWQ](./quantization/awq/minicpm-v4_awq_quantize.md)   | High-performance quantization for efficient inference |
 
 ## Awesome Works using MiniCPM-V & o

@@ -1,14 +1,14 @@
 # Model Download
 
-This guide provides instructions for downloading the MiniCPM-V 4.0 model from Hugging Face Hub and ModelScope.
+This guide provides instructions for downloading the MiniCPM-V 4.5 model from Hugging Face Hub and ModelScope.
 
 ## Available Model
 
-**MiniCPM-V 4.0**: Vision Understanding model for image and video processing (~8GB)
+**MiniCPM-V 4.5**: Vision Understanding model for image and video processing (~18GB)
 
 ## Hugging Face Hub Download
 
-Hugging Face Hub is the primary platform for accessing MiniCPM-V 4.0, offering excellent global accessibility and integration with the transformers library.
+Hugging Face Hub is the primary platform for accessing MiniCPM-V 4.5, offering excellent global accessibility and integration with the transformers library.
 
 ### Prerequisites
 
@@ -20,10 +20,10 @@ pip install huggingface-hub
 
 ```bash
 # Download to specific directory
-huggingface-cli download openbmb/MiniCPM-V-4 --local-dir ./MiniCPM-V-4
+huggingface-cli download openbmb/MiniCPM-V-4_5 --local-dir ./MiniCPM-V-4_5
 
 # Download with resume capability
-huggingface-cli download openbmb/MiniCPM-V-4 --local-dir ./MiniCPM-V-4 --resume-download
+huggingface-cli download openbmb/MiniCPM-V-4_5 --local-dir ./MiniCPM-V-4_5 --resume-download
 ```
 
 ### Method 2: Using Git LFS
@@ -33,7 +33,7 @@ huggingface-cli download openbmb/MiniCPM-V-4 --local-dir ./MiniCPM-V-4 --resume-
 git lfs install
 
 # Clone the repository
-git clone https://huggingface.co/openbmb/MiniCPM-V-4
+git clone https://huggingface.co/openbmb/MiniCPM-V-4_5
 ```
 
 ### Method 3: Direct Integration
@@ -42,8 +42,8 @@ git clone https://huggingface.co/openbmb/MiniCPM-V-4
 from transformers import AutoModel, AutoTokenizer
 
 # This will automatically download and cache the model
-model = AutoModel.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_code=True)
-tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_code=True)
+model = AutoModel.from_pretrained('openbmb/MiniCPM-V-4_5', trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4_5', trust_remote_code=True)
 ```
 
 ## ModelScope Download
@@ -65,7 +65,7 @@ pip install modelscope[cv] -f https://modelscope.oss-cn-beijing.aliyuncs.com/rel
 # Download using Python
 python -c "
 from modelscope import snapshot_download
-model_dir = snapshot_download('openbmb/MiniCPM-V-4', cache_dir='./models')
+model_dir = snapshot_download('openbmb/MiniCPM-V-4_5', cache_dir='./models')
 print(f'Model downloaded to: {model_dir}')
 "
 ```
@@ -74,10 +74,10 @@ print(f'Model downloaded to: {model_dir}')
 
 ```bash
 # Clone from ModelScope
-git clone https://www.modelscope.cn/openbmb/MiniCPM-V-4.git
+git clone https://www.modelscope.cn/openbmb/MiniCPM-V-4_5.git
 
 # Or with specific depth for faster clone
-git clone --depth 1 https://www.modelscope.cn/openbmb/MiniCPM-V-4.git
+git clone --depth 1 https://www.modelscope.cn/openbmb/MiniCPM-V-4_5.git
 ```
 
 ### Method 3: Direct Integration
@@ -86,8 +86,8 @@ git clone --depth 1 https://www.modelscope.cn/openbmb/MiniCPM-V-4.git
 from modelscope import AutoModel, AutoTokenizer
 
 # Load model directly from ModelScope
-model = AutoModel.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_code=True)
-tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_code=True)
+model = AutoModel.from_pretrained('openbmb/MiniCPM-V-4_5', trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4_5', trust_remote_code=True)
 ```
 
 ### Method 4: Using Modelscope CLI
@@ -97,7 +97,7 @@ tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4', trust_remote_co
 pip install modelscope
 
 # Download using CLI
-modelscope download --model openbmb/MiniCPM-V-4 --local_dir ./MiniCPM-V-4
+modelscope download --model openbmb/MiniCPM-V-4_5 --local_dir ./MiniCPM-V-4_5
 ```
 
 ## Platform Comparison
@@ -125,7 +125,7 @@ import torch
 from transformers import AutoModel, AutoTokenizer
 
 # Load the model (adjust path as needed)
-model_path = "./MiniCPM-V-4"  # or your download path
+model_path = "./MiniCPM-V-4_5"  # or your download path
 model = AutoModel.from_pretrained(model_path, trust_remote_code=True)
 tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
 

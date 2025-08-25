@@ -111,11 +111,11 @@ To use images in multi-turn conversations, add the `<image>` tag in the user's c
 
 ### LoRA Fine-tuning
 
-Create a configuration file named `minicpmv_4_lora_sft.yaml` and place it in `LLaMA-Factory/minicpm_config`.
+Create a configuration file named `minicpmv4_5_lora_sft.yaml` and place it in `LLaMA-Factory/minicpm_config`.
 
 ```yaml
 ### model
-model_name_or_path: openbmb/MiniCPM-V4 # Can be MiniCPMV or MiniCPMO local model
+model_name_or_path: openbmb/MiniCPM-V-4_5 # Can be MiniCPM-V or MiniCPM-o local model
 trust_remote_code: true
 
 ### method
@@ -133,7 +133,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: saves/minicpmv_4/lora/sft
+output_dir: saves/minicpmv4_5/lora/sft
 logging_steps: 1
 save_steps: 100 # Save every N steps
 plot_loss: true # Plot loss curve
@@ -157,11 +157,11 @@ do_eval: false
 
 ### Full Fine-tuning
 
-Create a full training configuration file `minicpmv_4_full_sft.yaml` and place it in `LLaMA-Factory/minicpm_config`:
+Create a full training configuration file `minicpmv4_5_full_sft.yaml` and place it in `LLaMA-Factory/minicpm_config`:
 
 ```yaml
 ### model
-model_name_or_path: openbmb/MiniCPM-V4 # MiniCPM-o-2_6 or MiniCPM-V-2_6
+model_name_or_path: openbmb/MiniCPM-V-4_5 # MiniCPM-o-2_6 or MiniCPM-V-2_6 or local path
 trust_remote_code: true
 freeze_vision_tower: true # Freeze vision module
 print_param_status: true
@@ -182,7 +182,7 @@ overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: saves/minicpmv_4/full/sft
+output_dir: saves/minicpmv4_5/full/sft
 logging_steps: 1
 save_steps: 100
 plot_loss: true
@@ -210,7 +210,7 @@ do_eval: false
 
 ```bash
 cd LLaMA-Factory
-llamafactory-cli train configs/minicpmv_4_full_sft.yaml
+llamafactory-cli train configs/minicpmv4_5_full_sft.yaml
 ```
 
 ### LoRA Training
@@ -218,21 +218,21 @@ llamafactory-cli train configs/minicpmv_4_full_sft.yaml
 1. Start training:
 
 ```bash
-llamafactory-cli train configs/minicpmv_4_lora_sft.yaml
+llamafactory-cli train configs/minicpmv4_5_lora_sft.yaml
 ```
 
 2. Create a merge script `merge.yaml`:
 
 ```yaml
 ### model
-model_name_or_path: openbmb/MiniCPM-V4 # Original model path, can be local
-adapter_name_or_path: saves/minicpm_v4/lora/sft # Path to saved LoRA model
+model_name_or_path: openbmb/MiniCPM-V-4_5 # Original model path, can be local
+adapter_name_or_path: saves/minicpm_v4_5/lora/sft # Path to saved LoRA model
 template: minicpm_v
 finetuning_type: lora
 trust_remote_code: true
 
 ### export
-export_dir: models/minicpmv_4_lora_sft
+export_dir: models/minicpmv4_5_lora_sft
 export_size: 2
 export_device: cpu
 export_legacy_format: false
@@ -241,5 +241,5 @@ export_legacy_format: false
 3. Merge the model:
 
 ```bash
-llamafactory-cli export configs/minicpmv_4_lora_export.yaml
+llamafactory-cli export configs/minicpmv4_5_lora_export.yaml
 ```

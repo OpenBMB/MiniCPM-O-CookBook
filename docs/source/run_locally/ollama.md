@@ -1,12 +1,12 @@
 # Ollama
 
-[Ollama](https://ollama.com/) helps you run LLMs locally with only a few commands. It is available at macOS, Linux, and Windows. Now, MiniCPM-V 4.0 is officially on Ollama, and you can run it with one command:
+[Ollama](https://ollama.com/) helps you run LLMs locally with only a few commands. It is available at macOS, Linux, and Windows. Now, MiniCPM-V 4.5 is officially on Ollama, and you can run it with one command:
 
 ```bash
-ollama run openbmb/minicpm-v4
+ollama run openbmb/minicpm-v4.5
 ```
 
-Next, we introduce more detailed usages of Ollama for running MiniCPM-V 4.0.
+Next, we introduce more detailed usages of Ollama for running MiniCPM-V 4.5.
 
 ## Install Ollama
 
@@ -45,7 +45,7 @@ go build .
 
 Once the Ollama service has been built and launched, the MiniCPM-V/o series models can be run using the following commands:
 
-*   `./ollama run openbmb/minicpm-v4`
+*   `./ollama run openbmb/minicpm-v4.5`
 *   `./ollama run openbmb/minicpm-o2.6`
 *   `./ollama run openbmb/minicpm-v2.6`
 *   `./ollama run openbmb/minicpm-v2.5`
@@ -62,7 +62,7 @@ with open(image_path, 'rb') as image_file:
     # Convert the image file to a base64 encoded string
     encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
     data = {
-    "model": "minicpm-v4",
+    "model": "minicpm-v4.5",
     "prompt": query,
     "stream": False,
     "images": [encoded_string] # The 'images' list can hold multiple base64-encoded images.
@@ -77,7 +77,7 @@ with open(image_path, 'rb') as image_file:
 
 ## Run Ollama with Your GGUF Files
 
-You can alse use Ollama with your own GGUF files of MiniCPM-V 4.0. For the first step, you need to create a file called `Modelfile`. The content of the file is shown below:
+You can alse use Ollama with your own GGUF files of MiniCPM-V 4.5. For the first step, you need to create a file called `Modelfile`. The content of the file is shown below:
 
 ```dockerfile
 FROM ./MiniCPM-V-4/model/Model-3.6B-Q4_K_M.gguf
@@ -101,13 +101,13 @@ Parameter Descriptions:
 
 Create Ollama Model:
 ```bash
-./ollama create minicpm-v4 -f minicpmv4.Modelfile
+./ollama create minicpm-v4.5 -f minicpmv4.5.Modelfile
 ```
 
 Run your Ollama model:
 In a new terminal window, run the model instance:
 ```bash
-./ollama run minicpm-v4
+./ollama run minicpm-v4.5
 ```
 
 Enter the prompt and the image path, separated by a space.
