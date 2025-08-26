@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-17 19:35+0800\n"
+"POT-Creation-Date: 2025-08-26 21:46+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -19,15 +19,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/run_locally/llama.cpp.md:1 be6e82cfcd14421bbc1af915ac32e2ea
+#: ../../source/run_locally/llama.cpp.md:1 513795cae0814aa489ec2f6945f3cbd9
 msgid "llama.cpp"
 msgstr "llama.cpp"
 
-#: ../../source/run_locally/llama.cpp.md 19af3ae953534304a76b64fb717281f1
+#: ../../source/run_locally/llama.cpp.md 5494e8f2749042eb9bee3eee2781a185
 msgid "llama.cpp as a C++ library"
 msgstr "llama.cpp 作为 C++ 库"
 
-#: ../../source/run_locally/llama.cpp.md:5 d35d6789f8224375a321400fd7bf552d
+#: ../../source/run_locally/llama.cpp.md:5 8e05a2d1a5a743efbd460e464e889827
 msgid ""
 "Before starting, let’s first discuss what is llama.cpp and what you "
 "should expect, and why we say “use” llama.cpp, with “use” in quotes. "
@@ -39,23 +39,23 @@ msgstr ""
 "llama.cpp（‘使用’加引号）。llama.cpp "
 "本质上是一个不同的生态系统，拥有不同的设计理念，目标是轻量级、最小外部依赖、多平台和广泛灵活的硬件支持："
 
-#: ../../source/run_locally/llama.cpp.md:7 6f4ec67b7ab449e49925d5a286d34807
+#: ../../source/run_locally/llama.cpp.md:7 2de98798a6df4cb9a7e28968c79e6f5e
 msgid "Plain C/C++ implementation without external dependencies"
 msgstr "纯 C/C++ 实现，无外部依赖"
 
-#: ../../source/run_locally/llama.cpp.md:8 4bc3bb0a13904fd1aa6ece837bb513b3
+#: ../../source/run_locally/llama.cpp.md:8 68e77230e31f4477be887f2352a947e5
 msgid "Support a wide variety of hardware:"
 msgstr "支持多种硬件："
 
-#: ../../source/run_locally/llama.cpp.md:9 59f69d5543df4f1ab22117ba5308df27
+#: ../../source/run_locally/llama.cpp.md:9 2ec368f5132b431481bb3273d642f862
 msgid "AVX, AVX2 and AVX512 support for x86_64 CPU"
 msgstr "x86_64 CPU 支持 AVX、AVX2 和 AVX512"
 
-#: ../../source/run_locally/llama.cpp.md:10 f24b725518b643a9901c02afdabf9233
+#: ../../source/run_locally/llama.cpp.md:10 0e4d25b33ee9476ea05b8bf10480174b
 msgid "Apple Silicon via Metal and Accelerate (CPU and GPU)"
 msgstr "Apple Silicon 支持 Metal 和 Accelerate（CPU 和 GPU）"
 
-#: ../../source/run_locally/llama.cpp.md:11 0a8f480fc0dc49eb8e0c55c9e5489b24
+#: ../../source/run_locally/llama.cpp.md:11 654e025923bd4b54bb137f3bf7bda4c4
 msgid ""
 "NVIDIA GPU (via CUDA), AMD GPU (via hipBLAS), Intel GPU (via SYCL), "
 "Ascend NPU (via CANN), and Moore Threads GPU (via MUSA)"
@@ -63,23 +63,23 @@ msgstr ""
 "NVIDIA GPU（通过 CUDA）、AMD GPU（通过 hipBLAS）、Intel GPU（通过 SYCL）、昇腾 NPU（通过 "
 "CANN）、摩尔线程 GPU（通过 MUSA）"
 
-#: ../../source/run_locally/llama.cpp.md:12 147426a51c68492f97802754bb0c9c3e
+#: ../../source/run_locally/llama.cpp.md:12 3660b23d45034e01894ef317ea5a723d
 msgid "Vulkan backend for GPU"
 msgstr "GPU 支持 Vulkan 后端"
 
-#: ../../source/run_locally/llama.cpp.md:13 7a1eb9adb67b4c2d9ea394c4fa63b126
+#: ../../source/run_locally/llama.cpp.md:13 5079787b5d804c839a903dfce455eec7
 msgid ""
 "Various quantization schemes for faster inference and reduced memory "
 "footprint"
 msgstr "多种量化方案以加速推理并减少内存占用"
 
-#: ../../source/run_locally/llama.cpp.md:14 69dec8205c514aeb9f65e294cbc965c1
+#: ../../source/run_locally/llama.cpp.md:14 89b16e9379184b74b1a7cb075de8604a
 msgid ""
 "CPU+GPU hybrid inference to partially accelerate models larger than the "
 "total VRAM capacity"
 msgstr "CPU+GPU 混合推理，可加速超出显存容量的大模型"
 
-#: ../../source/run_locally/llama.cpp.md:16 607e693511d54633a0a980db29a710ab
+#: ../../source/run_locally/llama.cpp.md:16 03b30af461f4450bad2cfb1284dfb0ed
 msgid ""
 "It’s like the Python frameworks `torch`+`transformers` or `torch`+`vllm` "
 "but in C++. However, this difference is crucial:"
@@ -87,7 +87,7 @@ msgstr ""
 "它类似于 Python 框架 `torch`+`transformers` 或 `torch`+`vllm`，但实现于 "
 "C++。不过，这种差异非常关键："
 
-#: ../../source/run_locally/llama.cpp.md:18 03376c812c49476e9a27b944b17e6c17
+#: ../../source/run_locally/llama.cpp.md:18 c6018f54d12945f285777249241d4238
 msgid ""
 "**Python is an interpreted language**: The code you write is executed "
 "line-by-line on-the-fly by an interpreter. You can run the example code "
@@ -98,7 +98,7 @@ msgstr ""
 "**Python 是解释型语言**：你编写的代码会被解释器逐行即时执行。你可以直接用解释器或交互式 shell "
 "运行示例代码或脚本。此外，Python 对初学者友好，即使你之前不太了解，也可以随意修改源码。"
 
-#: ../../source/run_locally/llama.cpp.md:19 0671df2aecf640568b40f0bd958f8048
+#: ../../source/run_locally/llama.cpp.md:19 c150901f72ee494b952fd550ffc81f89
 msgid ""
 "**C++ is a compiled language**: The source code you write needs to be "
 "compiled beforehand, and it is translated to machine code and an "
@@ -111,7 +111,7 @@ msgstr ""
 "是编译型语言**：你编写的源码需要提前编译，由编译器翻译为机器码和可执行程序。语言本身的开销很小。你可以参考示例程序源码来学习如何使用该库，但如果你不熟悉"
 " C++ 或 C，修改源码并不容易。"
 
-#: ../../source/run_locally/llama.cpp.md:21 fd84032c6cfa46e2b7ae99e61f80d4f7
+#: ../../source/run_locally/llama.cpp.md:21 4ec760a7b86e4acbb8f42ceab3225269
 msgid ""
 "To use llama.cpp means that you use the llama.cpp library in your own "
 "program, like writing the source code of [Ollama](https://ollama.com/), "
@@ -126,7 +126,7 @@ msgstr ""
 "/Mozilla-Ocho/llamafile) 这样的源码。但本指南并不涉及这些内容，而是介绍如何使用 `llama-cli` "
 "示例程序，希望你能了解 llama.cpp 支持 MiniCPM-V 4.0 以及其生态系统的基本用法。"
 
-#: ../../source/run_locally/llama.cpp.md:25 a2b4fa1f856149bf82310f9bd12c860a
+#: ../../source/run_locally/llama.cpp.md:25 bd085c62733249f786ca520e34f6a273
 msgid ""
 "In this guide, we will show how to \"use\" [llama.cpp](https://github.com"
 "/ggml-org/llama.cpp) to run models on your local machine, in particular, "
@@ -136,27 +136,27 @@ msgstr ""
 "本指南将演示如何“使用” [llama.cpp](https://github.com/ggml-org/llama.cpp) "
 "在本地运行模型，主要介绍库自带的 `llama-cli` 和 `llama-server` 示例程序。"
 
-#: ../../source/run_locally/llama.cpp.md:27 c23003c450a94a0484f1711677f1f390
+#: ../../source/run_locally/llama.cpp.md:27 381ad62e1be54ae3bf4191a4886f5d6e
 msgid "The main steps:"
 msgstr "主要步骤："
 
-#: ../../source/run_locally/llama.cpp.md:29 099f944b3cb847b4b7a3825e2ee78bc5
+#: ../../source/run_locally/llama.cpp.md:29 f76822a8ca08429e85e92dc2ae398790
 msgid "Get the programs"
 msgstr "获取程序"
 
-#: ../../source/run_locally/llama.cpp.md:30 26773f3f3e024e45808bc366c97eb2c4
-msgid "Get the MiniCPM-V 4.0 models in GGUF[^1] format"
-msgstr "下载 MiniCPM-V 4.0 GGUF[^1] 格式模型"
+#: ../../source/run_locally/llama.cpp.md:30 85dc30dbd98549cab84359e2a69428b7
+msgid "Get the MiniCPM-V 4.5 models in GGUF[^1] format"
+msgstr "下载 MiniCPM-V 4.5 GGUF[^1] 格式模型"
 
-#: ../../source/run_locally/llama.cpp.md:31 0a8d69c867c2489483d80e3ac9e4bd6f
+#: ../../source/run_locally/llama.cpp.md:31 1282148d3a364fd990dc54d802993d95
 msgid "Run the program with the model"
 msgstr "用模型运行程序"
 
-#: ../../source/run_locally/llama.cpp.md:33 a91c6faf453a435da2903ffd5f581039
+#: ../../source/run_locally/llama.cpp.md:33 93bdfec241754ebe8fbafbc4d9b4e751
 msgid "Getting the Program"
 msgstr "获取程序"
 
-#: ../../source/run_locally/llama.cpp.md:35 8bf141361aba4d179b0b9ba408623c2c
+#: ../../source/run_locally/llama.cpp.md:35 d9d9e1b65727486e902a798e4f9cee6d
 msgid ""
 "You can get the programs in various ways. For optimal efficiency, we "
 "recommend compiling the programs locally, so you get the CPU "
@@ -168,11 +168,11 @@ msgstr ""
 "你可以通过多种方式获取程序。为了获得最佳效率，推荐本地编译，这样可以自动获得 CPU 优化。如果本地没有 C++ "
 "编译器，也可以通过包管理器安装或下载预编译二进制文件。虽然效率可能略低，但对于非生产环境或示例用途已经足够。"
 
-#: ../../source/run_locally/llama.cpp.md 70267b1b684d47f684527b15005fcc90
+#: ../../source/run_locally/llama.cpp.md 7f77efcb65db450787ee1f028a9fbd35
 msgid "Compile Locally"
 msgstr "本地编译"
 
-#: ../../source/run_locally/llama.cpp.md:41 4682f628a6bb451d9f69890904828a4b
+#: ../../source/run_locally/llama.cpp.md:41 ddeedac9c85446e39a68ee5edf814ce1
 msgid ""
 "Here are the basic command to compile llama-cli locally on macOS or "
 "Linux. For Windows or GPU users, please refer to the guide from "
@@ -182,32 +182,32 @@ msgstr ""
 "以下是在 macOS 或 Linux 上本地编译 llama-cli 的基本命令。Windows 或 GPU 用户请参考 [llama.cpp "
 "官方文档](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md)。"
 
-#: ../../source/run_locally/llama.cpp.md:43 abbc16a3cc64483e9b9c167bcd637a3d
+#: ../../source/run_locally/llama.cpp.md:43 a0ac7e1416e54efda9ad816e7c5a6ce6
 msgid "Installing Build Tools"
 msgstr "安装构建工具"
 
-#: ../../source/run_locally/llama.cpp.md:45 8b5b94b429514c84801ade9043d260af
+#: ../../source/run_locally/llama.cpp.md:45 ae5efc8ff6eb447895e93fd872451dc0
 msgid ""
 "To build locally, a C++ compiler and a build system tool are required. To"
 " see if they have been installed already, type `cc --version` or `cmake "
 "--version` in a terminal window."
 msgstr "本地编译需要 C++ 编译器和构建系统工具。你可以在终端输入 `cc --version` 或 `cmake --version` 检查是否已安装。"
 
-#: ../../source/run_locally/llama.cpp.md:47 01c0e96513d54acca51cfab2e0b44eff
+#: ../../source/run_locally/llama.cpp.md:47 f583e380cb7743b5bd3863a2760ce0e0
 msgid ""
 "If installed, the build configuration of the tool will be printed and you"
 " are good to go!"
 msgstr "如果已安装，会显示工具的配置信息，即可继续。"
 
-#: ../../source/run_locally/llama.cpp.md:48 cb34e8e3230542a6abb981e58f0006bc
+#: ../../source/run_locally/llama.cpp.md:48 213d66f60d3d4e1e82e12a9947c56d65
 msgid "If errors are raised, you need to first install the related tools:"
 msgstr "如果出现错误，需要先安装相关工具："
 
-#: ../../source/run_locally/llama.cpp.md:49 40970993452e4e02a16c7b15efd68e41
+#: ../../source/run_locally/llama.cpp.md:49 0a4c3f9052a7487fa287b22ce098c546
 msgid "On macOS, install with the command `xcode-select --install`."
 msgstr "macOS 下可用 `xcode-select --install` 安装。"
 
-#: ../../source/run_locally/llama.cpp.md:50 15d312c6e13f43468f5d38f5dcd57c36
+#: ../../source/run_locally/llama.cpp.md:50 8fe76d9561f440a492e512d7a1d738ff
 msgid ""
 "On Ubuntu, install with the command `sudo apt install build-essential`. "
 "For other Linux distributions, the command may vary; the essential "
@@ -216,15 +216,15 @@ msgstr ""
 "Ubuntu 下可用 `sudo apt install build-essential` 安装。其他 Linux "
 "发行版命令可能不同，本指南所需的核心包为 `gcc` 和 `cmake`。"
 
-#: ../../source/run_locally/llama.cpp.md:52 ec1896a0d5344f508b211a26bf5ec256
+#: ../../source/run_locally/llama.cpp.md:52 8c81822486bb4e139b55a6d6ca613a47
 msgid "Compiling the Program"
 msgstr "编译程序"
 
-#: ../../source/run_locally/llama.cpp.md:54 e5417153b93644c792203d536498984d
+#: ../../source/run_locally/llama.cpp.md:54 778b432db6dd4f0f932700d929e065b6
 msgid "Clone the llama.cpp repository"
 msgstr "克隆 llama.cpp 仓库"
 
-#: ../../source/run_locally/llama.cpp.md:59 9eefee2aa44a4d92a13d154b91b775a3
+#: ../../source/run_locally/llama.cpp.md:59 82f83835d0f748f7bbf77b31294c3d31
 msgid ""
 "Build llama.cpp using `CMake`: "
 "[https://github.com/ggerganov/llama.cpp/blob/master/docs/build.md](https://github.com/ggerganov/llama.cpp/blob/master/docs/build.md)"
@@ -233,29 +233,29 @@ msgstr ""
 "[CMake](https://github.com/ggerganov/llama.cpp/blob/master/docs/build.md)"
 " 构建 llama.cpp："
 
-#: ../../source/run_locally/llama.cpp.md:61 7e409105fdcf4a79b1d1770b82655246
+#: ../../source/run_locally/llama.cpp.md:61 9dde5d101a764b38bdca60bf0840da4c
 msgid "**CPU/Metal:**"
 msgstr "**CPU/Metal：**"
 
-#: ../../source/run_locally/llama.cpp.md:66 dd9e4c29aa2b498c9111f527efda2ed1
+#: ../../source/run_locally/llama.cpp.md:66 8dc300c9db0e424d8721160770b26669
 msgid "**CUDA:**"
 msgstr "**CUDA：**"
 
-#: ../../source/run_locally/llama.cpp.md:71 dcc2d273c85b4e069e28a4e16b2a6af5
+#: ../../source/run_locally/llama.cpp.md:71 34031d49f1354811b46e86ee68fb5429
 msgid ""
 "Based on your CPU cores, you can enable parallel compiling to shorten the"
 " time, for example:"
 msgstr "根据你的 CPU 核心数，可以开启并行编译以缩短时间，例如："
 
-#: ../../source/run_locally/llama.cpp.md:76 f36a672d803f48a6ad1adcc076a8a8fc
+#: ../../source/run_locally/llama.cpp.md:76 00801afef26e4132b19822255df593be
 msgid "The built programs will be in `./build/bin/`."
 msgstr "编译后的程序位于 `./build/bin/`。"
 
-#: ../../source/run_locally/llama.cpp.md 58d8cb0ce8f4486094808a7f09291a1a
+#: ../../source/run_locally/llama.cpp.md 3203ab0385ef4441a1b3feb3c9a913f4
 msgid "Package Managers"
 msgstr "包管理器"
 
-#: ../../source/run_locally/llama.cpp.md:81 882aee26354f4bf79019820559fa44d0
+#: ../../source/run_locally/llama.cpp.md:81 b9dd6d11363543449d72541d932f636d
 msgid ""
 "For macOS and Linux users, `llama-cli` and `llama-server` can be "
 "installed with package managers including Homebrew, Nix, and Flox."
@@ -263,7 +263,7 @@ msgstr ""
 "macOS 和 Linux 用户可以通过 Homebrew、Nix、Flox 等包管理器安装 `llama-cli` 和 `llama-"
 "server`。"
 
-#: ../../source/run_locally/llama.cpp.md:83 fc4319bc78904af6adfcdcd52e2268cd
+#: ../../source/run_locally/llama.cpp.md:83 d2da34108dbd436abe149809ffc32eea
 msgid ""
 "Here, we show how to install `llama-cli` and` llama-server` with "
 "Homebrew. For other package managers, please check the instructions "
@@ -274,32 +274,32 @@ msgstr ""
 "server`。其他包管理器请参考[官方说明](https://github.com/ggml-"
 "org/llama.cpp/blob/master/docs/install.md)。"
 
-#: ../../source/run_locally/llama.cpp.md:85 06ef497b0441448a8cc71356049edbbf
+#: ../../source/run_locally/llama.cpp.md:85 e216316fd4e64bcab5a33c3aee814a99
 msgid "Steps of installing with Homebrew:"
 msgstr "使用 Homebrew 安装步骤："
 
-#: ../../source/run_locally/llama.cpp.md:87 f258326cf4134de3a1ee42aa2d5f7bee
+#: ../../source/run_locally/llama.cpp.md:87 05dcf6b49e4c49ffabd14154b32a210e
 msgid ""
 "First, Ensure that Homebrew is available on your operating system. If you"
 " don’t have Homebrew, install it as in its [website](https://brew.sh/)."
 msgstr "首先，确保你的系统已安装 Homebrew。没有的话请参考其[官网](https://brew.sh/)安装。"
 
-#: ../../source/run_locally/llama.cpp.md:89 1d9b464062a14cbb8f5fd7d50b6d5728
+#: ../../source/run_locally/llama.cpp.md:89 b9afd4f42d844498b59bf58bf6f8944f
 msgid "Second, install the pre-built binaries with a single command:"
 msgstr "然后，一条命令安装预编译二进制文件："
 
-#: ../../source/run_locally/llama.cpp.md:94 438ea79b978e497cbcd3abdf0cf833ff
+#: ../../source/run_locally/llama.cpp.md:94 a8306acef4b54085b60d583de4842e1e
 msgid ""
 "The installed binaries might not be built with the optimal compile "
 "options for your hardware, which can lead to poor performance. They also "
 "don’t support GPU on Linux systems."
 msgstr "通过包管理器安装的二进制文件可能没有针对你的硬件进行最佳编译，性能可能较低，且 Linux 下不支持 GPU。"
 
-#: ../../source/run_locally/llama.cpp.md c2e8252dc2de4786ba357bdf37ea4bde
+#: ../../source/run_locally/llama.cpp.md ac6d61c541084b61b40abd71422f98c3
 msgid "Binary Release"
 msgstr "二进制发布包"
 
-#: ../../source/run_locally/llama.cpp.md:101 dfbd7c5a196047e3aa12b2593ed4abb7
+#: ../../source/run_locally/llama.cpp.md:101 4be937e96d2f44a38906c6d3276b9d32
 msgid ""
 "You can also download pre-built binaries from [GitHub "
 "Release](https://github.com/ggml-org/llama.cpp/releases). Please note "
@@ -311,11 +311,11 @@ msgstr ""
 "你也可以从 [GitHub Release](https://github.com/ggml-org/llama.cpp/releases) "
 "下载预编译二进制文件。注意，这些文件依赖于特定的架构、后端和操作系统。如果你不清楚这些含义，建议不要使用，否则可能运行失败或性能较差。"
 
-#: ../../source/run_locally/llama.cpp.md:103 aba3ccc7171542d8a0875230a85779b7
+#: ../../source/run_locally/llama.cpp.md:103 b4a955b79fe34e1ca7e549354be83899
 msgid "The file names are like `llama-<version>-bin-<os>-<feature>-<arch>.zip`."
 msgstr "文件名格式为 `llama-<version>-bin-<os>-<feature>-<arch>.zip`。"
 
-#: ../../source/run_locally/llama.cpp.md:105 aef6f1e08be447d48f9730d1fdf95cdd
+#: ../../source/run_locally/llama.cpp.md:105 511156cfd0c94a1c806feeff363366b9
 msgid ""
 "`<version>`: The version of llama.cpp. The latest is preferred, but as "
 "llama.cpp is updated and released frequently, the latest may contain "
@@ -323,13 +323,13 @@ msgid ""
 " it works."
 msgstr "`<version>`：llama.cpp 的版本。建议优先使用最新版，但由于更新频繁，最新版可能有 bug。如遇问题可尝试回退到上一个版本。"
 
-#: ../../source/run_locally/llama.cpp.md:106 8d24f65fd7804630bc26f291d1376bb5
+#: ../../source/run_locally/llama.cpp.md:106 81a53132d4f0414cb7eec211b376ee8b
 msgid ""
 "`<os>`: the operating system. `win` for Windows; `macos` for macOS; "
 "`linux` for Linux."
 msgstr "`<os>`：操作系统。`win` 表示 Windows，`macos` 表示 macOS，`linux` 表示 Linux。"
 
-#: ../../source/run_locally/llama.cpp.md:107 cb12601b5a5042ed9a7f56af35f09513
+#: ../../source/run_locally/llama.cpp.md:107 a997a6d6986f4ff3b95a811f6ab891b2
 msgid ""
 "`<arch>`: the system architecture. `x64` for `x86_64`, e.g., most Intel "
 "and AMD systems, including Intel Mac; `arm64` for arm64, e.g., Apple "
@@ -338,39 +338,39 @@ msgstr ""
 "`<arch>`：系统架构。`x64` 表示 x86_64（如大多数 Intel/AMD 电脑，包括 Intel Mac）；`arm64` 表示 "
 "arm64（如 Apple Silicon 或 Snapdragon 设备）。"
 
-#: ../../source/run_locally/llama.cpp.md:109 85952a13aa994ac5849daa76bca9d1bc
+#: ../../source/run_locally/llama.cpp.md:109 f9196a7c50b04a56bd634a7545b4c573
 msgid "For Windows, the `<feature>` reference:"
 msgstr "Windows 下 `<feature>` 说明："
 
-#: ../../source/run_locally/llama.cpp.md:111 5193e9684051423eb43f82812448b563
+#: ../../source/run_locally/llama.cpp.md:111 c104d673ca0d4dbaa0ae73d08d0cef85
 msgid "On CPU"
 msgstr "CPU 相关"
 
-#: ../../source/run_locally/llama.cpp.md:112 f50b0fda4e2740bb988285234f3a2b5b
+#: ../../source/run_locally/llama.cpp.md:112 f9f15f18022f41fa8b1ef9d03142a1c6
 msgid "`x86_64` CPUs: try `avx2` first."
 msgstr "`x86_64` CPU：优先尝试 `avx2`。"
 
-#: ../../source/run_locally/llama.cpp.md:113 c995e09a0b134945b7fa9f3de6d0ce97
+#: ../../source/run_locally/llama.cpp.md:113 e821af48524f436d85778c21e6888673
 msgid "`noavx`: No hardware acceleration at all."
 msgstr "`noavx`：无硬件加速。"
 
-#: ../../source/run_locally/llama.cpp.md:114 eafd51a82c7349afa8f23e59c9a4cd43
+#: ../../source/run_locally/llama.cpp.md:114 43a014ae6507479787e61c14b1489e78
 msgid ""
 "`avx2`, `avx`, `avx512`: SIMD-based acceleration. Most modern desktop "
 "CPUs should support avx2, and some CPUs support `avx512`."
 msgstr "`avx2`、`avx`、`avx512`：基于 SIMD 的加速。大多数现代桌面 CPU 支持 avx2，部分支持 avx512。"
 
-#: ../../source/run_locally/llama.cpp.md:115 480c5daf3dda4dd0a0598d46784e04b9
+#: ../../source/run_locally/llama.cpp.md:115 5c1472af745c469ba1e5e7958884d56c
 msgid ""
 "`openblas`: Relying on OpenBLAS for acceleration for prompt processing "
 "but not generation."
 msgstr "`openblas`：依赖 OpenBLAS 加速 prompt 处理，但不加速生成。"
 
-#: ../../source/run_locally/llama.cpp.md:116 8561de96a0b442d29eeb5a85df23a751
+#: ../../source/run_locally/llama.cpp.md:116 88124a98fdfe408a8218b35e21b32158
 msgid "`arm64` CPUs: try `llvm` first."
 msgstr "`arm64` CPU：优先尝试 `llvm`。"
 
-#: ../../source/run_locally/llama.cpp.md:118 8ef41b1f01c543c58b8a6ca2e543f37c
+#: ../../source/run_locally/llama.cpp.md:118 85d6dea961b547199876290d39c5a98f
 msgid ""
 "`llvm` and `msvc` are different compilers: [https://github.com/ggml-"
 "org/llama.cpp/pull/7191](https://github.com/ggml-org/llama.cpp/pull/7191)"
@@ -378,7 +378,7 @@ msgstr ""
 "`llvm` 和 `msvc` 是不同的编译器：[https://github.com/ggml-"
 "org/llama.cpp/pull/7191](https://github.com/ggml-org/llama.cpp/pull/7191)"
 
-#: ../../source/run_locally/llama.cpp.md:121 36f5fd2f4ae54d1ba30b57c382b1d8de
+#: ../../source/run_locally/llama.cpp.md:121 f4fc5e6a04534e5e831a5be3f381cef4
 msgid ""
 "On GPU: try the `cu<cuda_verison>` one for NVIDIA GPUs, `kompute` for AMD"
 " GPUs, and `sycl` for Intel GPUs first. Ensure the related drivers "
@@ -387,19 +387,19 @@ msgstr ""
 "GPU 相关：NVIDIA GPU 优先尝试 `cu<cuda_version>`，AMD GPU 试 `kompute`，Intel GPU 试"
 " `sycl`。请确保已安装相关驱动。"
 
-#: ../../source/run_locally/llama.cpp.md:122 12582eee23f44356914f2aaf0985a643
+#: ../../source/run_locally/llama.cpp.md:122 a24242d6922d4397a5e04b245bb5a177
 msgid "`vulkan`: support certain NVIDIA and AMD GPUs"
 msgstr "`vulkan`：支持部分 NVIDIA 和 AMD GPU"
 
-#: ../../source/run_locally/llama.cpp.md:123 83c77939c9614d638d563c3ed7fcc527
+#: ../../source/run_locally/llama.cpp.md:123 12ba0a994bd74b0dbcafb2e1dcf52f80
 msgid "`kompute`: support certain NVIDIA and AMD GPUs"
 msgstr "`kompute`：支持部分 NVIDIA 和 AMD GPU"
 
-#: ../../source/run_locally/llama.cpp.md:124 28a30c9990ae43aa9d3d90e52e98b77e
+#: ../../source/run_locally/llama.cpp.md:124 7ac3d2330d5141018ad81582cfae1973
 msgid "`sycl`: Intel GPUs, oneAPI runtime is included"
 msgstr "`sycl`：Intel GPU，包含 oneAPI 运行时"
 
-#: ../../source/run_locally/llama.cpp.md:125 f3329454350f43f3b83530f5a7b4d3de
+#: ../../source/run_locally/llama.cpp.md:125 83d4b2194c0a47239795cf15a20e86d4
 msgid ""
 "`cu<cuda_verison>`: NVIDIA GPUs, CUDA runtime is not included. You can "
 "download the `cudart-llama-bin-win-cu<cuda_version>-x64.zip` and unzip it"
@@ -409,15 +409,15 @@ msgstr ""
 "`cu<cuda_version>`：NVIDIA GPU，不包含 CUDA 运行时。如果未安装对应 CUDA 工具包，可下载 `cudart-"
 "llama-bin-win-cu<cuda_version>-x64.zip` 并解压到同一目录。"
 
-#: ../../source/run_locally/llama.cpp.md:127 eabc70b3db3b46b2b92a177b81589180
+#: ../../source/run_locally/llama.cpp.md:127 fa6d633695b84b1880b98c7360004064
 msgid "For macOS or Linux:"
 msgstr "macOS 或 Linux："
 
-#: ../../source/run_locally/llama.cpp.md:129 6df97c5280b14824bd35e375c140e141
+#: ../../source/run_locally/llama.cpp.md:129 eaa78232cbf9465784ae401becec9303
 msgid "Linux: only `llama-<version>-bin-linux-x64.zip`, supporting CPU."
 msgstr "Linux：仅有 `llama-<version>-bin-linux-x64.zip`，仅支持 CPU。"
 
-#: ../../source/run_locally/llama.cpp.md:130 2dba8d62dd2244888a0ae6cf32e23516
+#: ../../source/run_locally/llama.cpp.md:130 828e33b507bc460caeb5f1e20cea4a70
 msgid ""
 "macOS: `llama-<version>-bin-macos-x64.zip` for Intel Mac with no GPU "
 "support; `llama-<version>-bin-macos-arm64.zip` for Apple Silicon with GPU"
@@ -426,66 +426,66 @@ msgstr ""
 "macOS：`llama-<version>-bin-macos-x64.zip` 适用于 Intel Mac（无 GPU "
 "支持）；`llama-<version>-bin-macos-arm64.zip` 适用于 Apple Silicon（支持 GPU）。"
 
-#: ../../source/run_locally/llama.cpp.md:132 2cf16551a0dd48e78d1e234ace73eee5
+#: ../../source/run_locally/llama.cpp.md:132 8d06eafc16324ed3b8c6b9fa3594d452
 msgid ""
 "Download and unzip the .zip file into a directory and open a terminal at "
 "that directory."
 msgstr "下载并解压 .zip 文件到某个目录，并在该目录下打开终端。"
 
-#: ../../source/run_locally/llama.cpp.md:137 737c815a87624990ae2537e6639ccad9
+#: ../../source/run_locally/llama.cpp.md:137 f598f4bc6a0249bfbf2e3df9ac8058be
 msgid "Getting the GGUF"
 msgstr "获取 GGUF"
 
-#: ../../source/run_locally/llama.cpp.md:139 864d9469b4e944c59457b962ea55f0cb
+#: ../../source/run_locally/llama.cpp.md:139 6a9be4f895f241a08f50377c649a3382
 msgid ""
 "GGUF[^1] is a file format for storing information needed to run a model, "
 "including but not limited to model weights, model hyperparameters, "
 "default generation configuration, and tokenizer."
 msgstr "GGUF[^1] 是一种用于存储模型运行所需信息的文件格式，包括但不限于模型权重、超参数、默认生成配置和分词器。"
 
-#: ../../source/run_locally/llama.cpp.md:141 792b9bca23544b188c88c7c2c6ab0555
+#: ../../source/run_locally/llama.cpp.md:141 7384fadefee94ee5a14ef74fbb0c6049
 msgid "You can use our official GGUF files or prepare your own GGUF file."
 msgstr "你可以使用官方 GGUF 文件，也可以自行准备 GGUF 文件。"
 
-#: ../../source/run_locally/llama.cpp.md:143 8aa95d585c334fdf9ebd4bd30a4feb1e
+#: ../../source/run_locally/llama.cpp.md:143 120e61b199304e398bab2f6dbc5dd49d
 msgid "Download official MiniCPM-V 4.0 GGUF files"
 msgstr "下载官方 MiniCPM-V 4.0 GGUF 文件"
 
-#: ../../source/run_locally/llama.cpp.md:145 b12d3023266640e2bc6bacb7cd837cbb
+#: ../../source/run_locally/llama.cpp.md:145 f2c193d2c6624f33a96daf8c08b45105
 msgid ""
 "Download converted language model file (e.g., `Model-3.6B-Q4_K_M.gguf`) "
 "and vision model file (`mmproj-model-f16.gguf`) from:"
 msgstr "下载转换后的语言模型文件（如 `Model-3.6B-Q4_K_M.gguf`）和视觉模型文件（`mmproj-model-f16.gguf`）："
 
-#: ../../source/run_locally/llama.cpp.md:146 c9d4764712164d9c8d08dfd795772f55
+#: ../../source/run_locally/llama.cpp.md:146 7758f22cb0d04abfa17f5cf3585808ab
 msgid "HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4-gguf"
 msgstr "HuggingFace：https://huggingface.co/openbmb/MiniCPM-V-4-gguf"
 
-#: ../../source/run_locally/llama.cpp.md:147 0fd73c48e7c84c25b7d88e506fb0c2a3
+#: ../../source/run_locally/llama.cpp.md:147 9fbce9f0df75497cacfef6128756fecb
 msgid "ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-V-4-gguf"
 msgstr "魔搭社区：https://modelscope.cn/models/OpenBMB/MiniCPM-V-4-gguf"
 
-#: ../../source/run_locally/llama.cpp.md:149 8fb336896eb24b2ba213e648a98909e4
+#: ../../source/run_locally/llama.cpp.md:149 44fb130b099747e58b072d47a375fe9e
 msgid ""
 "Or download the GGUF model with `huggingface-cli` (install with `pip "
 "install huggingface_hub`):"
 msgstr "也可以用 `huggingface-cli` 下载 GGUF 模型（用 `pip install huggingface_hub` 安装）："
 
-#: ../../source/run_locally/llama.cpp.md:155 958cb3446f72404fac63802a2752a510
+#: ../../source/run_locally/llama.cpp.md:155 0362628a22504065a59a4ccf48740b87
 msgid "For example:"
 msgstr "例如："
 
-#: ../../source/run_locally/llama.cpp.md:161 731cd13debe7409db8596fddc9b1de6f
+#: ../../source/run_locally/llama.cpp.md:161 af0b77af7c5c42acb875a512fdcb3cb8
 msgid ""
 "This will download the MiniCPM-V 4.0 model in GGUF format quantized with "
 "the scheme Q4_K_M."
 msgstr "这将下载采用 Q4_K_M 量化方案的 MiniCPM-V 4.0 GGUF 格式模型。"
 
-#: ../../source/run_locally/llama.cpp.md:163 b95d6c77e3664472b87d0e5f450f27b5
+#: ../../source/run_locally/llama.cpp.md:163 5e344a48424f4c7485346adc4e6e2d51
 msgid "Convert from PyTorch model"
 msgstr "从 PyTorch 模型转换"
 
-#: ../../source/run_locally/llama.cpp.md:165 5f4b1276e8874a8e88f3416187f80d41
+#: ../../source/run_locally/llama.cpp.md:165 f064430d07d44055af4d60927d3bb8bc
 msgid ""
 "Model files from Hugging Face Hub can be converted to GGUF, using the "
 "`convert-hf-to-gguf.py` script. It does require you to have a working "
@@ -494,35 +494,35 @@ msgstr ""
 "可以使用 `convert-hf-to-gguf.py` 脚本将 Hugging Face Hub 上的模型文件转换为 GGUF。需要有可用的 "
 "Python 环境并安装 `transformers`。"
 
-#: ../../source/run_locally/llama.cpp.md:167 1e1704ac471f48dcaad90239d72bd031
+#: ../../source/run_locally/llama.cpp.md:167 9d4fde36675240f39535c163e4bcd929
 msgid "Download the MiniCPM-V-4 PyTorch model to \"MiniCPM-V-4\" folder:"
 msgstr "将 MiniCPM-V-4 PyTorch 模型下载到 \"MiniCPM-V-4\" 文件夹："
 
-#: ../../source/run_locally/llama.cpp.md:168 eb531e9e926a4f3fbc03979da4f5e5ef
+#: ../../source/run_locally/llama.cpp.md:168 f8d17a7c77e642289ab9187e170df0b6
 msgid "HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4"
 msgstr "HuggingFace：https://huggingface.co/openbmb/MiniCPM-V-4"
 
-#: ../../source/run_locally/llama.cpp.md:169 1cfa9a4d13a64e02a81738337cc1fbab
+#: ../../source/run_locally/llama.cpp.md:169 898150c9282d44c796553015370512ba
 msgid "ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-V-4"
 msgstr "魔搭社区：https://modelscope.cn/models/OpenBMB/MiniCPM-V-4"
 
-#: ../../source/run_locally/llama.cpp.md:171 d88a1f392b454fe58dfcef74a995ef4f
+#: ../../source/run_locally/llama.cpp.md:171 57dcdf27589042ed983648c3d4fe6b00
 msgid "Clone the llama.cpp repository:"
 msgstr "克隆 llama.cpp 仓库："
 
-#: ../../source/run_locally/llama.cpp.md:178 aa278abd49b04407b4ee95efa15faf7e
+#: ../../source/run_locally/llama.cpp.md:178 bde63d2cf4a4476e8b2584e4d9cd0a47
 msgid "Convert the PyTorch model to GGUF:"
 msgstr "将 PyTorch 模型转换为 GGUF："
 
-#: ../../source/run_locally/llama.cpp.md:192 c0567a1edcac425590591537816a6218
+#: ../../source/run_locally/llama.cpp.md:192 33c0deb615e043769499c65477974b4b
 msgid "Run MiniCPM-V 4.0 with llama.cpp"
 msgstr "用 llama.cpp 运行 MiniCPM-V 4.0"
 
-#: ../../source/run_locally/llama.cpp.md:194 1ae7a38cf05342099e691fcc392b9381
+#: ../../source/run_locally/llama.cpp.md:194 d346887acf104e1b865e21fea9ebc4d6
 msgid "llama-cli"
 msgstr "llama-cli"
 
-#: ../../source/run_locally/llama.cpp.md:196 7fd178507e454569952cfcc841c645af
+#: ../../source/run_locally/llama.cpp.md:196 1612876ca7494ab6931b09864005bf2c
 msgid ""
 "[`llama-cli`](https://github.com/ggml-"
 "org/llama.cpp/tree/master/tools/main) is a console program which can be "
@@ -533,79 +533,79 @@ msgstr ""
 "org/llama.cpp/tree/master/tools/main) 是一个控制台程序，可用于与大模型对话。在 llama.cpp "
 "程序目录下运行如下命令即可："
 
-#: ../../source/run_locally/llama.cpp.md:211 42df5fb31c0d4924b655538ae02a48f7
+#: ../../source/run_locally/llama.cpp.md:211 b0212729a455477389a24d8db1f8be8d
 msgid "Simple argument reference:"
 msgstr "常用参数说明："
 
-#: ../../source/run_locally/llama.cpp.md:117 df3b3708d8314681b69a6e50886ae77c
+#: ../../source/run_locally/llama.cpp.md:117 ddbfe7da964244419258505ef1df5f2e
 msgid "Argument"
 msgstr "参数"
 
-#: ../../source/run_locally/llama.cpp.md:117 c48a07b114164252914b9e6abdd46524
+#: ../../source/run_locally/llama.cpp.md:117 24a3803bad814e4091612ed6a43af2b2
 msgid "`-m, --model`"
 msgstr "`-m, --model`"
 
-#: ../../source/run_locally/llama.cpp.md:117 501319acbb034c40a61e7d313b8bbb62
+#: ../../source/run_locally/llama.cpp.md:117 21a583aad26a4bff8618d34ce9d65ab0
 msgid "`--mmproj`"
 msgstr "`--mmproj`"
 
-#: ../../source/run_locally/llama.cpp.md:117 61cabb5ce86349289bb1a2c66d4a8fd9
+#: ../../source/run_locally/llama.cpp.md:117 c3cc3afd1a7243e08aa0dc680ea5faa5
 msgid "`--image`"
 msgstr "`--image`"
 
-#: ../../source/run_locally/llama.cpp.md:117 b18b0816d0754d71a62fa6d2f8b8d3b8
+#: ../../source/run_locally/llama.cpp.md:117 ef0a8315292e43a0990fa711d8302865
 msgid "`-p, --prompt`"
 msgstr "`-p, --prompt`"
 
-#: ../../source/run_locally/llama.cpp.md:117 dd8846cf819e44778e1bb1f2413cfb34
+#: ../../source/run_locally/llama.cpp.md:117 36a2a26217504c21ac55a6d97a4abc5b
 msgid "`-c, --ctx-size`"
 msgstr "`-c, --ctx-size`"
 
-#: ../../source/run_locally/llama.cpp.md:117 0620ccd07375480da65a29caacf15d97
+#: ../../source/run_locally/llama.cpp.md:117 af9a00815a9c4030a91341409e3b935e
 msgid "Description"
 msgstr "说明"
 
-#: ../../source/run_locally/llama.cpp.md:117 04a8c138b18147e18716f9d43f9de440
+#: ../../source/run_locally/llama.cpp.md:117 2ab36ac558fe4c97b0867c04167201fb
 msgid "Path to the language model"
 msgstr "语言模型路径"
 
-#: ../../source/run_locally/llama.cpp.md:117 489892d52b2e40e48bcf1598040fce70
+#: ../../source/run_locally/llama.cpp.md:117 b27c8e56ae4741f6bf60803dd9a3fcf3
 msgid "Path to the vision model"
 msgstr "视觉模型路径"
 
-#: ../../source/run_locally/llama.cpp.md:117 b34fd60d9ba2496cbecea484e8746f1f
+#: ../../source/run_locally/llama.cpp.md:117 b31fe87c8d7b4f639e14f6db699e1e9f
 msgid "Path to the input image"
 msgstr "输入图片路径"
 
-#: ../../source/run_locally/llama.cpp.md:117 c8cc2e7c34914334bd51a4cb2ab98cc4
+#: ../../source/run_locally/llama.cpp.md:117 e4ec35c901b945ee924b092b01824634
 msgid "The prompt"
 msgstr "输入提示"
 
-#: ../../source/run_locally/llama.cpp.md:117 173960ab40e740b6a43ceb9a9f6d0b67
+#: ../../source/run_locally/llama.cpp.md:117 ad7becdaaec8455380adf0828ebdd275
 msgid "Maximum context size"
 msgstr "最大上下文长度"
 
-#: ../../source/run_locally/llama.cpp.md:217 3323d3ae650b4aadad1560c2c3dcd5b1
+#: ../../source/run_locally/llama.cpp.md:217 f676bf6269344770b0c083632aa3cd07
 msgid "Here are more detailed explanations to the command:"
 msgstr "以下是命令的详细说明："
 
-#: ../../source/run_locally/llama.cpp.md:219 c553bd9dd31d4a73ae4e6aec7f68cdef
+#: ../../source/run_locally/llama.cpp.md:219 bb621c7578354ee48d78fee5646678f6
 msgid ""
 "**Model**: `llama-cli` supports using model files from local path, "
 "Hugging Face hub, or remote URL."
 msgstr "**模型**：`llama-cli` 支持本地路径、Hugging Face hub 或远程 URL 的模型文件。"
 
-#: ../../source/run_locally/llama.cpp.md:220 74ff77f9c7d544fb8cd1e7f19465b0ba
+#: ../../source/run_locally/llama.cpp.md:220 928aa6826a624c0099c45f8e658bc19a
 msgid "To use a local path, pass `-m Model-3.6B-Q4_K_M.gguf`"
 msgstr "本地路径用法：`-m Model-3.6B-Q4_K_M.gguf`"
 
-#: ../../source/run_locally/llama.cpp.md:221 ea9f2bd93aec449eaacf49260ccf1c7c
+#: ../../source/run_locally/llama.cpp.md:221 fc683a8e6df34dd7ac06bbaf8305b9c6
 msgid ""
 "To use the model file from Hugging Face hub, pass `-hf "
 "openbmb/MiniCPM-V-4-gguf:Q4_K_M`"
 msgstr "Hugging Face hub 用法：`-hf openbmb/MiniCPM-V-4-gguf:Q4_K_M`"
 
-#: ../../source/run_locally/llama.cpp.md:222 7922c683eaac416a9f5b745e47e01297
+#: ../../source/run_locally/llama.cpp.md:222 0aea9d6decd44cfb90b4a425508a00a2
 msgid ""
 "To use a remote URL, pass `-mu "
 "https://huggingface.co/openbmb/MiniCPM-V-4-gguf/resolve/main/Model-3.6B-"
@@ -615,18 +615,18 @@ msgstr ""
 "https://huggingface.co/openbmb/MiniCPM-V-4-gguf/resolve/main/Model-3.6B-"
 "Q4_K_M.gguf?download=true`"
 
-#: ../../source/run_locally/llama.cpp.md:224 ad7439e7fd304b8cb489ba2a5f0eb3ef
+#: ../../source/run_locally/llama.cpp.md:224 6e7d69c9af3648c5a336070f2d261289
 msgid "**Speed Optimization**:"
 msgstr "**速度优化**："
 
-#: ../../source/run_locally/llama.cpp.md:225 54fc5ec2b6e84ca2b76542677d12025c
+#: ../../source/run_locally/llama.cpp.md:225 fa62f9bb64b747c1a00a84728931dc7c
 msgid ""
 "CPU: `llama-cli` by default will use CPU and you can change `-t` to "
 "specify how many threads you would like it to use, e.g., `-t 8` means "
 "using 8 threads."
 msgstr "CPU：`llama-cli` 默认使用 CPU，可用 `-t` 指定线程数，如 `-t 8` 表示用 8 线程。"
 
-#: ../../source/run_locally/llama.cpp.md:226 7507d4b4fca7415895e6b654f9f6c59c
+#: ../../source/run_locally/llama.cpp.md:226 b5191a933f0548c88150f560d22a14f6
 msgid ""
 "GPU: If the programs are built with GPU support, you can use `-ngl`, "
 "which allows offloading some layers to the GPU for computation. If there "
@@ -640,7 +640,7 @@ msgstr ""
 " 控制并行方式。例如 `-ngl 99 -dev cuda0,cuda1 -sm row` 表示所有层分行并行分配到 GPU0 和 GPU1。加上"
 " `-fa` 可能进一步加速生成。"
 
-#: ../../source/run_locally/llama.cpp.md:228 8842d5d05a744b91b860774e708a0e59
+#: ../../source/run_locally/llama.cpp.md:228 a79b0b48fdd84ffcabecb4e13f5e838d
 msgid ""
 "**Sampling Parameters**: llama.cpp supports a variety of [sampling "
 "methods](https://github.com/ggml-org/llama.cpp/tree/master/tools/main"
@@ -655,7 +655,7 @@ msgstr ""
 "flags)，并有默认配置。建议根据实际情况调整参数，可参考 MiniCPM-V 4.0 modelcard "
 "推荐参数。如遇重复或无尽生成，建议加上 `--presence-penalty`（最高 2.0）。"
 
-#: ../../source/run_locally/llama.cpp.md:230 73791142bfed43fbb4ec6badb73de769
+#: ../../source/run_locally/llama.cpp.md:230 0b75ff3638124152a27ea530a499afb3
 msgid ""
 "**Context Management**: llama.cpp adopts the “rotating” context "
 "management by default. The `-c` controls the maximum context length "
@@ -675,7 +675,7 @@ msgstr ""
 "token（默认 0，-1 表示全部）会保留，其余前半部分被丢弃，模型继续基于新上下文生成。可用 `--no-context-shift` "
 "禁用旋转，生成将在达到 `-c` 时停止。"
 
-#: ../../source/run_locally/llama.cpp.md:232 1d103baf80574273936d503a7a460896
+#: ../../source/run_locally/llama.cpp.md:232 631bccfceeca48ea9ee6def0e580a525
 msgid ""
 "**Chat**: `--jinja` indicates using the chat template embedded in the "
 "GGUF which is preferred and `--color` indicates coloring the texts so "
@@ -688,11 +688,11 @@ msgstr ""
 "表示彩色区分用户输入和模型输出。如果有对话模板，`llama-cli` 会自动进入对话模式。按 \"Ctrl+C\" 可中断生成或退出。可用 "
 "`-sys` 添加系统提示词。"
 
-#: ../../source/run_locally/llama.cpp.md:234 25067dfb18154c6587cc2865d8fb9022
+#: ../../source/run_locally/llama.cpp.md:234 ee1cc86e8db84002bfc717035023d987
 msgid "llama-server"
 msgstr "llama-server"
 
-#: ../../source/run_locally/llama.cpp.md:236 2837d14d33d94e99b6499756e92839d2
+#: ../../source/run_locally/llama.cpp.md:236 8d823097ce64490799e7731523cd768c
 msgid ""
 "[llama-server](https://github.com/ggml-"
 "org/llama.cpp/tree/master/tools/server) is a simple HTTP server, "
@@ -703,13 +703,13 @@ msgstr ""
 "org/llama.cpp/tree/master/tools/server) 是一个简单的 HTTP 服务器，包含一组 LLM REST API"
 " 和简单的 Web 前端，可通过 llama.cpp 与大模型交互。"
 
-#: ../../source/run_locally/llama.cpp.md:238 227a3d803c094bfc96c4d79c6276a7ea
+#: ../../source/run_locally/llama.cpp.md:238 9d20f4126ca04ab6bfc5626e2e6331ad
 msgid ""
 "he core command is similar to that of llama-cli. In addition, it supports"
 " thinking content parsing and tool call parsing."
 msgstr "核心命令与 llama-cli 类似，此外还支持思维内容解析和工具调用解析。"
 
-#: ../../source/run_locally/llama.cpp.md:244 d07266a2d2e340399a0423f196e0db2a
+#: ../../source/run_locally/llama.cpp.md:244 0401b40230ee413798181737279d535a
 msgid ""
 "By default, the server will listen at `http://localhost:8080` which can "
 "be changed by passing `--host` and `--port`. The web front end can be "
@@ -719,11 +719,11 @@ msgstr ""
 "服务器默认监听 `http://localhost:8080`，可通过 `--host` 和 `--port` 修改。Web 前端可通过浏览器访问"
 " `http://localhost:8080/`，OpenAI 兼容 API 地址为 `http://localhost:8080/v1/`。"
 
-#: ../../source/run_locally/llama.cpp.md:246 1545b0fc15dc4660a06ca6294795eb60
+#: ../../source/run_locally/llama.cpp.md:246 49978db1469f4761898d17e53708b392
 msgid "What’s More"
 msgstr "更多内容"
 
-#: ../../source/run_locally/llama.cpp.md:248 a6184d2d9bf44d21930624ef082c4732
+#: ../../source/run_locally/llama.cpp.md:248 a6218848c7bd4bafbae5d53a289dc8ac
 msgid ""
 "If you still find it difficult to use llama.cpp, don’t worry, just check "
 "out other llama.cpp-based applications. For example, MiniCPM-V 4.0 has "
@@ -733,11 +733,11 @@ msgstr ""
 "如果你觉得 llama.cpp 还是难以上手，不用担心，可以尝试其他基于 llama.cpp 的应用。例如，MiniCPM-V 4.0 已正式加入"
 " [Ollama](https://ollama.com/)，这是一个很好的本地大模型搜索和运行平台。"
 
-#: ../../source/run_locally/llama.cpp.md:250 95c718d7833543338ce3cf774ab33c48
+#: ../../source/run_locally/llama.cpp.md:250 57c67a020462402dbc1010f6acb41c96
 msgid "Have fun!"
 msgstr "玩得开心！"
 
-#: ../../source/run_locally/llama.cpp.md:252 d71a0e82168e417ca5475b658e4d8d4a
+#: ../../source/run_locally/llama.cpp.md:252 b6648e7e1dfc4398b51e8759b7c13038
 msgid ""
 "GGUF (GPT-Generated Unified Format) is a file format designed for "
 "efficiently storing and loading language models for inference."

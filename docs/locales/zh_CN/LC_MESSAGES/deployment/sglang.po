@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-20 15:43+0800\n"
+"POT-Creation-Date: 2025-08-26 21:46+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -19,37 +19,45 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/deployment/sglang.md:1 e89b53f07f924193843c437368f32c2e
+#: ../../source/deployment/sglang.md:1 61928f94a1fc469a82cfd36609677466
 msgid "SGLang"
 msgstr "SGLang"
 
-#: ../../source/deployment/sglang.md:3 305303342f95431abdeaa104930d45e0
+#: ../../source/deployment/sglang.md:4 40b75376048d4307a88e798d90c20951
+msgid ""
+"We've submitted a PR for MiniCPM-V 4.5 to the SGLang repo, and it's "
+"currently under review for merging. In the meantime, you can use our code"
+" via [this link](https://github.com/tc-mb/sglang/tree/Support-"
+"MiniCPM-V-4.5).."
+msgstr "我们已向 SGLang 仓库提交了 MiniCPM-V 4.5 的 PR，目前正在审核合并中。在此期间，您可以通过[此链接](https://github.com/tc-mb/sglang/tree/Support-MiniCPM-V-4.5)使用我们的代码。"
+
+#: ../../source/deployment/sglang.md:7 ad98fd9e9c3d420386a82ef5a1392819
 msgid "1.Installing SGLang"
 msgstr "1.安装 SGLang"
 
-#: ../../source/deployment/sglang.md:4 3fab0dffdcf64b2b80410ec8c1ffc140
+#: ../../source/deployment/sglang.md:8 7e8f5ad154104edd859cadb222737c49
 msgid "Install SGLang from Source Code"
 msgstr "从源码安装 SGLang"
 
-#: ../../source/deployment/sglang.md:13 6912a70264914b54b9ca3d19f86c88b1
+#: ../../source/deployment/sglang.md:17 a8b960f763f1489f821891da9bef129e
 msgid "Installing flashinfer Dependencies"
 msgstr "安装 flashinfer 依赖"
 
-#: ../../source/deployment/sglang.md:15 baad27c9af634f6e87d7bc9a86580b12
+#: ../../source/deployment/sglang.md:19 d530424127094d61a357cebb9d21a9ba
 msgid "Method 1: pip installation (network speed may be insufficient)"
 msgstr "方法一：pip 安装（网络速度可能不足）"
 
-#: ../../source/deployment/sglang.md:20 7261129eb204456d85aa0c27305bc644
+#: ../../source/deployment/sglang.md:24 1a7041b742e14cefb44c0c0502ca3540
 msgid "Method 2: whl file installation"
 msgstr "方法二：whl 文件安装"
 
-#: ../../source/deployment/sglang.md:21 93f040cb0e9740dab4b79d482ab56872
+#: ../../source/deployment/sglang.md:25 a1bb282ee6bf416bbacac8b5eb3d26ce
 msgid ""
 "Visit: "
 "[https://flashinfer.ai/whl/cu121/torch2.4/flashinfer/](https://flashinfer.ai/whl/cu121/torch2.4/flashinfer/)"
 msgstr "访问：[https://flashinfer.ai/whl/cu121/torch2.4/flashinfer/](https://flashinfer.ai/whl/cu121/torch2.4/flashinfer/)"
 
-#: ../../source/deployment/sglang.md:22 950a765b4d35431f94d07a15ae9bef49
+#: ../../source/deployment/sglang.md:26 6787795d94624684a00ebb610105a32b
 msgid ""
 "Locate and download the whl file compatible with your server, e.g. "
 "`flashinfer-0.1.6+cu121torch2.4-cp310-cp310-linux_x86_64.whl`"
@@ -57,49 +65,49 @@ msgstr ""
 "找到并下载与你服务器兼容的 whl 文件，例如 "
 "`flashinfer-0.1.6+cu121torch2.4-cp310-cp310-linux_x86_64.whl`"
 
-#: ../../source/deployment/sglang.md:23 38e2e2f8ac6d477686315d726977652e
+#: ../../source/deployment/sglang.md:27 28917fb30b2d48f8a685228764e40b01
 msgid "Install using pip:"
 msgstr "使用 pip 安装："
 
-#: ../../source/deployment/sglang.md:27 a6b1b2dfbf2a49149b38d953e7e69239
+#: ../../source/deployment/sglang.md:31 b91e5a495096497189e0f4e9e927ae0d
 msgid ""
 "For any installation issues, please consult the [official installation "
 "documentation](https://docs.sglang.ai/start/install.html)"
 msgstr "如遇安装问题，请参考[官方安装文档](https://docs.sglang.ai/start/install.html)"
 
-#: ../../source/deployment/sglang.md:29 0c784659a8ac40a596460bbd14cbbc3a
+#: ../../source/deployment/sglang.md:33 53de327cc06c420b92c3d39a88fbe0ae
 msgid "2.Launching Inference Service with SGLang"
 msgstr "2.使用 SGLang 启动推理服务"
 
-#: ../../source/deployment/sglang.md:31 caacc777b6ca4716be66d1d1c2471997
+#: ../../source/deployment/sglang.md:35 a774e7299ae14c1999affbf0e5345526
 msgid "By default, it downloads model files from Hugging Face Hub"
 msgstr "默认情况下，会从 Hugging Face Hub 下载模型文件"
 
-#: ../../source/deployment/sglang.md:35 0a3bfc42320d459d8c90117cf9985139
+#: ../../source/deployment/sglang.md:39 4ac080d9b7ac4e0fbbedd9cd311f16d3
 msgid ""
 "Alternatively, you can specify a local path after the `--model-path` "
 "parameter"
 msgstr "或者，你可以在 `--model-path` 参数后指定本地路径"
 
-#: ../../source/deployment/sglang.md:40 5324d4b34e8b41869df6953a4e26d8d2
+#: ../../source/deployment/sglang.md:44 c04eb35f2078401a868059b97c87d1cb
 msgid "3.Service API Calls"
 msgstr "3.服务 API 调用"
 
-#: ../../source/deployment/sglang.md:41 bab93a692c504b6dac97c7871cc7d700
+#: ../../source/deployment/sglang.md:45 8956c2b529124f48a4c576936043e01c
 msgid "Bash call"
 msgstr "Bash 调用"
 
-#: ../../source/deployment/sglang.md:68 d86cdfc108a64ac481effc80618205fc
+#: ../../source/deployment/sglang.md:72 5180e54c1f32488fb6e504877e21c1ce
 msgid "Python call"
 msgstr "Python 调用"
 
-#: ../../source/deployment/sglang.md:98 918b38f6bb61429abead625ee9ccef9b
+#: ../../source/deployment/sglang.md:102 6b11042f309e4a519cf6c41340c4f74c
 msgid ""
 "**If the image_url is inaccessible, it can be replaced with a local image"
 " path**"
 msgstr "**如果 image_url 无法访问，可以替换为本地图片路径**"
 
-#: ../../source/deployment/sglang.md:100 1cd3d955b9ef43419039b2adbb9df845
+#: ../../source/deployment/sglang.md:104 062a0e3d49df4766a0382a2b6c2731ca
 msgid ""
 "For more calling methods, please refer to the [SGLang "
 "documentation](https://docs.sglang.ai/backend/openai_api_vision.html)"

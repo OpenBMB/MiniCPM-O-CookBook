@@ -1,5 +1,9 @@
 # SGLang 
 
+:::{Note}
+We've submitted a PR for MiniCPM-V 4.5 to the SGLang repo, and it's currently under review for merging. In the meantime, you can use our code via [this link](https://github.com/tc-mb/sglang/tree/Support-MiniCPM-V-4.5)..
+:::
+
 ## 1.Installing SGLang
 ### Install SGLang from Source Code
 ```bash

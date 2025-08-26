@@ -1,5 +1,9 @@
 # vLLM
 
+:::{Note}
+We've submitted a PR for MiniCPM-V 4.5 to the vLLM repo, and it's currently under review for merging. In the meantime, you can use our code via [this link](https://github.com/tc-mb/vllm/tree/Support-MiniCPM-V-4.5)..
+:::
+
 [vLLM](https://github.com/vllm-project/vllm) is a fast and easy-to-use library for LLM inference and serving.
 To learn more about vLLM, please refer to the [documentation](https://docs.vllm.ai/en/latest/).
 
@@ -32,7 +36,7 @@ vllm serve <model_path>  --dtype auto --max-model-len 2048 --api-key token-abc12
 ```
 
 **Parameter Description:**
-- `<model_path>`: Specify the local path to your MiniCPM-V 4.0 model
+- `<model_path>`: Specify the local path to your MiniCPM-V 4.5 model
 - `--api-key`: Set the API access key
 - `--max-model-len`: Set the maximum model length
 - `--gpu_memory_utilization`: GPU memory utilization rate
@@ -306,7 +310,7 @@ print(outputs[0].outputs[0].text)
 
 ## Notes
 
-1. **Model Path**: Replace all `<model_path>` in the examples with the actual MiniCPM-V 4.0 model path
+1. **Model Path**: Replace all `<model_path>` in the examples with the actual MiniCPM-V 4.5 model path
 2. **API Key**: Ensure the API key when launching the service matches the key in the client code
 3. **File Paths**: Adjust image and video file paths according to your actual situation
 4. **Memory Configuration**: Adjust the `--gpu_memory_utilization` parameter appropriately based on GPU memory

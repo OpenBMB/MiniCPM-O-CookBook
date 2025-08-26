@@ -1,5 +1,9 @@
 # Ollama
 
+:::{Note}
+We've submitted a PR for MiniCPM-V 4.5 to the Ollama repo, and it's currently under review for merging. In the meantime, you can use our code via [this link](https://github.com/tc-mb/ollama/tree/Support-MiniCPM-V-4.5)..
+:::
+
 [Ollama](https://ollama.com/) helps you run LLMs locally with only a few commands. It is available at macOS, Linux, and Windows. Now, MiniCPM-V 4.5 is officially on Ollama, and you can run it with one command:
 
 ```bash
@@ -31,7 +35,7 @@ Clone OpenBMB Ollama Fork:
 ```sh
 git clone https://github.com/tc-mb/ollama.git
 cd ollama
-git checkout MIniCPM-V
+git checkout Support-MiniCPM-V-4.5
 ```
 
 Then build and run Ollama from the root directory of the repository:

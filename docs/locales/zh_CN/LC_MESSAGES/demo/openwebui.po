@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-17 20:35+0800\n"
+"POT-Creation-Date: 2025-08-26 21:46+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -20,15 +20,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/demo/openwebui.md:1 67f2ad5e74ef437a83fdcc7ab0206073
+#: ../../source/demo/openwebui.md:1 0c57a6737e7147b0818724f5ef27e402
 msgid "OpenWebUI"
 msgstr ""
 
-#: ../../source/demo/openwebui.md:3 2a8a656404d74898a5a3d994f8522872
+#: ../../source/demo/openwebui.md:3 843276e3df1b49f7b03277e0e47f46ac
 msgid "Overview"
 msgstr "概述"
 
-#: ../../source/demo/openwebui.md:5 1cd6c3fb236441fe951b0bebf7d832cc
+#: ../../source/demo/openwebui.md:5 15f4a527ab7e4cfda928e84961918017
 msgid ""
 "Open WebUI is an extensible web interface designed for Ollama with full "
 "OpenAI API compatibility. It provides seamless interaction with MiniCPM-V"
@@ -37,136 +37,136 @@ msgstr ""
 "Open WebUI 是一个为 Ollama 设计的可扩展 Web 界面，完全兼容 OpenAI API。它通过直观的聊天界面，提供了与 "
 "MiniCPM-V 多模态模型的无缝交互。"
 
-#: ../../source/demo/openwebui.md:7 0b68302c3dad43e68fdd781b7dfa1bcf
+#: ../../source/demo/openwebui.md:7 5962f93b7cac455f83ab8e36df83791d
 msgid ""
 "MiniCPM-V is a series of efficient multimodal models with strong OCR "
 "capabilities, supporting high-resolution images, multi-image reasoning, "
 "and video understanding."
 msgstr "MiniCPM-V 是一系列高效的多模态模型，具有强大的 OCR 能力，支持高分辨率图像、多图像推理和视频理解。"
 
-#: ../../source/demo/openwebui.md:9 2d0a894e707f4fe1b7bbc1d229a66274
+#: ../../source/demo/openwebui.md:9 e43396e02a1c474c9a6c92cfafea403f
 msgid "Requirements"
 msgstr "环境要求"
 
-#: ../../source/demo/openwebui.md:11 8a345b8b0c76426c85f9f2f1eb8748e0
+#: ../../source/demo/openwebui.md:10 3c5a932919f24c44a1caa63aeaed1d3b
 msgid "Python 3.11+"
 msgstr "Python 3.11+"
 
-#: ../../source/demo/openwebui.md:12 7fe9c754128f49098237f6bc755d477a
+#: ../../source/demo/openwebui.md:11 683ac1f1831c411b9c1259fffaa2ed20
 msgid "Docker (recommended) or local Python environment"
 msgstr "Docker（推荐）或本地 Python 环境"
 
-#: ../../source/demo/openwebui.md:13 0e8bace682084d6abe4fc2b5891873f9
-msgid "8GB+ RAM (16GB+ recommended)"
-msgstr "8GB+ 内存（推荐 16GB+）"
+#: ../../source/demo/openwebui.md:12 fd1b149beb524fb199a7a40dc7463093
+msgid "18GB+ RAM (24GB+ recommended)"
+msgstr "18GB+ 内存（推荐 24GB+）"
 
-#: ../../source/demo/openwebui.md:14 7262ab01cb704e6caf5751a669e1d41e
+#: ../../source/demo/openwebui.md:13 76d993788f4d4292b9a9075c1545fe6d
 msgid "CUDA-compatible GPU (for local inference)"
 msgstr "兼容 CUDA 的 GPU（用于本地推理）"
 
-#: ../../source/demo/openwebui.md:16 cc77d3946afa4a8c895e58f1e9056722
+#: ../../source/demo/openwebui.md:15 1575fcb85a2c4bf5ba350e1f53a8dad0
 msgid "Quick Setup"
 msgstr "快速设置"
 
-#: ../../source/demo/openwebui.md:18 56ec108cebd2443ab5fed959d32bd333
+#: ../../source/demo/openwebui.md:17 c2b8a69007f64fd59cfdffc20904b88d
 msgid "Option 1: Docker (Recommended)"
 msgstr "方案一：Docker（推荐）"
 
-#: ../../source/demo/openwebui.md:29 0897fb9961da4392bb118f9e998202e7
+#: ../../source/demo/openwebui.md:28 509dc16c5f2c48bf8cb131d8025ef480
 msgid "Option 2: pip Installation"
 msgstr "方案二：pip 安装"
 
-#: ../../source/demo/openwebui.md:36 c56f13a1d63f4283b7eddccb55cad6b0
+#: ../../source/demo/openwebui.md:35 bb9721d3846645808ab29a40e5a608d1
 msgid "Access at: http://localhost:8080"
 msgstr "访问地址：http://localhost:8080"
 
-#: ../../source/demo/openwebui.md:38 8b8a3a8132f4412bb77735954fb60225
+#: ../../source/demo/openwebui.md:37 d018cf48912243d5a68e3c328da2e3b8
 msgid "Model Deployment"
 msgstr "模型部署"
 
-#: ../../source/demo/openwebui.md:40 4c6703881ada4587add12c765bb2b42f
+#: ../../source/demo/openwebui.md:39 6b83d043b3f24b228f07f93d78fe68e9
 msgid "Using Ollama (Easiest)"
 msgstr "使用 Ollama（最简单）"
 
-#: ../../source/demo/openwebui.md:50 8baf59de9b0443c09e19e3177b0f5417
+#: ../../source/demo/openwebui.md:49 992d88c4934d4cdca1f949716883ca28
 msgid ""
 "Configure in Open WebUI: Settings → Connections → Ollama API → "
 "`http://localhost:11434`"
 msgstr "在 Open WebUI 中配置：设置 → 连接 → Ollama API → `http://localhost:11434`"
 
-#: ../../source/demo/openwebui.md:52 839e6e2f79564e50b3ff3db79d4be7df
+#: ../../source/demo/openwebui.md:51 f8b7583c4bc944bbb0a53385958a6312
 msgid "Using vLLM (High Performance)"
 msgstr "使用 vLLM（高性能）"
 
-#: ../../source/demo/openwebui.md:63 b5036d8ae624431ca0580f044fb17fe0
+#: ../../source/demo/openwebui.md:62 d8e8c1d4cf0646e6a8bab9360c12b5e6
 msgid "Configure in Open WebUI: Settings → Connections → OpenAI API"
 msgstr "在 Open WebUI 中配置：设置 → 连接 → OpenAI API"
 
-#: ../../source/demo/openwebui.md:64 ab79f9ad9def48988003aeca2e4354d7
+#: ../../source/demo/openwebui.md:63 33accda4916249ad98ef3a9a18b32e83
 msgid "API Base URL: `http://localhost:8000/v1`"
 msgstr "API 基础 URL：`http://localhost:8000/v1`"
 
-#: ../../source/demo/openwebui.md:65 a5d6ae4d3db04f62b986144e527f7793
+#: ../../source/demo/openwebui.md:64 0bd577205221404f9edc7d6f7b857767
 msgid "API Key: `token-abc123`"
 msgstr "API 密钥：`token-abc123`"
 
-#: ../../source/demo/openwebui.md:67 2545fda7980c4354913203d9109355d4
+#: ../../source/demo/openwebui.md:66 910a16c2b44e4c50b6ef4d42f4b24b33
 msgid "Using SGLang (Structured Generation)"
 msgstr "使用 SGLang（结构化生成）"
 
-#: ../../source/demo/openwebui.md:81 24d5d1f269734d9bae7cd4bb16833542
+#: ../../source/demo/openwebui.md:80 ddb93794493d405aae53c9ff1fad79c6
 msgid "Configure API Base URL: `http://localhost:30000/v1`"
 msgstr "配置 API 基础 URL：`http://localhost:30000/v1`"
 
-#: ../../source/demo/openwebui.md:83 9c9536f539d7443dadff7a17bd70d8f5
+#: ../../source/demo/openwebui.md:82 fce5af9b0e3046d49930dfc8197cec96
 msgid "Usage Examples"
 msgstr "使用示例"
 
-#: ../../source/demo/openwebui.md:85 add7f0995b9043bbb916dd5191920f14
+#: ../../source/demo/openwebui.md:84 3d0521586af04901a727f66e50f7f040
 msgid "Image Understanding"
 msgstr "图像理解"
 
-#: ../../source/demo/openwebui.md:86 3d777b97916e4de48619b9133a3e9929
+#: ../../source/demo/openwebui.md:85 891403d580084650b9f5ed3dfda9f4ef
 msgid "Upload an image and ask:"
 msgstr "上传一张图片并提问："
 
-#: ../../source/demo/openwebui.md:91 c61881119c534219820e3c3f0a8c540b
+#: ../../source/demo/openwebui.md:90 9d49df6a44d3447c8e8d6871161ebd3b
 msgid "OCR Text Extraction"
 msgstr "OCR 文本提取"
 
-#: ../../source/demo/openwebui.md:96 5707479e425a4e359b724494a8827817
+#: ../../source/demo/openwebui.md:95 e4a1b9df9abc4c8eab3aa4eec819eee3
 msgid "Multi-image Comparison"
 msgstr "多图对比"
 
-#: ../../source/demo/openwebui.md:101 416f51aac14f47fe8a525c36d7bb307b
+#: ../../source/demo/openwebui.md:100 01aef1cea7664046adbba0c5d73f8cce
 msgid "Document Analysis"
 msgstr "文档分析"
 
-#: ../../source/demo/openwebui.md:106 6c2587d1247a4677a3b3659e64bae3b6
+#: ../../source/demo/openwebui.md:105 dfab1e9488254f3692fb4258616ef21b
 msgid "API Integration"
 msgstr "API 集成"
 
-#: ../../source/demo/openwebui.md:108 a084a3b1505d4c09a263270709d4d038
+#: ../../source/demo/openwebui.md:107 9fc336eda35946acbbe587c4fbde36a2
 msgid "Python Example"
 msgstr "Python 示例"
 
-#: ../../source/demo/openwebui.md:133 838d23f363c94eddbd3a7437f9659dd6
+#: ../../source/demo/openwebui.md:132 a5c3e3d505cb4e03a86c4ff0925907e5
 msgid "Resources"
 msgstr "资源"
 
-#: ../../source/demo/openwebui.md:135 619d07d7a6894f01bc23967d1744fbdc
+#: ../../source/demo/openwebui.md:134 02f6a1da4e294338ba8de6659e20af65
 msgid "[Open WebUI Documentation](https://docs.openwebui.com/)"
 msgstr "[Open WebUI 文档](https://docs.openwebui.com/)"
 
-#: ../../source/demo/openwebui.md:136 6636f28a936940c981325ebb19dddbea
+#: ../../source/demo/openwebui.md:135 21697f0380f74f8c8ed07375217f49d9
 msgid "[MiniCPM-V Models](https://huggingface.co/openbmb)"
 msgstr "[MiniCPM-V 模型](https://huggingface.co/openbmb)"
 
-#: ../../source/demo/openwebui.md:137 3ae22e2a64b44a1e8049033f452ed47d
+#: ../../source/demo/openwebui.md:136 2561dd65817f4174ac2311e68b03f1eb
 msgid "[Ollama Official Site](https://ollama.ai/)"
 msgstr "[Ollama 官网](https://ollama.ai/)"
 
-#: ../../source/demo/openwebui.md:138 427f14fbab4646c29cb2eca7a0a34815
+#: ../../source/demo/openwebui.md:137 993da9049aff4a37a850d64fcee7304a
 msgid "[vLLM Documentation](https://docs.vllm.ai/)"
 msgstr "[vLLM 文档](https://docs.vllm.ai/)"
 

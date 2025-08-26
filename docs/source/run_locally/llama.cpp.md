@@ -27,7 +27,7 @@ In this guide, we will show how to "use" [llama.cpp](https://github.com/ggml-org
 The main steps:
 
 1. Get the programs
-2. Get the MiniCPM-V 4.0 models in GGUF[^1] format
+2. Get the MiniCPM-V 4.5 models in GGUF[^1] format
 3. Run the program with the model
 
 ## Getting the Program
