@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-V & o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-04 10:11+0800\n"
+"POT-Creation-Date: 2025-08-27 19:04+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -25,8 +25,8 @@ msgid "AWQ"
 msgstr "AWQ"
 
 #: ../../source/quantization/awq.md:4 606ab7d8eecb435bb9599a23307b4496
-msgid "**Support:** MiniCPM-V4.0"
-msgstr "**支持:** MiniCPM-V4.0"
+msgid "**Support:** MiniCPM-V 4.5, MiniCPM-V 4.0"
+msgstr "**支持:** MiniCPM-V 4.5, MiniCPM-V 4.0"
 
 #: ../../source/quantization/awq.md:7 0d15086ed2d34593854ff4183034764a
 msgid "Method 1 (Use the pre-quantized model)"
@@ -39,10 +39,11 @@ msgstr "1.下载模型"
 
 #: ../../source/quantization/awq.md:14 de21d0bc8fdd47a7bf82799062cc0333
 msgid ""
-"Download the 4-bit quantized MiniCPM-V-4 model with AutoAWQ from "
-"[HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4-AWQ)"
+"Download the 4-bit quantized MiniCPM-V-4_5 model with AutoAWQ from "
+"[HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ)"
 msgstr ""
-"从 [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4-AWQ) 下载 4 位量化的 MiniCPM-V-4 模型（AutoAWQ）"
+"从 [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ) 下载 4 位量化的"
+" MiniCPM-V-4 模型（AutoAWQ）"
 
 #: ../../source/quantization/awq.md:20 ffc3ee8a8bc641ebaec59a50f2f87ad0
 msgid "2.Run with vLLM"
@@ -54,10 +55,11 @@ msgstr "方法二（自行量化模型）"
 
 #: ../../source/quantization/awq.md:97 97547a86768247eea4566a062e1a495a
 msgid ""
-"Download the MiniCPM-V-4 model from "
-"[HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4)"
+"Download the MiniCPM-V 4.5 model from "
+"[HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5)"
 msgstr ""
-"从 [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4) 下载 MiniCPM-V-4 模型"
+"从 [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5) 下载 "
+"MiniCPM-V 4.5 模型"
 
 #: ../../source/quantization/awq.md:103 8a9503c852cc4bfd91883c53a3fe535d
 msgid "2.Download and build AutoAWQ"
@@ -67,17 +69,16 @@ msgstr "2.下载并构建 AutoAWQ"
 msgid ""
 "Since the official AutoAWQ repository is no longer maintained, please "
 "download and build our fork instead."
-msgstr ""
-"由于官方 AutoAWQ 仓库已不再维护，请下载并构建我们的分支版本。"
+msgstr "由于官方 AutoAWQ 仓库已不再维护，请下载并构建我们的分支版本。"
 
-#: ../../source/quantization/awq.md:112 4d92fa6ac59846d3b9c596e58bf97b4d
+#: ../../source/quantization/awq.md:111 4d92fa6ac59846d3b9c596e58bf97b4d
 msgid "3.Quantization Script"
 msgstr "3.量化脚本"
 
-#: ../../source/quantization/awq.md:114 b2f8d103a0a94c4ca85e89d7f97cc633
+#: ../../source/quantization/awq.md:113 b2f8d103a0a94c4ca85e89d7f97cc633
 msgid ""
 "Run the following quantization script (replace model_path and quant_path "
 "with the paths to the original model and the quantized model, "
 "respectively)."
-msgstr ""
-"运行以下量化脚本（将 model_path 和 quant_path 分别替换为原始模型和量化模型的路径）。"
+msgstr "运行以下量化脚本（将 model_path 和 quant_path 分别替换为原始模型和量化模型的路径）。"
+

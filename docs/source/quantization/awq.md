@@ -1,20 +1,20 @@
 # AWQ
 
 :::{Note}
-**Support:** MiniCPM-V4.0
+**Support:** MiniCPM-V 4.5, MiniCPM-V 4.0
 :::
 
 ## Method 1 (Use the pre-quantized model)
 
 ### 1.Download the Model
 <!-- 下载量化模型
-https://huggingface.co/openbmb/MiniCPM-V-4-AWQ
+https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ
  -->
 
-Download the 4-bit quantized MiniCPM-V-4 model with AutoAWQ from [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4-AWQ)
+Download the 4-bit quantized MiniCPM-V-4_5 model with AutoAWQ from [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ)
 
 ```Bash
-git clone https://huggingface.co/openbmb/MiniCPM-V-4-AWQ
+git clone https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ
 ```
 
 ### 2.Run with vLLM
@@ -27,7 +27,7 @@ from vllm import LLM, SamplingParams
 
 
 # Quantized model name or path
-MODEL_NAME = "openbmb/MiniCPM-V-4-AWQ"
+MODEL_NAME = "openbmb/MiniCPM-V-4_5-AWQ"
 
 # List of image file paths
 IMAGES = [
@@ -91,13 +91,13 @@ print(outputs[0].outputs[0].text)
 
 ### 1.Download the Model
 <!-- 下载模型
-https://huggingface.co/openbmb/MiniCPM-V-4
+https://huggingface.co/openbmb/MiniCPM-V-4_5
  -->
 
-Download the MiniCPM-V-4 model from [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4)
+Download the MiniCPM-V 4.5 model from [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5)
 
 ```Bash
-git clone https://huggingface.co/openbmb/MiniCPM-V-4
+git clone https://huggingface.co/openbmb/MiniCPM-V-4_5
 ```
 
 ### 2.Download and build AutoAWQ
@@ -105,7 +105,6 @@ Since the official AutoAWQ repository is no longer maintained, please download a
 ```Bash
 git clone https://github.com/tc-mb/AutoAWQ.git
 cd AutoAWQ
-git checkout MiniCPMV4
 pip install -e .
 ```
 
@@ -122,10 +121,10 @@ from transformers import AutoTokenizer
 import shutil
 
 # Set the path to the original model (can be a local path or model ID)
-model_path = '/openbmb/MiniCPM-V-4'
+model_path = '/openbmb/MiniCPM-V-4_5'
 
 # Path to save the quantized model
-quant_path = '/model_quantized/minicpmv4_awq'
+quant_path = '/model_quantized/minicpmv4_5_awq'
 
 # Quantization configuration: 4-bit weights, group size 128, GEMM backend
 quant_config = { "zero_point": True, "q_group_size": 128, "w_bit": 4, "version": "GEMM" } # "w_bit":4 or 8	
