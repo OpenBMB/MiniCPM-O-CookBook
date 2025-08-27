@@ -18,7 +18,7 @@ It’s like the Python frameworks `torch`+`transformers` or `torch`+`vllm` but i
 *   **Python is an interpreted language**: The code you write is executed line-by-line on-the-fly by an interpreter. You can run the example code snippet or script with an interpreter or a natively interactive interpreter shell. In addition, Python is learner friendly, and even if you don’t know much before, you can tweak the source code here and there.
 *   **C++ is a compiled language**: The source code you write needs to be compiled beforehand, and it is translated to machine code and an executable program by a compiler. The overhead from the language side is minimal. You do have source code for example programs showcasing how to use the library. But it is not very easy to modify the source code if you are not verse in C++ or C.
 
-To use llama.cpp means that you use the llama.cpp library in your own program, like writing the source code of [Ollama](https://ollama.com/), [GPT4ALL](https://gpt4all.io/), [llamafile](https://github.com/Mozilla-Ocho/llamafile) etc. But that’s not what this guide is intended or could do. Instead, here we introduce how to use the `llama-cli` example program, in the hope that you know that llama.cpp does support MiniCPM-V 4.0 and how the ecosystem of llama.cpp generally works.
+To use llama.cpp means that you use the llama.cpp library in your own program, like writing the source code of [Ollama](https://ollama.com/), [GPT4ALL](https://gpt4all.io/), [llamafile](https://github.com/Mozilla-Ocho/llamafile) etc. But that’s not what this guide is intended or could do. Instead, here we introduce how to use the `llama-cli` example program, in the hope that you know that llama.cpp does support MiniCPM-V 4.5 and how the ecosystem of llama.cpp generally works.
 
 ```
 
@@ -36,7 +36,7 @@ You can get the programs in various ways. For optimal efficiency, we recommend c
 
 ::::{tab-set}
 
-:::{tab-item} Compile Locally
+::::{tab-item} Compile Locally
 Here are the basic command to compile llama-cli locally on macOS or Linux. For Windows or GPU users, please refer to the guide from [llama.cpp](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md).
 
 ### Installing Build Tools
@@ -74,9 +74,9 @@ Based on your CPU cores, you can enable parallel compiling to shorten the time, 
 
 The built programs will be in `./build/bin/`.
 
-:::
+::::
 
-:::{tab-item} Package Managers
+::::{tab-item} Package Managers
 For macOS and Linux users, `llama-cli` and `llama-server` can be installed with package managers including Homebrew, Nix, and Flox.
 
 Here, we show how to install `llama-cli` and` llama-server` with Homebrew. For other package managers, please check the instructions [here](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md).
@@ -93,9 +93,9 @@ Second, install the pre-built binaries with a single command:
 The installed binaries might not be built with the optimal compile options for your hardware, which can lead to poor performance. They also don’t support GPU on Linux systems.
 ```
 
-:::
+::::
 
-:::{tab-item} Binary Release
+::::{tab-item} Binary Release
 
 You can also download pre-built binaries from [GitHub Release](https://github.com/ggml-org/llama.cpp/releases). Please note that those pre-built binaries files are architecture-, backend-, and os-specific. If you are not sure what those mean, you probably don’t want to use them and running with incompatible versions will most likely fail or lead to poor performance.
 
@@ -130,9 +130,9 @@ For macOS or Linux:
 
 Download and unzip the .zip file into a directory and open a terminal at that directory.
 
-:::
-
 ::::
+
+:::::
 
 ## Getting the GGUF
 
@@ -140,11 +140,11 @@ GGUF[^1] is a file format for storing information needed to run a model, includi
 
 You can use our official GGUF files or prepare your own GGUF file.
 
-### Download official MiniCPM-V 4.0 GGUF files
+### Download official MiniCPM-V 4.5 GGUF files
 
 Download converted language model file (e.g., `Model-3.6B-Q4_K_M.gguf`) and vision model file (`mmproj-model-f16.gguf`) from:
-*   HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4-gguf
-*   ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-V-4-gguf
+*   HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4_5-gguf
+*   ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-V-4_5-gguf
 
 Or download the GGUF model with `huggingface-cli` (install with `pip install huggingface_hub`):
 
@@ -155,18 +155,18 @@ huggingface-cli download <model_repo> <gguf_file> --local-dir <local_dir>
 For example:
 
 ```bash
-huggingface-cli download openbmb/MiniCPM-V-4-gguf Model-3.6B-Q4_K_M.gguf --local-dir .
+huggingface-cli download openbmb/MiniCPM-V-4_5-gguf Model-3.6B-Q4_K_M.gguf --local-dir .
 ```
 
-This will download the MiniCPM-V 4.0 model in GGUF format quantized with the scheme Q4_K_M.
+This will download the MiniCPM-V 4.5 model in GGUF format quantized with the scheme Q4_K_M.
 
 ### Convert from PyTorch model
 
 Model files from Hugging Face Hub can be converted to GGUF, using the `convert-hf-to-gguf.py` script. It does require you to have a working Python environment with at least `transformers` installed.
 
-Download the MiniCPM-V-4 PyTorch model to "MiniCPM-V-4" folder:
-*   HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4
-*   ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-V-4
+Download the MiniCPM-V-4_5 PyTorch model to "MiniCPM-V-4_5" folder:
+*   HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4_5
+*   ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-V-4_5
 
 Clone the llama.cpp repository:
 
@@ -178,18 +178,18 @@ cd llama.cpp
 Convert the PyTorch model to GGUF:
 
 ```bash
-python ./tools/mtmd/legacy-models/minicpmv-surgery.py -m ../MiniCPM-V-4
+python ./tools/mtmd/legacy-models/minicpmv-surgery.py -m ../MiniCPM-V-4_5
 
-python ./tools/mtmd/legacy-models/minicpmv-convert-image-encoder-to-gguf.py -m ../MiniCPM-V-4 --minicpmv-projector ../MiniCPM-V-4/minicpmv.projector --output-dir ../MiniCPM-V-4/ --minicpmv_version 5
+python ./tools/mtmd/legacy-models/minicpmv-convert-image-encoder-to-gguf.py -m ../MiniCPM-V-4_5 --minicpmv-projector ../MiniCPM-V-4_5/minicpmv.projector --output-dir ../MiniCPM-V-4_5/ --minicpmv_version 6
 
-python ./convert_hf_to_gguf.py ../MiniCPM-V-4/model
+python ./convert_hf_to_gguf.py ../MiniCPM-V-4_5/model
 
 # quantize int4 version
 cd build/bin/
-./llama-quantize ../MiniCPM-V-4/model/Model-3.6B-F16.gguf ../MiniCPM-V-4/model/Model-3.6B-Q4_K_M.gguf Q4_K_M
+./llama-quantize ../MiniCPM-V-4_5/model/Model-3.6B-F16.gguf ../MiniCPM-V-4_5/model/Model-3.6B-Q4_K_M.gguf Q4_K_M
 ```
 
-## Run MiniCPM-V 4.0 with llama.cpp
+## Run MiniCPM-V 4.5 with llama.cpp
 
 ### llama-cli
 
@@ -199,13 +199,13 @@ cd build/bin/
 cd build/bin/
 
 # run f16 version
-./llama-mtmd-cli -m ../MiniCPM-V-4/model/Model-3.6B-F16.gguf --mmproj ../MiniCPM-V-4/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -p "What is in the image?"
+./llama-mtmd-cli -m ../MiniCPM-V-4_5/model/Model-3.6B-F16.gguf --mmproj ../MiniCPM-V-4_5/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -p "What is in the image?"
 
 # run quantized int4 version
-./llama-mtmd-cli -m ../MiniCPM-V-4/model/Model-3.6B-Q4_K_M.gguf --mmproj ../MiniCPM-V-4/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -p "What is in the image?"
+./llama-mtmd-cli -m ../MiniCPM-V-4_5/model/Model-3.6B-Q4_K_M.gguf --mmproj ../MiniCPM-V-4_5/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -p "What is in the image?"
 
 # or run in interactive mode
-./llama-mtmd-cli -m ../MiniCPM-V-4/model/Model-3.6B-Q4_K_M.gguf --mmproj ../MiniCPM-V-4/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -i
+./llama-mtmd-cli -m ../MiniCPM-V-4_5/model/Model-3.6B-Q4_K_M.gguf --mmproj ../MiniCPM-V-4_5/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -i
 ```
 
 Simple argument reference:
@@ -218,14 +218,14 @@ Here are more detailed explanations to the command:
 
 *   **Model**: `llama-cli` supports using model files from local path, Hugging Face hub, or remote URL.
     *   To use a local path, pass `-m Model-3.6B-Q4_K_M.gguf`
-    *   To use the model file from Hugging Face hub, pass `-hf openbmb/MiniCPM-V-4-gguf:Q4_K_M`
-    *   To use a remote URL, pass `-mu https://huggingface.co/openbmb/MiniCPM-V-4-gguf/resolve/main/Model-3.6B-Q4_K_M.gguf?download=true`.
+    *   To use the model file from Hugging Face hub, pass `-hf openbmb/MiniCPM-V-4_5-gguf:Q4_K_M`
+    *   To use a remote URL, pass `-mu https://huggingface.co/openbmb/MiniCPM-V-4_5-gguf/resolve/main/Model-3.6B-Q4_K_M.gguf?download=true`.
 
 *   **Speed Optimization**:
     *   CPU: `llama-cli` by default will use CPU and you can change `-t` to specify how many threads you would like it to use, e.g., `-t 8` means using 8 threads.
     *   GPU: If the programs are built with GPU support, you can use `-ngl`, which allows offloading some layers to the GPU for computation. If there are multiple GPUs, it will offload to all the GPUs. You can use `-dev` to control the devices used and `-sm` to control which kinds of parallelism is used. For example, `-ngl 99 -dev cuda0,cuda1 -sm row` means offload all layers to GPU 0 and GPU1 using the split mode row. Adding `-fa` may also speed up the generation.
 
-*   **Sampling Parameters**: llama.cpp supports a variety of [sampling methods](https://github.com/ggml-org/llama.cpp/tree/master/tools/main#generation-flags) and has default configuration for many of them. It is recommended to adjust those parameters according to the actual case and the recommended parameters from MiniCPM-V 4.0 modelcard could be used as a reference. If you encounter repetition and endless generation, it is recommended to pass in addition `--presence-penalty` up to `2.0`.
+*   **Sampling Parameters**: llama.cpp supports a variety of [sampling methods](https://github.com/ggml-org/llama.cpp/tree/master/tools/main#generation-flags) and has default configuration for many of them. It is recommended to adjust those parameters according to the actual case and the recommended parameters from MiniCPM-V 4.5 modelcard could be used as a reference. If you encounter repetition and endless generation, it is recommended to pass in addition `--presence-penalty` up to `2.0`.
 
 *   **Context Management**: llama.cpp adopts the “rotating” context management by default. The `-c` controls the maximum context length (default 4096, 0 means loaded from model), and `-n` controls the maximum generation length each time (default -1 means infinite until ending, -2 means until context full). When the context is full but the generation doesn’t end, the first `--keep` tokens (default 0, -1 means all) from the initial prompt is kept, and the first half of the rest is discarded. Then, the model continues to generate based on the new context tokens. You can set `--no-context-shift` to prevent this rotating behavior and the generation will stop once `-c` is reached. llama.cpp supports YaRN, which can be enabled by `-c 131072 --rope-scaling yarn --rope-scale 4 --yarn-orig-ctx 32768`.
 
@@ -238,14 +238,14 @@ Here are more detailed explanations to the command:
 he core command is similar to that of llama-cli. In addition, it supports thinking content parsing and tool call parsing.
 
 ```bash
-./llama-server -m ../MiniCPM-V-4/model/Model-3.6B-Q4_K_M.gguf --mmproj ../MiniCPM-V-4/mmproj-model-f16.gguf -ngl 100 -...
+./llama-server -m ../MiniCPM-V-4_5/model/Model-3.6B-Q4_K_M.gguf --mmproj ../MiniCPM-V-4_5/mmproj-model-f16.gguf -ngl 100 -...
 ```
 
 By default, the server will listen at `http://localhost:8080` which can be changed by passing `--host` and `--port`. The web front end can be assessed from a browser at `http://localhost:8080/`. The OpenAI compatible API is at `http://localhost:8080/v1/`.
 
 ## What’s More
 
-If you still find it difficult to use llama.cpp, don’t worry, just check out other llama.cpp-based applications. For example, MiniCPM-V 4.0 has already been officially part of [Ollama](https://ollama.com/), which is a good platform for you to search and run local LLMs.
+If you still find it difficult to use llama.cpp, don’t worry, just check out other llama.cpp-based applications. For example, MiniCPM-V 4.5 has already been officially part of [Ollama](https://ollama.com/), which is a good platform for you to search and run local LLMs.
 
 Have fun!
 

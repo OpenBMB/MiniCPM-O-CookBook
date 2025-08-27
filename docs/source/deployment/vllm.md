@@ -228,7 +228,7 @@ while True:
     )
 
     ai_message = chat_response.choices[0].message
-    print("MiniCPM-V-4:", ai_message.content)
+    print("MiniCPM-V-4_5:", ai_message.content)
     
     messages.append({
         "role": "assistant",
@@ -246,7 +246,7 @@ from vllm import LLM, SamplingParams
 # Model configuration
 MODEL_NAME = "<model_path>"
 # Option to use HuggingFace model ID
-# MODEL_NAME = "openbmb/MiniCPM-V-4"
+# MODEL_NAME = "openbmb/MiniCPM-V-4_5"
 
 # Load image
 image = Image.open("./assets/airplane.jpeg").convert("RGB")
