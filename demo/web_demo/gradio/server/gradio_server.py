@@ -2,7 +2,7 @@ from pydantic import BaseModel
 import uvicorn
 import fastapi
 import argparse
-from models import ModelMiniCPMV4
+from models import ModelMiniCPMV4, ModelMiniCPMV4_5
 import logging
 from logging_util import setup_root_logger
 
@@ -14,6 +14,8 @@ class Model:
         match model_type.lower():
             case 'minicpmv4':
                 self.model = ModelMiniCPMV4(model_path)
+            case 'minicpmv4_5':
+                self.model = ModelMiniCPMV4_5(model_path)
             case _:
                 raise ValueError(f"Unsupported model type: {model_type}")
 
@@ -35,12 +37,12 @@ class Item(BaseModel):
     params: str
 
 
-parser = argparse.ArgumentParser(description='Server for MiniCPM-V 4.0')
+parser = argparse.ArgumentParser(description='Server for MiniCPM-V 4.0 & 4.5')
 parser.add_argument('--port', type=int, default=9999,
                     help='Port to run the server on')
 parser.add_argument('--log_dir', type=str, default='logs',
                     help='Directory for log files')
-parser.add_argument('--model_path', type=str, default='openbmb/MiniCPM-V-4',
+parser.add_argument('--model_path', type=str, default='openbmb/MiniCPM-V-4_5',
                     help='Path to the model directory')
 parser.add_argument('--model_type', type=str, default='minicpmv4',
                     help='Type of the model to use')
