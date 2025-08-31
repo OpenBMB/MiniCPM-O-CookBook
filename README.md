@@ -150,3 +150,16 @@ This cookbook is developed by [OpenBMB](https://github.com/openbmb) and [OpenSQZ
 ## 📜 License
 
 This cookbook is served under the [Apache-2.0 License](LICENSE) - cook freely, share generously! 🍳
+
+## Citation <!-- omit in toc -->
+
+If you find our model/code/paper helpful, please consider citing our papers 📝 and staring us ⭐️！
+
+```bib
+@article{yao2024minicpm,
+  title={MiniCPM-V: A GPT-4V Level MLLM on Your Phone},
+  author={Yao, Yuan and Yu, Tianyu and Zhang, Ao and Wang, Chongyi and Cui, Junbo and Zhu, Hongji and Cai, Tianchi and Li, Haoyu and Zhao, Weilin and He, Zhihui and others},
+  journal={arXiv preprint arXiv:2408.01800},
+  year={2024}
+}
+```
