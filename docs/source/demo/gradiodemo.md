@@ -1,7 +1,7 @@
 # Gradio Web Demo
 
 :::{Note}
-**Support:** MiniCPM-V 4.0
+**Support:** MiniCPM-V 4.5, MiniCPM-V 4.0
 :::
 
 Gradio Web Demo is a web interface demonstration service for MiniCPM-V, supporting multimodal conversations with images and videos. The demo consists of two parts: **server** and **client**
@@ -17,6 +17,7 @@ cd server
 conda create -n gradio-server python=3.10
 conda activate gradio-server
 pip install -r requirements.txt
+
 python gradio_server.py
 ```
 
@@ -24,7 +25,7 @@ python gradio_server.py
 
 ```bash
 # Specify server port, log directory, model path and model type
-python gradio_server.py --port=39240 --log_dir=logs_v4 --model_path=/path/to/model --model_type=minicpmv4
+python gradio_server.py --port=39240 --log_dir=logs_v4 --model_path=/path/to/model --model_type=minicpmv4_5
 ```
 
 ### Client
@@ -34,6 +35,11 @@ cd client
 conda create -n gradio-client python=3.10
 conda activate gradio-client
 pip install -r requirements.txt
+
+# MiniCPM-V 4.5
+python gradio_client_minicpmv4_5.py
+
+# MiniCPM-V 4.0
 python gradio_client_minicpmv4.py
 ```
 

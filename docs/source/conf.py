@@ -145,15 +145,15 @@ ogp_locale_alternate = [
 # HTML head meta tags
 html_context = {
     'en': {
-        'meta_description': 'MiniCPM-V & o Cookbook - Your step-by-step guide to running MiniCPM models anywhere',
-        'meta_keywords': 'MiniCPM, Large Language Model, AI, Machine Learning, Documentation',
+        'meta_description': 'MiniCPM-V & MiniCPM-o Cookbook: Step-by-step guide to deploy and run multimodal models locally or in the cloud.',
+        'meta_keywords': 'MiniCPM, Large Language Model, AI, Machine Learning, Documentation, MiniCPM-V, MiniCPM-V Cookbook, MiniCPM-o, MiniCPM-o Cookbook',
         'meta_author': 'OpenBMB',
         'meta_robots': 'index, follow',
         'canonical_url': 'https://minicpm-o.readthedocs.io/en/latest/',
     },
     'zh_CN': {
-        'meta_description': 'MiniCPM-V & o Cookbook - 完整的MiniCPM模型使用指南',
-        'meta_keywords': 'MiniCPM, 大语言模型, AI, 机器学习, 文档',
+        'meta_description': 'MiniCPM-V 和 MiniCPM-o 模型详细教程，涵盖模型部署、本地运行与使用技巧，一站式掌握 MiniCPM 系列模型完整指南。',
+        'meta_keywords': 'MiniCPM, 大语言模型, AI, 机器学习, 文档, MiniCPM-V, MiniCPM-V 教程, MiniCPM-o, MiniCPM-o 教程',
         'meta_author': 'OpenBMB',
         'meta_robots': 'index, follow',
         'canonical_url': 'https://minicpm-o.readthedocs.io/zh_CN/latest/',

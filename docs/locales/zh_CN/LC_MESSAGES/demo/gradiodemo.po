@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-V & o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-07 10:49+0800\n"
+"POT-Creation-Date: 2025-09-01 12:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -25,8 +25,8 @@ msgid "Gradio Web Demo"
 msgstr "Gradio Web Demo"
 
 #: ../../source/demo/gradiodemo.md:4 af925e780118458aafc5c138b753c41d
-msgid "**Support:** MiniCPM-V 4.0"
-msgstr "**支持：** MiniCPM-V 4.0"
+msgid "**Support:** MiniCPM-V 4.5, MiniCPM-V 4.0"
+msgstr "**支持：** MiniCPM-V 4.5, MiniCPM-V 4.0"
 
 #: ../../source/demo/gradiodemo.md:7 6c26e946a8a54b02ad9a40bf7118c00f
 msgid ""
@@ -34,15 +34,14 @@ msgid ""
 "supporting multimodal conversations with images and videos. The demo "
 "consists of two parts: **server** and **client**"
 msgstr ""
-"Gradio Web 演示是 MiniCPM-V 的网页界面演示服务，支持图像和视频的多模态对话。"
-"该演示由两部分组成：**服务端** 和 **客户端**"
+"Gradio Web 演示是 MiniCPM-V 的网页界面演示服务，支持图像和视频的多模态对话。该演示由两部分组成：**服务端** 和 "
+"**客户端**"
 
 #: ../../source/demo/gradiodemo.md:9 21c2353c974346a4b0fe8de976451519
 msgid ""
 "Before getting started, please obtain the relevant code via [this "
 "link](https://github.com/OpenSQZ/MiniCPM-V-CookBook/tree/main/demo/web_demo/gradio)."
-msgstr ""
-"在开始之前，请通过[此链接](https://github.com/OpenSQZ/MiniCPM-V-CookBook/tree/main/demo/web_demo/gradio)获取相关代码。"
+msgstr "在开始之前，请通过[此链接](https://github.com/OpenSQZ/MiniCPM-V-CookBook/tree/main/demo/web_demo/gradio)获取相关代码。"
 
 #: ../../source/demo/gradiodemo.md:11 8228c45f1b7049c7ad2ed1683032cb43
 msgid "Deployment Steps"
@@ -52,30 +51,30 @@ msgstr "部署步骤"
 msgid "Server"
 msgstr "服务端"
 
-#: ../../source/demo/gradiodemo.md:23 ../../source/demo/gradiodemo.md:40
+#: ../../source/demo/gradiodemo.md:24 ../../source/demo/gradiodemo.md:46
 #: 22174f3121b640dfbf77aef5f6d50c37 417a174aa99846959d6981c1c6250f86
 msgid "**Custom Parameters:**"
 msgstr "**自定义参数：**"
 
-#: ../../source/demo/gradiodemo.md:30 e0cf3f597f864e689f8ff45fc820a415
+#: ../../source/demo/gradiodemo.md:31 e0cf3f597f864e689f8ff45fc820a415
 msgid "Client"
 msgstr "客户端"
 
-#: ../../source/demo/gradiodemo.md:47 6b4686b9fc7b4ef4933a44b903144edb
+#: ../../source/demo/gradiodemo.md:53 6b4686b9fc7b4ef4933a44b903144edb
 msgid "Access"
 msgstr "访问"
 
-#: ../../source/demo/gradiodemo.md:49 f053139e1e3e41f9b8de0b4bd0706a49
+#: ../../source/demo/gradiodemo.md:55 f053139e1e3e41f9b8de0b4bd0706a49
 msgid ""
 "By default, after the services are started, you can access the web demo "
 "by visiting http://localhost:8889 in your browser."
-msgstr ""
-"默认情况下，服务启动后，您可以在浏览器中访问 http://localhost:8889 来使用网页演示。"
+msgstr "默认情况下，服务启动后，您可以在浏览器中访问 http://localhost:8889 来使用网页演示。"
 
-#: ../../source/demo/gradiodemo.md:51 995ee33e06db4f308d640813af1daf65
+#: ../../source/demo/gradiodemo.md:57 995ee33e06db4f308d640813af1daf65
 msgid "![demo](./assets/demo.png)"
 msgstr "![演示](./assets/demo.png)"
 
-#: ../../source/demo/gradiodemo.md:51 18a69391393a491a87719e3a0e49089f
+#: ../../source/demo/gradiodemo.md:57 18a69391393a491a87719e3a0e49089f
 msgid "demo"
 msgstr "演示"
+
