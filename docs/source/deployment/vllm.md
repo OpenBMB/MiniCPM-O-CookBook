@@ -20,16 +20,9 @@ For video inference, install the video module:
 pip install vllm[video]
 ```
 
-:::{note}
-Please note that the prebuilt `vllm` has strict dependencies on `torch` and its CUDA versions.
-Check the note in the official document for installation ([link](https://docs.vllm.ai/en/latest/getting_started/installation.html)) for more help.
-:::
-
 ## 2. API Service Deployment
 
 ### 2.1 Launch API Service
-
-It is easy to build an OpenAI-compatible API service with vLLM, which can be deployed as a server that implements OpenAI API protocol. By default, it starts the server at http://localhost:8000. You can specify the address with --host and --port arguments. Run the command as shown below:
 
 ```bash
 vllm serve <model_path>  --dtype auto --max-model-len 2048 --api-key token-abc123 --gpu_memory_utilization 0.9 --trust-remote-code
@@ -131,7 +124,56 @@ print("Chat response:", chat_response)
 print("Chat response content:", chat_response.choices[0].message.content)
 ```
 
-### 2.4 Multi-turn Conversation
+### 2.4 Thinking and Non-Thinking Modes
+
+The `MiniCPM-V 4.5` model supports thinking before replying, and the thinking mode can be turned on and off by setting the `opanai` request parameters.
+
+- `"chat_template_kwargs": {"enable_thinking": True}`
+
+In the reply, thinking and the reply will be separated by the `</think>` tag.
+
+```python
+from openai import OpenAI
+import base64
+
+# API configuration
+openai_api_key = "token-abc123"
+openai_api_base = "http://localhost:8000/v1"
+
+client = OpenAI(
+    api_key=openai_api_key,
+    base_url=openai_api_base,
+)
+
+# Read and encode local image
+with open('./assets/airplane.jpeg', 'rb') as file:
+    image = "data:image/jpeg;base64," + base64.b64encode(file.read()).decode('utf-8')
+
+chat_response = client.chat.completions.create(
+    model="<model_path>", # Specify model path or HuggingFace ID
+    messages=[{
+        "role": "user",
+        "content": [
+            {"type": "text", "text": "Please describe this image"},
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": image,   # Supports network image URLs
+                },
+            },
+        ],
+    }],
+    extra_body={
+        "stop_token_ids": [1, 73440],
+        "chat_template_kwargs": {"enable_thinking": True},
+    }
+)
+
+print("Chat response:", chat_response)
+print("Chat response content:", chat_response.choices[0].message.content)
+```
+
+### 2.5 Multi-turn Conversation
 
 #### Launch Parameter Configuration
 
@@ -228,7 +270,7 @@ while True:
     )
 
     ai_message = chat_response.choices[0].message
-    print("MiniCPM-V-4_5:", ai_message.content)
+    print("MiniCPM-V 4.5:", ai_message.content)
     
     messages.append({
         "role": "assistant",
@@ -255,7 +297,7 @@ tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, trust_remote_code=True)
 # Initialize LLM
 llm = LLM(
     model=MODEL_NAME, 
-    max_model_len=4096,
+    max_model_len=2048,
     trust_remote_code=True,
     disable_mm_preprocessor_cache=True,
     limit_mm_per_prompt={"image": 5}
@@ -299,8 +341,8 @@ stop_token_ids = [tokenizer.convert_tokens_to_ids(i) for i in stop_tokens]
 sampling_params = SamplingParams(
     stop_token_ids=stop_token_ids, 
     temperature=0.7,
-    top_p=0.8,
-    max_tokens=4096
+    top_p=0.7,
+    max_tokens=1024
 )
 
 # Generate results

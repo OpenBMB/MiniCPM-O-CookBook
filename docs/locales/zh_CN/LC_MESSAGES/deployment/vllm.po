@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-26 21:46+0800\n"
+"POT-Creation-Date: 2025-09-02 20:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -30,7 +30,10 @@ msgid ""
 "currently under review for merging. In the meantime, you can use our code"
 " via [this link](https://github.com/tc-mb/vllm/tree/Support-"
 "MiniCPM-V-4.5).."
-msgstr "我们已向 vLLM 仓库提交了 MiniCPM-V 4.5 的 PR，目前正在审核合并中。在此期间，您可以通过[此链接](https://github.com/tc-mb/vllm/tree/Support-MiniCPM-V-4.5)使用我们的代码。"
+msgstr ""
+"我们已向 vLLM 仓库提交了 MiniCPM-V 4.5 的 "
+"PR，目前正在审核合并中。在此期间，您可以通过[此链接](https://github.com/tc-mb/vllm/tree/Support-"
+"MiniCPM-V-4.5)使用我们的代码。"
 
 #: ../../source/deployment/vllm.md:7 16b6cc8958bf410ba928524a83ab5466
 msgid ""
@@ -54,124 +57,153 @@ msgstr "1.1 安装vLLM"
 msgid "For video inference, install the video module:"
 msgstr "如需进行视频推理，请安装视频模块："
 
-#: ../../source/deployment/vllm.md:24 3b4c7cb336224f4a92fc14c866362276
-msgid ""
-"Please note that the prebuilt `vllm` has strict dependencies on `torch` "
-"and its CUDA versions. Check the note in the official document for "
-"installation "
-"([link](https://docs.vllm.ai/en/latest/getting_started/installation.html))"
-" for more help."
-msgstr ""
-"请注意，预编译的 `vllm` 对 `torch` 及其 CUDA "
-"版本有严格依赖。如需更多帮助，请查阅官方文档中的安装说明（[链接](https://docs.vllm.ai/en/latest/getting_started/installation.html)）。"
-
-#: ../../source/deployment/vllm.md:28 a5a71e9955054b77abcd8418b89545db
+#: ../../source/deployment/vllm.md:23 a5a71e9955054b77abcd8418b89545db
 msgid "2. API Service Deployment"
 msgstr "2.API 服务部署"
 
-#: ../../source/deployment/vllm.md:30 964ba38c1f674e12ba6be2f447c99740
+#: ../../source/deployment/vllm.md:25 964ba38c1f674e12ba6be2f447c99740
 msgid "2.1 Launch API Service"
 msgstr "2.1 启动 API 服务"
 
-#: ../../source/deployment/vllm.md:32 2679c3656ef8423e9391539ba53d1fdd
-msgid ""
-"It is easy to build an OpenAI-compatible API service with vLLM, which can"
-" be deployed as a server that implements OpenAI API protocol. By default,"
-" it starts the server at http://localhost:8000. You can specify the "
-"address with --host and --port arguments. Run the command as shown below:"
-msgstr ""
-"使用 vLLM 可以轻松构建兼容 OpenAI 的 API 服务，可作为实现 OpenAI API 协议的服务器部署。默认情况下，服务器会启动在 "
-"http://localhost:8000。你可以通过 --host 和 --port 参数指定地址。请按如下命令运行："
-
-#: ../../source/deployment/vllm.md:38 4dd8b8e0ec7b4ed4bff83f4d8370f0e8
+#: ../../source/deployment/vllm.md:31 4dd8b8e0ec7b4ed4bff83f4d8370f0e8
 msgid "**Parameter Description:**"
 msgstr "**参数说明：**"
 
-#: ../../source/deployment/vllm.md:39 48ae5ca2a2614ddbb7a04a25ef60bf16
+#: ../../source/deployment/vllm.md:32 48ae5ca2a2614ddbb7a04a25ef60bf16
 msgid "`<model_path>`: Specify the local path to your MiniCPM-V 4.5 model"
 msgstr "`<model_path>`：指定本地 MiniCPM-V 4.5 模型路径"
 
-#: ../../source/deployment/vllm.md:40 19d5b039710445518b49c0186d983038
+#: ../../source/deployment/vllm.md:33 19d5b039710445518b49c0186d983038
 msgid "`--api-key`: Set the API access key"
 msgstr "`--api-key`：设置 API 访问密钥"
 
-#: ../../source/deployment/vllm.md:41 f33c620c22fb4232b8927c3a26ddcd65
+#: ../../source/deployment/vllm.md:34 f33c620c22fb4232b8927c3a26ddcd65
 msgid "`--max-model-len`: Set the maximum model length"
 msgstr "`--max-model-len`：设置模型最大长度"
 
-#: ../../source/deployment/vllm.md:42 60ffbe3211224778990fdc749da708aa
+#: ../../source/deployment/vllm.md:35 60ffbe3211224778990fdc749da708aa
 msgid "`--gpu_memory_utilization`: GPU memory utilization rate"
 msgstr "`--gpu_memory_utilization`：GPU 显存利用率"
 
-#: ../../source/deployment/vllm.md:44 9875df5857d94fb9aadf7125bf873446
+#: ../../source/deployment/vllm.md:37 9875df5857d94fb9aadf7125bf873446
 msgid "2.2 Image Inference"
 msgstr "2.2 图片推理"
 
-#: ../../source/deployment/vllm.md:86 c5996fcd6591475da15d2f985838e2a1
+#: ../../source/deployment/vllm.md:79 c5996fcd6591475da15d2f985838e2a1
 msgid "2.3 Video Inference"
 msgstr "2.3 视频推理"
 
-#: ../../source/deployment/vllm.md:134 ce26f223c2b1454482fef0ab4e3bc8f5
-msgid "2.4 Multi-turn Conversation"
-msgstr "2.4 多轮对话"
+#: ../../source/deployment/vllm.md:127 315a242a08b2400fa3cd7498cb3afa9c
+msgid "2.4 Thinking and Non-Thinking Modes"
+msgstr "2.4 思考与非思考模式"
 
-#: ../../source/deployment/vllm.md:136 7aaf746b97004ff2af99f9a7696ea205
+#: ../../source/deployment/vllm.md:129 3627fd8821554fd797b6f2c1962fb87c
+msgid ""
+"The `MiniCPM-V 4.5` model supports thinking before replying, and the "
+"thinking mode can be turned on and off by setting the `opanai` request "
+"parameters."
+msgstr "`MiniCPM-V 4.5` 模型支持在回复前进行思考，可通过设置 `openai` 请求参数开启或关闭思考模式。"
+
+#: ../../source/deployment/vllm.md:131 74471051923446b68c529885881f501d
+#, python-brace-format
+msgid "`\"chat_template_kwargs\": {\"enable_thinking\": True}`"
+msgstr "`\"chat_template_kwargs\": {\"enable_thinking\": True}`"
+
+#: ../../source/deployment/vllm.md:133 73081677a0b14f2c846a4f0caae9f074
+msgid ""
+"In the reply, thinking and the reply will be separated by the `</think>` "
+"tag."
+msgstr "在回复内容中，思考内容与正式回复将通过 `</think>` 标签进行分隔。"
+
+#: ../../source/deployment/vllm.md:176 ce26f223c2b1454482fef0ab4e3bc8f5
+msgid "2.5 Multi-turn Conversation"
+msgstr "2.5 多轮对话"
+
+#: ../../source/deployment/vllm.md:178 7aaf746b97004ff2af99f9a7696ea205
 msgid "Launch Parameter Configuration"
 msgstr "启动参数配置"
 
-#: ../../source/deployment/vllm.md:138 7070efa8f77740d2a48dae15d2b873d0
+#: ../../source/deployment/vllm.md:180 7070efa8f77740d2a48dae15d2b873d0
 msgid ""
 "For video multi-turn conversations, you need to add the `--limit-mm-per-"
 "prompt` parameter when launching vLLM:"
 msgstr "对于视频多轮对话，启动 vLLM 时需添加 `--limit-mm-per-prompt` 参数："
 
-#: ../../source/deployment/vllm.md:140 87d5483d54544ff7b2b5be4180ca3872
+#: ../../source/deployment/vllm.md:182 87d5483d54544ff7b2b5be4180ca3872
 msgid "**Video multi-turn conversation configuration (supports up to 3 videos):**"
 msgstr "**视频多轮对话配置（最多支持3个视频）：**"
 
-#: ../../source/deployment/vllm.md:145 43e8edc78d484ac5b3492d6b47b8983d
+#: ../../source/deployment/vllm.md:187 43e8edc78d484ac5b3492d6b47b8983d
 msgid "**Image and video mixed input configuration:**"
 msgstr "**图片与视频混合输入配置：**"
 
-#: ../../source/deployment/vllm.md:150 0d79a4ee0c9b42f18a8e0fc2724544bc
+#: ../../source/deployment/vllm.md:192 0d79a4ee0c9b42f18a8e0fc2724544bc
 msgid "Multi-turn Conversation Example Code"
 msgstr "多轮对话示例代码"
 
-#: ../../source/deployment/vllm.md:239 8f3759c6496b4941b2da40fc5453e936
+#: ../../source/deployment/vllm.md:281 8f3759c6496b4941b2da40fc5453e936
 msgid "3. Offline Inference"
 msgstr "3.离线推理"
 
-#: ../../source/deployment/vllm.md:311 90ac38da0089440c9be4b9040be78493
+#: ../../source/deployment/vllm.md:353 90ac38da0089440c9be4b9040be78493
 msgid "Notes"
 msgstr "注意事项"
 
-#: ../../source/deployment/vllm.md:313 661ec8ab139549a0a3fb2d9f43b41111
+#: ../../source/deployment/vllm.md:355 661ec8ab139549a0a3fb2d9f43b41111
 msgid ""
 "**Model Path**: Replace all `<model_path>` in the examples with the "
 "actual MiniCPM-V 4.5 model path"
 msgstr "**模型路径**：请将示例中的 `<model_path>` 替换为实际的 MiniCPM-V 4.5 模型路径"
 
-#: ../../source/deployment/vllm.md:314 b7545723f89d478b890b648cfe8e27d0
+#: ../../source/deployment/vllm.md:356 b7545723f89d478b890b648cfe8e27d0
 msgid ""
 "**API Key**: Ensure the API key when launching the service matches the "
 "key in the client code"
 msgstr "**API 密钥**：请确保启动服务时的 API 密钥与客户端代码中的密钥一致"
 
-#: ../../source/deployment/vllm.md:315 f1f697156c1f454582dc878ffdcc0538
+#: ../../source/deployment/vllm.md:357 f1f697156c1f454582dc878ffdcc0538
 msgid ""
 "**File Paths**: Adjust image and video file paths according to your "
 "actual situation"
 msgstr "**文件路径**：请根据实际情况调整图片和视频文件路径"
 
-#: ../../source/deployment/vllm.md:316 1454806ae3b448adac1f032f5fac537f
+#: ../../source/deployment/vllm.md:358 1454806ae3b448adac1f032f5fac537f
 msgid ""
 "**Memory Configuration**: Adjust the `--gpu_memory_utilization` parameter"
 " appropriately based on GPU memory"
 msgstr "**显存配置**：请根据 GPU 显存情况合理调整 `--gpu_memory_utilization` 参数"
 
-#: ../../source/deployment/vllm.md:317 701b11c1ba484ac8a1dfeacbe6982bc3
+#: ../../source/deployment/vllm.md:359 701b11c1ba484ac8a1dfeacbe6982bc3
 msgid ""
 "**Multimodal Limits**: Set appropriate `--limit-mm-per-prompt` parameters"
 " when using multi-turn conversations"
 msgstr "**多模态限制**：多轮对话时请合理设置 `--limit-mm-per-prompt` 参数"
+
+#~ msgid ""
+#~ "Please note that the prebuilt `vllm` "
+#~ "has strict dependencies on `torch` and"
+#~ " its CUDA versions. Check the note"
+#~ " in the official document for "
+#~ "installation "
+#~ "([link](https://docs.vllm.ai/en/latest/getting_started/installation.html))"
+#~ " for more help."
+#~ msgstr ""
+#~ "请注意，预编译的 `vllm` 对 `torch` 及其 CUDA "
+#~ "版本有严格依赖。如需更多帮助，请查阅官方文档中的安装说明（[链接](https://docs.vllm.ai/en/latest/getting_started/installation.html)）。"
+
+#~ msgid ""
+#~ "It is easy to build an OpenAI-"
+#~ "compatible API service with vLLM, which"
+#~ " can be deployed as a server "
+#~ "that implements OpenAI API protocol. By"
+#~ " default, it starts the server at "
+#~ "http://localhost:8000. You can specify the "
+#~ "address with --host and --port "
+#~ "arguments. Run the command as shown "
+#~ "below:"
+#~ msgstr ""
+#~ "使用 vLLM 可以轻松构建兼容 OpenAI 的 API "
+#~ "服务，可作为实现 OpenAI API 协议的服务器部署。默认情况下，服务器会启动在 "
+#~ "http://localhost:8000。你可以通过 --host 和 --port "
+#~ "参数指定地址。请按如下命令运行："
 
