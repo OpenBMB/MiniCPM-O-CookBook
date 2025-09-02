@@ -102,7 +102,7 @@ We provide training methods serving different needs as following:
 | [Llama.cpp](./deployment/llama.cpp/minicpm-v4_5_llamacpp.md)| Fast CPU inference on PC, iPhone and iPad                        |
 | [Ollama](./deployment/ollama/minicpm-v4_5_ollama.md)| User-friendly setup  |
 | [OpenWebUI](./demo/web_demo/openwebui) | Interactive Web demo with Open WebUI |
-| [Gradio](./demo/web_demo/gradio) | Interactive Web demo with Gradio |
+| [Gradio](./demo/web_demo/gradio/README.md) | Interactive Web demo with Gradio |
 | [FastAPI](./demo/README.md) | Interactive Omni Streaming demo with FastAPI |
 | [iOS](./demo/ios_demo/ios.md) | Interactive iOS demo with llama.cpp |
 
@@ -114,6 +114,95 @@ We provide training methods serving different needs as following:
 | [GGUF](./quantization/gguf/minicpm-v4_5_gguf_quantize.md)| Simplest and most portable format  |
 | [BNB](./quantization/bnb/minicpm-v4_5_bnb_quantize.md)   | Simple and easy-to-use quantization method |
 | [AWQ](./quantization/awq/minicpm-v4_awq_quantize.md)   | High-performance quantization for efficient inference |
+
+## Framework Support Matrix
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Framework</th>
+      <th>Cookbook Link</th>
+      <th>Upstream PR</th>
+      <th>Supported since (branch)</th>
+      <th>Supported since (release)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Edge (On-device)</td>
+      <td>Llama.cpp</td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/llama.cpp/minicpm-v4_5_llamacpp.md">Llama.cpp Doc</a></td>
+      <td><a href="https://github.com/ggml-org/llama.cpp/pull/15575">#15575</a> (2025-08-26)</td>
+      <td>master (2025-08-26)</td>
+      <td><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b6282">b6282</a></td>
+    </tr>
+    <tr>
+      <td>Ollama</td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/ollama/minicpm-v4_5_ollama.md">Ollama Doc</a></td>
+      <td><a href="https://github.com/ollama/ollama/pull/12078">#12078</a> (2025-08-26)</td>
+      <td>Merging</td>
+      <td>Waiting for official release</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Serving (Cloud)</td>
+      <td>vLLM</td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/vllm/minicpm-v4_5_vllm.md">vLLM Doc</a></td>
+      <td><a href="https://github.com/vllm-project/vllm/pull/23586">#23586</a> (2025-08-26)</td>
+      <td>main (2025-08-27)</td>
+      <td>Waiting for official release</td>
+    </tr>
+    <tr>
+      <td>SGLang</td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/sglang/MiniCPM-v4_5_sglang.md">SGLang Doc</a></td>
+      <td><a href="https://github.com/sgl-project/sglang/pull/9610">#9610</a> (2025-08-26)</td>
+      <td>Merging</td>
+      <td>Waiting for official release</td>
+    </tr>
+    <tr>
+      <td>Finetuning</td>
+      <td>LLaMA-Factory</td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/finetune/finetune_llamafactory.md">LLaMA-Factory Doc</a></td>
+      <td><a href="https://github.com/hiyouga/LLaMA-Factory/pull/9022">#9022</a> (2025-08-26)</td>
+      <td>main (2025-08-26)</td>
+      <td>Waiting for official release</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Quantization</td>
+      <td>GGUF</td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/gguf/minicpm-v4_5_gguf_quantize.md">GGUF Doc</a></td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>BNB</td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/bnb/minicpm-v4_5_bnb_quantize.md">BNB Doc</a></td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>AWQ</td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/awq/minicpm-v4_5_awq_quantize.md">AWQ Doc</a></td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Demos</td>
+      <td>Gradio Demo</td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/demo/web_demo/gradio/README.md">Gradio Demo Doc</a></td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+ </table>
+
+
+If you'd like us to prioritize support for another open-source framework, please let us know via this
+[short form](https://docs.google.com/forms/d/e/1FAIpQLSdyTUrOPBgWqPexs3ORrg47ZcZ1r4vFQaA4ve2iA7L9sMfMWw/viewform).
+
 
 ## Awesome Works using MiniCPM-V & o
 - [text-extract-api](https://github.com/CatchTheTornado/text-extract-api): Document extraction API using OCRs and Ollama supported models ![GitHub Repo stars](https://img.shields.io/github/stars/CatchTheTornado/text-extract-api)
