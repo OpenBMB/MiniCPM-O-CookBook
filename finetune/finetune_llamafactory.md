@@ -17,6 +17,8 @@ pip install -e ".[torch,metrics,deepspeed,minicpm_v]"
 
 ## Prepare the Dataset
 
+### Building Image Dataset
+
 Refer to the **mllm_demo.json** dataset under [LLaMA-Factory/data](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json) and construct your data in the same format. The structure is as follows:
 
 To use images in multi-turn conversations, add the `<image>` tag in the user's content for each turn, and add the corresponding image paths in the `images` field. The number of `<image>` tags should match the number of values in `images`.
@@ -73,6 +75,62 @@ To use images in multi-turn conversations, add the `<image>` tag in the user's c
 ]
 ```
 
+### Building Video Dataset
+
+Refer to the **mllm_video_demo.json** dataset under [LLaMA-Factory/data](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json) and construct your data in the same format. The structure is as follows:
+
+To use videos in multi-turn conversations, add the `<video>` tag in the user's content for each turn, and add the corresponding video paths in the `videos` field. The number of `<video>` tags should match the number of values in `videos`.
+
+```json
+[
+  {
+    "messages": [
+      {
+        "content": "<video>Why is this video funny?",
+        "role": "user"
+      },
+      {
+        "content": "Because a baby is reading, and he is so cute!",
+        "role": "assistant"
+      }
+    ],
+    "videos": [
+      "mllm_demo_data/1.mp4"
+    ]
+  }
+]
+```
+
+### Building Audio Dataset
+
+**Note: Only MiniCPM-o 2.6 model supports audio fine-tuning**
+
+Refer to the **mllm_audio_demo.json** dataset under [LLaMA-Factory/data](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json) and construct your data in the same format. The structure is as follows:
+
+To use audio in multi-turn conversations, add the `<audio>` tag in the user's content for each turn, and add the corresponding audio paths in the `audios` field. The number of `<audio>` tags should match the number of values in `audios`.
+
+```json
+[
+  {
+    "messages": [
+      {
+        "content": "<audio>What's that sound?",
+        "role": "user"
+      },
+      {
+        "content": "It is the sound of glass shattering.",
+        "role": "assistant"
+      }
+    ],
+    "audios": [
+      "mllm_demo_data/1.mp3"
+    ]
+  }
+]
+```
+
+### Register Dataset
+
 1. Name your constructed JSON file as `image_caption.json` and place it under `LLaMA-Factory/data/`.
 
 2. Locate `LLaMA-Factory/data/dataset_info.json`.
@@ -89,11 +147,9 @@ To use images in multi-turn conversations, add the `<image>` tag in the user's c
           }
     ```
 
-   2. Copy this field, modify the highlighted parts as per your dataset, and add it to `LLaMA-Factory/data/dataset_info.json`.
+   2. Change the **key** `mllm_demo` to your custom dataset name, e.g., `cpmv_img`.
 
-   3. Change the **key** `mllm_demo` to your custom dataset name, e.g., `cpmv_img`.
-
-   4. Change the `file_name` value to your constructed dataset name, e.g., `image_caption.json`.
+   3. Change the `file_name` value to your constructed dataset name, e.g., `image_caption.json`.
 
    Example:
 
@@ -104,7 +160,34 @@ To use images in multi-turn conversations, add the `<image>` tag in the user's c
        "columns": {
          "messages": "messages",
          "images": "images"
+       },
+       "tags": {
+         "role_tag": "role",
+         "content_tag": "content",
+         "user_tag": "user",
+         "assistant_tag": "assistant"
        }
+   }
+   ```
+
+   4. For datasets containing videos and audio, please refer to the following format:
+
+   ```json
+   "mllm_video_audio_demo": {
+     "file_name": "mllm_video_audio_demo.json",
+     "formatting": "sharegpt",
+     "columns": {
+       "messages": "messages",
+       "videos": "videos",
+       "audios": "audios"
+     },
+     "tags": {
+       "role_tag": "role",
+       "content_tag": "content",
+       "user_tag": "user",
+       "assistant_tag": "assistant"
+     }
+   }
    ```
 
 ## Create Training Configuration YAML Files

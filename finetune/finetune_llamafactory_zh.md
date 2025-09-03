@@ -17,6 +17,7 @@ pip install -e ".[torch,metrics,deepspeed,minicpm_v]
 
 ## 构造数据
 
+### 构建图片数据集
 参照LLaMA-Factory/[data](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json)下的**mllm_demo.json**数据集,按照相同格式构造数据，结构如下：
 
 如需在多轮对话中使用图片，请在每轮对话的user content中添加`<image>`标签，并在images中添加相应的图片路径。`<image>` 标签数量需要与 `images`中的值数量相匹配。
@@ -73,6 +74,61 @@ pip install -e ".[torch,metrics,deepspeed,minicpm_v]
 ]
 ```
 
+### 构建视频数据集
+
+参照LLaMA-Factory/[data](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json)下的**mllm_video_demo.json**数据集,按照相同格式构造数据，结构如下：
+
+如需在多轮对话中使用图片，请在每轮对话的user content中添加`<video>`标签，并在images中添加相应的图片路径。`<video>` 标签数量需要与 `videos`中的值数量相匹配。
+
+```JSON
+[
+  {
+    "messages": [
+      {
+        "content": "<video>Why is this video funny?",
+        "role": "user"
+      },
+      {
+        "content": "Because a baby is reading, and he is so cute!",
+        "role": "assistant"
+      }
+    ],
+    "videos": [
+      "mllm_demo_data/1.mp4"
+    ]
+  }
+]
+```
+
+### 构建音频数据集
+
+**注意：仅MiniCPM-o 2.6模型支持音频微调**
+
+参照LLaMA-Factory/[data](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json)下的**mllm_audio_demo.json**数据集,按照相同格式构造数据，结构如下：
+
+如需在多轮对话中使用图片，请在每轮对话的user content中添加`<audio>`标签，并在images中添加相应的图片路径。`<audio>` 标签数量需要与 `audios`中的值数量相匹配。
+
+```JSON
+[
+  {
+    "messages": [
+      {
+        "content": "<audio>What's that sound?",
+        "role": "user"
+      },
+      {
+        "content": "It is the sound of glass shattering.",
+        "role": "assistant"
+      }
+    ],
+    "audios": [
+      "mllm_demo_data/1.mp3"
+    ]
+  }
+]
+```
+
+### 注册数据集
 1. 将构造的JSON文件命名为：image_caption.json，并放到LLaMA-Factory/[data/](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json)路径下
 
 2. 找到 LLaMA-Factory/[data/dataset_info.json](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json)
@@ -89,11 +145,9 @@ pip install -e ".[torch,metrics,deepspeed,minicpm_v]
           }
     ```
 
-   2. 复制以上字段，并且将标红处根据笔者给予的注释进行修改，放入LLaMA-Factory/data/dataset_info.json；
+   2.  将**键值**`mllm_demo`改成自定义的数据集名称，如cpmv_img
 
-   3.  将**键值**`mllm_demo`改成自定义的数据集名称，如cpmv_img
-
-   4.  将`file_name`应的值改成构造的数据集名称，如上文的image_caption.json
+   3.  将`file_name`应的值改成构造的数据集名称，如上文的image_caption.json
 
    Example:
 
@@ -105,6 +159,32 @@ pip install -e ".[torch,metrics,deepspeed,minicpm_v]
             "messages": "messages",
             "images": "images"
           },
+          "tags": {
+            "role_tag": "role",
+            "content_tag": "content",
+            "user_tag": "user",
+            "assistant_tag": "assistant"
+          }
+      }
+    ```
+    4.  对于包含视频和音频的数据集，请参照下列格式
+
+    ```JSON
+    "mllm_video_audio_demo": {
+      "file_name": "mllm_video_audio_demo.json",
+      "formatting": "sharegpt",
+      "columns": {
+        "messages": "messages",
+        "videos": "videos",
+        "audios": "audios"
+      },
+      "tags": {
+        "role_tag": "role",
+        "content_tag": "content",
+        "user_tag": "user",
+        "assistant_tag": "assistant"
+      }
+    }
     ```
 
 ## 创建训练的配置yaml文件：
