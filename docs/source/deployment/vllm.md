@@ -12,7 +12,7 @@ To learn more about vLLM, please refer to the [documentation](https://docs.vllm.
 ### 1.1 Install vLLM
 
 ```bash
-pip install vllm==0.10.1
+pip install -U vllm --pre --extra-index-url https://wheels.vllm.ai/nightly
 ```
 
 For video inference, install the video module:
