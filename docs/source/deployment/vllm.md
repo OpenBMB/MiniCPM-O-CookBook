@@ -1,9 +1,5 @@
 # vLLM
 
-:::{Note}
-We've submitted a PR for MiniCPM-V 4.5 to the vLLM repo, and it's currently under review for merging. In the meantime, you can use our code via [this link](https://github.com/tc-mb/vllm/tree/Support-MiniCPM-V-4.5)..
-:::
-
 [vLLM](https://github.com/vllm-project/vllm) is a fast and easy-to-use library for LLM inference and serving.
 To learn more about vLLM, please refer to the [documentation](https://docs.vllm.ai/en/latest/).
 
@@ -12,7 +8,7 @@ To learn more about vLLM, please refer to the [documentation](https://docs.vllm.
 ### 1.1 Install vLLM
 
 ```bash
-pip install -U vllm --pre --extra-index-url https://wheels.vllm.ai/nightly
+pip install vllm==0.10.2
 ```
 
 For video inference, install the video module:
