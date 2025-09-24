@@ -245,10 +245,21 @@ This cookbook is served under the [Apache-2.0 License](LICENSE) - cook freely, s
 If you find our model/code/paper helpful, please consider citing our papers 📝 and staring us ⭐️！
 
 ```bib
+@misc{yu2025minicpmv45cookingefficient,
+      title={MiniCPM-V 4.5: Cooking Efficient MLLMs via Architecture, Data, and Training Recipe}, 
+      author={Tianyu Yu and Zefan Wang and Chongyi Wang and Fuwei Huang and Wenshuo Ma and Zhihui He and Tianchi Cai and Weize Chen and Yuxiang Huang and Yuanqian Zhao and Bokai Xu and Junbo Cui and Yingjing Xu and Liqing Ruan and Luoyuan Zhang and Hanyu Liu and Jingkun Tang and Hongyuan Liu and Qining Guo and Wenhao Hu and Bingxiang He and Jie Zhou and Jie Cai and Ji Qi and Zonghao Guo and Chi Chen and Guoyang Zeng and Yuxuan Li and Ganqu Cui and Ning Ding and Xu Han and Yuan Yao and Zhiyuan Liu and Maosong Sun},
+      year={2025},
+      eprint={2509.18154},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2509.18154}, 
+}
+
 @article{yao2024minicpm,
   title={MiniCPM-V: A GPT-4V Level MLLM on Your Phone},
   author={Yao, Yuan and Yu, Tianyu and Zhang, Ao and Wang, Chongyi and Cui, Junbo and Zhu, Hongji and Cai, Tianchi and Li, Haoyu and Zhao, Weilin and He, Zhihui and others},
-  journal={arXiv preprint arXiv:2408.01800},
-  year={2024}
+  journal={Nat Commun 16, 5509 (2025)},
+  year={2025}
 }
+
 ```
