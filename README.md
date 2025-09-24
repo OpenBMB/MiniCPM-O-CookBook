@@ -149,7 +149,7 @@ We provide training methods serving different needs as following:
       <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/vllm/minicpm-v4_5_vllm.md">vLLM Doc</a></td>
       <td><a href="https://github.com/vllm-project/vllm/pull/23586">#23586</a> (2025-08-26)</td>
       <td>main (2025-08-27)</td>
-      <td>Waiting for official release</td>
+      <td><a href="https://github.com/vllm-project/vllm/releases/tag/v0.10.2">v0.10.2</td>
     </tr>
     <tr>
       <td>SGLang</td>
