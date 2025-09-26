@@ -4,7 +4,7 @@
 **Support:** MiniCPM-V 4.5, MiniCPM-V 4.0
 :::
 
-## Method 1 (Use the pre-quantized model)
+## Method 1 (Use the pre-quantized model with vllm)
 
 ### 1.Download the Model
 <!-- 下载量化模型
@@ -17,7 +17,7 @@ Download the 4-bit quantized MiniCPM-V-4_5 model with AutoAWQ from [HuggingFace]
 git clone https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ
 ```
 
-### 2.Run with vLLM
+### 2.Run with vllm
 
 ```python
 import os
@@ -86,8 +86,63 @@ outputs = llm.generate({
 print(outputs[0].outputs[0].text)
 ```
 
+## Method 2 (Use the pre-quantized model)
 
-## Method 2 (Quantize the model yourself)
+### 1.Download the Model
+<!-- 下载模型
+https://huggingface.co/openbmb/MiniCPM-V-4_5
+ -->
+
+Download the MiniCPM-V 4.5 model from [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5)
+
+```Bash
+git clone https://huggingface.co/openbmb/MiniCPM-V-4_5
+```
+
+### 2.Download and build AutoAWQ
+Since the official AutoAWQ repository is no longer maintained, please download and build our fork instead.
+```Bash
+git clone https://github.com/tc-mb/AutoAWQ.git
+cd AutoAWQ
+pip install -e .
+```
+
+### 3.Inference Script
+Use the following script to directly use the AWQ quantized model for inference.
+
+```python
+import os
+from PIL import Image
+from transformers import AutoTokenizer, TextStreamer
+from awq import AutoAWQForCausalLM
+import torch
+
+# Quantized model name or path
+model_path = "openbmb/MiniCPM-V-4_5-AWQ"
+device = 'cuda'
+# List of image file paths
+image_path = './assets/airplane.jpeg'
+
+model = AutoAWQForCausalLM.from_quantized(model_path, trust_remote_code=True).to('cuda')
+tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
+
+gpu_usage = GPUtil.getGPUs()[0].memoryUsed  
+response = model.chat(
+    image=Image.open(image_path).convert("RGB"),
+    msgs=[
+        {
+            "role": "user",
+            "content": "What is in this picture?"
+        }
+    ],
+    tokenizer=tokenizer
+) # 模型推理
+
+print('Output:',response)
+```
+
+
+## Method 3 (Quantize the model yourself)
 
 ### 1.Download the Model
 <!-- 下载模型
