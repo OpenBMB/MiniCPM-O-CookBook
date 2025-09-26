@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-V & o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-27 19:04+0800\n"
+"POT-Creation-Date: 2025-09-26 15:08+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -20,40 +20,45 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/quantization/awq.md:1 7babdc3cb4c34685aebb8b0cbb612022
+#: ../source/quantization/awq.md:1 cbab2df1836d4df5b589566cc9d47a13
 msgid "AWQ"
 msgstr "AWQ"
 
-#: ../../source/quantization/awq.md:4 606ab7d8eecb435bb9599a23307b4496
+#: ../source/quantization/awq.md:4 656cd02c1c4f42a0af406a8c1da768d1
 msgid "**Support:** MiniCPM-V 4.5, MiniCPM-V 4.0"
 msgstr "**支持:** MiniCPM-V 4.5, MiniCPM-V 4.0"
 
-#: ../../source/quantization/awq.md:7 0d15086ed2d34593854ff4183034764a
-msgid "Method 1 (Use the pre-quantized model)"
+#: ../source/quantization/awq.md:7 663109cae9f4410689cc9b18bb291400
+#, fuzzy
+msgid "Method 1 (Use the pre-quantized model with vllm)"
 msgstr "方法一（使用预量化模型）"
 
-#: ../../source/quantization/awq.md:9 ../../source/quantization/awq.md:92
-#: 349b17911d57428491b3d8e52b50bb2b cc6fbcbdb2bd48ee918ab45c6cdc732d
+#: ../source/quantization/awq.md:9 ../source/quantization/awq.md:91
+#: ../source/quantization/awq.md:147 5e28485548bd4004935f864eecb64266
+#: 908efc521ef14f06bff13d17dac150a6 eba290b960a8495788887c7f7e5a191b
 msgid "1.Download the Model"
 msgstr "1.下载模型"
 
-#: ../../source/quantization/awq.md:14 de21d0bc8fdd47a7bf82799062cc0333
+#: ../source/quantization/awq.md:14 a33cd93c6c79497ebc8689ea0c6c032a
 msgid ""
 "Download the 4-bit quantized MiniCPM-V-4_5 model with AutoAWQ from "
 "[HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ)"
 msgstr ""
-"从 [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ) 下载 4 位量化的"
-" MiniCPM-V-4 模型（AutoAWQ）"
+"从 [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ) 下载 4 "
+"位量化的 MiniCPM-V-4 模型（AutoAWQ）"
 
-#: ../../source/quantization/awq.md:20 ffc3ee8a8bc641ebaec59a50f2f87ad0
-msgid "2.Run with vLLM"
+#: ../source/quantization/awq.md:20 d605e88b81404c48a436b932c8f4c79a
+#, fuzzy
+msgid "2.Run with vllm"
 msgstr "2.使用 vLLM 运行"
 
-#: ../../source/quantization/awq.md:90 48ca56b27bb14cf2862e310ba4f3b074
-msgid "Method 2 (Quantize the model yourself)"
-msgstr "方法二（自行量化模型）"
+#: ../source/quantization/awq.md:89 f3ec1f5193f84b05b2675d2489b0b700
+#, fuzzy
+msgid "Method 2 (Use the pre-quantized model)"
+msgstr "方法一（使用预量化模型）"
 
-#: ../../source/quantization/awq.md:97 97547a86768247eea4566a062e1a495a
+#: ../source/quantization/awq.md:96 ../source/quantization/awq.md:152
+#: 7b0f02c25ea04c50ba52bab202479ec3 8b7dccb36c7946b6b171d824c4dfc68e
 msgid ""
 "Download the MiniCPM-V 4.5 model from "
 "[HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5)"
@@ -61,21 +66,38 @@ msgstr ""
 "从 [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5) 下载 "
 "MiniCPM-V 4.5 模型"
 
-#: ../../source/quantization/awq.md:103 8a9503c852cc4bfd91883c53a3fe535d
+#: ../source/quantization/awq.md:102 ../source/quantization/awq.md:158
+#: 63d9a6a3a4424f24b93496ed20d80f90 bbc3b033d9444873adf6f31d5689509f
 msgid "2.Download and build AutoAWQ"
 msgstr "2.下载并构建 AutoAWQ"
 
-#: ../../source/quantization/awq.md:104 15c28f1e80044cc7b262cfd38ee468dd
+#: ../source/quantization/awq.md:103 ../source/quantization/awq.md:159
+#: 78cc7c04be674204b12716c3a918f6c5 a0c561f10b514e128af5f0360ed89137
 msgid ""
 "Since the official AutoAWQ repository is no longer maintained, please "
 "download and build our fork instead."
 msgstr "由于官方 AutoAWQ 仓库已不再维护，请下载并构建我们的分支版本。"
 
-#: ../../source/quantization/awq.md:111 4d92fa6ac59846d3b9c596e58bf97b4d
+#: ../source/quantization/awq.md:110 e5b0cba2c7934d53a7a58dc7a7f86ee1
+msgid "3.Inference Script"
+msgstr ""
+
+#: ../source/quantization/awq.md:111 3c913fecb6b3445eb0f002808ee2a48f
+msgid ""
+"Use the following script to directly use the AWQ quantized model for "
+"inference."
+msgstr ""
+
+#: ../source/quantization/awq.md:145 c557bf2e27fc499ead5d835a464fe73f
+#, fuzzy
+msgid "Method 3 (Quantize the model yourself)"
+msgstr "方法二（自行量化模型）"
+
+#: ../source/quantization/awq.md:166 2a85ac2900844b619fcef3156ac38f39
 msgid "3.Quantization Script"
 msgstr "3.量化脚本"
 
-#: ../../source/quantization/awq.md:113 b2f8d103a0a94c4ca85e89d7f97cc633
+#: ../source/quantization/awq.md:168 fb2494da29c4493db05a3ab5e092f5c2
 msgid ""
 "Run the following quantization script (replace model_path and quant_path "
 "with the paths to the original model and the quantized model, "
