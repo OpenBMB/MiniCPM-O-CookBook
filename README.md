@@ -65,6 +65,7 @@ Explore real-world examples of MiniCPM-V deployed on edge devices using our cura
 | 🎬 [Video QA](./inference/minicpm-v4_5_video_understanding.md) | Video-based question answering |
 | 📄 [Document Parser](./inference/minicpm-v4_5_pdf_parse.md) | Parse and extract content from PDFs and webpages |
 | 📝 [Text Recognition](./inference/minicpm-v4_5_ocr.md) | Reliable OCR for photos and screenshots |
+| 🎯 [Grounding](./inference/minicpm-minicpm-v4_5_grounding.md) | Visual grounding and object localization in images |
 | **Audio Capabilities** | |
 | 🎤 [Speech-to-Text](./inference/speech2text.md) | Multilingual speech recognition |
 | 🗣️ [Text-to-Speech](./inference/text2speech.md) | Instruction-following speech synthesis |
