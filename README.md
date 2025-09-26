@@ -124,38 +124,38 @@ We provide training methods serving different needs as following:
       <th>Framework</th>
       <th>Cookbook Link</th>
       <th>Upstream PR</th>
-      <th>Supported since (branch)</th>
-      <th>Supported since (release)</th>
+      <th>Supported since(branch)</th>
+      <th>Supported since(release)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2">Edge (On-device)</td>
+      <td rowspan="2">Edge(On-device)</td>
       <td>Llama.cpp</td>
       <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/llama.cpp/minicpm-v4_5_llamacpp.md">Llama.cpp Doc</a></td>
-      <td><a href="https://github.com/ggml-org/llama.cpp/pull/15575">#15575</a> (2025-08-26)</td>
-      <td>master (2025-08-26)</td>
+      <td><a href="https://github.com/ggml-org/llama.cpp/pull/15575">#15575</a>(2025-08-26)</td>
+      <td>master(2025-08-26)</td>
       <td><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b6282">b6282</a></td>
     </tr>
     <tr>
       <td>Ollama</td>
       <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/ollama/minicpm-v4_5_ollama.md">Ollama Doc</a></td>
-      <td><a href="https://github.com/ollama/ollama/pull/12078">#12078</a> (2025-08-26)</td>
+      <td><a href="https://github.com/ollama/ollama/pull/12078">#12078</a>(2025-08-26)</td>
       <td>Merging</td>
       <td>Waiting for official release</td>
     </tr>
     <tr>
-      <td rowspan="2">Serving (Cloud)</td>
+      <td rowspan="2">Serving(Cloud)</td>
       <td>vLLM</td>
       <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/vllm/minicpm-v4_5_vllm.md">vLLM Doc</a></td>
-      <td><a href="https://github.com/vllm-project/vllm/pull/23586">#23586</a> (2025-08-26)</td>
-      <td>main (2025-08-27)</td>
+      <td><a href="https://github.com/vllm-project/vllm/pull/23586">#23586</a>(2025-08-26)</td>
+      <td>main(2025-08-27)</td>
       <td><a href="https://github.com/vllm-project/vllm/releases/tag/v0.10.2">v0.10.2</td>
     </tr>
     <tr>
       <td>SGLang</td>
       <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/sglang/MiniCPM-v4_5_sglang.md">SGLang Doc</a></td>
-      <td><a href="https://github.com/sgl-project/sglang/pull/9610">#9610</a> (2025-08-26)</td>
+      <td><a href="https://github.com/sgl-project/sglang/pull/9610">#9610</a>(2025-08-26)</td>
       <td>Merging</td>
       <td>Waiting for official release</td>
     </tr>
@@ -163,8 +163,8 @@ We provide training methods serving different needs as following:
       <td>Finetuning</td>
       <td>LLaMA-Factory</td>
       <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/finetune/finetune_llamafactory.md">LLaMA-Factory Doc</a></td>
-      <td><a href="https://github.com/hiyouga/LLaMA-Factory/pull/9022">#9022</a> (2025-08-26)</td>
-      <td>main (2025-08-26)</td>
+      <td><a href="https://github.com/hiyouga/LLaMA-Factory/pull/9022">#9022</a>(2025-08-26)</td>
+      <td>main(2025-08-26)</td>
       <td>Waiting for official release</td>
     </tr>
     <tr>
