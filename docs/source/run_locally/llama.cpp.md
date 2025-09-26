@@ -36,7 +36,7 @@ You can get the programs in various ways. For optimal efficiency, we recommend c
 
 ::::{tab-set}
 
-::::{tab-item} Compile Locally
+:::{tab-item} Compile Locally
 Here are the basic command to compile llama-cli locally on macOS or Linux. For Windows or GPU users, please refer to the guide from [llama.cpp](https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md).
 
 ### Installing Build Tools
@@ -74,9 +74,9 @@ Based on your CPU cores, you can enable parallel compiling to shorten the time, 
 
 The built programs will be in `./build/bin/`.
 
-::::
+:::
 
-::::{tab-item} Package Managers
+:::{tab-item} Package Managers
 For macOS and Linux users, `llama-cli` and `llama-server` can be installed with package managers including Homebrew, Nix, and Flox.
 
 Here, we show how to install `llama-cli` and` llama-server` with Homebrew. For other package managers, please check the instructions [here](https://github.com/ggml-org/llama.cpp/blob/master/docs/install.md).
@@ -93,9 +93,9 @@ Second, install the pre-built binaries with a single command:
 The installed binaries might not be built with the optimal compile options for your hardware, which can lead to poor performance. They also don’t support GPU on Linux systems.
 ```
 
-::::
+:::
 
-::::{tab-item} Binary Release
+:::{tab-item} Binary Release
 
 You can also download pre-built binaries from [GitHub Release](https://github.com/ggml-org/llama.cpp/releases). Please note that those pre-built binaries files are architecture-, backend-, and os-specific. If you are not sure what those mean, you probably don’t want to use them and running with incompatible versions will most likely fail or lead to poor performance.
 
@@ -130,9 +130,9 @@ For macOS or Linux:
 
 Download and unzip the .zip file into a directory and open a terminal at that directory.
 
-::::
+:::
 
-:::::
+::::
 
 ## Getting the GGUF
 
