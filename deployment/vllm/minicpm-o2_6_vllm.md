@@ -34,7 +34,7 @@ pip install vllm[video]
 ### 2.1 Launch API Service
 
 ```bash
-vllm serve <model_path>  --dtype auto --max-model-len 2048 --api-key token-abc123 --gpu_memory_utilization 0.9 --trust-remote-code
+vllm serve <model_path>  --dtype auto --max-model-len 2048 --api-key token-abc123 --gpu_memory_utilization 0.9 --trust-remote-code --max-num-batched-tokens 2048
 ```
 
 **Parameter Description:**
