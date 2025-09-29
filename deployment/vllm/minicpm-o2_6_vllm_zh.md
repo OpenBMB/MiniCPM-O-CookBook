@@ -3,15 +3,13 @@
 ## 1. 环境准备
 
 >  [!NOTE]
-> MiniCPM-O2.6在vllm上使用需要特定的transformers来进行运行
+> MiniCPM-O2.6在vLLM上使用需要特定的transformers来进行运行
 >
 > 目前测试可行的方案：
 > 
 > 1、`0.9.2>vllm >= 0.7.1 + 4.52.3 >= transformers >= 4.48.2`
 >
-> 2、`vllm >= 0.10.0 + 4.53.3 >= transformers >= 4.53.0` 
->
-> 3、**临时方案（马上会提交）**：一个新分支修复了不同transformers版本的问题，可以使用源码安装该分支 [Fix-minicpm-o-2_6](https://github.com/tc-mb/vllm/tree/Fix/Fix-minicpm-o-2_6-WhisperEncodingLayer)，安装方式详见[vLLM文档](https://docs.vllm.ai/en/v0.10.1.1/getting_started/installation/index.html)
+> 2、**临时方案（即将提交）**：一分支已修复不同transformers版本问题，如需使用较新vLLM版本，请使用源码安装该分支 [Fix-minicpm-o-2_6](https://github.com/tc-mb/vllm/tree/Fix/Fix-minicpm-o-2_6-WhisperEncodingLayer)，安装方式详见[vLLM文档](https://docs.vllm.ai/en/v0.10.1.1/getting_started/installation/index.html)或1.2节内容
 
 ### 1.1 安装 vLLM
 
@@ -27,6 +25,24 @@ pip install vllm[video]
 
 进行音频推理时，需要安装相应的音频模块：
 ```bash
+pip install vllm[audio]
+```
+
+### 1.2 安装特定版本（源码构建）
+如需安装特定版本 vLLM（源码构建），按以下步骤操作：
+
+```bash
+# 重要：确保CUDA版本12.8，并使用干净的新环境（torch 将自动安装）
+conda create -n vllm python=3.12
+conda activate vllm
+
+git clone https://github.com/tc-mb/vllm.git
+cd vllm
+git checkout Fix/Fix-minicpm-o-2_6-WhisperEncodingLayer
+
+MAX_JOBS=6 VLLM_USE_PRECOMPILED=1 pip install --editable . -v --progress-bar=on
+
+pip install vllm[video]
 pip install vllm[audio]
 ```
 

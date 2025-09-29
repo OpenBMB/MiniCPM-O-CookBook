@@ -4,15 +4,12 @@
 
 ### 1.1 Install vLLM
 > [!NOTE]
-> MiniCPM-O2.6 requires a specific version of transformers to run on vllm.
+> MiniCPM-O2.6 requires specific transformers versions to run on vLLM.
 >
 > Currently tested feasible solutions:
 >
-> 1、`0.9.2 >= vllm >= 0.7.1 + 4.52.3 >= transformers >= 4.48.2`
->
-> 2、`vllm >= 0.10.0 + 4.53.3 >= transformers >= 4.53.0` 
->
-> 3、**Temporary solution(Will submit immediately)**: A new branch is provided here to fix issues with different transformers. You can install from the source code using this branch [Fix-minicpm-o-2_6](https://github.com/tc-mb/vllm/tree/Fix/Fix-minicpm-o-2_6-WhisperEncodingLayer). For installation methods, please refer to the [vLLM documentation](https://docs.vllm.ai/en/v0.10.1.1/getting_started/installation/index.html)
+> 1. `0.9.2 >= vllm >= 0.7.1 + 4.52.3 >= transformers >= 4.48.2`
+> 2. Temporary solution (under submission): a branch has fixed compatibility issues across different transformers versions. If you need a newer vLLM version, install from source using this branch [Fix-minicpm-o-2_6](https://github.com/tc-mb/vllm/tree/Fix/Fix-minicpm-o-2_6-WhisperEncodingLayer). See the [vLLM installation docs](https://docs.vllm.ai/en/v0.10.1.1/getting_started/installation/index.html) or section 1.2 for step-by-step commands.
 
 ```bash
 pip install vllm == 0.7.1
@@ -26,7 +23,22 @@ pip install vllm[video]
 
 For audio inference, install the audio module:
 ```bash
+pip install vllm[audio]
+```
+
+### 1.2 Install a specific vLLM version (from source)
+If you need a specific vLLM build from source, follow these steps:
+
+```bash
+# IMPORTANT: Ensure CUDA 12.8 is available; create a clean environment (torch will be installed automatically)
+conda create -n vllm python=3.12
+conda activate vllm
+git clone https://github.com/tc-mb/vllm.git 
+cd vllm
+git checkout Fix/Fix-minicpm-o-2_6-WhisperEncodingLayer
+MAX_JOBS=6 VLLM_USE_PRECOMPILED=1 pip install --editable . -v --progress-bar=on
 pip install vllm[video]
+pip install vllm[audio]
 ```
 
 ## 2. API Service Deployment
@@ -137,7 +149,7 @@ print("Chat response content:", chat_response.choices[0].message.content)
 from openai import OpenAI
 import base64
 
-# API 配置
+# API configuration
 openai_api_key = "token-abc123"
 openai_api_base = "http://localhost:8000/v1"
 
@@ -146,12 +158,12 @@ client = OpenAI(
     base_url=openai_api_base,
 )
 
-# 读取音频文件并编码为 base64
+# Read audio file and encode to base64
 with open('./audio/audio.wav', 'rb') as audio_file:
     video_base64 = base64.b64encode(audio_file.read()).decode('utf-8')
 
 chat_response = client.chat.completions.create(
-    model="<模型路径>",
+    model="<model_path>",
     messages=[
         {
             "role": "system",
@@ -160,7 +172,7 @@ chat_response = client.chat.completions.create(
         {
             "role": "user",
             "content": [
-                {"type": "text", "text": "请描述这个音频"},
+                {"type": "text", "text": "Please describe this audio"},
                 {
                     "type": "video_url",
                     "video_url": {
