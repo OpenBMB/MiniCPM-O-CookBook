@@ -122,7 +122,7 @@ print("Chat response content:", chat_response.choices[0].message.content)
 
 ### 2.4 Thinking and Non-Thinking Modes
 
-The `MiniCPM-V 4.5` model supports thinking before replying, and the thinking mode can be turned on and off by setting the `opanai` request parameters.
+The `MiniCPM-V 4.5` model supports thinking before replying, and the thinking mode can be turned on and off by setting the `openai` request parameters.
 
 - `"chat_template_kwargs": {"enable_thinking": True}`
 
