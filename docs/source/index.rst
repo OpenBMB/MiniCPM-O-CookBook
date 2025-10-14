@@ -28,6 +28,13 @@ Cook up amazing multimodal AI applications effortlessly with MiniCPM-o / MiniCPM
 ✨ What Makes Our Recipes Special?
 **********************************
 
+Easy Usage Documentation
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Our comprehensive `documentation website <https://minicpm-o.readthedocs.io/en/latest/index.html>`_
+presents every recipe in a clear, well-organized manner.
+All features are displayed at a glance, making it easy for you to quickly find exactly what you need.
+
 Broad User Spectrum
 ~~~~~~~~~~~~~~~~~~~
 
@@ -46,7 +53,35 @@ Our ecosystem delivers optimal solution for a variety of hardware environments a
 * Quantized deployment: Maximize efficiency and minimize resource consumption using **GGUF** and **BNB**.
 * Edge devices: Bring powerful AI experiences directly to **iPhone** and **iPad**, supporting mobile and privacy-sensitive applications.
 
-🔥 Inference recipes
+⭐️ Live Demonstrations
+*********************
+
+Explore real-world examples of MiniCPM-V deployed on edge devices using our curated recipes. 
+These demos highlight the model’s high efficiency and robust performance in practical scenarios.
+
+Run locally on iPhone with `iOS demo <demo/iosdemo.html>`_.
+
+.. raw:: html
+
+   <p align="center">
+     <img src="../inference/assets/gif_cases/iphone_cn.gif" width="32%">
+     &nbsp;&nbsp;&nbsp;&nbsp;
+     <img src="../inference/assets/gif_cases/iphone_en.gif" width="32%">
+   </p>
+
+Run locally on iPad with `iOS demo <demo/iosdemo.html>`_, observing the process of drawing a rabbit.
+
+.. raw:: html
+
+   <p align="center">
+     <video width="360" controls>
+       <source src="https://github.com/user-attachments/assets/43659803-8fa4-463a-a22c-46ad108019a7" type="video/mp4">
+       Your browser does not support the video tag.
+     </video>
+   </p>
+
+
+🔥 Inference Recipes
 ********************
 
 *Ready-to-run examples*
@@ -139,13 +174,13 @@ We provide training methods serving different needs as following:
      - Fast inference on PC, iPhone and iPad  
    * - `Ollama <./run_locally/ollama.html>`_
      - User-friendly setup
-   * - `Fast API <./demo/webdemo.html>`_
-     - Interactive Omni Streaming demo with FastAPI
    * - `OpenWebUI <./demo/openwebui.html>`_
      - Interactive Web demo with Open WebUI
-   * - `Gradio Web Demo <./demo/gradiodemo.html>`_
+   * - `Gradio <./demo/web_demo/gradio/README.html>`_
      - Interactive Web demo with Gradio
-   * - `iOS Demo <./demo/iosdemo.html>`_
+   * - `FastAPI <./demo/webdemo.html>`_
+     - Interactive Omni Streaming demo with FastAPI
+   * - `iOS <./demo/ios_demo/ios.html>`_
      - Interactive iOS demo with llama.cpp
 
 
@@ -167,6 +202,102 @@ We provide training methods serving different needs as following:
      - Simple and easy-to-use quantization method
    * - `AWQ <./quantization/awq.html>`_
      - High-performance quantization for efficient inference
+
+.. _support-matrix:
+
+Framework Support Matrix
+************************
+
+.. list-table::
+   :widths: 15 15 25 15 15 15
+   :header-rows: 1
+
+   * - Category
+     - Framework
+     - Cookbook Link
+     - Upstream PR
+     - Supported since (branch)
+     - Supported since (release)
+
+   * - Edge (On-device)
+     - Llama.cpp
+     - `Llama.cpp Doc <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/llama.cpp/minicpm-v4_5_llamacpp.md>`_
+     - `#15575 <https://github.com/ggml-org/llama.cpp/pull/15575>`_ (2025-08-26)
+     - master (2025-08-26)
+     - `b6282 <https://github.com/ggml-org/llama.cpp/releases/tag/b6282>`_
+
+   * - 
+     - Ollama
+     - `Ollama Doc <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/ollama/minicpm-v4_5_ollama.md>`_
+     - `#12078 <https://github.com/ollama/ollama/pull/12078>`_ (2025-08-26)
+     - Merging
+     - Waiting for official release
+
+   * - Serving (Cloud)
+     - vLLM
+     - `vLLM Doc <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/vllm/minicpm-v4_5_vllm.md>`_
+     - `#23586 <https://github.com/vllm-project/vllm/pull/23586>`_ (2025-08-26)
+     - main (2025-08-27)
+     - `v0.10.2 <https://github.com/vllm-project/vllm/releases/tag/v0.10.2>`_
+
+   * - 
+     - SGLang
+     - `SGLang Doc <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/sglang/MiniCPM-v4_5_sglang.md>`_
+     - `#9610 <https://github.com/sgl-project/sglang/pull/9610>`_ (2025-08-26)
+     - Merging
+     - Waiting for official release
+
+   * - Finetuning
+     - LLaMA-Factory
+     - `LLaMA-Factory Doc <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/finetune/finetune_llamafactory.md>`_
+     - `#9022 <https://github.com/hiyouga/LLaMA-Factory/pull/9022>`_ (2025-08-26)
+     - main (2025-08-26)
+     - Waiting for official release
+
+   * - Quantization
+     - GGUF
+     - `GGUF Doc <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/gguf/minicpm-v4_5_gguf_quantize.md>`_
+     - —
+     - —
+     - —
+
+   * - 
+     - BNB
+     - `BNB Doc <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/bnb/minicpm-v4_5_bnb_quantize.md>`_
+     - —
+     - —
+     - —
+
+   * - 
+     - AWQ
+     - `AWQ Doc <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/awq/minicpm-v4_5_awq_quantize.md>`_
+     - —
+     - —
+     - —
+
+   * - Demos
+     - Gradio Demo
+     - `Gradio Demo Doc <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/demo/web_demo/gradio/README.md>`_
+     - —
+     - —
+     - —
+
+If you'd like us to prioritize support for another open-source framework,
+please let us know via this
+`short form <https://docs.google.com/forms/d/e/1FAIpQLSdyTUrOPBgWqPexs3ORrg47ZcZ1r4vFQaA4ve2iA7L9sMfMWw/viewform>`_.
+
+
+Awesome Works using MiniCPM-V & o
+=================================
+
+* `text-extract-api <https://github.com/CatchTheTornado/text-extract-api>`_ — Document extraction API using OCRs and Ollama supported models
+* `comfyui_LLM_party <https://github.com/heshengtao/comfyui_LLM_party>`_ — Build LLM workflows and integrate into existing image workflows
+* `Ollama-OCR <https://github.com/imanoop7/Ollama-OCR>`_ — OCR package uses VLMs through Ollama to extract text from images and PDFs
+* `comfyui-mixlab-nodes <https://github.com/MixLabPro/comfyui-mixlab-nodes>`_ — ComfyUI node suite supports Workflow-to-APP、GPT&3D and more
+* `OpenAvatarChat <https://github.com/HumanAIGC-Engineering/OpenAvatarChat>`_ — Interactive digital human conversation implementation on single PC
+* `pensieve <https://github.com/arkohut/pensieve>`_ — A privacy-focused passive recording project by recording screen content
+* `paperless-gpt <https://github.com/icereed/paperless-gpt>`_ — Use LLMs to handle paperless-ngx, AI-powered titles, tags and OCR
+* `Neuro <https://github.com/kimjammer/Neuro>`_ — A recreation of Neuro-Sama, but running on local models on consumer hardware
 
 
 .. _community:
