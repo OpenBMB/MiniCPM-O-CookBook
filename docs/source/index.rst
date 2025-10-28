@@ -64,9 +64,9 @@ Run locally on iPhone with `iOS demo <demo/iosdemo.html>`_.
 .. raw:: html
 
    <p align="center">
-     <img src="../inference/assets/gif_cases/iphone_cn.gif" width="32%">
+     <img src="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/inference/assets/gif_cases/iphone_cn.gif" width="32%">
      &nbsp;&nbsp;&nbsp;&nbsp;
-     <img src="../inference/assets/gif_cases/iphone_en.gif" width="32%">
+     <img src=https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/inference/assets/gif_cases/iphone_en.gif width="32%">
    </p>
 
 Run locally on iPad with `iOS demo <demo/iosdemo.html>`_, observing the process of drawing a rabbit.
@@ -96,14 +96,14 @@ Run locally on iPad with `iOS demo <demo/iosdemo.html>`_, observing the process 
    * - **Vision Capabilities**
      - 
 
-   * - 🎬 `Video QA <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/video_understanding.md>`_
-     - Video-based question answering
+   * - 🖼️ `Single-image QA <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/single_image.md>`_
+     - Question answering on a single image
 
    * - 🧩 `Multi-image QA <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/multi_images.md>`_
      - Question answering with multiple images
 
-   * - 🖼️ `Single-image QA <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/single_image.md>`_
-     - Question answering on a single image
+   * - 🎬 `Video QA <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/video_understanding.md>`_
+     - Video-based question answering
 
    * - 📄 `Document Parser <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/pdf_parse.md>`_
      - Parse and extract content from PDFs and webpages
@@ -111,17 +111,21 @@ Run locally on iPad with `iOS demo <demo/iosdemo.html>`_, observing the process 
    * - 📝 `Text Recognition <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/ocr.md>`_
      - Reliable OCR for photos and screenshots
 
+   * - 🎯 `Grounding <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/minicpm-v4_5_grounding.md>`_
+     - Visual grounding and object localization in images
+
    * - **Audio Capabilities**
      -
 
    * - 🎤 `Speech-to-Text <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/speech2text.md>`_
      - Multilingual speech recognition
 
+   * - 🗣️ `Text-to-Speech <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/text2speech.md>`_
+     - Instruction-following speech synthesis
+
    * - 🎭 `Voice Cloning <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/voice_clone.md>`_
      - Realistic voice cloning and role-play
 
-   * - 🗣️ `Text-to-Speech <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/text2speech.md>`_
-     - Instruction-following speech synthesis
 
 🏋️ Fine-tuning recipes
 **********************
