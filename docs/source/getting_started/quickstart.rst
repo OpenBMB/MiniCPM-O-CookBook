@@ -42,14 +42,14 @@ Quickstart
    * - **Vision Capabilities**
      - 
 
-   * - 🎬 `Video QA <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/video_understanding.md>`_
-     - Video-based question answering
+   * - 🖼️ `Single-image QA <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/single_image.md>`_
+     - Question answering on a single image
 
    * - 🧩 `Multi-image QA <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/multi_images.md>`_
      - Question answering with multiple images
 
-   * - 🖼️ `Single-image QA <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/single_image.md>`_
-     - Question answering on a single image
+   * - 🎬 `Video QA <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/video_understanding.md>`_
+     - Video-based question answering
 
    * - 📄 `Document Parser <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/pdf_parse.md>`_
      - Parse and extract content from PDFs and webpages
@@ -57,17 +57,20 @@ Quickstart
    * - 📝 `Text Recognition <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/ocr.md>`_
      - Reliable OCR for photos and screenshots
 
+   * - 🎯 `Grounding <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/minicpm-v4_5_grounding.md>`_
+     - Visual grounding and object localization in images
+
    * - **Audio Capabilities**
      -
 
    * - 🎤 `Speech-to-Text <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/speech2text.md>`_
      - Multilingual speech recognition
 
-   * - 🎭 `Voice Cloning <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/voice_clone.md>`_
-     - Realistic voice cloning and role-play
-
    * - 🗣️ `Text-to-Speech <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/text2speech.md>`_
      - Instruction-following speech synthesis
+
+   * - 🎭 `Voice Cloning <https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/voice_clone.md>`_
+     - Realistic voice cloning and role-play
 
 🏋️ Fine-tuning recipes
 **********************
