@@ -64,9 +64,9 @@ Run locally on iPhone with `iOS demo <demo/iosdemo.html>`_.
 .. raw:: html
 
    <p align="center">
-     <img src="../inference/assets/gif_cases/iphone_cn.gif" width="32%">
+     <img src="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/inference/assets/gif_cases/iphone_cn.gif" width="32%">
      &nbsp;&nbsp;&nbsp;&nbsp;
-     <img src="../inference/assets/gif_cases/iphone_en.gif" width="32%">
+     <img src=https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/inference/assets/gif_cases/iphone_en.gif width="32%">
    </p>
 
 Run locally on iPad with `iOS demo <demo/iosdemo.html>`_, observing the process of drawing a rabbit.
