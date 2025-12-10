@@ -76,7 +76,7 @@ msgstr "✨ 我们的Cookbook有何特别之处？"
 
 #: ../../source/index.rst:33 7f71675352f64007a062b48fe7f6db58
 msgid "Easy Usage Documentation"
-msgstr ""
+msgstr "易用性文档"
 
 #: ../../source/index.rst:35 859606e2090b4e5eba179fc9de92afb6
 msgid ""
@@ -85,6 +85,7 @@ msgid ""
 "recipe in a clear, well-organized manner. All features are displayed at a"
 " glance, making it easy for you to quickly find exactly what you need."
 msgstr ""
+"我们全面的`文档网站<https://minicpm-o.readthedocs.io/en/latest/index.html>`_，以清晰有序的方式呈现了每一项指南。所有特性一目了然，方便您快速找到所需信息。"
 
 #: ../../source/index.rst:40 d5f82e808ba945cd989f1c7e12054b95
 msgid "Broad User Spectrum"
@@ -147,7 +148,7 @@ msgstr "边缘设备：将强大的 AI 体验直接带到 **iPhone** 和 **iPad*
 
 #: ../../source/index.rst:58 35c727f575e34496b43a39d0b9b70146
 msgid "⭐️ Live Demonstrations"
-msgstr ""
+msgstr "⭐️ 实时演示"
 
 #: ../../source/index.rst:60 dbd94c5c79f74e3b8a27e0ec78430183
 msgid ""
@@ -155,6 +156,7 @@ msgid ""
 "our curated recipes. These demos highlight the model’s high efficiency "
 "and robust performance in practical scenarios."
 msgstr ""
+"通过我们精心编写的方案，体验 MiniCPM-V 部署在边缘设备上的真实案例。这些演示突出了模型在实际场景下的高效性和强大性能。"
 
 #: ../../source/index.rst:63 bf7b839b13b44911825d4c7741d3319d
 msgid "Run locally on iPhone with `iOS demo <demo/iosdemo.html>`_."
@@ -476,35 +478,36 @@ msgstr "高效推理的高性能量化方法"
 
 #: ../../source/index.rst:214 50c48e0213264395a3c98b5356dd4455
 msgid "Framework Support Matrix"
-msgstr ""
+msgstr "框架支持表"
 
 #: ../../source/index.rst:220 8acc44dc699e439fa761815c71950b0f
 msgid "Category"
-msgstr ""
+msgstr "类别"
 
 #: ../../source/index.rst:222 a832424a30c4477987c5620d2390a99f
 msgid "Cookbook Link"
-msgstr ""
+msgstr "Cookbook 链接"
 
 #: ../../source/index.rst:223 fc0176de7731439e999acec6a2f9ebc5
 msgid "Upstream PR"
-msgstr ""
+msgstr "上游 PR"
 
 #: ../../source/index.rst:224 f03b2a916d854d16abc7ca3a4ced8786
 msgid "Supported since (branch)"
-msgstr ""
+msgstr "支持自（分支）"
 
 #: ../../source/index.rst:225 72e9cb83e350496c8b275ae95d47408f
 msgid "Supported since (release)"
-msgstr ""
+msgstr "支持自（版本）"
 
 #: ../../source/index.rst:227 6b9b29517e8740a1900dd777daeb950e
 msgid "Edge (On-device)"
-msgstr ""
+msgstr "端侧（本地设备）"
 
 #: ../../source/index.rst:228 8d414d2d3d7141419fdf2b7cf02309e8
 msgid "Llama.cpp"
-msgstr ""
+msgstr "Llama.cpp"
+
 
 #: ../../source/index.rst:229 63560686bfc04a74a303d93fdd6290d5
 msgid ""
@@ -520,7 +523,7 @@ msgstr ""
 
 #: ../../source/index.rst:231 5bfd09197c1e4195a166f813351db5aa
 msgid "master (2025-08-26)"
-msgstr ""
+msgstr "master (2025-08-26)"
 
 #: ../../source/index.rst:232 63560686bfc04a74a303d93fdd6290d5
 msgid "`b6282 <https://github.com/ggml-org/llama.cpp/releases/tag/b6282>`_"
@@ -528,7 +531,7 @@ msgstr ""
 
 #: ../../source/index.rst:235 e8b36f27989145dab51ebfd4e809e16b
 msgid "Ollama"
-msgstr ""
+msgstr "Ollama"
 
 #: ../../source/index.rst:236 63560686bfc04a74a303d93fdd6290d5
 msgid ""
@@ -540,26 +543,26 @@ msgstr ""
 
 #: ../../source/index.rst:237 78e98148b32045dd83563396c477eba1
 msgid "`#12078 <https://github.com/ollama/ollama/pull/12078>`_ (2025-08-26)"
-msgstr ""
+msgstr "`#12078 <https://github.com/ollama/ollama/pull/12078>`_ (2025-08-26)"
 
 #: ../../source/index.rst:238 ../../source/index.rst:252
 #: 47cb6f7056d940fa8862e1a4ece619e2 cbae4d3fa8d749d6b3802a37e420659c
 msgid "Merging"
-msgstr ""
+msgstr "合并中"
 
 #: ../../source/index.rst:239 ../../source/index.rst:253
 #: ../../source/index.rst:260 1965f1f528924ee382f360cfd9a8b0ad
 #: 4f42d09474fe4290a9440c193488216d 8fb67e0838f2468bbd12466a800d1e9c
 msgid "Waiting for official release"
-msgstr ""
+msgstr "等待官方发布"
 
 #: ../../source/index.rst:241 7fe84999ebe641caa433a5d1176bb4fa
 msgid "Serving (Cloud)"
-msgstr ""
+msgstr "服务端（云端）"
 
 #: ../../source/index.rst:242 8a81128604114222ae5dfa1aa6a6e5b1
 msgid "vLLM"
-msgstr ""
+msgstr "vLLM"
 
 #: ../../source/index.rst:243 63560686bfc04a74a303d93fdd6290d5
 msgid ""
@@ -571,19 +574,19 @@ msgstr ""
 
 #: ../../source/index.rst:244 6d0fba216227454096aded047e2092b7
 msgid "`#23586 <https://github.com/vllm-project/vllm/pull/23586>`_ (2025-08-26)"
-msgstr ""
+msgstr "`#23586 <https://github.com/vllm-project/vllm/pull/23586>`_ (2025-08-26)"
 
 #: ../../source/index.rst:245 2867249cf01b446fada0d7e56e7ac49a
 msgid "main (2025-08-27)"
-msgstr ""
+msgstr "main (2025-08-27)"
 
 #: ../../source/index.rst:246 462fe02f49954e7a8895e526446fea22
 msgid "`v0.10.2 <https://github.com/vllm-project/vllm/releases/tag/v0.10.2>`_"
-msgstr ""
+msgstr "`v0.10.2 <https://github.com/vllm-project/vllm/releases/tag/v0.10.2>`_"
 
 #: ../../source/index.rst:249 04ba42fd5a4744f18a8b650ee41b1241
 msgid "SGLang"
-msgstr ""
+msgstr "SGLang"
 
 #: ../../source/index.rst:250 63560686bfc04a74a303d93fdd6290d5
 msgid ""
@@ -614,7 +617,7 @@ msgstr ""
 
 #: ../../source/index.rst:258 2ab8aa012c2f4137bf9bf666d3c5f7e7
 msgid "`#9022 <https://github.com/hiyouga/LLaMA-Factory/pull/9022>`_ (2025-08-26)"
-msgstr "#9022 <https://github.com/hiyouga/LLaMA-Factory/pull/9022>`_ (2025-08-26)"
+msgstr "`#9022 <https://github.com/hiyouga/LLaMA-Factory/pull/9022>`_ (2025-08-26)"
 
 #: ../../source/index.rst:259 8101124282974c5ea72f5d6eef69c37c
 msgid "main (2025-08-26)"
@@ -687,11 +690,9 @@ msgstr ""
 #: ../../source/index.rst:290 6cd43920846642cd9abfadf2bb28e94b
 msgid ""
 "If you'd like us to prioritize support for another open-source framework,"
-" please let us know via this `short form "
-"<https://docs.google.com/forms/d/e/1FAIpQLSdyTUrOPBgWqPexs3ORrg47ZcZ1r4vFQaA4ve2iA7L9sMfMWw/viewform>`_."
+" please let us know via this `short form <https://docs.google.com/forms/d/e/1FAIpQLSdyTUrOPBgWqPexs3ORrg47ZcZ1r4vFQaA4ve2iA7L9sMfMWw/viewform>`_."
 msgstr ""
-"如果您希望我们优先支持其他开源框架，请通过这个`表单 "
-"<https://docs.google.com/forms/d/e/1FAIpQLSdyTUrOPBgWqPexs3ORrg47ZcZ1r4vFQaA4ve2iA7L9sMfMWw/viewform>`_告知我们。"
+"如果您希望我们优先支持其他开源框架，请通过这个`表单 <https://docs.google.com/forms/d/e/1FAIpQLSdyTUrOPBgWqPexs3ORrg47ZcZ1r4vFQaA4ve2iA7L9sMfMWw/viewform>`_告知我们。"
 
 #: ../../source/index.rst:296 087403815ad547569181b84beff529d0
 msgid "Awesome Works using MiniCPM-V & o"
