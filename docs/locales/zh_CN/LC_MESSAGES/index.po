@@ -85,7 +85,7 @@ msgid ""
 "recipe in a clear, well-organized manner. All features are displayed at a"
 " glance, making it easy for you to quickly find exactly what you need."
 msgstr ""
-"我们全面的`文档网站<https://minicpm-o.readthedocs.io/en/latest/index.html>`_，以清晰有序的方式呈现了每一项指南。所有特性一目了然，方便您快速找到所需信息。"
+"我们全面的 `文档网站 <https://minicpm-o.readthedocs.io/en/latest/index.html>`_ ，以清晰有序的方式呈现了每一项指南。所有特性一目了然，方便您快速找到所需信息。"
 
 #: ../../source/index.rst:40 d5f82e808ba945cd989f1c7e12054b95
 msgid "Broad User Spectrum"
@@ -692,7 +692,7 @@ msgid ""
 "If you'd like us to prioritize support for another open-source framework,"
 " please let us know via this `short form <https://docs.google.com/forms/d/e/1FAIpQLSdyTUrOPBgWqPexs3ORrg47ZcZ1r4vFQaA4ve2iA7L9sMfMWw/viewform>`_."
 msgstr ""
-"如果您希望我们优先支持其他开源框架，请通过这个`表单 <https://docs.google.com/forms/d/e/1FAIpQLSdyTUrOPBgWqPexs3ORrg47ZcZ1r4vFQaA4ve2iA7L9sMfMWw/viewform>`_告知我们。"
+"如果您希望我们优先支持其他开源框架，请通过这个 `表单 <https://docs.google.com/forms/d/e/1FAIpQLSdyTUrOPBgWqPexs3ORrg47ZcZ1r4vFQaA4ve2iA7L9sMfMWw/viewform>`_ 告知我们。"
 
 #: ../../source/index.rst:296 087403815ad547569181b84beff529d0
 msgid "Awesome Works using MiniCPM-V & o"
