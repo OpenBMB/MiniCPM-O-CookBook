@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-07 11:02+0800\n"
+"POT-Creation-Date: 2025-12-10 08:32+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -20,31 +20,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/index.rst:202
+#: ../../source/index.rst:337
 msgid "Getting Started"
 msgstr "快速开始"
 
-#: ../../source/index.rst:210
+#: ../../source/index.rst:345
 msgid "Inference"
 msgstr "推理"
 
-#: ../../source/index.rst:217
+#: ../../source/index.rst:352
 msgid "Deployment"
 msgstr "部署"
 
-#: ../../source/index.rst:225
+#: ../../source/index.rst:360
 msgid "Run Locally"
 msgstr "端侧运行"
 
-#: ../../source/index.rst:233
+#: ../../source/index.rst:262 ../../source/index.rst:368
+#: 58c8c8e8d6d94cf4b86d7de75bdbe93b
 msgid "Quantization"
 msgstr "量化"
 
-#: ../../source/index.rst:243
+#: ../../source/index.rst:378
 msgid "finetune"
 msgstr "微调"
 
-#: ../../source/index.rst:253
+#: ../../source/index.rst:388
 msgid "Demo"
 msgstr "演示"
 
@@ -73,29 +74,41 @@ msgstr "使用 MiniCPM-o / MiniCPM-V 轻松打造出色的多模态 AI 应用，
 msgid "✨ What Makes Our Recipes Special?"
 msgstr "✨ 我们的Cookbook有何特别之处？"
 
-#: ../../source/index.rst:33 d5f82e808ba945cd989f1c7e12054b95
+#: ../../source/index.rst:33 7f71675352f64007a062b48fe7f6db58
+msgid "Easy Usage Documentation"
+msgstr ""
+
+#: ../../source/index.rst:35 859606e2090b4e5eba179fc9de92afb6
+msgid ""
+"Our comprehensive `documentation website "
+"<https://minicpm-o.readthedocs.io/en/latest/index.html>`_ presents every "
+"recipe in a clear, well-organized manner. All features are displayed at a"
+" glance, making it easy for you to quickly find exactly what you need."
+msgstr ""
+
+#: ../../source/index.rst:40 d5f82e808ba945cd989f1c7e12054b95
 msgid "Broad User Spectrum"
 msgstr "适配广泛的用户群体"
 
-#: ../../source/index.rst:35 3bd00be3a6ca4c43b0a9ecee4f4a92f1
+#: ../../source/index.rst:42 3bd00be3a6ca4c43b0a9ecee4f4a92f1
 msgid ""
 "We support a wide range of users, from individuals to enterprises and "
 "researchers."
 msgstr "我们支持从个人到企业和研究人员的广泛用户。"
 
-#: ../../source/index.rst:37 66d28169322140f78dddabb673334a0c
+#: ../../source/index.rst:44 66d28169322140f78dddabb673334a0c
 msgid ""
 "Individuals: Enjoy effortless inference using **Ollama** and "
 "**Llama.cpp** with minimal setup."
 msgstr "个人用户：使用 **Ollama** 和 **Llama.cpp**，只需最少的设置即可轻松进行推理。"
 
-#: ../../source/index.rst:38 c5a1012dab27496bbf86ecd42d1e40f9
+#: ../../source/index.rst:45 c5a1012dab27496bbf86ecd42d1e40f9
 msgid ""
 "Enterprises: Achieve high-throughput, scalable performance with **vLLM** "
 "and **SGLang**."
 msgstr "企业用户：使用 **vLLM** 和 **SGLang** 实现高吞吐量、可扩展的性能。"
 
-#: ../../source/index.rst:39 d5eb053867a64d70bbec2cc1fbffa89d
+#: ../../source/index.rst:46 d5eb053867a64d70bbec2cc1fbffa89d
 msgid ""
 "Researchers: Leverage advanced frameworks including **Transformers**, "
 "**LLaMA-Factory**, **SWIFT**, and **Align-anything** to enable flexible "
@@ -104,81 +117,77 @@ msgstr ""
 "研究人员：利用包括 **Transformers**、**LLaMA-Factory**、**SWIFT** 和 **Align-"
 "anything** 在内的先进框架，实现灵活的模型开发和前沿实验。"
 
-#: ../../source/index.rst:42 e6b0a28590e749d1a43f84eac6f1c1b8
+#: ../../source/index.rst:49 e6b0a28590e749d1a43f84eac6f1c1b8
 msgid "Versatile Deployment Scenarios"
 msgstr "多样的部署场景"
 
-#: ../../source/index.rst:44 9e7be7326ba6449a942618db138d90f6
+#: ../../source/index.rst:51 9e7be7326ba6449a942618db138d90f6
 msgid ""
 "Our ecosystem delivers optimal solution for a variety of hardware "
 "environments and deployment demands."
 msgstr "我们的生态系统为各种硬件环境和部署需求提供最佳解决方案。"
 
-#: ../../source/index.rst:46 45178e172afb4d89ae6ce772f9f3d2a6
+#: ../../source/index.rst:53 45178e172afb4d89ae6ce772f9f3d2a6
 msgid ""
 "Private Web demo: Launch interactive multimodal AI web demo with "
 "**FastAPI**."
 msgstr "私有化网页演示：使用 **FastAPI** 启动交互式多模态 AI 网页演示。"
 
-#: ../../source/index.rst:47 bab556c6407742de97a95057d98ce1f2
+#: ../../source/index.rst:54 bab556c6407742de97a95057d98ce1f2
 msgid ""
 "Quantized deployment: Maximize efficiency and minimize resource "
 "consumption using **GGUF** and **BNB**."
 msgstr "量化部署：使用 **GGUF** 和 **BNB** 最大化效率并最小化资源消耗。"
 
-#: ../../source/index.rst:48 529dd15efc1144c59e1514253b6fde7e
+#: ../../source/index.rst:55 529dd15efc1144c59e1514253b6fde7e
 msgid ""
 "Edge devices: Bring powerful AI experiences directly to **iPhone** and "
 "**iPad**, supporting mobile and privacy-sensitive applications."
 msgstr "边缘设备：将强大的 AI 体验直接带到 **iPhone** 和 **iPad**，支持移动和隐私敏感型应用。"
 
-#: ../../source/index.rst:51 31e144f4cf0e4f03bf62eab3959fba10
-msgid "🔥 Inference recipes"
+#: ../../source/index.rst:58 35c727f575e34496b43a39d0b9b70146
+msgid "⭐️ Live Demonstrations"
+msgstr ""
+
+#: ../../source/index.rst:60 dbd94c5c79f74e3b8a27e0ec78430183
+msgid ""
+"Explore real-world examples of MiniCPM-V deployed on edge devices using "
+"our curated recipes. These demos highlight the model’s high efficiency "
+"and robust performance in practical scenarios."
+msgstr ""
+
+#: ../../source/index.rst:63 bf7b839b13b44911825d4c7741d3319d
+msgid "Run locally on iPhone with `iOS demo <demo/iosdemo.html>`_."
+msgstr "在 iPhone 本地运行，可参考 `iOS 演示 <demo/iosdemo.html>`_"
+
+#: ../../source/index.rst:73 cf8dec15dc0649ceb08818c7d7accae7
+msgid ""
+"Run locally on iPad with `iOS demo <demo/iosdemo.html>`_, observing the "
+"process of drawing a rabbit."
+msgstr "在 iPad 本地运行，可参考 `iOS 演示 <demo/iosdemo.html>`_，可观察画兔子的过程。"
+
+#: ../../source/index.rst:86 31e144f4cf0e4f03bf62eab3959fba10
+msgid "🔥 Inference Recipes"
 msgstr "🔥 推理指南"
 
-#: ../../source/index.rst:53 527947e531954dfcac5c995185cad4c3
+#: ../../source/index.rst:88 527947e531954dfcac5c995185cad4c3
 msgid "*Ready-to-run examples*"
 msgstr "*开箱即用的示例*"
 
-#: ../../source/index.rst:59 e5db240335b049e2b8d178fe7f3c4f95
+#: ../../source/index.rst:94 e5db240335b049e2b8d178fe7f3c4f95
 msgid "Recipe"
 msgstr "指南"
 
-#: ../../source/index.rst:60 ../../source/index.rst:111
-#: ../../source/index.rst:134 3f48b851005a4fb7afbc91afd146a28f
-#: 44dff23311bc49ab8579e34081b22b1d cc5df4a5787f4ba98bac27f3747493a9
+#: ../../source/index.rst:95 ../../source/index.rst:150
+#: ../../source/index.rst:173 44dff23311bc49ab8579e34081b22b1d
 msgid "Description"
 msgstr "描述"
 
-#: ../../source/index.rst:62 e54dbfc8c47b45418ca3b199c4e4b4eb
+#: ../../source/index.rst:97 e54dbfc8c47b45418ca3b199c4e4b4eb
 msgid "**Vision Capabilities**"
 msgstr "**视觉能力**"
 
-#: ../../source/index.rst:65 63560686bfc04a74a303d93fdd6290d5
-msgid ""
-"🎬 `Video QA "
-"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/video_understanding.md>`_"
-msgstr ""
-"🎬 `视频问答 "
-"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/video_understanding.md>`_"
-
-#: ../../source/index.rst:66 326a3be482fe413e8744bf862c35e3a0
-msgid "Video-based question answering"
-msgstr "基于视频的问答"
-
-#: ../../source/index.rst:68 bcb47c0247d94b058fe156339a8332b2
-msgid ""
-"🧩 `Multi-image QA "
-"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/multi_images.md>`_"
-msgstr ""
-"🧩 `多图问答 "
-"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/multi_images.md>`_"
-
-#: ../../source/index.rst:69 cebdb261df2b4689b93ea3f984e9ac2e
-msgid "Question answering with multiple images"
-msgstr "使用多张图片的问答"
-
-#: ../../source/index.rst:71 c60105277715412bbd31cf2c105dfe1b
+#: ../../source/index.rst:100 c60105277715412bbd31cf2c105dfe1b
 msgid ""
 "🖼️ `Single-image QA "
 "<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/single_image.md>`_"
@@ -186,21 +195,45 @@ msgstr ""
 "🖼️ `单图问答 "
 "<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/single_image.md>`_"
 
-#: ../../source/index.rst:72 90cc0e6a1d254d6691cba516271323d2
+#: ../../source/index.rst:101 90cc0e6a1d254d6691cba516271323d2
 msgid "Question answering on a single image"
 msgstr "对单张图片进行问答"
 
-#: ../../source/index.rst:74 0e92f15ed1994a1dbb85908e227a8ec9
+#: ../../source/index.rst:103 bcb47c0247d94b058fe156339a8332b2
+msgid ""
+"🧩 `Multi-image QA "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/multi_images.md>`_"
+msgstr ""
+"🧩 `多图问答 "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/multi_images.md>`_"
+
+#: ../../source/index.rst:104 cebdb261df2b4689b93ea3f984e9ac2e
+msgid "Question answering with multiple images"
+msgstr "使用多张图片的问答"
+
+#: ../../source/index.rst:106 63560686bfc04a74a303d93fdd6290d5
+msgid ""
+"🎬 `Video QA "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/video_understanding.md>`_"
+msgstr ""
+"🎬 `视频问答 "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/video_understanding.md>`_"
+
+#: ../../source/index.rst:107 326a3be482fe413e8744bf862c35e3a0
+msgid "Video-based question answering"
+msgstr "基于视频的问答"
+
+#: ../../source/index.rst:109 0e92f15ed1994a1dbb85908e227a8ec9
 msgid ""
 "📄 `Document Parser "
 "<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/pdf_parse.md>`_"
 msgstr "📄 `文档解析器 <./inference/pdf_parse.md>`_"
 
-#: ../../source/index.rst:75 788f7873392447a7a98c5cb1edcc4f19
+#: ../../source/index.rst:110 788f7873392447a7a98c5cb1edcc4f19
 msgid "Parse and extract content from PDFs and webpages"
 msgstr "解析并从 PDF 和网页中提取内容"
 
-#: ../../source/index.rst:77 357540428bdf4e79a578a3273c2ba95b
+#: ../../source/index.rst:112 357540428bdf4e79a578a3273c2ba95b
 msgid ""
 "📝 `Text Recognition "
 "<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/ocr.md>`_"
@@ -208,15 +241,28 @@ msgstr ""
 "📝 `文本识别 "
 "<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/ocr.md>`_"
 
-#: ../../source/index.rst:78 f92c0eeeb2ae418eb375d72129b82eb2
+#: ../../source/index.rst:113 f92c0eeeb2ae418eb375d72129b82eb2
 msgid "Reliable OCR for photos and screenshots"
 msgstr "可靠的照片和截图 OCR"
 
-#: ../../source/index.rst:80 fbb5b13492224d41bd971eac5aa3f266
+#: ../../source/index.rst:115 63560686bfc04a74a303d93fdd6290d5
+msgid ""
+"🎯 `Grounding "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference"
+"/minicpm-v4_5_grounding.md>`_"
+msgstr ""
+"🎯 `图像定位 "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/minicpm-v4_5_grounding.md>`_"
+
+#: ../../source/index.rst:116 6a2f1e5545ab4d6198fddb3c28b85105
+msgid "Visual grounding and object localization in images"
+msgstr ""
+
+#: ../../source/index.rst:118 fbb5b13492224d41bd971eac5aa3f266
 msgid "**Audio Capabilities**"
 msgstr "**音频能力**"
 
-#: ../../source/index.rst:83 462fe02f49954e7a8895e526446fea22
+#: ../../source/index.rst:121 462fe02f49954e7a8895e526446fea22
 msgid ""
 "🎤 `Speech-to-Text "
 "<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/speech2text.md>`_"
@@ -224,23 +270,11 @@ msgstr ""
 "🎤 `语音转文本 "
 "<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/speech2text.md>`_"
 
-#: ../../source/index.rst:84 fb180d4080864813abc46987aab67dec
+#: ../../source/index.rst:122 fb180d4080864813abc46987aab67dec
 msgid "Multilingual speech recognition"
 msgstr "多语言语音识别"
 
-#: ../../source/index.rst:86 d63669c6dcae43c18a6e7d4eb364a600
-msgid ""
-"🎭 `Voice Cloning "
-"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/voice_clone.md>`_"
-msgstr ""
-"🎭 `声音克隆 "
-"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/voice_clone.md>`_"
-
-#: ../../source/index.rst:87 45906dbb344443a2b1a41927f9bc7f26
-msgid "Realistic voice cloning and role-play"
-msgstr "逼真的声音克隆和角色扮演"
-
-#: ../../source/index.rst:89 8244d806f0804af0b9be618d50bd60a8
+#: ../../source/index.rst:124 8244d806f0804af0b9be618d50bd60a8
 msgid ""
 "🗣️ `Text-to-Speech "
 "<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/text2speech.md>`_"
@@ -248,220 +282,505 @@ msgstr ""
 "🗣️ `文本转语音 "
 "<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/text2speech.md>`_"
 
-#: ../../source/index.rst:90 a9782e6bf6924eeaa3c524ba1b6d5b74
+#: ../../source/index.rst:125 a9782e6bf6924eeaa3c524ba1b6d5b74
 msgid "Instruction-following speech synthesis"
 msgstr "指令驱动的语音合成"
 
-#: ../../source/index.rst:93 35c727f575e34496b43a39d0b9b70146
+#: ../../source/index.rst:127 d63669c6dcae43c18a6e7d4eb364a600
+msgid ""
+"🎭 `Voice Cloning "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/voice_clone.md>`_"
+msgstr ""
+"🎭 `声音克隆 "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/voice_clone.md>`_"
+
+#: ../../source/index.rst:128 45906dbb344443a2b1a41927f9bc7f26
+msgid "Realistic voice cloning and role-play"
+msgstr "逼真的声音克隆和角色扮演"
+
+#: ../../source/index.rst:132 35c727f575e34496b43a39d0b9b70146
 msgid "🏋️ Fine-tuning recipes"
 msgstr "🏋️ 微调指南"
 
-#: ../../source/index.rst:95 ee2912391e954037b510c01a7b4d12e4
+#: ../../source/index.rst:134 ee2912391e954037b510c01a7b4d12e4
 msgid "*Customize your model with your own ingredients*"
 msgstr "*用您自己的数据集定制您的模型*"
 
-#: ../../source/index.rst:97 65f4c1358ad14b8eae05fe346cb85302
+#: ../../source/index.rst:136 65f4c1358ad14b8eae05fe346cb85302
 msgid "**Data preparation**"
 msgstr "**数据准备**"
 
-#: ../../source/index.rst:99 6b8e6bd6d53b4ce3931cac819d044bea
+#: ../../source/index.rst:138 6b8e6bd6d53b4ce3931cac819d044bea
 msgid ""
 "Follow the `guidance <./finetune/fintune.html#data-preparation>`_ to set "
 "up your training datasets."
 msgstr "请遵循 `指南 <./finetune/fintune.html#data-preparation>`_  来设置您的训练数据集。"
 
-#: ../../source/index.rst:102 b33fcb9c45d749a2ae93c104ca5b9219
+#: ../../source/index.rst:141 b33fcb9c45d749a2ae93c104ca5b9219
 msgid "**Training**"
 msgstr "**训练**"
 
-#: ../../source/index.rst:104 9fc37102d10d483b9e0494998236cae7
+#: ../../source/index.rst:143 9fc37102d10d483b9e0494998236cae7
 msgid "We provide training methods serving different needs as following:"
 msgstr "我们提供以下训练方法以满足不同需求："
 
-#: ../../source/index.rst:110 8acc44dc699e439fa761815c71950b0f
+#: ../../source/index.rst:149 ../../source/index.rst:221
+#: 8acc44dc699e439fa761815c71950b0f
 msgid "Framework"
 msgstr ""
 
-#: ../../source/index.rst:112 23c34d97540e4ebe83d894670cc00e0e
+#: ../../source/index.rst:151 23c34d97540e4ebe83d894670cc00e0e
 msgid "`Transformers <./finetune/fintune.html#full-parameter-finetuning>`_"
 msgstr "`Transformers <./finetune/fintune.html#full-parameter-finetuning>`_"
 
-#: ../../source/index.rst:113 7f71675352f64007a062b48fe7f6db58
+#: ../../source/index.rst:152 7f71675352f64007a062b48fe7f6db58
 msgid "Most flexible for customization"
 msgstr "全面的模型定制"
 
-#: ../../source/index.rst:114 7cc6423f534a4430a3e7f5d0dccb19b7
+#: ../../source/index.rst:153 7cc6423f534a4430a3e7f5d0dccb19b7
 msgid "`LLaMA-Factory <./finetune/llamafactory.html>`_"
 msgstr "`LLaMA-Factory <./finetune/llamafactory.html>`_"
 
-#: ../../source/index.rst:115 e3f64e3d512a45f6816e56ba5154607f
+#: ../../source/index.rst:154 e3f64e3d512a45f6816e56ba5154607f
 msgid "Modular fine-tuning toolkit"
 msgstr "灵活且模块化的微调框架"
 
-#: ../../source/index.rst:116 d2ffd09a8e054f4b9b387999a1bf546b
+#: ../../source/index.rst:155 d2ffd09a8e054f4b9b387999a1bf546b
 msgid "`SWIFT <./finetune/swift.html>`_"
 msgstr "`SWIFT <./finetune/swift.html>`_"
 
-#: ../../source/index.rst:117 cdcf9fb0bfbc4633abd5a1543ce557c1
+#: ../../source/index.rst:156 cdcf9fb0bfbc4633abd5a1543ce557c1
 msgid "Lightweight and fast parameter-efficient tuning"
 msgstr "轻量级、快速的参数高效微调"
 
-#: ../../source/index.rst:118 bbfa80853092422aacbae6d5b2a435b3
+#: ../../source/index.rst:157 bbfa80853092422aacbae6d5b2a435b3
 msgid "`Align-anything <./finetune/align-anything.html>`_"
 msgstr "`Align-anything <./finetune/align-anything.html>`_"
 
-#: ../../source/index.rst:119 6a2f1e5545ab4d6198fddb3c28b85105
+#: ../../source/index.rst:158 6a2f1e5545ab4d6198fddb3c28b85105
 msgid "Visual instruction alignment for multimodal models"
 msgstr "多模态模型的视觉指令对齐"
 
-#: ../../source/index.rst:125 7fe84999ebe641caa433a5d1176bb4fa
+#: ../../source/index.rst:164 7fe84999ebe641caa433a5d1176bb4fa
 msgid "📦 Serving recipes"
 msgstr "📦 服务指南"
 
-#: ../../source/index.rst:127 71b04c5bda5a41df9e994fa0ebbdbe81
+#: ../../source/index.rst:166 71b04c5bda5a41df9e994fa0ebbdbe81
 msgid "*Deploy your model efficiently*"
 msgstr "*高效部署您的模型*"
 
-#: ../../source/index.rst:133 e562eeb59a1249e094d13a6302fe55e9
+#: ../../source/index.rst:172 e562eeb59a1249e094d13a6302fe55e9
 msgid "Method"
 msgstr "方法"
 
-#: ../../source/index.rst:135 5845502329804de5b2c53f2bcce42c92
+#: ../../source/index.rst:174 5845502329804de5b2c53f2bcce42c92
 msgid "`vLLM <./deployment/vllm.html>`_"
 msgstr "`vLLM <./deployment/vllm.html>`_"
 
-#: ../../source/index.rst:136 ../../source/index.rst:138
-#: 2b3b24f9d30e4876b6352103a801725a d41faa49e56c4f58ab253b69f43cb937
+#: ../../source/index.rst:175 ../../source/index.rst:177
+#: d41faa49e56c4f58ab253b69f43cb937
 msgid "High-throughput GPU inference"
 msgstr "高吞吐量 GPU 推理"
 
-#: ../../source/index.rst:137 7aa03597228149c4a2a228dcd5a2fa66
+#: ../../source/index.rst:176 7aa03597228149c4a2a228dcd5a2fa66
 msgid "`SGLang <./deployment/sglang.html>`_"
 msgstr "`SGLang <./deployment/sglang.html>`_"
 
-#: ../../source/index.rst:139 b9aa6924d1b94723be5622d98ae92b0e
+#: ../../source/index.rst:178 b9aa6924d1b94723be5622d98ae92b0e
 msgid "`Llama.cpp <./run_locally/llama.cpp.html>`_"
 msgstr "`Llama.cpp <./run_locally/llama.cpp.html>`_"
 
-#: ../../source/index.rst:140 5c9d51e11b3e4625baec355f5253f57a
+#: ../../source/index.rst:179 5c9d51e11b3e4625baec355f5253f57a
 msgid "Fast inference on PC, iPhone and iPad"
 msgstr "在 PC、iPhone 和 iPad 上进行快速推理"
 
-#: ../../source/index.rst:141 9b53349511a3499ca4fbd35f7c01ef2a
+#: ../../source/index.rst:180 9b53349511a3499ca4fbd35f7c01ef2a
 msgid "`Ollama <./run_locally/ollama.html>`_"
 msgstr "`Ollama <./run_locally/ollama.html>`_"
 
-#: ../../source/index.rst:142 3a0288da0fce4dc9b076f3351b8d10df
+#: ../../source/index.rst:181 3a0288da0fce4dc9b076f3351b8d10df
 msgid "User-friendly setup"
 msgstr "用户友好的设置"
 
-#: ../../source/index.rst:143 16496145f8414fc4937547b8b13e0041
-msgid "`Fast API <./demo/webdemo.html>`_"
-msgstr "`Fast API <./demo/webdemo.html>`_"
-
-#: ../../source/index.rst:144 4aa4f818d2134acdaef346946c40b797
-msgid "Interactive Omni Streaming demo with FastAPI"
-msgstr "使用 FastAPI 的交互式全能流媒体演示"
-
-#: ../../source/index.rst:145 42a72afb616f453599ad88fa766258b1
+#: ../../source/index.rst:182 42a72afb616f453599ad88fa766258b1
 msgid "`OpenWebUI <./demo/openwebui.html>`_"
 msgstr "`OpenWebUI <./demo/openwebui.html>`_"
 
-#: ../../source/index.rst:146 e51570ace92e486aae87f1b7e80eb95e
+#: ../../source/index.rst:183 e51570ace92e486aae87f1b7e80eb95e
 msgid "Interactive Web demo with Open WebUI"
 msgstr "使用 Open WebUI 的交互式网页演示"
 
-#: ../../source/index.rst:147 b15d8d6b92a943d4bb34010c5b390015
-msgid "`Gradio Web Demo <./demo/gradiodemo.html>`_"
-msgstr "`Gradio Web Demo <./demo/gradiodemo.html>`_"
+#: ../../source/index.rst:184 b15d8d6b92a943d4bb34010c5b390015
+msgid "`Gradio <./demo/gradiodemo.html>`_"
+msgstr "`Gradio <./demo/gradiodemo.html>`_"
 
-#: ../../source/index.rst:148 fad430eb87b84defb096a7082cc80f4b
+#: ../../source/index.rst:185 fad430eb87b84defb096a7082cc80f4b
 msgid "Interactive Web demo with Gradio"
 msgstr "使用 Gradio 构建的交互式网页演示"
 
-#: ../../source/index.rst:149 b15d8d6b92a943d4bb34010c5b390015
-msgid "`iOS Demo <./demo/iosdemo.html>`_"
-msgstr "`iOS 演示 <./demo/iosdemo.html>`_"
+#: ../../source/index.rst:186 16496145f8414fc4937547b8b13e0041
+msgid "`FastAPI <./demo/webdemo.html>`_"
+msgstr "`FastAPI <./demo/webdemo.html>`_"
 
-#: ../../source/index.rst:150 fad430eb87b84defb096a7082cc80f4b
+#: ../../source/index.rst:187 4aa4f818d2134acdaef346946c40b797
+msgid "Interactive Omni Streaming demo with FastAPI"
+msgstr "使用 FastAPI 的交互式全能流媒体演示"
+
+#: ../../source/index.rst:188 b15d8d6b92a943d4bb34010c5b390015
+msgid "`iOS <./demo/iosdemo.html>`_"
+msgstr "`iOS <./demo/iosdemo.html>`_"
+
+#: ../../source/index.rst:189 fad430eb87b84defb096a7082cc80f4b
 msgid "Interactive iOS demo with llama.cpp"
 msgstr "使用 llama.cpp 的交互式 iOS 演示"
 
-#: ../../source/index.rst:156 58c8c8e8d6d94cf4b86d7de75bdbe93b
+#: ../../source/index.rst:195 58c8c8e8d6d94cf4b86d7de75bdbe93b
 msgid "🥄 Quantization recipes"
 msgstr "🥄 量化指南"
 
-#: ../../source/index.rst:157 fab657301895452ebb3933775c68e628
+#: ../../source/index.rst:196 fab657301895452ebb3933775c68e628
 msgid "*Compress your model to improve efficiency*"
 msgstr "*压缩您的模型以提高效率*"
 
-#: ../../source/index.rst:163 92d994d7425e43e7853c940eb757db1b
+#: ../../source/index.rst:202 92d994d7425e43e7853c940eb757db1b
 msgid "Format"
 msgstr "格式"
 
-#: ../../source/index.rst:164 3580a8d6e5e44cbebab43f1e97448e6a
+#: ../../source/index.rst:203 3580a8d6e5e44cbebab43f1e97448e6a
 msgid "Key Feature"
 msgstr "主要特点"
 
-#: ../../source/index.rst:165 451ff75dd48c49f3bb6dcc229c0f3b79
+#: ../../source/index.rst:204 451ff75dd48c49f3bb6dcc229c0f3b79
 msgid "`GGUF <./quantization/gguf.html>`_"
 msgstr "`GGUF <./quantization/gguf.html>`_"
 
-#: ../../source/index.rst:166 2b795563879d4b7fa920ef2496adb2de
+#: ../../source/index.rst:205 2b795563879d4b7fa920ef2496adb2de
 msgid "Simplest and most portable format"
 msgstr "最简单、最便携的格式"
 
-#: ../../source/index.rst:167 8c5c45b98e7f4c1f8e0562c1b0f4a0b7
+#: ../../source/index.rst:206 8c5c45b98e7f4c1f8e0562c1b0f4a0b7
 msgid "`BNB <./quantization/bnb.html>`_"
 msgstr "`BNB <./quantization/bnb.html>`_"
 
-#: ../../source/index.rst:168 f8fcba9af1224e9c84ba245370a4e84d
+#: ../../source/index.rst:207 f8fcba9af1224e9c84ba245370a4e84d
 msgid "Simple and easy-to-use quantization method"
 msgstr "简单易用的量化方法"
 
-#: ../../source/index.rst:169 a3f574c0e901406ba7716f86edc84fb8
+#: ../../source/index.rst:208 a3f574c0e901406ba7716f86edc84fb8
 msgid "`AWQ <./quantization/awq.html>`_"
 msgstr "`AWQ <./quantization/AWQ.html>`_"
 
-#: ../../source/index.rst:170 ad6a6baffb2e4cff8a0d3ce46a3b329d
+#: ../../source/index.rst:209 ad6a6baffb2e4cff8a0d3ce46a3b329d
 msgid "High-performance quantization for efficient inference"
 msgstr "高效推理的高性能量化方法"
 
-#: ../../source/index.rst:176 3b774724eb0f454eb4c87e3d072e7446
+#: ../../source/index.rst:214 50c48e0213264395a3c98b5356dd4455
+msgid "Framework Support Matrix"
+msgstr ""
+
+#: ../../source/index.rst:220 8acc44dc699e439fa761815c71950b0f
+msgid "Category"
+msgstr ""
+
+#: ../../source/index.rst:222 a832424a30c4477987c5620d2390a99f
+msgid "Cookbook Link"
+msgstr ""
+
+#: ../../source/index.rst:223 fc0176de7731439e999acec6a2f9ebc5
+msgid "Upstream PR"
+msgstr ""
+
+#: ../../source/index.rst:224 f03b2a916d854d16abc7ca3a4ced8786
+msgid "Supported since (branch)"
+msgstr ""
+
+#: ../../source/index.rst:225 72e9cb83e350496c8b275ae95d47408f
+msgid "Supported since (release)"
+msgstr ""
+
+#: ../../source/index.rst:227 6b9b29517e8740a1900dd777daeb950e
+msgid "Edge (On-device)"
+msgstr ""
+
+#: ../../source/index.rst:228 8d414d2d3d7141419fdf2b7cf02309e8
+msgid "Llama.cpp"
+msgstr ""
+
+#: ../../source/index.rst:229 63560686bfc04a74a303d93fdd6290d5
+msgid ""
+"`Llama.cpp Doc "
+"<https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/llama.cpp"
+"/minicpm-v4_5_llamacpp.md>`_"
+msgstr ""
+"`Llama.cpp 文档 <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/llama.cpp/minicpm-v4_5_llamacpp.md>`_"
+
+#: ../../source/index.rst:230 4bf781bf581a4ee7a4e287fb40b6d908
+msgid "`#15575 <https://github.com/ggml-org/llama.cpp/pull/15575>`_ (2025-08-26)"
+msgstr ""
+
+#: ../../source/index.rst:231 5bfd09197c1e4195a166f813351db5aa
+msgid "master (2025-08-26)"
+msgstr ""
+
+#: ../../source/index.rst:232 63560686bfc04a74a303d93fdd6290d5
+msgid "`b6282 <https://github.com/ggml-org/llama.cpp/releases/tag/b6282>`_"
+msgstr ""
+
+#: ../../source/index.rst:235 e8b36f27989145dab51ebfd4e809e16b
+msgid "Ollama"
+msgstr ""
+
+#: ../../source/index.rst:236 63560686bfc04a74a303d93fdd6290d5
+msgid ""
+"`Ollama Doc "
+"<https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/ollama"
+"/minicpm-v4_5_ollama.md>`_"
+msgstr ""
+"`Ollama 文档 <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/ollama/minicpm-v4_5_ollama.md>`_"
+
+#: ../../source/index.rst:237 78e98148b32045dd83563396c477eba1
+msgid "`#12078 <https://github.com/ollama/ollama/pull/12078>`_ (2025-08-26)"
+msgstr ""
+
+#: ../../source/index.rst:238 ../../source/index.rst:252
+#: 47cb6f7056d940fa8862e1a4ece619e2 cbae4d3fa8d749d6b3802a37e420659c
+msgid "Merging"
+msgstr ""
+
+#: ../../source/index.rst:239 ../../source/index.rst:253
+#: ../../source/index.rst:260 1965f1f528924ee382f360cfd9a8b0ad
+#: 4f42d09474fe4290a9440c193488216d 8fb67e0838f2468bbd12466a800d1e9c
+msgid "Waiting for official release"
+msgstr ""
+
+#: ../../source/index.rst:241 7fe84999ebe641caa433a5d1176bb4fa
+msgid "Serving (Cloud)"
+msgstr ""
+
+#: ../../source/index.rst:242 8a81128604114222ae5dfa1aa6a6e5b1
+msgid "vLLM"
+msgstr ""
+
+#: ../../source/index.rst:243 63560686bfc04a74a303d93fdd6290d5
+msgid ""
+"`vLLM Doc "
+"<https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/vllm"
+"/minicpm-v4_5_vllm.md>`_"
+msgstr ""
+"`vLLM 文档 <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/vllm/minicpm-v4_5_vllm.md>`_"
+
+#: ../../source/index.rst:244 6d0fba216227454096aded047e2092b7
+msgid "`#23586 <https://github.com/vllm-project/vllm/pull/23586>`_ (2025-08-26)"
+msgstr ""
+
+#: ../../source/index.rst:245 2867249cf01b446fada0d7e56e7ac49a
+msgid "main (2025-08-27)"
+msgstr ""
+
+#: ../../source/index.rst:246 462fe02f49954e7a8895e526446fea22
+msgid "`v0.10.2 <https://github.com/vllm-project/vllm/releases/tag/v0.10.2>`_"
+msgstr ""
+
+#: ../../source/index.rst:249 04ba42fd5a4744f18a8b650ee41b1241
+msgid "SGLang"
+msgstr ""
+
+#: ../../source/index.rst:250 63560686bfc04a74a303d93fdd6290d5
+msgid ""
+"`SGLang Doc "
+"<https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/sglang"
+"/MiniCPM-v4_5_sglang.md>`_"
+msgstr ""
+"`SGLang 文档 <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/sglang/MiniCPM-v4_5_sglang.md>`_"
+
+#: ../../source/index.rst:251 8e91f29d6c68418b9a88833e9a48a8e9
+msgid "`#9610 <https://github.com/sgl-project/sglang/pull/9610>`_ (2025-08-26)"
+msgstr ""
+
+#: ../../source/index.rst:255 35c727f575e34496b43a39d0b9b70146
+msgid "Finetuning"
+msgstr "微调"
+
+#: ../../source/index.rst:256 0c7abefe267d405aa016699369311da7
+msgid "LLaMA-Factory"
+msgstr "LLaMA-Factory"
+
+#: ../../source/index.rst:257 63560686bfc04a74a303d93fdd6290d5
+msgid ""
+"`LLaMA-Factory Doc "
+"<https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/finetune/finetune_llamafactory.md>`_"
+msgstr ""
+"`LLaMA-Factory 文档 <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/finetune/finetune_llamafactory.md>`_"
+
+#: ../../source/index.rst:258 2ab8aa012c2f4137bf9bf666d3c5f7e7
+msgid "`#9022 <https://github.com/hiyouga/LLaMA-Factory/pull/9022>`_ (2025-08-26)"
+msgstr "#9022 <https://github.com/hiyouga/LLaMA-Factory/pull/9022>`_ (2025-08-26)"
+
+#: ../../source/index.rst:259 8101124282974c5ea72f5d6eef69c37c
+msgid "main (2025-08-26)"
+msgstr "main (2025-08-26)"
+
+#: ../../source/index.rst:263 ccf5a2452c734136b2a0df9663d130cf
+msgid "GGUF"
+msgstr "GGUF"
+
+#: ../../source/index.rst:264 63560686bfc04a74a303d93fdd6290d5
+msgid ""
+"`GGUF Doc "
+"<https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/gguf"
+"/minicpm-v4_5_gguf_quantize.md>`_"
+msgstr "`GGUF 文档 <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/gguf/minicpm-v4_5_gguf_quantize.md>`_"
+
+#: ../../source/index.rst:265 ../../source/index.rst:266
+#: ../../source/index.rst:267 ../../source/index.rst:272
+#: ../../source/index.rst:273 ../../source/index.rst:274
+#: ../../source/index.rst:279 ../../source/index.rst:280
+#: ../../source/index.rst:281 ../../source/index.rst:286
+#: ../../source/index.rst:287 ../../source/index.rst:288
+#: 0cccb6ff731345f392bdc630787531af 5d36f427a8e44f53be849f392c762b2c
+#: 64e310b8249944d2b859ec28931c09ce 6f36969458b44d2e81ef36e37aeff89d
+#: 7320cd4122d4498c937b47cfec90be82 82a159bcda1f4261b9613d377fe8119b
+#: 891b3540f96649289289ab60b3403b64 8b64397cc1454d518635d8c1785c7c0c
+#: a1f1b8997cea4bac90e664d6ae858d85 b8b6cfc062264bd8b204368c68b5452a
+#: d8601db2f2b04c789864df6d563b28d1 ee2e24a1fd0344ba9b88d183cb3129ba
+msgid "—"
+msgstr ""
+
+#: ../../source/index.rst:270 1ba424e8e55a4f65a027f66bf5a7a7da
+msgid "BNB"
+msgstr "BNB"
+
+#: ../../source/index.rst:271 63560686bfc04a74a303d93fdd6290d5
+msgid ""
+"`BNB Doc "
+"<https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/bnb"
+"/minicpm-v4_5_bnb_quantize.md>`_"
+msgstr "`BNB 文档 <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/bnb/minicpm-v4_5_bnb_quantize.md>`_"
+
+#: ../../source/index.rst:277 9832253a164f4b67bbc64be27db00e91
+msgid "AWQ"
+msgstr ""
+
+#: ../../source/index.rst:278 63560686bfc04a74a303d93fdd6290d5
+msgid ""
+"`AWQ Doc "
+"<https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/awq"
+"/minicpm-v4_5_awq_quantize.md>`_"
+msgstr "`AWQ 文档 <https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/awq/minicpm-v4_5_awq_quantize.md>`_"
+
+#: ../../source/index.rst:283 12451671fd15408b93343445fa9c037f
+msgid "Demos"
+msgstr "演示"
+
+#: ../../source/index.rst:284 56676d98a6a949c8b599d64bf5bba3cd
+msgid "Gradio Demo"
+msgstr "Gradio Demo"
+
+#: ../../source/index.rst:285 63560686bfc04a74a303d93fdd6290d5
+msgid ""
+"`Gradio Demo Doc "
+"<https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/demo/web_demo/gradio/README.md>`_"
+msgstr ""
+"`Gradio 演示文档 "
+"<https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/demo/web_demo/gradio/README.md>`_"
+
+#: ../../source/index.rst:290 6cd43920846642cd9abfadf2bb28e94b
+msgid ""
+"If you'd like us to prioritize support for another open-source framework,"
+" please let us know via this `short form "
+"<https://docs.google.com/forms/d/e/1FAIpQLSdyTUrOPBgWqPexs3ORrg47ZcZ1r4vFQaA4ve2iA7L9sMfMWw/viewform>`_."
+msgstr ""
+"如果您希望我们优先支持其他开源框架，请通过这个`表单 "
+"<https://docs.google.com/forms/d/e/1FAIpQLSdyTUrOPBgWqPexs3ORrg47ZcZ1r4vFQaA4ve2iA7L9sMfMWw/viewform>`_告知我们。"
+
+#: ../../source/index.rst:296 087403815ad547569181b84beff529d0
+msgid "Awesome Works using MiniCPM-V & o"
+msgstr "基于 MiniCPM-V & o 的优秀项目"
+
+#: ../../source/index.rst:298 f30a9c9639064f52a8311eafeaa779c0
+msgid ""
+"`text-extract-api <https://github.com/CatchTheTornado/text-extract-api>`_"
+" — Document extraction API using OCRs and Ollama supported models"
+msgstr "`text-extract-api <https://github.com/CatchTheTornado/text-extract-api>`_ —— 基于 OCR 和 Ollama 支持的模型的文档提取 API"
+
+#: ../../source/index.rst:299 ef25bb5eadda41c084b90e339c2d9ee7
+msgid ""
+"`comfyui_LLM_party <https://github.com/heshengtao/comfyui_LLM_party>`_ — "
+"Build LLM workflows and integrate into existing image workflows"
+msgstr "`comfyui_LLM_party <https://github.com/heshengtao/comfyui_LLM_party>`_ —— 构建大模型工作流并集成到现有图像工作流"
+
+#: ../../source/index.rst:300 1e1f148822024c67b4d96c0e7b52fb10
+msgid ""
+"`Ollama-OCR <https://github.com/imanoop7/Ollama-OCR>`_ — OCR package uses"
+" VLMs through Ollama to extract text from images and PDFs"
+msgstr "`Ollama-OCR <https://github.com/imanoop7/Ollama-OCR>`_ —— 通过 Ollama 使用多模态大模型 (VLMs) 的 OCR 包，从图片和 PDF 中提取文本"
+
+#: ../../source/index.rst:301 b4efd6a5374441dea162d56049ffaad6
+msgid ""
+"`comfyui-mixlab-nodes <https://github.com/MixLabPro/comfyui-mixlab-"
+"nodes>`_ — ComfyUI node suite supports Workflow-to-APP、GPT&3D and more"
+msgstr "`comfyui-mixlab-nodes <https://github.com/MixLabPro/comfyui-mixlab-nodes>`_ —— ComfyUI 节点工具集，支持 Workflow-to-APP、GPT&3D 等功能"
+
+#: ../../source/index.rst:302 4e9791705a75463ea65e56850e0f2e67
+msgid ""
+"`OpenAvatarChat <https://github.com/HumanAIGC-"
+"Engineering/OpenAvatarChat>`_ — Interactive digital human conversation "
+"implementation on single PC"
+msgstr "`OpenAvatarChat <https://github.com/HumanAIGC-Engineering/OpenAvatarChat>`_ —— 单机实现的交互式数字人对话项目"
+
+#: ../../source/index.rst:303 41d4b2de8853443898e3da486c6ebc1c
+msgid ""
+"`pensieve <https://github.com/arkohut/pensieve>`_ — A privacy-focused "
+"passive recording project by recording screen content"
+msgstr "`pensieve <https://github.com/arkohut/pensieve>`_ —— 注重隐私的被动录制项目，通过录制屏幕内容实现"
+
+#: ../../source/index.rst:304 90010dbdeb7d4d25b6646c6bccc183bb
+msgid ""
+"`paperless-gpt <https://github.com/icereed/paperless-gpt>`_ — Use LLMs to"
+" handle paperless-ngx, AI-powered titles, tags and OCR"
+msgstr "`paperless-gpt <https://github.com/icereed/paperless-gpt>`_ —— 利用大模型处理 paperless-ngx，实现 AI 标题、标签和 OCR 功能"
+
+#: ../../source/index.rst:305 a325279786f7403a93431fbab9ac3e47
+msgid ""
+"`Neuro <https://github.com/kimjammer/Neuro>`_ — A recreation of Neuro-"
+"Sama, but running on local models on consumer hardware"
+msgstr "`Neuro <https://github.com/kimjammer/Neuro>`_ —— Neuro-Sama 的复刻版，可在消费级硬件上本地运行大模型"
+
+#: ../../source/index.rst:311 3b774724eb0f454eb4c87e3d072e7446
 msgid "👥 Community"
 msgstr "👥 社区"
 
-#: ../../source/index.rst:180 e458dce2ec334d6db5cee82249e1fa58
+#: ../../source/index.rst:315 e458dce2ec334d6db5cee82249e1fa58
 msgid "**Contributing**"
 msgstr "**贡献**"
 
-#: ../../source/index.rst:182 3efa38c6d7e14aa89f9c0d1ab21a0989
+#: ../../source/index.rst:317 3efa38c6d7e14aa89f9c0d1ab21a0989
 msgid "We love new recipes! Please share your creative dishes:"
 msgstr "我们欢迎新的指南！请分享您的创意："
 
-#: ../../source/index.rst:184 8c00ad59874b44079eb80c0102e17ed8
+#: ../../source/index.rst:319 8c00ad59874b44079eb80c0102e17ed8
 msgid "Fork the repository"
 msgstr "Fork 本仓库"
 
-#: ../../source/index.rst:185 2c8f3e011fbd4f11b75b03c0f98af737
+#: ../../source/index.rst:320 2c8f3e011fbd4f11b75b03c0f98af737
 msgid "Create your recipe"
 msgstr "创建您的指南"
 
-#: ../../source/index.rst:186 035848f49c5f4033a493e80134879d69
+#: ../../source/index.rst:321 035848f49c5f4033a493e80134879d69
 msgid "Submit a pull request"
 msgstr "提交拉取请求"
 
-#: ../../source/index.rst:191 ecf30d57b7d24095a45b1fd1a476cbcc
+#: ../../source/index.rst:326 ecf30d57b7d24095a45b1fd1a476cbcc
 msgid "**Issues & Support**"
 msgstr "**问题与支持**"
 
-#: ../../source/index.rst:193 c2d6b90bef9747dab9f7c83b2cfbd0de
+#: ../../source/index.rst:328 c2d6b90bef9747dab9f7c83b2cfbd0de
 msgid ""
 "Found a bug? `Open an issue "
 "<https://github.com/OpenBMB/MiniCPM-o/issues>`__"
 msgstr "发现了一个 bug？ `提交一个 issue <https://github.com/OpenBMB/MiniCPM-o/issues>`__"
 
-#: ../../source/index.rst:194 3cb9b9a72aaf4f209904ad6b1ca4a34a
+#: ../../source/index.rst:329 3cb9b9a72aaf4f209904ad6b1ca4a34a
 msgid ""
 "Need help? Join our `Discord <https://discord.gg/rM6sC9G2MA>`__ and "
 "`WeChat <https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-"
@@ -471,19 +790,19 @@ msgstr ""
 "<https://github.com/OpenBMB/MiniCPM-o/blob/main/assets/wechat-QR.jpeg>`__"
 " 群组。"
 
-#: ../../source/index.rst:196 6a76dbc64ed04d33be5be9c9deecec4d
+#: ../../source/index.rst:331 6a76dbc64ed04d33be5be9c9deecec4d
 msgid "For more information, please visit our:"
 msgstr "更多信息，请访问我们的："
 
-#: ../../source/index.rst:198 667ed553a2dd4b449ca6d232962d9d85
+#: ../../source/index.rst:333 667ed553a2dd4b449ca6d232962d9d85
 msgid "`GitHub <https://github.com/OpenBMB>`__"
 msgstr "`GitHub <https://github.com/OpenBMB>`__"
 
-#: ../../source/index.rst:199 512363db53dd412d858d7ad1a7a5046e
+#: ../../source/index.rst:334 512363db53dd412d858d7ad1a7a5046e
 msgid "`Hugging Face <https://huggingface.co/OpenBMB>`__"
 msgstr "`Hugging Face <https://huggingface.co/OpenBMB>`__"
 
-#: ../../source/index.rst:200 79efc2ea35a149fbaa8570791b001806
+#: ../../source/index.rst:335 79efc2ea35a149fbaa8570791b001806
 msgid "`Modelscope <https://modelscope.cn/organization/OpenBMB>`__"
 msgstr "`Modelscope <https://modelscope.cn/organization/OpenBMB>`__"
 

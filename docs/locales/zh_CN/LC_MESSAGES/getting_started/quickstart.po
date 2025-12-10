@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MiniCPM-o Cookbook \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-07 11:02+0800\n"
+"POT-Creation-Date: 2025-12-10 08:30+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -51,10 +51,9 @@ msgid "Recipe"
 msgstr "用法"
 
 #: ../../source/getting_started/quickstart.rst:40
-#: ../../source/getting_started/quickstart.rst:81
-#: ../../source/getting_started/quickstart.rst:103
+#: ../../source/getting_started/quickstart.rst:84
+#: ../../source/getting_started/quickstart.rst:106
 #: 221628419a874711acc6b9afafc815f9 c55f80622a16410cb05c821c8af8d7fe
-#: cfa0266af32a4179be6bb24c71d77007
 msgid "Description"
 msgstr "描述"
 
@@ -64,18 +63,18 @@ msgid "**Vision Capabilities**"
 msgstr "视觉能力"
 
 #: ../../source/getting_started/quickstart.rst:45
-#: 1064606e1e95450d89f5ac33002476d3
+#: 600d83d4c9eb46f185bfd96a3206f48b
 msgid ""
-"🎬 `Video QA "
-"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/video_understanding.md>`_"
+"🖼️ `Single-image QA "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/single_image.md>`_"
 msgstr ""
-"🎬 `视频问答 "
-"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/video_understanding.md>`_"
+"🖼️ `单图问答 "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/single_image.md>`_"
 
 #: ../../source/getting_started/quickstart.rst:46
-#: 0a283a9d776045a1a6fe41b01e017f33
-msgid "Video-based question answering"
-msgstr "基于视频的问题回答"
+#: 8c48b21ede194a0aab786db646fe884e
+msgid "Question answering on a single image"
+msgstr "单图问答"
 
 #: ../../source/getting_started/quickstart.rst:48
 #: ea68777d34794314a1894324dc99a6a9
@@ -92,18 +91,18 @@ msgid "Question answering with multiple images"
 msgstr "多图联合问答"
 
 #: ../../source/getting_started/quickstart.rst:51
-#: 600d83d4c9eb46f185bfd96a3206f48b
+#: 1064606e1e95450d89f5ac33002476d3
 msgid ""
-"🖼️ `Single-image QA "
-"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/single_image.md>`_"
+"🎬 `Video QA "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/video_understanding.md>`_"
 msgstr ""
-"🖼️ `单图问答 "
-"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/single_image.md>`_"
+"🎬 `视频问答 "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/video_understanding.md>`_"
 
 #: ../../source/getting_started/quickstart.rst:52
-#: 8c48b21ede194a0aab786db646fe884e
-msgid "Question answering on a single image"
-msgstr "单图问答"
+#: 0a283a9d776045a1a6fe41b01e017f33
+msgid "Video-based question answering"
+msgstr "基于视频的问题回答"
 
 #: ../../source/getting_started/quickstart.rst:54
 #: f8cc01cc417044e3bbcaddc646e2c2ba
@@ -134,11 +133,26 @@ msgid "Reliable OCR for photos and screenshots"
 msgstr "照片和截图的可靠 OCR 识别"
 
 #: ../../source/getting_started/quickstart.rst:60
+#: 1064606e1e95450d89f5ac33002476d3
+msgid ""
+"🎯 `Grounding "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference"
+"/minicpm-v4_5_grounding.md>`_"
+msgstr ""
+"🎯 `图像定位 "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/minicpm-v4_5_grounding.md>`_"
+
+#: ../../source/getting_started/quickstart.rst:61
+#: 98ab59d4067c44adaf29043c9cde191d
+msgid "Visual grounding and object localization in images"
+msgstr "图像中的视觉定位与目标定位"
+
+#: ../../source/getting_started/quickstart.rst:63
 #: c753c58701564f12b6a94f4c74acf74e
 msgid "**Audio Capabilities**"
 msgstr "音频能力"
 
-#: ../../source/getting_started/quickstart.rst:63
+#: ../../source/getting_started/quickstart.rst:66
 #: 873e4dbf9b2c4b199aea5cac629aff53
 msgid ""
 "🎤 `Speech-to-Text "
@@ -147,24 +161,10 @@ msgstr ""
 "🎤 `语音转文本 "
 "<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/speech2text.md>`_"
 
-#: ../../source/getting_started/quickstart.rst:64
+#: ../../source/getting_started/quickstart.rst:67
 #: b9eb20100d7c4a03895ac698e7d0252c
 msgid "Multilingual speech recognition"
 msgstr "多语言语音识别"
-
-#: ../../source/getting_started/quickstart.rst:66
-#: 392a7206a0e1472e8a4e05d3a44cf6bb
-msgid ""
-"🎭 `Voice Cloning "
-"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/voice_clone.md>`_"
-msgstr ""
-"🎭 `声音克隆 "
-"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/voice_clone.md>`_"
-
-#: ../../source/getting_started/quickstart.rst:67
-#: 7635734b8f5741d5899b5482d6206513
-msgid "Realistic voice cloning and role-play"
-msgstr "真实的声音克隆与角色扮演"
 
 #: ../../source/getting_started/quickstart.rst:69
 #: cb7c750141cf4212bfe192ce704a8062
@@ -180,184 +180,197 @@ msgstr ""
 msgid "Instruction-following speech synthesis"
 msgstr "指令跟随型语音合成"
 
+#: ../../source/getting_started/quickstart.rst:72
+#: 392a7206a0e1472e8a4e05d3a44cf6bb
+msgid ""
+"🎭 `Voice Cloning "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/voice_clone.md>`_"
+msgstr ""
+"🎭 `声音克隆 "
+"<https://github.com/OpenSQZ/MiniCPM-o-cookbook/blob/main/inference/voice_clone.md>`_"
+
 #: ../../source/getting_started/quickstart.rst:73
+#: 7635734b8f5741d5899b5482d6206513
+msgid "Realistic voice cloning and role-play"
+msgstr "真实的声音克隆与角色扮演"
+
+#: ../../source/getting_started/quickstart.rst:76
 #: c27b450eaf634b83ad1e6dd8f7130de8
 msgid "🏋️ Fine-tuning recipes"
 msgstr "🏋️ 微调指南"
 
-#: ../../source/getting_started/quickstart.rst:80
+#: ../../source/getting_started/quickstart.rst:83
 #: 6fb3885e02434861bb38f3dd9b649e14
 msgid "Framework"
 msgstr "框架"
 
-#: ../../source/getting_started/quickstart.rst:82
+#: ../../source/getting_started/quickstart.rst:85
 #: 5b6913337c0940eca4bd89f6d8068bc1
 msgid "`Transformers <../finetune/fintune.html#full-parameter-finetuning>`_"
 msgstr "`Transformers <../finetune/fintune.html#full-parameter-finetuning>`_"
 
-#: ../../source/getting_started/quickstart.rst:83
+#: ../../source/getting_started/quickstart.rst:86
 #: da0ab130ef2b4439a1be76c5f6d57f57
 msgid "Most flexible for customization"
 msgstr "最灵活的自定义方式"
 
-#: ../../source/getting_started/quickstart.rst:84
+#: ../../source/getting_started/quickstart.rst:87
 #: 90fdfa8547974dc199d426248794c76d
 msgid "`LLaMA-Factory <../finetune/llamafactory.html>`_"
 msgstr "`LLaMA-Factory <../finetune/llamafactory.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:85
+#: ../../source/getting_started/quickstart.rst:88
 #: 1edcf66daa0a4513a8a4c4966da8fb4d
 msgid "Modular fine-tuning toolkit"
 msgstr "模块化微调工具包"
 
-#: ../../source/getting_started/quickstart.rst:86
+#: ../../source/getting_started/quickstart.rst:89
 #: 18620f411ce14c59a38198e32034ad0b
 msgid "`SWIFT <../finetune/swift.html>`_"
 msgstr "`SWIFT <../finetune/swift.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:87
+#: ../../source/getting_started/quickstart.rst:90
 #: bde77cf5b8bd4de78720424950afc759
 msgid "Lightweight and fast parameter-efficient tuning"
 msgstr "轻量且高效的参数高效微调"
 
-#: ../../source/getting_started/quickstart.rst:88
+#: ../../source/getting_started/quickstart.rst:91
 #: ae68e3cc57344590bb9a81fb75584eb8
 msgid "`Align-anything <../finetune/align-anything.html>`_"
 msgstr "`Align-anything <../finetune/align-anything.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:89
+#: ../../source/getting_started/quickstart.rst:92
 #: 98ab59d4067c44adaf29043c9cde191d
 msgid "Visual instruction alignment for multimodal models"
 msgstr "多模态模型的视觉指令对齐"
 
-#: ../../source/getting_started/quickstart.rst:95
+#: ../../source/getting_started/quickstart.rst:98
 #: 6168a372dd9942ebbe1cb1d7b0457e77
 msgid "📦 Serving recipes"
 msgstr "📦 服务指南"
 
-#: ../../source/getting_started/quickstart.rst:102
+#: ../../source/getting_started/quickstart.rst:105
 #: 73b39cefe9044c5f9f673e249c1f8997
 msgid "Method"
 msgstr "方法"
 
-#: ../../source/getting_started/quickstart.rst:104
+#: ../../source/getting_started/quickstart.rst:107
 #: f5e573ecc422442ebf08c77fe936f751
 msgid "`vLLM <../deployment/vllm.html>`_"
 msgstr "`vLLM <../deployment/vllm.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:105
-#: ../../source/getting_started/quickstart.rst:107
+#: ../../source/getting_started/quickstart.rst:108
+#: ../../source/getting_started/quickstart.rst:110
 #: 6d46f56deb8f4607bfda96cbee564f1b a3cac4f17cee435999c222097b0c1c3d
 msgid "High-throughput GPU inference"
 msgstr "高吞吐量 GPU 推理"
 
-#: ../../source/getting_started/quickstart.rst:106
+#: ../../source/getting_started/quickstart.rst:109
 #: 4bd6971371a7418790c73b2eee3c845c
 msgid "`SGLang <../deployment/sglang.html>`_"
 msgstr "`SGLang <../deployment/sglang.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:108
+#: ../../source/getting_started/quickstart.rst:111
 #: ff63bc96e69545ab826ad7b827bc8f73
 msgid "`Llama.cpp <../run_locally/llama.cpp.html>`_"
 msgstr "`Llama.cpp <../run_locally/llama.cpp.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:109
+#: ../../source/getting_started/quickstart.rst:112
 #: d5005123efb349b19e50666b51a217f4
 msgid "Fast inference on PC, iPhone and iPad"
 msgstr "在 PC、iPhone 和 iPad 上快速推理"
 
-#: ../../source/getting_started/quickstart.rst:110
+#: ../../source/getting_started/quickstart.rst:113
 #: 26e6576f5d6c44d7bfd184c380cf4665
 msgid "`Ollama <../run_locally/ollama.html>`_"
 msgstr "`Ollama <../run_locally/ollama.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:111
+#: ../../source/getting_started/quickstart.rst:114
 #: c8b1f60f2abb44d18ef1312eec2551bc
 msgid "User-friendly setup"
 msgstr "用户友好配置"
 
-#: ../../source/getting_started/quickstart.rst:112
+#: ../../source/getting_started/quickstart.rst:115
 #: 9d7e1e2cb8404e38b11b07cb4f3cc214
 msgid "`Fast API <../demo/webdemo.html>`_"
 msgstr "`Fast API <../demo/webdemo.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:113
+#: ../../source/getting_started/quickstart.rst:116
 #: 7575ff787c1544a186611693aec8648d
 msgid "Interactive Omni Streaming demo with FastAPI"
 msgstr "基于 FastAPI 的交互式 Omni Streaming 演示"
 
-#: ../../source/getting_started/quickstart.rst:114
+#: ../../source/getting_started/quickstart.rst:117
 #: 5a0646a6acd144e4b7114e41e297b887
 msgid "`OpenWebUI <../demo/openwebui.html>`_"
 msgstr "`OpenWebUI <../demo/openwebui.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:115
+#: ../../source/getting_started/quickstart.rst:118
 #: 4b5ee2c422eb425b9f7bcc1c4b158561
 msgid "Interactive Web demo with Open WebUI"
 msgstr "基于 Open WebUI 的交互式网页演示"
 
-#: ../../source/getting_started/quickstart.rst:116
+#: ../../source/getting_started/quickstart.rst:119
 #: 34a31b93d4134d5ab3a116bbe3b1c0e5
-#, fuzzy
 msgid "`Gradio Web Demo <../demo/gradiodemo.html>`_"
 msgstr "`Gradio Web Demo <../demo/gradiodemo.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:117
+#: ../../source/getting_started/quickstart.rst:120
 #: bbf3c3043c1f4371b77bbc4e061a7db9
 msgid "Interactive Web demo with Gradio"
 msgstr "基于 Gradio 构建的交互式网页演示"
 
-#: ../../source/getting_started/quickstart.rst:118
+#: ../../source/getting_started/quickstart.rst:121
 #: 34a31b93d4134d5ab3a116bbe3b1c0e5
 msgid "`iOS Demo <../demo/iosdemo.html>`_"
 msgstr "`iOS Demo <../demo/iosdemo.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:119
+#: ../../source/getting_started/quickstart.rst:122
 #: bbf3c3043c1f4371b77bbc4e061a7db9
 msgid "Interactive iOS demo with llama.cpp"
 msgstr "基于 llama.cpp 的交互式 iOS 演示"
 
-#: ../../source/getting_started/quickstart.rst:125
+#: ../../source/getting_started/quickstart.rst:128
 #: 30841164327e457896449ad00240326e
 msgid "🥄 Quantization recipes"
 msgstr "🥄 量化指南"
 
-#: ../../source/getting_started/quickstart.rst:132
+#: ../../source/getting_started/quickstart.rst:135
 #: cfb74d6d23f14ef7851da05081d5949e
 msgid "Format"
 msgstr "格式"
 
-#: ../../source/getting_started/quickstart.rst:133
+#: ../../source/getting_started/quickstart.rst:136
 #: 357ede3a0841462197ce05f3067f20d5
 msgid "Key Feature"
 msgstr "主要特性"
 
-#: ../../source/getting_started/quickstart.rst:134
+#: ../../source/getting_started/quickstart.rst:137
 #: a4aa3759188247f8a0b9aff8990ea43b
 msgid "`GGUF <../quantization/gguf.html>`_"
 msgstr "`GGUF <../quantization/gguf.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:135
+#: ../../source/getting_started/quickstart.rst:138
 #: f82ff7c0b022483e9a14915a3c988b4b
 msgid "Simplest and most portable format"
 msgstr "最简单且最便携的格式"
 
-#: ../../source/getting_started/quickstart.rst:136
+#: ../../source/getting_started/quickstart.rst:139
 #: a9226d1eab614c40bf7f377f8a432d9a
 msgid "`BNB <../quantization/bnb.html>`_"
 msgstr "`BNB <../quantization/bnb.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:137
+#: ../../source/getting_started/quickstart.rst:140
 #: d6a13abe910a4d3e9cc9e7d92c9f0f3a
 msgid "Efficient 4/8-bit weight quantization"
 msgstr "高效的 4/8 位权重量化"
 
-#: ../../source/getting_started/quickstart.rst:138
+#: ../../source/getting_started/quickstart.rst:141
 #: b4fc87720583497bbb0db91aa709835b
 msgid "`AWQ <../quantization/awq.html>`_"
 msgstr "`AWQ <../quantization/awq.html>`_"
 
-#: ../../source/getting_started/quickstart.rst:139
+#: ../../source/getting_started/quickstart.rst:142
 #: e5db7059765d4de58e1f43c63a881316
 msgid "High-performance quantization for efficient inference"
 msgstr "高效推理的高性能量化方法"

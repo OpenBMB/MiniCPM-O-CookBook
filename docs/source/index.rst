@@ -20,6 +20,7 @@ Welcome to MiniCPM-V & o Cookbook
 .. _`🤗 Hugging Face`: https://huggingface.co/openbmb/MiniCPM-V-4_5 
 .. _`🤖 ModelScope`: https://modelscope.cn/models/openbmb/MiniCPM-V-4_5 
 .. _`📖 Technical Blog`: https://huggingface.co/papers/2509.18154
+
 | `🏠 Main Repository`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 Technical Blog`_ 
 
 Cook up amazing multimodal AI applications effortlessly with MiniCPM-o / MiniCPM-V, bringing vision, speech, and live-streaming capabilities right to your fingertips!
@@ -54,7 +55,7 @@ Our ecosystem delivers optimal solution for a variety of hardware environments a
 * Edge devices: Bring powerful AI experiences directly to **iPhone** and **iPad**, supporting mobile and privacy-sensitive applications.
 
 ⭐️ Live Demonstrations
-*********************
+***********************
 
 Explore real-world examples of MiniCPM-V deployed on edge devices using our curated recipes. 
 These demos highlight the model’s high efficiency and robust performance in practical scenarios.
@@ -180,11 +181,11 @@ We provide training methods serving different needs as following:
      - User-friendly setup
    * - `OpenWebUI <./demo/openwebui.html>`_
      - Interactive Web demo with Open WebUI
-   * - `Gradio <./demo/web_demo/gradio/README.html>`_
+   * - `Gradio <./demo/gradiodemo.html>`_
      - Interactive Web demo with Gradio
    * - `FastAPI <./demo/webdemo.html>`_
      - Interactive Omni Streaming demo with FastAPI
-   * - `iOS <./demo/ios_demo/ios.html>`_
+   * - `iOS <./demo/iosdemo.html>`_
      - Interactive iOS demo with llama.cpp
 
 
