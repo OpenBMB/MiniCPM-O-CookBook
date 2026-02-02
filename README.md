@@ -132,14 +132,14 @@ We provide training methods serving different needs as following:
     <tr>
       <td rowspan="2">Edge(On-device)</td>
       <td>Llama.cpp</td>
-      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/llama.cpp/minicpm-v4_5_llamacpp.md">Llama.cpp Doc</a></td>
-      <td><a href="https://github.com/ggml-org/llama.cpp/pull/15575">#15575</a>(2025-08-26)</td>
-      <td>master(2025-08-26)</td>
-      <td><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b6282">b6282</a></td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/llama.cpp/minicpm-o4_5_llamacpp.md">Llama.cpp Doc</a></td>
+      <td><a href="https://github.com/ggml-org/llama.cpp/pull/19211">#19211</a>(2026-01-30)</td>
+      <td>master(2026-01-30)</td>
+      <td><a href="https://github.com/ggml-org/llama.cpp/releases/tag/b7895">b7895</a></td>
     </tr>
     <tr>
       <td>Ollama</td>
-      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/ollama/minicpm-v4_5_ollama.md">Ollama Doc</a></td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/ollama/minicpm-o4_5_ollama.md">Ollama Doc</a></td>
       <td><a href="https://github.com/ollama/ollama/pull/12078">#12078</a>(2025-08-26)</td>
       <td>Merging</td>
       <td>Waiting for official release</td>
@@ -147,14 +147,14 @@ We provide training methods serving different needs as following:
     <tr>
       <td rowspan="2">Serving(Cloud)</td>
       <td>vLLM</td>
-      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/vllm/minicpm-v4_5_vllm.md">vLLM Doc</a></td>
-      <td><a href="https://github.com/vllm-project/vllm/pull/23586">#23586</a>(2025-08-26)</td>
-      <td>main(2025-08-27)</td>
-      <td><a href="https://github.com/vllm-project/vllm/releases/tag/v0.10.2">v0.10.2</td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/vllm/minicpm-o4_5_vllm.md">vLLM Doc</a></td>
+      <td><a href="https://github.com/vllm-project/vllm/pull/33431">#33431</a>(2026-01-30)</td>
+      <td>Merging</td>
+      <td>Waiting for official release</td>
     </tr>
     <tr>
       <td>SGLang</td>
-      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/sglang/MiniCPM-v4_5_sglang.md">SGLang Doc</a></td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/deployment/sglang/MiniCPM-o4_5_sglang.md">SGLang Doc</a></td>
       <td><a href="https://github.com/sgl-project/sglang/pull/9610">#9610</a>(2025-08-26)</td>
       <td>Merging</td>
       <td>Waiting for official release</td>
@@ -170,22 +170,22 @@ We provide training methods serving different needs as following:
     <tr>
       <td rowspan="3">Quantization</td>
       <td>GGUF</td>
-      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/gguf/minicpm-v4_5_gguf_quantize.md">GGUF Doc</a></td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/gguf/minicpm-o4_5_gguf_quantize.md">GGUF Doc</a></td>
       <td>—</td>
       <td>—</td>
       <td>—</td>
     </tr>
     <tr>
       <td>BNB</td>
-      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/bnb/minicpm-v4_5_bnb_quantize.md">BNB Doc</a></td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/bnb/minicpm-o4_5_bnb_quantize.md">BNB Doc</a></td>
       <td>—</td>
       <td>—</td>
       <td>—</td>
     </tr>
     <tr>
       <td>AWQ</td>
-      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/awq/minicpm-v4_5_awq_quantize.md">AWQ Doc</a></td>
-      <td>—</td>
+      <td><a href="https://github.com/OpenSQZ/MiniCPM-V-CookBook/blob/main/quantization/awq/minicpm-o4_5_awq_quantize.md">AWQ Doc</a></td>
+      <td><a href="https://github.com/tc-mb/AutoAWQ">tc-mb/AutoAWQ</a></td>
       <td>—</td>
       <td>—</td>
     </tr>
