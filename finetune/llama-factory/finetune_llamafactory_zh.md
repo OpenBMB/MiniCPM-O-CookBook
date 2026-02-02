@@ -4,13 +4,13 @@
 
 1. 获取LlamaFactory Github代码
 
-```Python
+```bash
 git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 ```
 
 1. 安装LlamaFactory的依赖
 
-```Python
+```bash
 cd LLaMA-Factory
 pip install -e ".[torch,metrics,deepspeed,minicpm_v]
 ```
@@ -102,7 +102,7 @@ pip install -e ".[torch,metrics,deepspeed,minicpm_v]
 
 ### 构建音频数据集
 
-**注意：仅MiniCPM-o 2.6模型支持音频微调**
+**注意：仅MiniCPM-o 2.6、MiniCPM-o 4.5模型支持音频微调**
 
 参照LLaMA-Factory/[data](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json)下的**mllm_audio_demo.json**数据集,按照相同格式构造数据，结构如下：
 
@@ -191,11 +191,11 @@ pip install -e ".[torch,metrics,deepspeed,minicpm_v]
 
 ### Lora微调
 
-创建minicpmv4_5_lora_sft.yaml的配置文件，并且放入LLaMA-Factory/minicpm_config。
+创建minicpmo4_5_lora_sft.yaml的配置文件，并且放入LLaMA-Factory/minicpm_config。
 
 ```YAML
 ### model
-model_name_or_path: openbmb/MiniCPM-V-4_5 # 可以是MiniCPM-V或者MiniCPM-o的本地模型
+model_name_or_path: openbmb/MiniCPM-o-4_5 # 可以是MiniCPM-V或者MiniCPM-o的本地模型
 trust_remote_code: true
 
 ### method
@@ -206,14 +206,14 @@ lora_target: q_proj,v_proj # lora层插入哪里
 
 ### dataset
 dataset: cpmv_img # 改成你上面data/data_info.json的文件下新增的键名
-template: minicpm_v # 不要改
+template: minicpm_o # 不要改
 cutoff_len: 3072 # 占用的模型token长度
 max_samples: 1000 #最多用多少条数据
 overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: saves/minicpmv4_5/lora/sft
+output_dir: saves/minicpmo4_5/lora/sft
 logging_steps: 1
 save_steps: 100 # 多少步保存一次
 plot_loss: true # 是否绘制损失函数
@@ -245,11 +245,11 @@ time_scale: 0.1 # temporal id的单位尺度（秒）
 
 ### 全量微调
 
-创建全量训练配置minicpmv4_5_full_sft.yaml文件，并且放入LLaMA-Factory/minicpm_config：
+创建全量训练配置minicpmo4_5_full_sft.yaml文件，并且放入LLaMA-Factory/minicpm_config：
 
 ```YAML
 ### model
-model_name_or_path: openbmb/MiniCPM-V-4_5 # 可以是MiniCPM-V或者MiniCPM-o的本地模型
+model_name_or_path: openbmb/MiniCPM-o-4_5 # 可以是MiniCPM-V或者MiniCPM-o的本地模型
 trust_remote_code: true
 freeze_vision_tower: true #冻结图像模块
 print_param_status: true
@@ -263,14 +263,14 @@ deepspeed: configs/deepspeed/ds_z2_config.json # deepspeed使用zero2分布式�
  
 ### dataset
 dataset: cpmv_img # 改成你上面data/data_info.json的文件下新增的键名
-template: minicpm_v #
+template: minicpm_o #
 cutoff_len: 3072
 max_samples: 1000
 overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: saves/minicpmv4_5/full/sft
+output_dir: saves/minicpmo4_5/full/sft
 logging_steps: 1
 save_steps: 100
 plot_loss: true
@@ -298,7 +298,7 @@ do_eval: false
 
 ```Bash
 cd LLaMA-Factory
-llamafactory-cli train configs/minicpmv4_5_full_sft.yaml
+llamafactory-cli train configs/minicpmo4_5_full_sft.yaml
 ```
 
 ### Lora训练
@@ -306,21 +306,21 @@ llamafactory-cli train configs/minicpmv4_5_full_sft.yaml
 1. 开始训练
 
 ```Bash
-llamafactory-cli train configs/minicpmv4_5_lora_sft.yaml
+llamafactory-cli train configs/minicpmo4_5_lora_sft.yaml
 ```
 
 2. 创建合并脚本merge.yaml
 
 ```Bash
 ### model
-model_name_or_path: openbmb/MiniCPM-V-4_5 # 这里可以填入原始模型地址，可以是本地模型
-adapter_name_or_path: saves/minicpm_v4_5/lora/sft # 这里填入保存的lora模型地址
-template: minicpm_v
+model_name_or_path: openbmb/MiniCPM-o-4_5 # 这里可以填入原始模型地址，可以是本地模型
+adapter_name_or_path: saves/minicpm_o4_5/lora/sft # 这里填入保存的lora模型地址
+template: minicpm_o
 finetuning_type: lora
 trust_remote_code: true
 
 ### export
-export_dir: models/minicpmv4_5_lora_sft
+export_dir: models/minicpmo4_5_lora_sft
 export_size: 2
 export_device: cpu
 export_legacy_format: false
@@ -329,5 +329,5 @@ export_legacy_format: false
 3. 合并模型
 
 ```Bash
-llamafactory-cli export configs/minicpmv4_5_lora_export.yaml
+llamafactory-cli export configs/minicpmo4_5_lora_export.yaml
 ```

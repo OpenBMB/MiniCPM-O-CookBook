@@ -103,7 +103,7 @@ To use videos in multi-turn conversations, add the `<video>` tag in the user's c
 
 ### Building Audio Dataset
 
-**Note: Only MiniCPM-o 2.6 model supports audio fine-tuning**
+**Note: Only MiniCPM-o 2.6 and MiniCPM-o 4.5 supports audio fine-tuning**
 
 Refer to the **mllm_audio_demo.json** dataset under [LLaMA-Factory/data](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json) and construct your data in the same format. The structure is as follows:
 
@@ -194,11 +194,11 @@ To use audio in multi-turn conversations, add the `<audio>` tag in the user's co
 
 ### LoRA Fine-tuning
 
-Create a configuration file named `minicpmv4_5_lora_sft.yaml` and place it in `LLaMA-Factory/minicpm_config`.
+Create a configuration file named `minicpmo4_5_lora_sft.yaml` and place it in `LLaMA-Factory/minicpm_config`.
 
 ```yaml
 ### model
-model_name_or_path: openbmb/MiniCPM-V-4_5 # Can be MiniCPM-V or MiniCPM-o local model
+model_name_or_path: openbmb/MiniCPM-o-4_5 # Can be MiniCPM-V or MiniCPM-o local model
 trust_remote_code: true
 
 ### method
@@ -209,14 +209,14 @@ lora_target: q_proj,v_proj # LoRA layers to insert
 
 ### dataset
 dataset: cpmv_img # Use the key you added in data/dataset_info.json
-template: minicpm_v # Do not change
+template: minicpm_o # Do not change
 cutoff_len: 3072 # Model token length including multimodal
 max_samples: 1000 # Max number of samples
 overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: saves/minicpmv4_5/lora/sft
+output_dir: saves/minicpmo4_5/lora/sft
 logging_steps: 1
 save_steps: 100 # Save every N steps
 plot_loss: true # Plot loss curve
@@ -248,11 +248,11 @@ time_scale: 0.1
 
 ### Full Fine-tuning
 
-Create a full training configuration file `minicpmv4_5_full_sft.yaml` and place it in `LLaMA-Factory/minicpm_config`:
+Create a full training configuration file `minicpmo4_5_full_sft.yaml` and place it in `LLaMA-Factory/minicpm_config`:
 
 ```yaml
 ### model
-model_name_or_path: openbmb/MiniCPM-V-4_5 # MiniCPM-o-2_6 or MiniCPM-V-2_6 or local path
+model_name_or_path: openbmb/MiniCPM-o-4_5 # MiniCPM-o-2_6 or MiniCPM-V-2_6 or local path
 trust_remote_code: true
 freeze_vision_tower: true # Freeze vision module
 print_param_status: true
@@ -266,14 +266,14 @@ deepspeed: configs/deepspeed/ds_z2_config.json # Use deepspeed zero2 distributed
  
 ### dataset
 dataset: cpmv_img # Use the key you added in data/dataset_info.json
-template: minicpm_v
+template: minicpm_o
 cutoff_len: 3072
 max_samples: 1000
 overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: saves/minicpmv4_5/full/sft
+output_dir: saves/minicpmo4_5/full/sft
 logging_steps: 1
 save_steps: 100
 plot_loss: true
@@ -301,7 +301,7 @@ do_eval: false
 
 ```bash
 cd LLaMA-Factory
-llamafactory-cli train configs/minicpmv4_5_full_sft.yaml
+llamafactory-cli train configs/minicpmo4_5_full_sft.yaml
 ```
 
 ### LoRA Training
@@ -309,21 +309,21 @@ llamafactory-cli train configs/minicpmv4_5_full_sft.yaml
 1. Start training:
 
 ```bash
-llamafactory-cli train configs/minicpmv4_5_lora_sft.yaml
+llamafactory-cli train configs/minicpmo4_5_lora_sft.yaml
 ```
 
 2. Create a merge script `merge.yaml`:
 
 ```yaml
 ### model
-model_name_or_path: openbmb/MiniCPM-V-4_5 # Original model path, can be local
-adapter_name_or_path: saves/minicpm_v4_5/lora/sft # Path to saved LoRA model
-template: minicpm_v
+model_name_or_path: openbmb/MiniCPM-o-4_5 # Original model path, can be local
+adapter_name_or_path: saves/minicpm_o4_5/lora/sft # Path to saved LoRA model
+template: minicpm_o
 finetuning_type: lora
 trust_remote_code: true
 
 ### export
-export_dir: models/minicpmv4_5_lora_sft
+export_dir: models/minicpmo4_5_lora_sft
 export_size: 2
 export_device: cpu
 export_legacy_format: false
@@ -332,5 +332,5 @@ export_legacy_format: false
 3. Merge the model:
 
 ```bash
-llamafactory-cli export configs/minicpmv4_5_lora_export.yaml
+llamafactory-cli export configs/minicpmo4_5_lora_export.yaml
 ```
