@@ -3,7 +3,7 @@ import uvicorn
 import fastapi
 from fastapi.responses import StreamingResponse
 import argparse
-from models import ModelMiniCPMV4, ModelMiniCPMV4_5
+from models import ModelMiniCPMV4, ModelMiniCPMV4_5, ModelMiniCPMO4_5
 import logging
 import json
 
@@ -29,6 +29,8 @@ class Model:
                 self.model = ModelMiniCPMV4(model_path)
             case 'minicpmv4_5':
                 self.model = ModelMiniCPMV4_5(model_path)
+            case 'minicpmo4_5':
+                self.model = ModelMiniCPMO4_5(model_path)
             case _:
                 raise ValueError(f"Unsupported model type: {model_type}")
         
