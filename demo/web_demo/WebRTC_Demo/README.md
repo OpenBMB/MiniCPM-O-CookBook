@@ -2,7 +2,7 @@
 
 A full-duplex real-time video interaction solution based on WebRTC, enabling seamless streaming input/output with high responsiveness and low latency.
 
-📖 [中文版本](./README_zh.md) | [Back to Demo](../../)
+📖 [中文版本](./README_zh.md)
 
 ## Overview
 
