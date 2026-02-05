@@ -91,7 +91,9 @@ We provide a pre-built Docker image for quick deployment and experience. The Doc
 
 ### macOS (Apple Silicon)
 
-Download the Docker image for macOS with Apple Silicon (M1/M2/M3/M4):
+**Requirements**: Apple Silicon Mac (M1/M2/M3/M4), **M4 recommended** for optimal performance.
+
+Download the Docker image for macOS:
 
 📦 [Download Docker Image (macOS)](https://drive.google.com/file/d/1vOi2T_l-MED7-q7fW-G1GHiHoDDcObxJ/view?usp=sharing)
 

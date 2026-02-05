@@ -91,7 +91,9 @@ ls -la build/bin/llama-server
 
 ### macOS (Apple Silicon)
 
-下载适用于 macOS Apple Silicon (M1/M2/M3/M4) 的 Docker 镜像：
+**设备要求**：Apple Silicon Mac（M1/M2/M3/M4），**推荐使用 M4** 以获得最佳性能。
+
+下载适用于 macOS 的 Docker 镜像：
 
 📦 [下载 Docker 镜像 (macOS)](https://drive.google.com/file/d/1vOi2T_l-MED7-q7fW-G1GHiHoDDcObxJ/view?usp=sharing)
 
