@@ -2,7 +2,7 @@
 
 基于 WebRTC 实现的全双工实时视频交互方案，支持流式输入输出，具有高响应、低延迟的特性。
 
-📖 [English Version](./README.md) | [返回 Demo](../../)
+📖 [English Version](./README.md)
 
 ## 概述
 
