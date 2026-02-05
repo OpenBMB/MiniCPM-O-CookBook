@@ -8,6 +8,9 @@ A full-duplex real-time video interaction solution based on WebRTC, enabling sea
 
 This demo implements a **full-duplex real-time video interaction** solution using WebRTC technology. It fills a significant gap in the open-source community by providing a **streaming duplex conversation** capability that was previously unavailable.
 
+> [!IMPORTANT]
+> **Note on Audio Quality**: The current local demo implementation has a known issue that may cause slight "electric noise", leading to lower audio quality than the online demo. We are actively working on this and expect a fix within the next few days.
+
 ## Prerequisites
 
 ### 1. Install Docker Desktop (macOS)
