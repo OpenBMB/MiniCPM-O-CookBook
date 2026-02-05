@@ -71,7 +71,7 @@ ls -la build/bin/llama-server
 
 下载适用于 macOS 的 Docker 镜像：
 
-📦 [下载 Docker 镜像 (macOS)](https://drive.google.com/file/d/1vOi2T_l-MED7-q7fW-G1GHiHoDDcObxJ/view?usp=sharing)
+📦 [下载 Docker 镜像 (macOS)](https://drive.google.com/file/d/1i7HrGBZE3E-6lsrHjQgaEQK0Qxdi6tSN/view?usp=sharing)
 
 ### 部署步骤
 

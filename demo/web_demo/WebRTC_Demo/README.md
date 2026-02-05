@@ -72,7 +72,7 @@ We provide a pre-built Docker image for quick deployment and experience. The Doc
 
 Download the Docker image for macOS:
 
-📦 [Download Docker Image (macOS)](https://drive.google.com/file/d/1vOi2T_l-MED7-q7fW-G1GHiHoDDcObxJ/view?usp=sharing)
+📦 [Download Docker Image (macOS)](https://drive.google.com/file/d/1i7HrGBZE3E-6lsrHjQgaEQK0Qxdi6tSN/view?usp=sharing)
 
 ### Deployment Steps
 
