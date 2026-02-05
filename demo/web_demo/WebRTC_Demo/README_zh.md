@@ -87,7 +87,16 @@ docker load -i o45-frontend.tar
 docker load -i omini_backend_code/omni_backend.tar
 ```
 
-#### 第二步：一键部署（推荐）
+#### 第二步：安装 Python 依赖
+
+```bash
+# 安装推理服务所需的 Python 依赖
+pip install -r cpp_server/requirements.txt
+```
+
+#### 第三步：一键部署（推荐）
+
+> **注意**：`deploy_all.sh` 脚本位于 `omni_docker` 目录下。
 
 ```bash
 # 运行部署脚本，指定必要路径
@@ -110,7 +119,7 @@ docker load -i omini_backend_code/omni_backend.tar
 - 启动 C++ 推理服务
 - 注册推理服务到后端
 
-#### 第三步：访问 Web 界面
+#### 第四步：访问 Web 界面
 
 ```bash
 # 在浏览器中打开前端

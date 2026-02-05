@@ -100,6 +100,8 @@ pip install -r cpp_server/requirements.txt
 
 #### Step 3: One-Click Deployment (Recommended)
 
+> **Note**: The `deploy_all.sh` script is located in the `omni_docker` directory.
+
 ```bash
 # Run the deployment script with required paths
 ./deploy_all.sh \
