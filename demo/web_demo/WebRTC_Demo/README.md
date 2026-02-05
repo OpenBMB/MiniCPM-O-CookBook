@@ -91,7 +91,14 @@ docker load -i o45-frontend.tar
 docker load -i omini_backend_code/omni_backend.tar
 ```
 
-#### Step 2: One-Click Deployment (Recommended)
+#### Step 2: Install Python Dependencies
+
+```bash
+# Install required Python dependencies for the inference service
+pip install -r cpp_server/requirements.txt
+```
+
+#### Step 3: One-Click Deployment (Recommended)
 
 ```bash
 # Run the deployment script with required paths
@@ -114,7 +121,7 @@ The script automatically:
 - Starts C++ inference service
 - Registers inference service to backend
 
-#### Step 3: Access the Web Interface
+#### Step 4: Access the Web Interface
 
 ```bash
 # Open the frontend in browser
