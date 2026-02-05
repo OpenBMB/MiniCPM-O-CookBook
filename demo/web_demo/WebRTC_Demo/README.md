@@ -26,7 +26,8 @@ docker --version
 
 ```bash
 # Clone and enter the project directory
-cd /path/to/llama.cpp-omni
+git clone https://github.com/tc-mb/llama.cpp-omni.git
+cd llama.cpp-omni
 
 # Build (Metal acceleration enabled by default on macOS)
 cmake -B build -DCMAKE_BUILD_TYPE=Release
@@ -78,6 +79,9 @@ Download the Docker image for macOS:
 # Extract the package
 unzip omni_docker.zip
 cd omni_docker
+
+# Open Docker
+open -a Docker
 
 # Load Docker images
 docker load -i o45-frontend.tar
