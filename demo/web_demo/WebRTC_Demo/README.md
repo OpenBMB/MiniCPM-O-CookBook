@@ -8,33 +8,6 @@ A full-duplex real-time video interaction solution based on WebRTC, enabling sea
 
 This demo implements a **full-duplex real-time video interaction** solution using WebRTC technology. It fills a significant gap in the open-source community by providing a **streaming duplex conversation** capability that was previously unavailable.
 
-## Key Features
-
-### 🔄 Full-Duplex Communication
-- Simultaneous bidirectional audio and video streaming
-- Natural conversation flow without turn-taking delays
-
-### ⚡ High Responsiveness & Low Latency
-- Streaming input/output for real-time interactions
-- Optimized for minimal end-to-end latency
-- Immediate feedback during conversations
-
-### 🚀 Native llamacpp-omni Support
-- Seamlessly integrates with [llamacpp-omni](https://github.com/OpenBMB/llama.cpp/tree/minicpm-omni) as the inference backend
-- Quick deployment and easy setup
-- Efficient resource utilization
-
-### 🎯 MiniCPM-o 4.5 Experience
-- Rapidly experience the full capabilities of MiniCPM-o 4.5
-- Real-time multimodal understanding and generation
-- Voice and video interaction in one unified interface
-
-## Technical Highlights
-
-- **WebRTC Protocol**: Industry-standard real-time communication
-- **Streaming Architecture**: Continuous data flow for smooth interactions
-- **Duplex Design**: Fills the gap in open-source streaming duplex conversation solutions
-
 ## Prerequisites
 
 ### 1. Install Docker Desktop (macOS)
@@ -151,6 +124,33 @@ open http://localhost:3000
 | Inference | 9060 | Python HTTP API |
 
 > More platform support (Linux, Windows) coming soon.
+
+## Key Features
+
+### 🔄 Full-Duplex Communication
+- Simultaneous bidirectional audio and video streaming
+- Natural conversation flow without turn-taking delays
+
+### ⚡ High Responsiveness & Low Latency
+- Streaming input/output for real-time interactions
+- Optimized for minimal end-to-end latency
+- Immediate feedback during conversations
+
+### 🚀 Native llamacpp-omni Support
+- Seamlessly integrates with [llamacpp-omni](https://github.com/OpenBMB/llama.cpp/tree/minicpm-omni) as the inference backend
+- Quick deployment and easy setup
+- Efficient resource utilization
+
+### 🎯 MiniCPM-o 4.5 Experience
+- Rapidly experience the full capabilities of MiniCPM-o 4.5
+- Real-time multimodal understanding and generation
+- Voice and video interaction in one unified interface
+
+## Technical Highlights
+
+- **WebRTC Protocol**: Industry-standard real-time communication
+- **Streaming Architecture**: Continuous data flow for smooth interactions
+- **Duplex Design**: Fills the gap in open-source streaming duplex conversation solutions
 
 ## Coming Soon
 
