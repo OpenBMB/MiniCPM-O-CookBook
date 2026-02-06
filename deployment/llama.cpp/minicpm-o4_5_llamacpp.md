@@ -25,7 +25,7 @@ cmake --build build --config Release
 
 ### Option 1: Download official GGUF files
 
-Download converted language model file (e.g., `ggml-model-Q4_K_M.gguf`) and vision model file (`mmproj-model-f16.gguf`) from:
+Download converted language model file (e.g., `MiniCPM-o-4_5-Q4_K_M.gguf`) and vision model file (`MiniCPM-o-4_5-vision-F16.gguf`) from:
 *   HuggingFace: https://huggingface.co/openbmb/MiniCPM-o-4_5-gguf
 *   ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-o-4_5-gguf
 
@@ -53,19 +53,19 @@ PYTHON="/path/to/python"            # Python path
 cd build/bin/
 
 # run f16 version
-./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/Model-8.2B-F16.gguf --mmproj ../MiniCPM-o-4_5/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -p "What is in the image?"
+./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/Model-8.2B-F16.gguf --mmproj ../MiniCPM-o-4_5/MiniCPM-o-4_5-vision-F16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -p "What is in the image?"
 
 # run quantized int4 version
-./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/ggml-model-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -p "What is in the image?"
+./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/MiniCPM-o-4_5-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/MiniCPM-o-4_5-vision-F16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -p "What is in the image?"
 
 # or run in interactive mode
-./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/ggml-model-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -i
+./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/MiniCPM-o-4_5-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/MiniCPM-o-4_5-vision-F16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -i
 
 # run with reasoning enabled (think mode without token limit)
-./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/ggml-model-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg --jinja --reasoning-budget -1 -p "what is it?"
+./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/MiniCPM-o-4_5-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/MiniCPM-o-4_5-vision-F16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg --jinja --reasoning-budget -1 -p "what is it?"
 
 # run with reasoning disabled (no think mode)
-./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/ggml-model-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg --jinja --reasoning-budget 0 -p "what is it?"
+./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/MiniCPM-o-4_5-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/MiniCPM-o-4_5-vision-F16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg --jinja --reasoning-budget 0 -p "what is it?"
 
 
 ```

@@ -29,7 +29,7 @@ cmake --build build --config Release
 *   HuggingFace: https://huggingface.co/openbmb/MiniCPM-o-4_5-gguf
 *   魔搭社区: https://modelscope.cn/models/OpenBMB/MiniCPM-o-4_5-gguf
 
-从仓库中下载语言模型文件（如: `ggml-model-Q4_K_M.gguf`）与视觉模型文件（`mmproj-model-f16.gguf`）
+从仓库中下载语言模型文件（如: `MiniCPM-o-4_5-Q4_K_M.gguf`）与视觉模型文件（`MiniCPM-o-4_5-vision-F16.gguf`）
 
 ### 方法二: 从 Pytorch 模型转换
 
@@ -55,19 +55,19 @@ PYTHON="/path/to/python"            # Python 路径
 cd build/bin/
 
 # 运行 f16 版本
-./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/Model-8.2B-F16.gguf --mmproj ../MiniCPM-o-4_5/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -p "What is in the image?"
+./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/Model-8.2B-F16.gguf --mmproj ../MiniCPM-o-4_5/MiniCPM-o-4_5-vision-F16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -p "What is in the image?"
 
 # 运行 int4 量化版本
-./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/ggml-model-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -p "What is in the image?"
+./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/MiniCPM-o-4_5-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/MiniCPM-o-4_5-vision-F16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -p "What is in the image?"
 
 # 或以交互模式运行
-./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/ggml-model-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -i
+./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/MiniCPM-o-4_5-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/MiniCPM-o-4_5-vision-F16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg -i
 
 # 或以思考模式运行(思考输出的token无限制)
-./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/ggml-model-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg --jinja --reasoning-budget -1 -p "what is it?"
+./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/MiniCPM-o-4_5-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/MiniCPM-o-4_5-vision-F16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg --jinja --reasoning-budget -1 -p "what is it?"
 
 # 或以禁止思考模式运行
-./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/ggml-model-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/mmproj-model-f16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg --jinja --reasoning-budget 0 -p "what is it?"
+./llama-mtmd-cli -m ../MiniCPM-o-4_5/model/MiniCPM-o-4_5-Q4_K_M.gguf --mmproj ../MiniCPM-o-4_5/MiniCPM-o-4_5-vision-F16.gguf -c 4096 --temp 0.7 --top-p 0.8 --top-k 100 --repeat-penalty 1.05 --image xx.jpg --jinja --reasoning-budget 0 -p "what is it?"
 ```
 
 **命令行参数解析:**

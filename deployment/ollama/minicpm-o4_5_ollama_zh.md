@@ -85,7 +85,7 @@ vim minicpmv4.5.Modelfile
 ModelFile 的内容如下:
 
 ```plaintext
-FROM ./MiniCPM-o-4_5/model/ggml-model-Q4_K_M.gguf
+FROM ./MiniCPM-o-4_5/model/MiniCPM-o-4_5-Q4_K_M.gguf
 FROM ./MiniCPM-o-4_5/mmproj-model-f16.gguf
 
 TEMPLATE """{{- if .Messages }}{{- range $i, $_ := .Messages }}{{- $last := eq (len (slice $.Messages $i)) 1 -}}<|im_start|>{{ .Role }}{{ .Content }}{{- if $last }}{{- if (ne .Role "assistant") }}<|im_end|><|im_start|>assistant{{ end }}{{- else }}<|im_end|>{{ end }}{{- end }}{{- else }}{{- if .System }}<|im_start|>system{{ .System }}<|im_end|>{{ end }}{{ if .Prompt }}<|im_start|>user{{ .Prompt }}<|im_end|>{{ end }}<|im_start|>assistant{{ end }}{{ .Response }}{{ if .Response }}<|im_end|>{{ end }}"""
