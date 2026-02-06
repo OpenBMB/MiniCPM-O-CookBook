@@ -153,7 +153,7 @@ open http://localhost:3000
 - Immediate feedback during conversations
 
 ### 🚀 Native llamacpp-omni Support
-- Seamlessly integrates with [llamacpp-omni](https://github.com/OpenBMB/llama.cpp/tree/minicpm-omni) as the inference backend
+- Seamlessly integrates with [llamacpp-omni](https://github.com/tc-mb/llama.cpp-omni) as the inference backend
 - Quick deployment and easy setup
 - Efficient resource utilization
 

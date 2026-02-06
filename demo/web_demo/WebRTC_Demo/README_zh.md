@@ -149,7 +149,7 @@ open http://localhost:3000
 - 对话过程中即时反馈
 
 ### 🚀 原生支持 llamacpp-omni
-- 无缝集成 [llamacpp-omni](https://github.com/OpenBMB/llama.cpp/tree/minicpm-omni) 作为推理后端
+- 无缝集成 [llamacpp-omni](https://github.com/tc-mb/llama.cpp-omni) 作为推理后端
 - 快速部署，简单配置
 - 高效的资源利用
 
