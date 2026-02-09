@@ -18,8 +18,8 @@ Quickstart
     from PIL import Image
 
     # Load the model
-    model = AutoModel.from_pretrained('openbmb/MiniCPM-V-4_5', trust_remote_code=True)
-    tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-V-4_5', trust_remote_code=True)
+    model = AutoModel.from_pretrained('openbmb/MiniCPM-o-4_5', trust_remote_code=True)
+    tokenizer = AutoTokenizer.from_pretrained('openbmb/MiniCPM-o-4_5', trust_remote_code=True)
 
     # Start inference!
     # See our recipe notebooks for detailed instructions
@@ -86,8 +86,7 @@ Quickstart
      - Most flexible for customization
    * - `LLaMA-Factory <../finetune/llamafactory.html>`_
      - Modular fine-tuning toolkit
-   * - `SWIFT <../finetune/swift.html>`_
-     - Lightweight and fast parameter-efficient tuning
+
    * - `Align-anything <../finetune/align-anything.html>`_
      - Visual instruction alignment for multimodal models
 

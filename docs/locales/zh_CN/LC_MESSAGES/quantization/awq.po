@@ -25,8 +25,8 @@ msgid "AWQ"
 msgstr "AWQ"
 
 #: ../source/quantization/awq.md:4 656cd02c1c4f42a0af406a8c1da768d1
-msgid "**Support:** MiniCPM-V 4.5, MiniCPM-V 4.0"
-msgstr "**支持:** MiniCPM-V 4.5, MiniCPM-V 4.0"
+msgid "**Support:** MiniCPM-o 4.5, MiniCPM-V 4.0"
+msgstr "**支持:** MiniCPM-o 4.5, MiniCPM-V 4.0"
 
 #: ../source/quantization/awq.md:7 663109cae9f4410689cc9b18bb291400
 #, fuzzy
@@ -41,11 +41,11 @@ msgstr "1.下载模型"
 
 #: ../source/quantization/awq.md:14 a33cd93c6c79497ebc8689ea0c6c032a
 msgid ""
-"Download the 4-bit quantized MiniCPM-V-4_5 model with AutoAWQ from "
-"[HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ)"
+"Download the 4-bit quantized MiniCPM-o-4_5 model with AutoAWQ from "
+"[HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-4_5-AWQ)"
 msgstr ""
-"从 [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ) 下载 4 "
-"位量化的 MiniCPM-V-4 模型（AutoAWQ）"
+"从 [HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-4_5-AWQ) 下载 4 "
+"位量化的 MiniCPM-o-4_5 模型（AutoAWQ）"
 
 #: ../source/quantization/awq.md:20 d605e88b81404c48a436b932c8f4c79a
 #, fuzzy
@@ -60,11 +60,11 @@ msgstr "方法一（使用预量化模型）"
 #: ../source/quantization/awq.md:96 ../source/quantization/awq.md:152
 #: 7b0f02c25ea04c50ba52bab202479ec3 8b7dccb36c7946b6b171d824c4dfc68e
 msgid ""
-"Download the MiniCPM-V 4.5 model from "
-"[HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5)"
+"Download the MiniCPM-o 4.5 model from "
+"[HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-4_5)"
 msgstr ""
-"从 [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5) 下载 "
-"MiniCPM-V 4.5 模型"
+"从 [HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-4_5) 下载 "
+"MiniCPM-o 4.5 模型"
 
 #: ../source/quantization/awq.md:102 ../source/quantization/awq.md:158
 #: 63d9a6a3a4424f24b93496ed20d80f90 bbc3b033d9444873adf6f31d5689509f

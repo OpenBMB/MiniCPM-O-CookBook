@@ -26,11 +26,11 @@ msgstr "Ollama"
 
 #: ../../source/run_locally/ollama.md:4 dd310ad927854857bbd6980f40f754be
 msgid ""
-"We've submitted a PR for MiniCPM-V 4.5 to the Ollama repo, and it's "
+"We've submitted a PR for MiniCPM-o 4.5 to the Ollama repo, and it's "
 "currently under review for merging. In the meantime, you can use our code"
 " via [this link](https://github.com/tc-mb/ollama/tree/Support-"
 "MiniCPM-V-4.5).."
-msgstr "我们已向 Ollama 仓库提交了 MiniCPM-V 4.5 的 PR，目前正在审核合并中。在此期间，您可以通过[此链接](https://github.com/tc-mb/ollama/tree/Support-MiniCPM-V-4.5)使用我们的代码。"
+msgstr "我们已向 Ollama 仓库提交了 MiniCPM-o 4.5 的 PR，目前正在审核合并中。在此期间，您可以通过[此链接](https://github.com/tc-mb/ollama/tree/Support-MiniCPM-o-4.5)使用我们的代码。"
 
 #: ../../source/run_locally/ollama.md:7 ec541de41ac24eb99bcc5bb3f795db39
 msgid ""
@@ -39,13 +39,13 @@ msgid ""
 "4.5 is officially on Ollama, and you can run it with one command:"
 msgstr ""
 "[Ollama](https://ollama.com/) 可以帮助你仅用几个命令在本地运行大语言模型。它支持 macOS、Linux 和 "
-"Windows。现在，MiniCPM-V 4.5 已正式上线 Ollama，你只需一条命令即可运行："
+"Windows。现在，MiniCPM-o 4.5 已正式上线 Ollama，你只需一条命令即可运行："
 
 #: ../../source/run_locally/ollama.md:13 1055f93917f14a37aa95f09a7b14d1eb
 msgid ""
 "Next, we introduce more detailed usages of Ollama for running MiniCPM-V "
 "4.5."
-msgstr "下面将介绍使用 Ollama 运行 MiniCPM-V 4.5 的更多详细用法。"
+msgstr "下面将介绍使用 Ollama 运行 MiniCPM-o 4.5 的更多详细用法。"
 
 #: ../../source/run_locally/ollama.md:15 970f056d6f6f49ccbdaeaf4de2c4c6e0
 msgid "Install Ollama"
@@ -131,13 +131,10 @@ msgid "`./ollama run openbmb/minicpm-v4.5`"
 msgstr "`./ollama run openbmb/minicpm-v4.5`"
 
 #: ../../source/run_locally/ollama.md:53 c035dc9fd9c54615a793e8b763b257a0
-msgid "`./ollama run openbmb/minicpm-o2.6`"
-msgstr "`./ollama run openbmb/minicpm-o2.6`"
+msgid "`./ollama run openbmb/minicpm-o4.5`"
+msgstr "`./ollama run openbmb/minicpm-o4.5`"
 
 #: ../../source/run_locally/ollama.md:54 d70217bc0e244bf2ba6620c6244f4428
-msgid "`./ollama run openbmb/minicpm-v2.6`"
-msgstr "`./ollama run openbmb/minicpm-v2.6`"
-
 #: ../../source/run_locally/ollama.md:55 f7226e420aee40ea8821686f06c9a506
 msgid "`./ollama run openbmb/minicpm-v2.5`"
 msgstr "`./ollama run openbmb/minicpm-v2.5`"
@@ -160,11 +157,11 @@ msgstr "使用你自己的 GGUF 文件运行 Ollama"
 
 #: ../../source/run_locally/ollama.md:84 7907b5c48e104eb99f82bfa032c11143
 msgid ""
-"You can alse use Ollama with your own GGUF files of MiniCPM-V 4.5. For "
+"You can alse use Ollama with your own GGUF files of MiniCPM-o 4.5. For "
 "the first step, you need to create a file called `Modelfile`. The content"
 " of the file is shown below:"
 msgstr ""
-"你也可以使用自己 MiniCPM-V 4.5 的 GGUF 文件与 Ollama 配合使用。第一步，你需要创建一个名为 `Modelfile` "
+"你也可以使用自己 MiniCPM-o 4.5 的 GGUF 文件与 Ollama 配合使用。第一步，你需要创建一个名为 `Modelfile` "
 "的文件，其内容如下所示："
 
 #: ../../source/run_locally/ollama.md:100 86fb0587132840659cd3ca54a549875e

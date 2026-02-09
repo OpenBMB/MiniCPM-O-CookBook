@@ -25,8 +25,8 @@ msgid "Align-Anything"
 msgstr "Align-Anything"
 
 #: ../../source/finetune/align-anything.md:4 89631e6a3d634edfac1e9bc1a915f676
-msgid "**Support:** MiniCPM-o 2.6"
-msgstr "**支持:** MiniCPM-o 2.6"
+msgid "**Support:** MiniCPM-o 4.5"
+msgstr "**支持:** MiniCPM-o 4.5"
 
 #: ../../source/finetune/align-anything.md:7 ccec53deaa20417299caf39d43ef0287
 msgid ""

@@ -1,8 +1,15 @@
-# Web Demo 服务器配置指南
+# MiniCPM-o 4.5 Web Demo
 
-为 MiniCPM-V 4.5（兼容 4.0）提供 Web 界面演示服务，支持图像和视频的多模态对话。Demo 分为[服务端](./server/)和[客户端](./client/)两个部分。
+为 MiniCPM-o 4.5 提供 Web 界面演示服务，支持图片和视频的多模态对话。演示由两部分组成：[服务端](./server/) 和 [客户端](./client/)。
 
-📖 [English Version](./README.md)
+📖 [English Version](./README_o45.md)
+
+## 主要特性
+
+- **多模态输入**：支持图片和视频
+- **流式输出**：实时流式响应
+- **思考模式**：显示模型的推理过程（`<think>` 标签）
+- **显存优化**：仅加载视觉和语言模块，禁用音频/TTS以节省显存
 
 ## 部署步骤
 
@@ -16,12 +23,12 @@ pip install -r requirements.txt
 python gradio_server.py
 ```
 
-**自定义参数:**
+**自定义参数：**
 
 ```bash
-# 指定服务端口、日志目录、模型路径和类型（MiniCPM-V 4.5）
-# 若显存有限，可将 /path/to/model 指向 INT4 量化模型，并自行安装相关依赖。
-python gradio_server.py --port=9999 --log_dir=logs_v4_5 --model_path=/path/to/model --model_type=minicpmv4_5
+# 指定服务端口、日志目录、模型路径和模型类型 (MiniCPM-o 4.5)
+# 如果显存有限，可以使用 INT4 量化模型
+python gradio_server.py --port=9999 --log_dir=logs_o45 --model_path=openbmb/MiniCPM-o-4_5 --model_type=minicpmo4_5
 ```
 
 ### 客户端
@@ -31,18 +38,30 @@ cd client
 conda create -n gradio-client python=3.10
 conda activate gradio-client
 pip install -r requirements.txt
-python gradio_client_minicpmv4_5.py
+python gradio_client_minicpmo4_5.py
 ```
 
-**自定义参数:**
+**自定义参数：**
 
 ```bash
-# 指定前端端口和后端服务地址（MiniCPM-V 4.5）
-python gradio_client_minicpmv4_5.py --port=8889 --server=http://localhost:9999/api
+# 指定前端端口和后端服务地址 (MiniCPM-o 4.5)
+python gradio_client_minicpmo4_5.py --port=8889 --server=http://localhost:9999/api
 ```
 
-## 访问地址
+## 访问
 
-默认配置下，服务启动完成后，在浏览器中访问 http://localhost:8889 可以看到 web demo 页面（客户端默认端口为 8889，服务端默认端口为 9999）
+默认情况下，服务启动后，可以通过浏览器访问 http://localhost:8889 来使用 Web Demo。
+
+## UI 功能
+
+### 解码类型
+- **Sampling**：默认模式，支持实时流式输出
+- **Beam Search**：输出质量更高但不支持流式输出
+
+### 思考模式
+启用后可以看到模型的推理过程。思考内容会以视觉区分的方式显示在单独的区域。
+
+### 流式模式
+启用后可以实时逐字符输出。仅在 Sampling 模式下可用。
 
 ![demo](./assets/demo.png)

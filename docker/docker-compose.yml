@@ -1,0 +1,78 @@
+version: '3.8'
+
+# MiniCPM-o 前后端联调 Docker Compose 配置
+# 用法: docker compose up -d
+
+services:
+  # ====================== Redis 服务 ======================
+  redis:
+    image: redis:7-alpine
+    container_name: minicpmo-redis
+    restart: unless-stopped
+    ports:
+      - "6389:6379"
+    networks:
+      - minicpmo-net
+
+  # ====================== LiveKit 服务 ======================
+  livekit:
+    image: livekit/livekit-server:v1.5.3
+    container_name: minicpmo-livekit
+    restart: unless-stopped
+    ports:
+      - "7880:7880"   # HTTP API
+      - "7881:7881"   # TCP WebRTC
+      - "7882:7882/udp"  # UDP TURN
+      - "50000-50100:50000-50100/udp"  # WebRTC UDP 端口范围
+    volumes:
+      - ./omini_backend_code/config/livekit.yaml:/livekit.yaml:ro
+    command: --config /livekit.yaml
+    networks:
+      - minicpmo-net
+
+  # ====================== 后端服务 ======================
+  backend:
+    image: modelbest-registry.cn-beijing.cr.aliyuncs.com/modelbest/minicpm-web-backend:release_local-202602041743-4f385b
+    container_name: minicpmo-backend
+    restart: unless-stopped
+    ports:
+      - "8021:8021"   # 后端 API + 推理节点注册
+      - "8022:8022"   # 备用端口
+    environment:
+      - LIVEKIT_URL=ws://livekit:7880
+      - LIVEKIT_API_KEY=devkey
+      - LIVEKIT_API_SECRET=secret
+      # Redis 配置
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      # 推理节点注册配置
+      - INFERENCE_REGISTER_ENABLED=true
+    depends_on:
+      - livekit
+      - redis
+    networks:
+      - minicpmo-net
+
+  # ====================== 前端服务 ======================
+  frontend:
+    image: modelbest-registry.cn-beijing.cr.aliyuncs.com/modelbest/three-o-h-100:kol-external-202602041835-b7c0c5
+    container_name: minicpmo-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"   # 前端 Web UI (nginx 监听 80)
+    volumes:
+      # 挂载自定义 nginx 配置，使用 Docker 内部网络地址
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    environment:
+      # API 地址指向后端
+      - NEXT_PUBLIC_API_URL=http://localhost:8021
+      # LiveKit 配置
+      - NEXT_PUBLIC_LIVEKIT_URL=ws://localhost:7880
+    depends_on:
+      - backend
+    networks:
+      - minicpmo-net
+
+networks:
+  minicpmo-net:
+    driver: bridge

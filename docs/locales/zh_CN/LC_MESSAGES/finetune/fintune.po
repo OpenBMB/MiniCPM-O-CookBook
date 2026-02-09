@@ -28,18 +28,18 @@ msgstr "微调"
 #, fuzzy
 msgid ""
 "We provide official scripts for easily fine-tuning the pretrained models "
-"**MiniCPM-V 4.5**, **MiniCPM-V 4.0**, **MiniCPM-o 2.6**, **MiniCPM-V "
-"2.6**, **MiniCPM-Llama3-V 2.5**, and **MiniCPM-V 2.0** on downstream "
+"**MiniCPM-o 4.5**, **MiniCPM-o 4.5**, **MiniCPM-V 4.0**, **MiniCPM-Llama3-V "
+"2.5**, and **MiniCPM-V 2.0** on downstream "
 "tasks. The fine-tuning scripts use `transformers Trainer` and `DeepSpeed`"
 " by default."
 msgstr ""
-"我们提供官方脚本，可以轻松地在下游任务上微调预训练模型 **MiniCPM-V 4.5**、**MiniCPM-V 4.0**、**MiniCPM-o "
-"2.6**、**MiniCPM-V 2.6**、**MiniCPM-Llama3-V 2.5** 和 **MiniCPM-V "
+"我们提供官方脚本，可以轻松地在下游任务上微调预训练模型 **MiniCPM-o 4.5**、**MiniCPM-o "
+"4.5**、**MiniCPM-V 4.0**、**MiniCPM-Llama3-V 2.5** 和 **MiniCPM-V "
 "2.0**。微调脚本默认使用 `transformers Trainer` 和 `DeepSpeed`。"
 
 #: ../../source/finetune/fintune.md:6 409f8eb6c242417398f4bcb3d6239cb1
-msgid "This section takes **MiniCPM-o 2.6** as an example."
-msgstr "本节以 **MiniCPM-o2.6** 为例。"
+msgid "This section takes **MiniCPM-o 4.5** as an example."
+msgstr "本节以 **MiniCPM-o4.5** 为例。"
 
 #: ../../source/finetune/fintune.md:10 a1f750b5cd1646738a11fdc50d6caf2b
 msgid "Download Code"

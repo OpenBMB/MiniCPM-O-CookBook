@@ -102,7 +102,7 @@ pip install -e ".[torch,metrics,deepspeed,minicpm_v]
 
 ### 构建音频数据集
 
-**注意：仅MiniCPM-o 2.6模型支持音频微调**
+**注意：仅MiniCPM-o 4.5模型支持音频微调**
 
 参照LLaMA-Factory/[data](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json)下的**mllm_audio_demo.json**数据集,按照相同格式构造数据，结构如下：
 
@@ -195,7 +195,7 @@ pip install -e ".[torch,metrics,deepspeed,minicpm_v]
 
 ```YAML
 ### model
-model_name_or_path: openbmb/MiniCPM-V-4_5 # 可以是MiniCPM-V或者MiniCPM-o的本地模型
+model_name_or_path: openbmb/MiniCPM-o-4_5 # 可以是MiniCPM-o的本地模型
 trust_remote_code: true
 
 ### method
@@ -241,7 +241,7 @@ do_eval: false
 
 ```YAML
 ### model
-model_name_or_path: openbmb/MiniCPM-V-4_5 # 可以是MiniCPM-V或者MiniCPM-o的本地模型
+model_name_or_path: openbmb/MiniCPM-o-4_5 # 可以是MiniCPM-o的本地模型
 trust_remote_code: true
 freeze_vision_tower: true #冻结图像模块
 print_param_status: true
@@ -305,7 +305,7 @@ llamafactory-cli train configs/minicpmv4_5_lora_sft.yaml
 
 ```Bash
 ### model
-model_name_or_path: openbmb/MiniCPM-V-4_5 # 这里可以填入原始模型地址，可以是本地模型
+model_name_or_path: openbmb/MiniCPM-o-4_5 # 这里可以填入原始模型地址，可以是本地模型
 adapter_name_or_path: saves/minicpm_v4_5/lora/sft # 这里填入保存的lora模型地址
 template: minicpm_v
 finetuning_type: lora

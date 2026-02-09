@@ -1,9 +1,9 @@
 # Finetune
 
 :::{note}
-We provide official scripts for easily fine-tuning the pretrained models **MiniCPM-V 4.5**, **MiniCPM-V 4.0**, **MiniCPM-o 2.6**, **MiniCPM-V 2.6**, **MiniCPM-Llama3-V 2.5**, and **MiniCPM-V 2.0** on downstream tasks. The fine-tuning scripts use `transformers Trainer` and `DeepSpeed` by default.
+We provide official scripts for easily fine-tuning the pretrained models **MiniCPM-o 4.5**, **MiniCPM-o 4.5**, **MiniCPM-V 4.0**, **MiniCPM-Llama3-V 2.5**, and **MiniCPM-V 2.0** on downstream tasks. The fine-tuning scripts use `transformers Trainer` and `DeepSpeed` by default.
 
-This section takes **MiniCPM-o 2.6** as an example.
+This section takes **MiniCPM-o 4.5** as an example.
 :::
 
 
@@ -94,10 +94,10 @@ In `conversations`, use `<image>` or `<image_XX>` placeholders to position image
 This method updates all model parameters. Specify your model and data paths in the script:
 
 ```shell
-MODEL="MiniCPM-o-2_6" # or "openbmb/MiniCPM-V-2_6", "openbmb/MiniCPM-Llama3-V-2_5", "openbmb/MiniCPM-V-2"
+MODEL="MiniCPM-o-4_5" # or "openbmb/MiniCPM-o-4_5", "openbmb/MiniCPM-V-4", "openbmb/MiniCPM-Llama3-V-2_5"
 DATA="path/to/training_data.json"
 EVAL_DATA="path/to/test_data.json"
-LLM_TYPE="qwen" # llama for MiniCPM-V-4, minicpm for MiniCPM-V-2, llama3 for MiniCPM-Llama3-V-2_5, qwen for MiniCPM-o-2_6/MiniCPM-V-2_6
+LLM_TYPE="qwen" # llama for MiniCPM-V-4, llama3 for MiniCPM-Llama3-V-2_5, qwen for MiniCPM-o-4_5
 ```
 
 To launch your training, run:
@@ -119,7 +119,7 @@ After training, load the LoRA adapter. Use an absolute path for the base model.
 from peft import PeftModel
 from transformers import AutoModel
 
-model_type = "openbmb/MiniCPM-o-2_6" # or "openbmb/MiniCPM-V-2_6", "openbmb/MiniCPM-Llama3-V-2_5", "openbmb/MiniCPM-V-2"
+model_type = "openbmb/MiniCPM-o-4_5" # or "openbmb/MiniCPM-o-4_5", "openbmb/MiniCPM-V-4", "openbmb/MiniCPM-Llama3-V-2_5"
 path_to_adapter = "path_to_your_fine_tuned_checkpoint"
 
 model = AutoModel.from_pretrained(

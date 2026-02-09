@@ -1,13 +1,13 @@
 # Object Recognition
 
-We can use MiniCPM-V-4_5 to perform object recognition tasks on images.
+We can use MiniCPM-o-4_5 to perform object recognition tasks on images.
 
 ```python
 from PIL import Image
 import torch
 from transformers import AutoModel, AutoTokenizer
 
-model_path = 'openbmb/MiniCPM-V-4_5'
+model_path = 'openbmb/MiniCPM-o-4_5'
 model = AutoModel.from_pretrained(model_path, trust_remote_code=True,
                                   # sdpa or flash_attention_2, no eager
                                   attn_implementation='sdpa', torch_dtype=torch.bfloat16)
@@ -39,14 +39,14 @@ The landform in the picture is a mountain range. The image shows steep cliffs, r
 
 # Object Spot
 
-We can also use MiniCPM-V-4_5 to perform object spotting tasks on images.
+We can also use MiniCPM-o-4_5 to perform object spotting tasks on images.
 
 ```python
 from PIL import Image
 import torch
 from transformers import AutoModel, AutoTokenizer
 
-model_path = 'openbmb/MiniCPM-V-4_5'
+model_path = 'openbmb/MiniCPM-o-4_5'
 model = AutoModel.from_pretrained(model_path, trust_remote_code=True,
                                   # sdpa or flash_attention_2, no eager
                                   attn_implementation='sdpa', torch_dtype=torch.bfloat16)

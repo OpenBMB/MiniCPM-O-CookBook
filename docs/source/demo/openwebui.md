@@ -53,7 +53,7 @@ Configure in Open WebUI: Settings → Connections → Ollama API → `http://loc
 ```bash
 # Install and start vLLM service
 pip install vllm==0.10.1
-vllm serve openbmb/MiniCPM-V-4_5 \
+vllm serve openbmb/MiniCPM-o-4_5 \
   --dtype auto \
   --api-key token-abc123 \
   --trust-remote-code
@@ -72,7 +72,7 @@ cd sglang && pip install -e "python[all]"
 
 # Start service
 python -m sglang.launch_server \
-  --model-path openbmb/MiniCPM-V-4_5 \
+  --model-path openbmb/MiniCPM-o-4_5 \
   --port 30000 \
   --trust-remote-code
 ```
@@ -117,7 +117,7 @@ response = requests.post(
     'http://localhost:8000/v1/chat/completions',
     headers={'Authorization': 'Bearer token-abc123'},
     json={
-        'model': 'MiniCPM-V-4_5',
+        'model': 'MiniCPM-o-4_5',
         'messages': [{
             'role': 'user',
             'content': [

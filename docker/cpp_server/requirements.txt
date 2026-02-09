@@ -1,0 +1,21 @@
+# MiniCPM-o C++ HTTP Server Python Dependencies
+# Used by minicpmo_cpp_http_server.py
+
+# Web framework
+fastapi>=0.109.0
+uvicorn>=0.27.0
+httpx>=0.26.0
+
+# Data processing
+numpy>=1.24.0
+Pillow>=10.0.0
+
+# Audio processing
+librosa>=0.10.0
+soundfile>=0.12.0
+
+# HTTP client
+requests>=2.31.0
+
+# Pydantic for data validation
+pydantic>=2.0.0

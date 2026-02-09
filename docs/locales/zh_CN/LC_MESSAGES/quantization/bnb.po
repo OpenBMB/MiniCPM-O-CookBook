@@ -25,8 +25,8 @@ msgid "BNB"
 msgstr "BNB"
 
 #: ../../source/quantization/bnb.md:4 2a940f7ac99744dcab6530225fd76fc4
-msgid "**Support:** MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5"
-msgstr "**支持模型:** MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5"
+msgid "**Support:** MiniCPM-o 4.5 / MiniCPM-o 4.5 / MiniCPM-V 4.0"
+msgstr "**支持模型:** MiniCPM-o 4.5 / MiniCPM-o 4.5 / MiniCPM-V 4.0"
 
 #: ../../source/quantization/bnb.md:8 bcdb3abf8e254dfbafe9a885d501c3a5
 msgid "1.Download the Model"

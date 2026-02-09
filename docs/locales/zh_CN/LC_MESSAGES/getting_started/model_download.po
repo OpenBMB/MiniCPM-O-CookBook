@@ -28,9 +28,9 @@ msgstr "模型下载"
 #: ../../source/getting_started/model_download.md:3
 #: 207a6c5ddc68477dad442e9669f50df4
 msgid ""
-"This guide provides instructions for downloading the MiniCPM-V 4.5 model "
+"This guide provides instructions for downloading the MiniCPM-o 4.5 model "
 "from Hugging Face Hub and ModelScope."
-msgstr "本指南提供了从 Hugging Face Hub 和 ModelScope 下载 MiniCPM-V 4.5 模型的说明。"
+msgstr "本指南提供了从 Hugging Face Hub 和 ModelScope 下载 MiniCPM-o 4.5 模型的说明。"
 
 #: ../../source/getting_started/model_download.md:5
 #: 6c679be5488140cb9abb5ce771818986
@@ -40,9 +40,9 @@ msgstr "可用模型"
 #: ../../source/getting_started/model_download.md:7
 #: ab8ffacb22d34a08bd8f5dd969b602d5
 msgid ""
-"**MiniCPM-V 4.5**: Vision Understanding model for image and video "
+"**MiniCPM-o 4.5**: Vision Understanding model for image and video "
 "processing (~18GB)"
-msgstr "**MiniCPM-V 4.5**：用于图像和视频处理的视觉理解模型（约18GB）"
+msgstr "**MiniCPM-o 4.5**：用于图像和视频处理的视觉理解模型（约18GB）"
 
 #: ../../source/getting_started/model_download.md:9
 #: c468b4d66bea4a96a37cde123c4b06de
@@ -52,10 +52,10 @@ msgstr "Hugging Face Hub 下载"
 #: ../../source/getting_started/model_download.md:11
 #: 667ca1d0cc1a46a7a07bac1b346bf5d3
 msgid ""
-"Hugging Face Hub is the primary platform for accessing MiniCPM-V 4.5, "
+"Hugging Face Hub is the primary platform for accessing MiniCPM-o 4.5, "
 "offering excellent global accessibility and integration with the "
 "transformers library."
-msgstr "Hugging Face Hub 是获取 MiniCPM-V 4.5 的主要平台，具有出色的全球可访问性，并可与 transformers 库集成。"
+msgstr "Hugging Face Hub 是获取 MiniCPM-o 4.5 的主要平台，具有出色的全球可访问性，并可与 transformers 库集成。"
 
 #: ../../source/getting_started/model_download.md:13
 #: ../../source/getting_started/model_download.md:53

@@ -5,11 +5,11 @@ Full-parameter parameter finetuning requires updating all parameters of LLM in t
 You can find and review the training script here: [finetune_ds.sh](./finetune_ds.sh)
 
 ```shell
-MODEL="MiniCPM-o-2_6" # or "openbmb/MiniCPM-V-4", "openbmb/MiniCPM-V-2_6", "openbmb/MiniCPM-Llama3-V-2_5", "openbmb/MiniCPM-V-2"
+MODEL="MiniCPM-o-4_5" # or "openbmb/MiniCPM-V-4", "openbmb/MiniCPM-Llama3-V-2_5"
 DATA="path/to/trainging_data" # json file
 EVAL_DATA="path/to/test_data" # json file
 LLM_TYPE="qwen" # if use openbmb/MiniCPM-V-2, please set LLM_TYPE=minicpm, if use openbmb/MiniCPM-Llama3-V-2_5, please set LLM_TYPE="llama3",
-# if use openbmb/MiniCPM-o-2_6 or openbmb/MiniCPM-V-2_6, please set LLM_TYPE=qwen
+# if use openbmb/MiniCPM-o-4_5, please set LLM_TYPE=qwen
 # if use openbmb/MiniCPM-V-4, please set LLM_TYPE=llama
 ```
 
@@ -24,7 +24,7 @@ After training, you could load the model with the path to the adapter. We advise
 ```python
 from peft import PeftModel
 from transformers import AutoModel
-model_type=  "openbmb/MiniCPM-o-2_6" # or "openbmb/MiniCPM-V-4", "openbmb/MiniCPM-V-2_6", "openbmb/MiniCPM-Llama3-V-2_5", "openbmb/MiniCPM-V-2"
+model_type=  "openbmb/MiniCPM-o-4_5" # or "openbmb/MiniCPM-V-4", "openbmb/MiniCPM-Llama3-V-2_5"
 path_to_adapter="path_to_your_fine_tuned_checkpoint"
 
 model =  AutoModel.from_pretrained(

@@ -1,20 +1,20 @@
 # AWQ
 
 :::{Note}
-**Support:** MiniCPM-V 4.5, MiniCPM-V 4.0
+**Support:** MiniCPM-o 4.5, MiniCPM-V 4.0
 :::
 
 ## Method 1 (Use the pre-quantized model with vllm)
 
 ### 1.Download the Model
 <!-- 下载量化模型
-https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ
+https://huggingface.co/openbmb/MiniCPM-o-4_5-AWQ
  -->
 
-Download the 4-bit quantized MiniCPM-V-4_5 model with AutoAWQ from [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ)
+Download the 4-bit quantized MiniCPM-o-4_5 model with AutoAWQ from [HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-4_5-AWQ)
 
 ```Bash
-git clone https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ
+git clone https://huggingface.co/openbmb/MiniCPM-o-4_5-AWQ
 ```
 
 ### 2.Run with vllm
@@ -27,7 +27,7 @@ from vllm import LLM, SamplingParams
 
 
 # Quantized model name or path
-MODEL_NAME = "openbmb/MiniCPM-V-4_5-AWQ"
+MODEL_NAME = "openbmb/MiniCPM-o-4_5-AWQ"
 
 # List of image file paths
 IMAGES = [
@@ -90,13 +90,13 @@ print(outputs[0].outputs[0].text)
 
 ### 1.Download the Model
 <!-- 下载模型
-https://huggingface.co/openbmb/MiniCPM-V-4_5
+https://huggingface.co/openbmb/MiniCPM-o-4_5
  -->
 
-Download the MiniCPM-V 4.5 model from [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5)
+Download the MiniCPM-o 4.5 model from [HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-4_5)
 
 ```Bash
-git clone https://huggingface.co/openbmb/MiniCPM-V-4_5
+git clone https://huggingface.co/openbmb/MiniCPM-o-4_5
 ```
 
 ### 2.Download and build AutoAWQ
@@ -118,7 +118,7 @@ from awq import AutoAWQForCausalLM
 import torch
 
 # Quantized model name or path
-model_path = "openbmb/MiniCPM-V-4_5-AWQ"
+model_path = "openbmb/MiniCPM-o-4_5-AWQ"
 device = 'cuda'
 # List of image file paths
 image_path = './assets/airplane.jpeg'
@@ -146,13 +146,13 @@ print('Output:',response)
 
 ### 1.Download the Model
 <!-- 下载模型
-https://huggingface.co/openbmb/MiniCPM-V-4_5
+https://huggingface.co/openbmb/MiniCPM-o-4_5
  -->
 
-Download the MiniCPM-V 4.5 model from [HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-4_5)
+Download the MiniCPM-o 4.5 model from [HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-4_5)
 
 ```Bash
-git clone https://huggingface.co/openbmb/MiniCPM-V-4_5
+git clone https://huggingface.co/openbmb/MiniCPM-o-4_5
 ```
 
 ### 2.Download and build AutoAWQ
@@ -176,7 +176,7 @@ from transformers import AutoTokenizer
 import shutil
 
 # Set the path to the original model (can be a local path or model ID)
-model_path = '/openbmb/MiniCPM-V-4_5'
+model_path = '/openbmb/MiniCPM-o-4_5'
 
 # Path to save the quantized model
 quant_path = '/model_quantized/minicpmv4_5_awq'

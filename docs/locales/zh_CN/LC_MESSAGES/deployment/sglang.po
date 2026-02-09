@@ -25,11 +25,11 @@ msgstr "SGLang"
 
 #: ../../source/deployment/sglang.md:4 40b75376048d4307a88e798d90c20951
 msgid ""
-"We've submitted a PR for MiniCPM-V 4.5 to the SGLang repo, and it's "
+"We've submitted a PR for MiniCPM-o 4.5 to the SGLang repo, and it's "
 "currently under review for merging. In the meantime, you can use our code"
 " via [this link](https://github.com/tc-mb/sglang/tree/Support-"
 "MiniCPM-V-4.5).."
-msgstr "我们已向 SGLang 仓库提交了 MiniCPM-V 4.5 的 PR，目前正在审核合并中。在此期间，您可以通过[此链接](https://github.com/tc-mb/sglang/tree/Support-MiniCPM-V-4.5)使用我们的代码。"
+msgstr "我们已向 SGLang 仓库提交了 MiniCPM-o 4.5 的 PR，目前正在审核合并中。在此期间，您可以通过[此链接](https://github.com/tc-mb/sglang/tree/Support-MiniCPM-V-4.5)使用我们的代码。"
 
 #: ../../source/deployment/sglang.md:7 ad98fd9e9c3d420386a82ef5a1392819
 msgid "1.Installing SGLang"

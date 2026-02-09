@@ -25,8 +25,8 @@ msgid "Llama Factory"
 msgstr "Llama Factory"
 
 #: ../../source/finetune/llamafactory.md:4 608cb06b111948418271df9a45d8d498
-msgid "**Support:** MiniCPM-V 4.5 / MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5"
-msgstr "**支持:** MiniCPM-V 4.5 / MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5"
+msgid "**Support:** MiniCPM-o 4.5 / MiniCPM-o 4.5 / MiniCPM-V 4.0"
+msgstr "**支持:** MiniCPM-o 4.5 / MiniCPM-o 4.5 / MiniCPM-V 4.0"
 
 #: ../../source/finetune/llamafactory.md:7 ee39d1a393144b638f126a135a96e648
 msgid "Install LlamaFactory"
@@ -99,8 +99,8 @@ msgid "Building Audio Dataset"
 msgstr "构建音频数据集"
 
 #: ../../source/finetune/llamafactory.md:110 c602a61519504fc48833cf86c0a14303
-msgid "**Note: Only MiniCPM-o 2.6 model supports audio fine-tuning**"
-msgstr "**注意：仅MiniCPM-o 2.6模型支持音频微调**"
+msgid "**Note: Only MiniCPM-o 4.5 model supports audio fine-tuning**"
+msgstr "**注意：仅MiniCPM-o 4.5模型支持音频微调**"
 
 #: ../../source/finetune/llamafactory.md:112 8645ead0e65e4f7eb3ca408fd5613c40
 msgid ""

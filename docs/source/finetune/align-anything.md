@@ -1,7 +1,7 @@
 # Align-Anything
 
 :::{Note}
-**Support:** MiniCPM-o 2.6
+**Support:** MiniCPM-o 4.5
 :::
 
 [Align-Anything](https://github.com/PKU-Alignment/align-anything/) is a multi-modal alignment framework, it aims to align any modality large models (any-to-any models), including LLMs, VLMs, and others, with human intentions and values. More details about the definition and milestones of alignment for Large Models can be found in [AI Alignment](https://alignmentsurvey.com/).

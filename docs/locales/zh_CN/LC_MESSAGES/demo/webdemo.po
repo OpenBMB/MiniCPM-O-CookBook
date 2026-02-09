@@ -14,163 +14,300 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
 "Language-Team: zh_CN <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../source/demo/webdemo.md:1 0e2e2732276b43dd84b8e7203b7f69e7
+#: ../../source/demo/webdemo.md:1
 msgid "Omni Stream"
-msgstr ""
+msgstr "全模态流式演示"
 
-#: ../../source/demo/webdemo.md:3 66b83295682a41ee8e28caba7fec79da
+#: ../../source/demo/webdemo.md:3
 msgid "Overview"
 msgstr "概述"
 
-#: ../../source/demo/webdemo.md:5 8c8ae687d19a45deb519c89ef0c30295
+#: ../../source/demo/webdemo.md:5
 msgid ""
-"The MiniCPM-o Omni Stream demo provides a real-time conversational AI "
-"experience with multimodal capabilities. It supports streaming audio "
-"input/output, voice activity detection (VAD), voice cloning, and "
+"The MiniCPM-o 4.5 Omni Stream demo provides a real-time conversational AI "
+"experience with multimodal capabilities. It supports full-duplex streaming "
+"audio/video input/output, voice activity detection (VAD), voice cloning, and "
 "multimodal interactions."
 msgstr ""
-"MiniCPM-o 全域流式（Omni "
-"Stream）演示提供了一个具备多模态能力的实时对话式人工智能体验。它支持流式音频输入/输出、语音活动检测（VAD）、声音克隆以及多模态交互。"
+"MiniCPM-o 4.5 全模态流式演示提供了具备多模态能力的实时对话式人工智能体验。"
+"它支持全双工流式音视频输入/输出、语音活动检测（VAD）、声音克隆以及多模态交互。"
 
-#: ../../source/demo/webdemo.md:7 9b280830829f49e29f1aade6e40003d3
+#: ../../source/demo/webdemo.md:7
 msgid "Key Features"
 msgstr "主要特性"
 
-#: ../../source/demo/webdemo.md:9 7ec9a6ad8d0e4b81bb2151ab94e5dab7
-msgid "Real-time Streaming"
-msgstr "实时流式处理"
+#: ../../source/demo/webdemo.md:9
+msgid "Full-Duplex Real-time Streaming"
+msgstr "全双工实时流式处理"
 
-#: ../../source/demo/webdemo.md:10 8fe1d4fc470840688bebca486e9fc73c
-msgid "**Streaming Audio Processing**: Process audio input in real-time chunks"
-msgstr "**流式音频处理**：实时分块处理音频输入"
+#: ../../source/demo/webdemo.md:10
+msgid "**Streaming Audio/Video Processing**: Process audio and video input in real-time"
+msgstr "**流式音视频处理**：实时处理音视频输入"
 
-#: ../../source/demo/webdemo.md:11 b3bbace3162d478386c458c9baa97e69
+#: ../../source/demo/webdemo.md:11
 msgid "**Low-latency Response**: Optimized for real-time conversation scenarios"
 msgstr "**低延迟响应**：为实时对话场景优化"
 
-#: ../../source/demo/webdemo.md:12 e3d259de1ffe4a80a96531490452cae5
-msgid ""
-"**Concurrent Processing**: Handle multiple audio streams with session "
-"management"
-msgstr "**并发处理**：通过会话管理处理多个音频流"
+#: ../../source/demo/webdemo.md:12
+msgid "**Full-Duplex Communication**: Simultaneous bidirectional audio streaming"
+msgstr "**全双工通信**：同时双向音频流传输"
 
-#: ../../source/demo/webdemo.md:14 458ce1dc1a3147f19d85de6fd47e8c4b
+#: ../../source/demo/webdemo.md:14
 msgid "Voice Activity Detection (VAD)"
 msgstr "语音活动检测（VAD）"
 
-#: ../../source/demo/webdemo.md:15 d49012d792d94d4294689fb6b09ab51f
+#: ../../source/demo/webdemo.md:15
 msgid ""
 "**Silero VAD Integration**: Automatic speech detection using pre-trained "
 "VAD models"
 msgstr "**集成 Silero VAD**：使用预训练的 VAD 模型自动检测语音"
 
-#: ../../source/demo/webdemo.md:16 f23d191ad5aa40cda5d3eaad02558182
+#: ../../source/demo/webdemo.md:16
 msgid ""
 "**Configurable Thresholds**: Customizable silence/speech detection "
 "parameters"
 msgstr "**可配置阈值**：可自定义的静音/语音检测参数"
 
-#: ../../source/demo/webdemo.md:17 ddc256cc5280427d96d854562e3795a9
+#: ../../source/demo/webdemo.md:17
 msgid ""
 "**Smart Segmentation**: Automatic audio segmentation based on speech "
 "patterns"
 msgstr "**智能分段**：根据语音模式自动进行音频分段"
 
-#: ../../source/demo/webdemo.md:19 7506ab1e7e6d411a961d310d73730149
+#: ../../source/demo/webdemo.md:19
 msgid "Voice Cloning & TTS"
 msgstr "声音克隆与文本转语音（TTS）"
 
-#: ../../source/demo/webdemo.md:20 edcb3640917d43808de058317ba3219a
+#: ../../source/demo/webdemo.md:20
 msgid ""
 "**Reference Audio Support**: Clone voice characteristics from reference "
 "audio samples"
 msgstr "**支持参考音频**：从参考音频样本中克隆声音特征"
 
-#: ../../source/demo/webdemo.md:21 affe2367d3e64c2aa5dd57f61576f879
+#: ../../source/demo/webdemo.md:21
 msgid ""
 "**Multiple Voice Options**: Built-in male, female, and default voice "
 "presets"
 msgstr "**多种声音选项**：内置男性、女性和默认声音预设"
 
-#: ../../source/demo/webdemo.md:22 374ab60bad2b46b2959c29f9005450d0
+#: ../../source/demo/webdemo.md:22
 msgid "**Custom Audio Upload**: Upload your own reference audio for voice cloning"
 msgstr "**自定义音频上传**：上传您自己的参考音频进行声音克隆"
 
-#: ../../source/demo/webdemo.md:24 6f97f6c93fbf4f1fa5d358216640b2f8
+#: ../../source/demo/webdemo.md:24
 msgid "Multimodal Support"
 msgstr "多模态支持"
 
-#: ../../source/demo/webdemo.md:25 e8fa9bd32a17451eb17bf2864660397a
+#: ../../source/demo/webdemo.md:25
 msgid ""
-"**Audio + Image Input**: Process both audio and visual information "
+"**Audio + Video Input**: Process both audio and visual information "
 "simultaneously"
-msgstr "**音频 + 图像输入**：同时处理音频和视觉信息"
+msgstr "**音频 + 视频输入**：同时处理音频和视觉信息"
 
-#: ../../source/demo/webdemo.md:26 da6cf58459ab4ffcae8750b0ea368940
+#: ../../source/demo/webdemo.md:26
 msgid "**Text + Audio Output**: Generate both speech and text responses"
 msgstr "**文本 + 音频输出**：生成语音和文本两种响应"
 
-#: ../../source/demo/webdemo.md:27 14e94eeb60784426b527dfef32e3a099
-msgid ""
-"**High-definition Video**: Support for HD video processing with advanced "
-"slicing"
-msgstr "**高清视频**：支持通过高级切片技术处理高清视频"
+#: ../../source/demo/webdemo.md:27
+msgid "**High-definition Video**: Support for HD video processing"
+msgstr "**高清视频**：支持高清视频处理"
 
-#: ../../source/demo/webdemo.md:29 de8b598336614baa8c646a306e65556d
+#: ../../source/demo/webdemo.md:29
 msgid "Architecture"
 msgstr "架构"
 
-#: ../../source/demo/webdemo.md:41 28226047dd5d4d26b0cf6358152547c1
-msgid "Local WebUI Demo"
-msgstr "本地 WebUI 演示"
+#: ../../source/demo/webdemo.md:41
+msgid "WebRTC Demo"
+msgstr "WebRTC 演示"
 
-#: ../../source/demo/webdemo.md:43 54f1ca64505f4d1188e293a1c00374f8
+#: ../../source/demo/webdemo.md:43
 msgid ""
-"You can easily build your own local WebUI demo using the following "
-"commands."
-msgstr "您可以使用以下命令轻松构建自己的本地 WebUI 演示。"
+"For MiniCPM-o 4.5, we provide a WebRTC-based full-duplex real-time video "
+"interaction demo."
+msgstr "对于 MiniCPM-o 4.5，我们提供了基于 WebRTC 的全双工实时视频交互演示。"
 
-#: ../../source/demo/webdemo.md:45 a2e8f3249c5549238a0047b8cddd6725
-msgid ""
-"Please ensure that `transformers==4.44.2` is installed, as other versions"
-" may have compatibility issues."
-msgstr "请确保已安装 `transformers==4.44.2`，因为其他版本可能存在兼容性问题。"
+#: ../../source/demo/webdemo.md:45
+msgid "Prerequisites"
+msgstr "前提条件"
 
-#: ../../source/demo/webdemo.md:47 3150308ad178411296ef69337a3742d3
+#: ../../source/demo/webdemo.md:47
+msgid "1. **Install Docker Desktop** (macOS)"
+msgstr "1. **安装 Docker Desktop** (macOS)"
+
+#: ../../source/demo/webdemo.md:59
+msgid "2. **Build llamacpp-omni Inference Service**"
+msgstr "2. **构建 llamacpp-omni 推理服务**"
+
+#: ../../source/demo/webdemo.md:75
+msgid "3. **Prepare GGUF Model Files**"
+msgstr "3. **准备 GGUF 模型文件**"
+
+#: ../../source/demo/webdemo.md:93
+msgid "Quick Start"
+msgstr "快速开始"
+
+#: ../../source/demo/webdemo.md:95
 msgid ""
-"If you are using an older version of PyTorch, you might encounter this "
-"issue `\"weight_norm_fwd_first_dim_kernel\" not implemented for "
-"'BFloat16'`, Please add `self.minicpmo_model.tts.float()` during the "
-"model initialization."
+"We provide a pre-built Docker image for quick deployment and experience. "
+"The Docker image includes all necessary dependencies and configurations."
+msgstr "我们提供预构建的 Docker 镜像用于快速部署和体验。Docker 镜像包含所有必要的依赖和配置。"
+
+#: ../../source/demo/webdemo.md:97
+msgid "macOS (Apple Silicon)"
+msgstr "macOS (Apple Silicon)"
+
+#: ../../source/demo/webdemo.md:99
+msgid ""
+"**Requirements**: Apple Silicon Mac (M1/M2/M3/M4), **M4 recommended** for "
+"optimal performance."
+msgstr "**要求**：Apple Silicon Mac (M1/M2/M3/M4)，推荐使用 **M4** 以获得最佳性能。"
+
+#: ../../source/demo/webdemo.md:101
+msgid "Download the Docker image for macOS:"
+msgstr "下载 macOS 的 Docker 镜像："
+
+#: ../../source/demo/webdemo.md:105
+msgid "Deployment Steps"
+msgstr "部署步骤"
+
+#: ../../source/demo/webdemo.md:107
+msgid "**Step 1: Extract and Load Docker Images**"
+msgstr "**步骤 1：解压并加载 Docker 镜像**"
+
+#: ../../source/demo/webdemo.md:121
+msgid "**Step 2: Install Python Dependencies**"
+msgstr "**步骤 2：安装 Python 依赖**"
+
+#: ../../source/demo/webdemo.md:127
+msgid "**Step 3: One-Click Deployment (Recommended)**"
+msgstr "**步骤 3：一键部署（推荐）**"
+
+#: ../../source/demo/webdemo.md:149
+msgid "The script automatically:"
+msgstr "该脚本会自动："
+
+#: ../../source/demo/webdemo.md:151
+msgid "Checks Docker environment"
+msgstr "检查 Docker 环境"
+
+#: ../../source/demo/webdemo.md:152
+msgid "Updates LiveKit configuration with local IP"
+msgstr "使用本地 IP 更新 LiveKit 配置"
+
+#: ../../source/demo/webdemo.md:153
+msgid "Starts Docker services (frontend, backend, LiveKit, Redis)"
+msgstr "启动 Docker 服务（前端、后端、LiveKit、Redis）"
+
+#: ../../source/demo/webdemo.md:154
+msgid "Installs Python dependencies"
+msgstr "安装 Python 依赖"
+
+#: ../../source/demo/webdemo.md:155
+msgid "Starts C++ inference service"
+msgstr "启动 C++ 推理服务"
+
+#: ../../source/demo/webdemo.md:156
+msgid "Registers inference service to backend"
+msgstr "将推理服务注册到后端"
+
+#: ../../source/demo/webdemo.md:158
+msgid "**Step 4: Access the Web Interface**"
+msgstr "**步骤 4：访问 Web 界面**"
+
+#: ../../source/demo/webdemo.md:168
+msgid "Service Ports"
+msgstr "服务端口"
+
+#: ../../source/demo/webdemo.md:170
+msgid "Service"
+msgstr "服务"
+
+#: ../../source/demo/webdemo.md:170
+msgid "Port"
+msgstr "端口"
+
+#: ../../source/demo/webdemo.md:170
+msgid "Description"
+msgstr "描述"
+
+#: ../../source/demo/webdemo.md:171
+msgid "Frontend"
+msgstr "前端"
+
+#: ../../source/demo/webdemo.md:171
+msgid "3000"
+msgstr "3000"
+
+#: ../../source/demo/webdemo.md:171
+msgid "Web UI"
+msgstr "Web 界面"
+
+#: ../../source/demo/webdemo.md:172
+msgid "Backend"
+msgstr "后端"
+
+#: ../../source/demo/webdemo.md:172
+msgid "8021"
+msgstr "8021"
+
+#: ../../source/demo/webdemo.md:172
+msgid "Backend API"
+msgstr "后端 API"
+
+#: ../../source/demo/webdemo.md:173
+msgid "LiveKit"
+msgstr "LiveKit"
+
+#: ../../source/demo/webdemo.md:173
+msgid "7880"
+msgstr "7880"
+
+#: ../../source/demo/webdemo.md:173
+msgid "Real-time communication"
+msgstr "实时通信"
+
+#: ../../source/demo/webdemo.md:174
+msgid "Inference"
+msgstr "推理"
+
+#: ../../source/demo/webdemo.md:174
+msgid "9060"
+msgstr "9060"
+
+#: ../../source/demo/webdemo.md:174
+msgid "Python HTTP API"
+msgstr "Python HTTP API"
+
+#: ../../source/demo/webdemo.md:176
+msgid "More platform support (Linux, Windows) coming soon."
+msgstr "更多平台支持（Linux、Windows）即将推出。"
+
+#: ../../source/demo/webdemo.md:178
+msgid "Technical Highlights"
+msgstr "技术亮点"
+
+#: ../../source/demo/webdemo.md:180
+msgid "**WebRTC Protocol**: Industry-standard real-time communication"
+msgstr "**WebRTC 协议**：行业标准的实时通信"
+
+#: ../../source/demo/webdemo.md:181
+msgid "**Full-Duplex Architecture**: Simultaneous bidirectional streaming"
+msgstr "**全双工架构**：同时双向流传输"
+
+#: ../../source/demo/webdemo.md:182
+msgid ""
+"**Native llamacpp-omni Support**: Seamlessly integrates with "
+"[llamacpp-omni](https://github.com/tc-mb/llama.cpp-omni) as the inference "
+"backend"
 msgstr ""
-"如果您使用的是旧版 PyTorch，可能会遇到此问题：`\"weight_norm_fwd_first_dim_kernel\" not "
-"implemented for 'BFloat16'`。请在模型初始化期间添加 "
-"`self.minicpmo_model.tts.float()`。"
+"**原生 llamacpp-omni 支持**：与 [llamacpp-omni](https://github.com/tc-mb/llama.cpp-omni) "
+"无缝集成作为推理后端"
 
-#: ../../source/demo/webdemo.md:49 9c505ae2755846d6bfefc836f85a7e80
-msgid "**For real-time voice/video call demo:**"
-msgstr "**对于实时语音/视频通话演示：**"
-
-#: ../../source/demo/webdemo.md:50 c06f420275b54097b3108700a7fe884c
-msgid "launch model server:"
-msgstr "启动模型服务器："
-
-#: ../../source/demo/webdemo.md:57 f321a1733c1c4ffba860fdc23eac27d0
-msgid "launch web server:"
-msgstr "启动 Web 服务器："
-
-#: ../../source/demo/webdemo.md:73 2508c69ed6e74a0a81418f30de71cc63
-msgid ""
-"Open `https://localhost:8088/` in browser and enjoy the real-time "
-"voice/video call."
-msgstr "在浏览器中打开 `https://localhost:8088/`，即可体验实时语音/视频通话。"
-
-#~ msgid "MiniCPM-o Omni Stream Demo"
-#~ msgstr "Omni Stream"
-
+#: ../../source/demo/webdemo.md:184
+msgid "Related Resources"
+msgstr "相关资源"

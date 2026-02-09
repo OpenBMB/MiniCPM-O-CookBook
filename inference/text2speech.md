@@ -7,15 +7,14 @@ import torch
 import librosa
 from transformers import AutoModel, AutoTokenizer
 
-model_path = 'openbmb/MiniCPM-o-2_6'
+model_path = 'openbmb/MiniCPM-o-4_5'
 model = AutoModel.from_pretrained(model_path, trust_remote_code=True,
                                   # sdpa or flash_attention_2, no eager
                                   attn_implementation='sdpa', torch_dtype=torch.bfloat16)
 model = model.eval().cuda()
 tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
 
-model.init_tts()
-model.tts.float()
+model.init_tts(streaming=False)
 ```
 
 ### Usage example
@@ -37,15 +36,12 @@ msgs = [{'role': 'user', 'content': [text_to_speak, ref_audio]}]
 
 tts_result = model.chat(
     msgs=msgs,
-    image=None,
     tokenizer=tokenizer,
     sampling=True,
     temperature=0.3,
     max_new_tokens=4096,
-    use_tts_template=True,
     generate_audio=True,
     output_audio_path='text2speech_output.wav',
-    ref_audio=ref_audio
 )
 ```
 

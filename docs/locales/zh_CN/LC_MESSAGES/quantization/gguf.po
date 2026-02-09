@@ -25,8 +25,8 @@ msgid "GGUF"
 msgstr "GGUF"
 
 #: ../../source/quantization/gguf.md:4 d2cd4f0ff43141579fc998b057f1803c
-msgid "**Support:** MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5"
-msgstr "**支持模型:** MiniCPM-V 4.0 / MiniCPM-V 2.6 / MiniCPM-V 2.5"
+msgid "**Support:** MiniCPM-o 4.5 / MiniCPM-o 4.5 / MiniCPM-V 4.0"
+msgstr "**支持模型:** MiniCPM-o 4.5 / MiniCPM-o 4.5 / MiniCPM-V 4.0"
 
 #: ../../source/quantization/gguf.md:7 2c7170ab211e4815abb26c06424b3616
 msgid "1.Download the PyTorch Model"
@@ -40,11 +40,11 @@ msgstr "首先，从以下来源之一获取原始的 PyTorch 模型文件："
 
 #: ../../source/quantization/gguf.md:11 ce986ccfb21249d587d5665b4507f75a
 msgid "**HuggingFace:** https://huggingface.co/openbmb/MiniCPM-V-4"
-msgstr "**[HuggingFace](https://huggingface.co/openbmb/MiniCPM-V-2_6)**"
+msgstr "**[HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-4_5)**"
 
 #: ../../source/quantization/gguf.md:12 9ef5fcc41e444fc7b63e39c35eb22386
 msgid "**ModelScope Community:** https://modelscope.cn/models/OpenBMB/MiniCPM-V-4"
-msgstr "**[ModelScope](https://modelscope.cn/models/OpenBMB/MiniCPM-V-2_6)**"
+msgstr "**[ModelScope](https://modelscope.cn/models/OpenBMB/MiniCPM-o-4_5)**"
 
 #: ../../source/quantization/gguf.md:14 5dfb27e4b79047d49b1c09fc9d8a6bca
 msgid "2.Convert the PyTorch Model to GGUF Format"

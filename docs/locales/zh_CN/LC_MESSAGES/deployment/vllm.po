@@ -59,8 +59,8 @@ msgid "**Parameter Description:**"
 msgstr "**参数说明：**"
 
 #: ../../source/deployment/vllm.md:28 48ae5ca2a2614ddbb7a04a25ef60bf16
-msgid "`<model_path>`: Specify the local path to your MiniCPM-V 4.5 model"
-msgstr "`<model_path>`：指定本地 MiniCPM-V 4.5 模型路径"
+msgid "`<model_path>`: Specify the local path to your MiniCPM-o 4.5 model"
+msgstr "`<model_path>`：指定本地 MiniCPM-o 4.5 模型路径"
 
 #: ../../source/deployment/vllm.md:29 19d5b039710445518b49c0186d983038
 msgid "`--api-key`: Set the API access key"
@@ -88,10 +88,10 @@ msgstr "2.4 思考与非思考模式"
 
 #: ../../source/deployment/vllm.md:125 3627fd8821554fd797b6f2c1962fb87c
 msgid ""
-"The `MiniCPM-V 4.5` model supports thinking before replying, and the "
+"The `MiniCPM-o 4.5` model supports thinking before replying, and the "
 "thinking mode can be turned on and off by setting the `openai` request "
 "parameters."
-msgstr "`MiniCPM-V 4.5` 模型支持在回复前进行思考，可通过设置 `openai` 请求参数开启或关闭思考模式。"
+msgstr "`MiniCPM-o 4.5` 模型支持在回复前进行思考，可通过设置 `openai` 请求参数开启或关闭思考模式。"
 
 #: ../../source/deployment/vllm.md:127 74471051923446b68c529885881f501d
 #, python-brace-format
@@ -141,8 +141,8 @@ msgstr "注意事项"
 #: ../../source/deployment/vllm.md:351 661ec8ab139549a0a3fb2d9f43b41111
 msgid ""
 "**Model Path**: Replace all `<model_path>` in the examples with the "
-"actual MiniCPM-V 4.5 model path"
-msgstr "**模型路径**：请将示例中的 `<model_path>` 替换为实际的 MiniCPM-V 4.5 模型路径"
+"actual MiniCPM-o 4.5 model path"
+msgstr "**模型路径**：请将示例中的 `<model_path>` 替换为实际的 MiniCPM-o 4.5 模型路径"
 
 #: ../../source/deployment/vllm.md:352 b7545723f89d478b890b648cfe8e27d0
 msgid ""
@@ -204,7 +204,7 @@ msgstr "**多模态限制**：多轮对话时请合理设置 `--limit-mm-per-pro
 #~ "code via [this link](https://github.com/tc-"
 #~ "mb/vllm/tree/Support-MiniCPM-V-4.5).."
 #~ msgstr ""
-#~ "我们已向 vLLM 仓库提交了 MiniCPM-V 4.5 的 "
+#~ "我们已向 vLLM 仓库提交了 MiniCPM-o 4.5 的 "
 #~ "PR，目前正在审核合并中。在此期间，您可以通过[此链接](https://github.com/tc-mb/vllm/tree"
 #~ "/Support-MiniCPM-V-4.5)使用我们的代码。"
 

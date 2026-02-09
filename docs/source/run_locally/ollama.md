@@ -1,16 +1,16 @@
 # Ollama
 
 :::{Note}
-We've submitted a PR for MiniCPM-V 4.5 to the Ollama repo, and it's currently under review for merging. In the meantime, you can use our code via [this link](https://github.com/tc-mb/ollama/tree/Support-MiniCPM-V-4.5)..
+We've submitted a PR for MiniCPM-o 4.5 to the Ollama repo, and it's currently under review for merging. In the meantime, you can use our code via [this link](https://github.com/tc-mb/ollama/tree/Support-MiniCPM-V-4.5)..
 :::
 
-[Ollama](https://ollama.com/) helps you run LLMs locally with only a few commands. It is available at macOS, Linux, and Windows. Now, MiniCPM-V 4.5 is officially on Ollama, and you can run it with one command:
+[Ollama](https://ollama.com/) helps you run LLMs locally with only a few commands. It is available at macOS, Linux, and Windows. Now, MiniCPM-o 4.5 is officially on Ollama, and you can run it with one command:
 
 ```bash
 ollama run openbmb/minicpm-v4.5
 ```
 
-Next, we introduce more detailed usages of Ollama for running MiniCPM-V 4.5.
+Next, we introduce more detailed usages of Ollama for running MiniCPM-o 4.5.
 
 ## Install Ollama
 
@@ -50,9 +50,7 @@ go build .
 Once the Ollama service has been built and launched, the MiniCPM-V/o series models can be run using the following commands:
 
 *   `./ollama run openbmb/minicpm-v4.5`
-*   `./ollama run openbmb/minicpm-o2.6`
-*   `./ollama run openbmb/minicpm-v2.6`
-*   `./ollama run openbmb/minicpm-v2.5`
+*   `./ollama run openbmb/minicpm-o4.5`
 
 ### Command Line
 Separate the input prompt and the image path with space.
@@ -81,7 +79,7 @@ with open(image_path, 'rb') as image_file:
 
 ## Run Ollama with Your GGUF Files
 
-You can alse use Ollama with your own GGUF files of MiniCPM-V 4.5. For the first step, you need to create a file called `Modelfile`. The content of the file is shown below:
+You can alse use Ollama with your own GGUF files of MiniCPM-o 4.5. For the first step, you need to create a file called `Modelfile`. The content of the file is shown below:
 
 ```dockerfile
 FROM ./MiniCPM-V-4/model/Model-3.6B-Q4_K_M.gguf

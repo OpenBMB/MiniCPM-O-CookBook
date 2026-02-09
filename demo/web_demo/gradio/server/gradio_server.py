@@ -81,7 +81,7 @@ def initialize_server():
                         help='Port to run the server on')
     parser.add_argument('--log_dir', type=str, default='logs',
                         help='Directory for log files')
-    parser.add_argument('--model_path', type=str, default='openbmb/MiniCPM-V-4_5',
+    parser.add_argument('--model_path', type=str, default='openbmb/MiniCPM-o-4_5',
                         help='Path to the model directory')
     parser.add_argument('--model_type', type=str, default='minicpmv4_5',
                         help='Type of the model to use')

@@ -103,7 +103,7 @@ To use videos in multi-turn conversations, add the `<video>` tag in the user's c
 
 ### Building Audio Dataset
 
-**Note: Only MiniCPM-o 2.6 model supports audio fine-tuning**
+**Note: Only MiniCPM-o 4.5 model supports audio fine-tuning**
 
 Refer to the **mllm_audio_demo.json** dataset under [LLaMA-Factory/data](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json) and construct your data in the same format. The structure is as follows:
 
@@ -198,7 +198,7 @@ Create a configuration file named `minicpmv4_5_lora_sft.yaml` and place it in `L
 
 ```yaml
 ### model
-model_name_or_path: openbmb/MiniCPM-V-4_5 # Can be MiniCPM-V or MiniCPM-o local model
+model_name_or_path: openbmb/MiniCPM-o-4_5 # MiniCPM-o-4_5 local model
 trust_remote_code: true
 
 ### method
@@ -244,7 +244,7 @@ Create a full training configuration file `minicpmv4_5_full_sft.yaml` and place 
 
 ```yaml
 ### model
-model_name_or_path: openbmb/MiniCPM-V-4_5 # MiniCPM-o-2_6 or MiniCPM-V-2_6 or local path
+model_name_or_path: openbmb/MiniCPM-o-4_5 # MiniCPM-o-4_5 or local path
 trust_remote_code: true
 freeze_vision_tower: true # Freeze vision module
 print_param_status: true
@@ -308,7 +308,7 @@ llamafactory-cli train configs/minicpmv4_5_lora_sft.yaml
 
 ```yaml
 ### model
-model_name_or_path: openbmb/MiniCPM-V-4_5 # Original model path, can be local
+model_name_or_path: openbmb/MiniCPM-o-4_5 # Original model path, can be local
 adapter_name_or_path: saves/minicpm_v4_5/lora/sft # Path to saved LoRA model
 template: minicpm_v
 finetuning_type: lora

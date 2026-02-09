@@ -1,7 +1,7 @@
-# MiniCPM-V Finetuning
+# MiniCPM-o Finetuning
 
 
-We offer the official scripts for easy finetuning of the pretrained **MiniCPM-V-4_5**, **MiniCPM-V4**, **MiniCPM-o-2_6**, **MiniCPM-V-2_6**, **MiniCPM-Llama3-V 2.5** and **MiniCPM-V 2.0** on downstream tasks. Our finetune scripts use transformers Trainer and DeepSpeed by default.
+We offer the official scripts for easy finetuning of the pretrained **MiniCPM-o-4_5**, **MiniCPM-Llama3-V 2.5** and **MiniCPM-V 2.0** on downstream tasks. Our finetune scripts use transformers Trainer and DeepSpeed by default.
 
 ### Data preparation
 
@@ -55,7 +55,7 @@ If your input consists of a single image, you can use a single placeholder **\<i
 #### Multiple Images Example
 For inputs containing multiple images, utilize a dictionary where each key represents a unique placeholder (e.g., **\<image_00\>**, **\<image_01\**) with the corresponding image path as its value. These placeholders can then be used within the conversation to seamlessly insert images at specific positions.
 
-Additionally, to optimize resource management, especially when dealing with large batches of images during training or inference, consider reducing `max_slice_nums`. For example, in version 2.6, a single image is represented by 64 tokens. When `slice=9`, an image with a maximum resolution of 1344x1344 will consume nearly 64*(9+1) tokens. To minimize the number of tokens used per image, you can set `slice=1`, resulting in a single image being represented by 64 tokens.
+Additionally, to optimize resource management, especially when dealing with large batches of images during training or inference, consider reducing `max_slice_nums`. For example, in MiniCPM-o 4.5, a single image is represented by 64 tokens. When `slice=9`, an image with a maximum resolution of 1344x1344 will consume nearly 64*(9+1) tokens. To minimize the number of tokens used per image, you can set `slice=1`, resulting in a single image being represented by 64 tokens.
 
 If the total token count exceeds `max_length`, truncation will be applied. For multi-image supervised fine-tuning (SFT), it's recommended to set `MODEL_MAX_LENGTH=4096` in your script for better performance.
 
@@ -96,11 +96,11 @@ If the total token count exceeds `max_length`, truncation will be applied. For m
 Full-parameter parameter finetuning requires updating all parameters of LLM in the whole training process. Please specify the correct MODEL path, DATA path and LLM_TYPE in the shell scripts.
 
 ```shell
-MODEL="MiniCPM-o-2_6" # or "openbmb/MiniCPM-V-2_6", openbmb/MiniCPM-Llama3-V-2_5, openbmb/MiniCPM-V-2
+MODEL="MiniCPM-o-4_5" # or openbmb/MiniCPM-Llama3-V-2_5, openbmb/MiniCPM-V-2
 DATA="path/to/trainging_data" # json file
 EVAL_DATA="path/to/test_data" # json file
 LLM_TYPE="qwen" # if use openbmb/MiniCPM-V-2, please set LLM_TYPE=minicpm, if use openbmb/MiniCPM-Llama3-V-2_5, please set LLM_TYPE="llama3",
-# if use openbmb/MiniCPM-o-2_6 or openbmb/MiniCPM-V-2_6, please set LLM_TYPE=qwen
+# if use openbmb/MiniCPM-o-4_5, please set LLM_TYPE=qwen
 ```
 
 To launch your training, run the following script:
@@ -123,7 +123,7 @@ After training, you could load the model with the path to the adapter. We advise
 ```
 from peft import PeftModel
 from transformers import AutoModel
-model_type=  ""openbmb/MiniCPM-o-2_6" or # openbmb/MiniCPM-V-2_6", openbmb/MiniCPM-Llama3-V-2_5, openbmb/MiniCPM-V-2
+model_type=  "openbmb/MiniCPM-o-4_5" # or openbmb/MiniCPM-Llama3-V-2_5, openbmb/MiniCPM-V-2
 path_to_adapter="path_to_your_fine_tuned_checkpoint"
 
 model =  AutoModel.from_pretrained(

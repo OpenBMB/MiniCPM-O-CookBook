@@ -102,7 +102,7 @@ pip install -e ".[torch,metrics,deepspeed,minicpm_v]
 
 ### 构建音频数据集
 
-**注意：仅MiniCPM-o 2.6、MiniCPM-o 4.5模型支持音频微调**
+**注意：仅MiniCPM-o 4.5模型支持音频微调**
 
 参照LLaMA-Factory/[data](https://github.com/hiyouga/LLaMA-Factory/blob/main/data/dataset_info.json)下的**mllm_audio_demo.json**数据集,按照相同格式构造数据，结构如下：
 

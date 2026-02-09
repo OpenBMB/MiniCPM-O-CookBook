@@ -1,7 +1,7 @@
 # Align-Anything
 
 :::{Note}
-**Support:** MiniCPM-o 2.6
+**Support:** MiniCPM-o 4.5
 :::
 
 ## Environment Setup

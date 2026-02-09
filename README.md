@@ -68,7 +68,7 @@ We provide training methods serving different needs as following:
 |----------|--------|
 | [Transformers](./finetune/finetune_full.md) | Most flexible for customization | 
 | [LLaMA-Factory](./finetune/finetune_llamafactory.md) | Modular fine-tuning toolkit  |
-| [SWIFT](./finetune/swift.md) | Lightweight and fast parameter-efficient tuning |
+
 | [Align-anything](./finetune/align_anything.md) | Visual instruction alignment for multimodal models |
 
 
@@ -212,7 +212,7 @@ If you find our model/code/paper helpful, please consider citing our papers 📝
 
 ```bib
 @misc{yu2025minicpmv45cookingefficient,
-      title={MiniCPM-V 4.5: Cooking Efficient MLLMs via Architecture, Data, and Training Recipe}, 
+      title={MiniCPM-o 4.5: A Gemini 2.5 Flash Level MLLM for Vision, Speech, and Full-Duplex Mulitmodal Live Streaming on Your Phone}, 
       author={Tianyu Yu and Zefan Wang and Chongyi Wang and Fuwei Huang and Wenshuo Ma and Zhihui He and Tianchi Cai and Weize Chen and Yuxiang Huang and Yuanqian Zhao and Bokai Xu and Junbo Cui and Yingjing Xu and Liqing Ruan and Luoyuan Zhang and Hanyu Liu and Jingkun Tang and Hongyuan Liu and Qining Guo and Wenhao Hu and Bingxiang He and Jie Zhou and Jie Cai and Ji Qi and Zonghao Guo and Chi Chen and Guoyang Zeng and Yuxuan Li and Ganqu Cui and Ning Ding and Xu Han and Yuan Yao and Zhiyuan Liu and Maosong Sun},
       year={2025},
       eprint={2509.18154},

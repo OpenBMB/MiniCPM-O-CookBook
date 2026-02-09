@@ -25,8 +25,8 @@ msgid "Gradio Web Demo"
 msgstr "Gradio Web Demo"
 
 #: ../../source/demo/gradiodemo.md:4 af925e780118458aafc5c138b753c41d
-msgid "**Support:** MiniCPM-V 4.5, MiniCPM-V 4.0"
-msgstr "**支持：** MiniCPM-V 4.5, MiniCPM-V 4.0"
+msgid "**Support:** MiniCPM-o 4.5, MiniCPM-V 4.0"
+msgstr "**支持：** MiniCPM-o 4.5, MiniCPM-V 4.0"
 
 #: ../../source/demo/gradiodemo.md:7 6c26e946a8a54b02ad9a40bf7118c00f
 msgid ""

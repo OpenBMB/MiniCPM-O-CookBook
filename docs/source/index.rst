@@ -17,8 +17,8 @@ Welcome to MiniCPM-V & o Cookbook
    <br>
 
 .. _`🏠 Main Repository`: https://github.com/OpenBMB/MiniCPM-o 
-.. _`🤗 Hugging Face`: https://huggingface.co/openbmb/MiniCPM-V-4_5 
-.. _`🤖 ModelScope`: https://modelscope.cn/models/openbmb/MiniCPM-V-4_5 
+.. _`🤗 Hugging Face`: https://huggingface.co/openbmb/MiniCPM-o-4_5 
+.. _`🤖 ModelScope`: https://modelscope.cn/models/openbmb/MiniCPM-o-4_5 
 .. _`📖 Technical Blog`: https://huggingface.co/papers/2509.18154
 
 | `🏠 Main Repository`_  |  `🤗 Hugging Face`_  |  `🤖 ModelScope`_  |  `📖 Technical Blog`_ 
@@ -152,8 +152,7 @@ We provide training methods serving different needs as following:
      - Most flexible for customization
    * - `LLaMA-Factory <./finetune/llamafactory.html>`_
      - Modular fine-tuning toolkit
-   * - `SWIFT <./finetune/swift.html>`_
-     - Lightweight and fast parameter-efficient tuning
+
    * - `Align-anything <./finetune/align-anything.html>`_
      - Visual instruction alignment for multimodal models
 
@@ -382,7 +381,6 @@ For more information, please visit our:
 
    finetune/fintune
    finetune/llamafactory
-   finetune/swift
    finetune/align-anything
    
 .. toctree::

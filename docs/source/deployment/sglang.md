@@ -1,7 +1,7 @@
 # SGLang 
 
 :::{Note}
-We've submitted a PR for MiniCPM-V 4.5 to the SGLang repo, and it's currently under review for merging. In the meantime, you can use our code via [this link](https://github.com/tc-mb/sglang/tree/Support-MiniCPM-V-4.5)..
+We've submitted a PR for MiniCPM-o 4.5 to the SGLang repo, and it's currently under review for merging. In the meantime, you can use our code via [this link](https://github.com/tc-mb/sglang/tree/Support-MiniCPM-o-4.5)..
 :::
 
 ## 1.Installing SGLang
@@ -34,7 +34,7 @@ For any installation issues, please consult the [official installation documenta
 
 By default, it downloads model files from Hugging Face Hub
 ```bash
-python -m sglang.launch_server --model-path openbmb/MiniCPM-V-4_5 --port 30000
+python -m sglang.launch_server --model-path openbmb/MiniCPM-o-4_5 --port 30000
 ```
 Alternatively, you can specify a local path after the `--model-path` parameter
 ```bash
@@ -47,7 +47,7 @@ python -m sglang.launch_server --model-path your_model_path --port 30000 --trust
     curl -s http://localhost:30000/v1/chat/completions \
     -H "Content-Type: application/json" \
     -d '{
-        "model": "MiniCPM-V-4_5",
+        "model": "MiniCPM-o-4_5",
         "messages": [
         {
             "role": "user",
@@ -76,7 +76,7 @@ python -m sglang.launch_server --model-path your_model_path --port 30000 --trust
     client = OpenAI(base_url=f"http://localhost:30000/v1", api_key="None")
 
     response = client.chat.completions.create(
-        model="MiniCPM-V-4_5",
+        model="MiniCPM-o-4_5",
         messages=[
             {
                 "role": "user",

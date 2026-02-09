@@ -6,7 +6,7 @@ Complete web demo applications to quickly experience and showcase MiniCPM-o's po
 
 ## Web Demo
 
-We provide two types of web demo applications for different use cases:
+We provide web demo applications for different use cases:
 
 ### 📖 Text & Image Demo
 
@@ -24,17 +24,19 @@ We provide two types of web demo applications for different use cases:
 - **Gradio**: Clean and easy-to-use web interface with quick deployment
 - **OpenWebUI**: Advanced web interface with enhanced features
 
-### 🎤 Omni Streaming Demo
+### 🎤 Omni Streaming Demo (WebRTC)
 
 **Best for**: Real-time voice conversations, multimodal streaming, voice interaction
 
 **Features**:
 
-- Real-time voice conversation capabilities
-- Audio and video streaming support
+- **Full-duplex** real-time voice/video conversation
+- Simultaneous bidirectional audio and video streaming
+- Natural conversation flow without turn-taking delays
 - Voice cloning and emotion control
-- Simultaneous processing of multiple modalities
-- API endpoints for streaming interactions
+- Native llamacpp-omni support for efficient inference
+
+**Location**: [WebRTC_Demo](./web_demo/WebRTC_Demo/)
 
 ## Use Cases
 

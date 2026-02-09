@@ -124,7 +124,7 @@ msgstr ""
 "使用 llama.cpp 意味着你会在自己的程序中调用 llama.cpp 库，比如像 "
 "[Ollama](https://ollama.com/)、[GPT4ALL](https://gpt4all.io/)、[llamafile](https://github.com"
 "/Mozilla-Ocho/llamafile) 这样的源码。但本指南并不涉及这些内容，而是介绍如何使用 `llama-cli` "
-"示例程序，希望你能了解 llama.cpp 支持 MiniCPM-V 4.5 以及其生态系统的基本用法。"
+"示例程序，希望你能了解 llama.cpp 支持 MiniCPM-o 4.5 以及其生态系统的基本用法。"
 
 #: ../../source/run_locally/llama.cpp.md:25 bd085c62733249f786ca520e34f6a273
 msgid ""
@@ -145,8 +145,8 @@ msgid "Get the programs"
 msgstr "获取程序"
 
 #: ../../source/run_locally/llama.cpp.md:30 85dc30dbd98549cab84359e2a69428b7
-msgid "Get the MiniCPM-V 4.5 models in GGUF[^1] format"
-msgstr "下载 MiniCPM-V 4.5 GGUF[^1] 格式模型"
+msgid "Get the MiniCPM-o 4.5 models in GGUF[^1] format"
+msgstr "下载 MiniCPM-o 4.5 GGUF[^1] 格式模型"
 
 #: ../../source/run_locally/llama.cpp.md:31 1282148d3a364fd990dc54d802993d95
 msgid "Run the program with the model"
@@ -448,8 +448,8 @@ msgid "You can use our official GGUF files or prepare your own GGUF file."
 msgstr "你可以使用官方 GGUF 文件，也可以自行准备 GGUF 文件。"
 
 #: ../../source/run_locally/llama.cpp.md:143 120e61b199304e398bab2f6dbc5dd49d
-msgid "Download official MiniCPM-V 4.5 GGUF files"
-msgstr "下载官方 MiniCPM-V 4.5 GGUF 文件"
+msgid "Download official MiniCPM-o 4.5 GGUF files"
+msgstr "下载官方 MiniCPM-o 4.5 GGUF 文件"
 
 #: ../../source/run_locally/llama.cpp.md:145 f2c193d2c6624f33a96daf8c08b45105
 msgid ""
@@ -458,12 +458,12 @@ msgid ""
 msgstr "下载转换后的语言模型文件（如 `Model-3.6B-Q4_K_M.gguf`）和视觉模型文件（`mmproj-model-f16.gguf`）："
 
 #: ../../source/run_locally/llama.cpp.md:146 7758f22cb0d04abfa17f5cf3585808ab
-msgid "HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4_5-gguf"
-msgstr "HuggingFace：https://huggingface.co/openbmb/MiniCPM-V-4_5-gguf"
+msgid "HuggingFace: https://huggingface.co/openbmb/MiniCPM-o-4_5-gguf"
+msgstr "HuggingFace：https://huggingface.co/openbmb/MiniCPM-o-4_5-gguf"
 
 #: ../../source/run_locally/llama.cpp.md:147 9fbce9f0df75497cacfef6128756fecb
-msgid "ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-V-4_5-gguf"
-msgstr "魔搭社区：https://modelscope.cn/models/OpenBMB/MiniCPM-V-4_5-gguf"
+msgid "ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-o-4_5-gguf"
+msgstr "魔搭社区：https://modelscope.cn/models/OpenBMB/MiniCPM-o-4_5-gguf"
 
 #: ../../source/run_locally/llama.cpp.md:149 44fb130b099747e58b072d47a375fe9e
 msgid ""
@@ -477,9 +477,9 @@ msgstr "例如："
 
 #: ../../source/run_locally/llama.cpp.md:161 af0b77af7c5c42acb875a512fdcb3cb8
 msgid ""
-"This will download the MiniCPM-V 4.5 model in GGUF format quantized with "
+"This will download the MiniCPM-o 4.5 model in GGUF format quantized with "
 "the scheme Q4_K_M."
-msgstr "这将下载采用 Q4_K_M 量化方案的 MiniCPM-V 4.5 GGUF 格式模型。"
+msgstr "这将下载采用 Q4_K_M 量化方案的 MiniCPM-o 4.5 GGUF 格式模型。"
 
 #: ../../source/run_locally/llama.cpp.md:163 5e344a48424f4c7485346adc4e6e2d51
 msgid "Convert from PyTorch model"
@@ -495,16 +495,16 @@ msgstr ""
 "Python 环境并安装 `transformers`。"
 
 #: ../../source/run_locally/llama.cpp.md:167 9d4fde36675240f39535c163e4bcd929
-msgid "Download the MiniCPM-V-4_5 PyTorch model to \"MiniCPM-V-4_5\" folder:"
-msgstr "将 MiniCPM-V-4 PyTorch 模型下载到 \"MiniCPM-V-4_5\" 文件夹："
+msgid "Download the MiniCPM-o-4_5 PyTorch model to \"MiniCPM-o-4_5\" folder:"
+msgstr "将 MiniCPM-V-4 PyTorch 模型下载到 \"MiniCPM-o-4_5\" 文件夹："
 
 #: ../../source/run_locally/llama.cpp.md:168 f8d17a7c77e642289ab9187e170df0b6
-msgid "HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4_5"
-msgstr "HuggingFace：https://huggingface.co/openbmb/MiniCPM-V-4_5"
+msgid "HuggingFace: https://huggingface.co/openbmb/MiniCPM-o-4_5"
+msgstr "HuggingFace：https://huggingface.co/openbmb/MiniCPM-o-4_5"
 
 #: ../../source/run_locally/llama.cpp.md:169 898150c9282d44c796553015370512ba
-msgid "ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-V-4_5"
-msgstr "魔搭社区：https://modelscope.cn/models/OpenBMB/MiniCPM-V-4_5"
+msgid "ModelScope: https://modelscope.cn/models/OpenBMB/MiniCPM-o-4_5"
+msgstr "魔搭社区：https://modelscope.cn/models/OpenBMB/MiniCPM-o-4_5"
 
 #: ../../source/run_locally/llama.cpp.md:171 57dcdf27589042ed983648c3d4fe6b00
 msgid "Clone the llama.cpp repository:"
@@ -515,8 +515,8 @@ msgid "Convert the PyTorch model to GGUF:"
 msgstr "将 PyTorch 模型转换为 GGUF："
 
 #: ../../source/run_locally/llama.cpp.md:192 33c0deb615e043769499c65477974b4b
-msgid "Run MiniCPM-V 4.5 with llama.cpp"
-msgstr "用 llama.cpp 运行 MiniCPM-V 4.5"
+msgid "Run MiniCPM-o 4.5 with llama.cpp"
+msgstr "用 llama.cpp 运行 MiniCPM-o 4.5"
 
 #: ../../source/run_locally/llama.cpp.md:194 d346887acf104e1b865e21fea9ebc4d6
 msgid "llama-cli"
@@ -602,17 +602,17 @@ msgstr "本地路径用法：`-m Model-3.6B-Q4_K_M.gguf`"
 #: ../../source/run_locally/llama.cpp.md:221 fc683a8e6df34dd7ac06bbaf8305b9c6
 msgid ""
 "To use the model file from Hugging Face hub, pass `-hf "
-"openbmb/MiniCPM-V-4_5-gguf:Q4_K_M`"
-msgstr "Hugging Face hub 用法：`-hf openbmb/MiniCPM-V-4_5-gguf:Q4_K_M`"
+"openbmb/MiniCPM-o-4_5-gguf:Q4_K_M`"
+msgstr "Hugging Face hub 用法：`-hf openbmb/MiniCPM-o-4_5-gguf:Q4_K_M`"
 
 #: ../../source/run_locally/llama.cpp.md:222 0aea9d6decd44cfb90b4a425508a00a2
 msgid ""
 "To use a remote URL, pass `-mu "
-"https://huggingface.co/openbmb/MiniCPM-V-4_5-gguf/resolve/main/Model-3"
+"https://huggingface.co/openbmb/MiniCPM-o-4_5-gguf/resolve/main/Model-3"
 ".6B-Q4_K_M.gguf?download=true`."
 msgstr ""
 "远程 URL 用法：`-mu "
-"https://huggingface.co/openbmb/MiniCPM-V-4_5-gguf/resolve/main/Model-3.6B-"
+"https://huggingface.co/openbmb/MiniCPM-o-4_5-gguf/resolve/main/Model-3.6B-"
 "Q4_K_M.gguf?download=true`"
 
 #: ../../source/run_locally/llama.cpp.md:224 6e7d69c9af3648c5a336070f2d261289
@@ -646,13 +646,13 @@ msgid ""
 "methods](https://github.com/ggml-org/llama.cpp/tree/master/tools/main"
 "#generation-flags) and has default configuration for many of them. It is "
 "recommended to adjust those parameters according to the actual case and "
-"the recommended parameters from MiniCPM-V 4.5 modelcard could be used as "
+"the recommended parameters from MiniCPM-o 4.5 modelcard could be used as "
 "a reference. If you encounter repetition and endless generation, it is "
 "recommended to pass in addition `--presence-penalty` up to `2.0`."
 msgstr ""
 "**采样参数**：llama.cpp 支持多种[采样方法](https://github.com/ggml-"
 "org/llama.cpp/tree/master/tools/main#generation-"
-"flags)，并有默认配置。建议根据实际情况调整参数，可参考 MiniCPM-V 4.5 modelcard "
+"flags)，并有默认配置。建议根据实际情况调整参数，可参考 MiniCPM-o 4.5 modelcard "
 "推荐参数。如遇重复或无尽生成，建议加上 `--presence-penalty`（最高 2.0）。"
 
 #: ../../source/run_locally/llama.cpp.md:230 0b75ff3638124152a27ea530a499afb3
@@ -726,11 +726,11 @@ msgstr "更多内容"
 #: ../../source/run_locally/llama.cpp.md:248 a6218848c7bd4bafbae5d53a289dc8ac
 msgid ""
 "If you still find it difficult to use llama.cpp, don’t worry, just check "
-"out other llama.cpp-based applications. For example, MiniCPM-V 4.5 has "
+"out other llama.cpp-based applications. For example, MiniCPM-o 4.5 has "
 "already been officially part of [Ollama](https://ollama.com/), which is a"
 " good platform for you to search and run local LLMs."
 msgstr ""
-"如果你觉得 llama.cpp 还是难以上手，不用担心，可以尝试其他基于 llama.cpp 的应用。例如，MiniCPM-V 4.5 已正式加入"
+"如果你觉得 llama.cpp 还是难以上手，不用担心，可以尝试其他基于 llama.cpp 的应用。例如，MiniCPM-o 4.5 已正式加入"
 " [Ollama](https://ollama.com/)，这是一个很好的本地大模型搜索和运行平台。"
 
 #: ../../source/run_locally/llama.cpp.md:250 57c67a020462402dbc1010f6acb41c96
@@ -755,17 +755,6 @@ msgstr "GGUF（GPT-Generated Unified Format）是一种为高效存储和加载�
 
 #~ msgid "2. GGUF files"
 #~ msgstr "2. GGUF 文件"
-
-#~ msgid ""
-#~ "Download the MiniCPM-o-2_6 PyTorch model "
-#~ "to \"MiniCPM-o-2_6\" folder:   "
-#~ "[HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-2_6)   "
-#~ "[ModelScope](https://modelscope.cn/models/OpenBMB/MiniCPM-o-2_6)"
-#~ msgstr ""
-#~ "将 MiniCPM-o-2_6 PyTorch 模型下载到 "
-#~ "\"MiniCPM-o-2_6\" "
-#~ "文件夹：[HuggingFace](https://huggingface.co/openbmb/MiniCPM-o-2_6) "
-#~ "[魔搭社区](https://modelscope.cn/models/OpenBMB/MiniCPM-o-2_6)"
 
 #~ msgid "3. Model Inference"
 #~ msgstr "3. 模型推理"
